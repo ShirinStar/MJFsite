@@ -34,6 +34,12 @@ export default {
       description: 'year of release',
     },
     {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'tag' }] }],
+    },
+    {
       name: 'bodyPortableText',
       type: 'array',
       title: 'Full description',
@@ -65,4 +71,23 @@ export default {
       ],
     },
   ],
+  preview: {
+    select: {
+      title: 'name',
+      media: 'image',
+      tag0: 'tags.0.name',
+      tag1: 'tags.1.name',
+      tag2: 'tags.2.name',
+      tag3: 'tags.3.name',
+    },
+    prepare: ({ title, media, ...tags }) => {
+      console.log('stay');
+      const projectTags = Object.values(tags).filter(Boolean);
+      return {
+        title,
+        media,
+        subtitle: projectTags.join(', '),
+      };
+    },
+  },
 };
