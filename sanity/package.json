@@ -1,10 +1,10 @@
 {
-  "name": "slicks-slices-backend",
+  "name": "MJF-backend",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Wes Bos <wesbos@gmail.com>",
+  "author": "shirin anlen <shirinanlen@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint .",
@@ -28,6 +28,7 @@
     "@sanity/google-maps-input": "1.150.1",
     "@sanity/structure": "1.150.1",
     "@sanity/vision": "1.150.6",
+    "get-video-id": "^3.2.0",
     "prop-types": "^15.7",
     "react": "^16.13",
     "react-dom": "^16.13",
