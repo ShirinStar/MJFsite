@@ -6,7 +6,6 @@ import VideoEmbed from './VideoEmbed';
 
 const ProjectStyle = styled.div`
   display: grid;
-  // grid-template-columns: 100px 50px 100px;
   @supports not (grid-template-rows: subgrid) {
     grid-template-rows: auto auto 1fr;
   }
