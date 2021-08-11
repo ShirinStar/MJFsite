@@ -30,6 +30,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-styled-components": "^3.10.0",
     "gatsby-source-sanity": "^6.0.5",
+    "get-video-id": "^3.2.0",
     "isomorphic-fetch": "^2.2.1",
     "netlify-cli": "^2.62.0",
     "netlify-lambda": "^2.0.1",

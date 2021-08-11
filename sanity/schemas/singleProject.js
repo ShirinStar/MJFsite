@@ -46,6 +46,15 @@ export default {
       of: [{ type: 'reference', to: [{ type: 'tag' }] }],
     },
     {
+      title: 'Project Link',
+      name: 'projectLink',
+      type: 'url',
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ['http', 'https', 'mailto', 'tel'],
+        }),
+    },
+    {
       name: 'bodyPortableText',
       type: 'array',
       title: 'Full description',
@@ -64,18 +73,40 @@ export default {
       },
     },
     {
-      name: 'videoPreview',
-      type: 'array',
-      title: 'Video embed',
-      of: [
-        {
-          type: 'block',
-        },
-        {
-          type: 'videoEmbed',
-        },
-      ],
+      title: 'Video Link',
+      name: 'videoLink',
+      type: 'url',
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ['http', 'https', 'mailto', 'tel'],
+        }),
     },
+    // {
+    //   name: 'imageGalley',
+    //   type: 'array',
+    //   title: 'Image Gallery',
+    //   of: [
+    //     // {
+    //     //   type: 'block',
+    //     // },
+    //     {
+    //       type: 'imageGallery',
+    //     },
+    //   ],
+    // },
+    // {
+    //   name: 'videoPreview',
+    //   type: 'array',
+    //   title: 'Video embed',
+    //   of: [
+    //     {
+    //       type: 'block',
+    //     },
+    //     {
+    //       type: 'videoEmbed',
+    //     },
+    //   ],
+    // },
   ],
   preview: {
     select: {

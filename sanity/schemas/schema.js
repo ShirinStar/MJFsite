@@ -9,6 +9,7 @@ import videoEmbed from './videoEmbed';
 import projectTag from './projectTag';
 import press from './press';
 import about from './about';
+import imageGallery from './imageGallery';
 
 export default createSchema({
   // We name our schema
