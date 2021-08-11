@@ -27,6 +27,7 @@
     "@sanity/desk-tool": "1.150.7",
     "@sanity/google-maps-input": "1.150.1",
     "@sanity/structure": "1.150.1",
+    "@sanity/ui": "^0.34.5",
     "@sanity/vision": "1.150.6",
     "get-video-id": "^3.2.0",
     "prop-types": "^15.7",

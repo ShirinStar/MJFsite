@@ -7,15 +7,29 @@
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "babel-plugin-styled-components",
+          "stage": "develop",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": false
+          }
+        },
+        {
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
@@ -23,7 +37,10 @@
         {
           "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -39,23 +56,40 @@
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "develop-html",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": false
+          }
         }
       ],
       "presets": [
         {
           "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -71,23 +105,40 @@
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "build-html",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": true
+          }
         }
       ],
       "presets": [
         {
           "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -103,23 +154,40 @@
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "build-javascript",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": true
+          }
         }
       ],
       "presets": [
         {
           "name": "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
