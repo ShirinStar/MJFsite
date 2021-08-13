@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
+		module.exports = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js", "react", "react-dom/server"], factory);
+		define("lib", ["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js", "fs", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js", "path", "react", "react-dom/server"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
+		exports["lib"] = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
 	else
-		root["lib"] = factory(root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__) {
+		root["lib"] = factory(root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"], root["fs"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"], root["path"], root["react"], root["react-dom/server"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_concat__, __WEBPACK_EXTERNAL_MODULE_lodash_flatten__, __WEBPACK_EXTERNAL_MODULE_lodash_get__, __WEBPACK_EXTERNAL_MODULE_lodash_isObject__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -91,10 +91,34 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./.cache/develop-static-entry.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./.cache/ssr-develop-static-entry.js");
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./.cache/_this_is_virtual_fs_path_/$virtual/ssr-sync-requires":
+/*!*********************************************************************!*\
+  !*** ./.cache/_this_is_virtual_fs_path_/$virtual/ssr-sync-requires ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules/react-hot-loader/root.js")
+  // prefer default export if available
+  const preferDefault = m => (m && m.default) || m
+  
+
+exports.ssrComponents = {
+  "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
+  "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
+  "component---src-pages-about-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js"))),
+  "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
+  "component---src-pages-press-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/press.js */ "./src/pages/press.js")))
+  }
+
+
+
+/***/ }),
 
 /***/ "./.cache/api-runner-ssr.js":
 /*!**********************************!*\
@@ -437,146 +461,140 @@ HTML.propTypes = {
 
 /***/ }),
 
-/***/ "./.cache/develop-static-entry.js":
-/*!****************************************!*\
-  !*** ./.cache/develop-static-entry.js ***!
-  \****************************************/
+/***/ "./.cache/dev-404-page.js":
+/*!********************************!*\
+  !*** ./.cache/dev-404-page.js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/merge */ "lodash/merge");
-/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_merge__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
-/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./api-runner-ssr */ "./.cache/api-runner-ssr.js");
-/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_api_runner_ssr__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
- // import testRequireError from "./test-require-error"
-// For some extremely mysterious reason, webpack adds the above module *after*
-// this module so that when this code runs, testRequireError is undefined.
-// So in the meantime, we'll just inline it.
 
-const testRequireError = (moduleName, err) => {
-  const regex = new RegExp(`Error: Cannot find module\\s.${moduleName}`);
-  const firstLine = err.toString().split(`\n`)[0];
-  return regex.test(firstLine);
-};
 
-let Html;
-
-try {
-  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-} catch (err) {
-  if (testRequireError(`../src/html`, err)) {
-    Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
-  } else {
-    console.log(`There was an error requiring "src/html.js"\n\n`, err, `\n\n`);
-    process.exit();
+class Dev404Page extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    const {
+      data,
+      location
+    } = this.props;
+    const pagePaths = data.allSitePage.nodes.map(node => node.path);
+    const urlState = query_string__WEBPACK_IMPORTED_MODULE_3___default.a.parse(location.search);
+    const initialPagePathSearchTerms = urlState.filter ? urlState.filter : ``;
+    this.state = {
+      showCustom404: false,
+      initPagePaths: pagePaths,
+      pagePathSearchTerms: initialPagePathSearchTerms,
+      pagePaths: this.getFilteredPagePaths(pagePaths, initialPagePathSearchTerms)
+    };
+    this.showCustom404 = this.showCustom404.bind(this);
+    this.handlePagePathSearch = this.handlePagePathSearch.bind(this);
+    this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
   }
+
+  showCustom404() {
+    this.setState({
+      showCustom404: true
+    });
+  }
+
+  handleSearchTermChange(event) {
+    const searchValue = event.target.value;
+    this.setSearchUrl(searchValue);
+    this.setState({
+      pagePathSearchTerms: searchValue
+    });
+  }
+
+  handlePagePathSearch(event) {
+    event.preventDefault();
+    const allPagePaths = [...this.state.initPagePaths];
+    this.setState({
+      pagePaths: this.getFilteredPagePaths(allPagePaths, this.state.pagePathSearchTerms)
+    });
+  }
+
+  getFilteredPagePaths(allPagePaths, pagePathSearchTerms) {
+    const searchTerm = new RegExp(`${pagePathSearchTerms}`);
+    return allPagePaths.filter(pagePath => searchTerm.test(pagePath));
+  }
+
+  setSearchUrl(searchValue) {
+    const {
+      location: {
+        pathname,
+        search
+      }
+    } = this.props;
+    const searchMap = query_string__WEBPACK_IMPORTED_MODULE_3___default.a.parse(search);
+    searchMap.filter = searchValue;
+    const newSearch = query_string__WEBPACK_IMPORTED_MODULE_3___default.a.stringify(searchMap);
+
+    if (search !== `?${newSearch}`) {
+      Object(gatsby__WEBPACK_IMPORTED_MODULE_2__["navigate"])(`${pathname}?${newSearch}`, {
+        replace: true
+      });
+    }
+  }
+
+  render() {
+    const {
+      pathname
+    } = this.props.location;
+    let newFilePath;
+
+    if (pathname === `/`) {
+      newFilePath = `src/pages/index.js`;
+    } else if (pathname.slice(-1) === `/`) {
+      newFilePath = `src/pages${pathname.slice(0, -1)}.js`;
+    } else {
+      newFilePath = `src/pages${pathname}.js`;
+    }
+
+    return this.state.showCustom404 ? this.props.custom404 : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Gatsby.js development 404 page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, `There's not a page yet at `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, pathname)), this.props.custom404 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: this.showCustom404
+    }, "Preview custom 404 page")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, `A custom 404 page wasn't detected - if you would like to add one, create a component in your site directory at `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "src/pages/404.js"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Create a React.js component in your site directory at", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, newFilePath), ` `, "and this page will automatically refresh to show the new page component you created."), this.state.initPagePaths.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If you were trying to reach another page, perhaps you can find it below."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Pages (", this.state.pagePaths.length != this.state.initPagePaths.length ? `${this.state.pagePaths.length}/${this.state.initPagePaths.length}` : this.state.initPagePaths.length, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      onSubmit: this.handlePagePathSearch
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Search:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      id: "search",
+      placeholder: "Search pages...",
+      value: this.state.pagePathSearchTerms,
+      onChange: this.handleSearchTermChange
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "submit",
+      value: "Submit"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, this.state.pagePaths.map((pagePath, index) => index < 100 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      key: pagePath
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: pagePath
+    }, pagePath))), this.state.pagePaths.length > 100 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      style: {
+        fontWeight: `bold`
+      }
+    }, "... and ", this.state.pagePaths.length - 100, " more."))));
+  }
+
 }
 
-Html = Html && Html.__esModule ? Html.default : Html;
-/* harmony default export */ __webpack_exports__["default"] = ((pagePath, callback) => {
-  let headComponents = [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
-    key: "environment",
-    name: "note",
-    content: "environment=development"
-  })];
-  let htmlAttributes = {};
-  let bodyAttributes = {};
-  let preBodyComponents = [];
-  let postBodyComponents = [];
-  let bodyProps = {};
-  let htmlStr;
-
-  const setHeadComponents = components => {
-    headComponents = headComponents.concat(components);
-  };
-
-  const setHtmlAttributes = attributes => {
-    htmlAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()(htmlAttributes, attributes);
-  };
-
-  const setBodyAttributes = attributes => {
-    bodyAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()(bodyAttributes, attributes);
-  };
-
-  const setPreBodyComponents = components => {
-    preBodyComponents = preBodyComponents.concat(components);
-  };
-
-  const setPostBodyComponents = components => {
-    postBodyComponents = postBodyComponents.concat(components);
-  };
-
-  const setBodyProps = props => {
-    bodyProps = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()({}, bodyProps, props);
-  };
-
-  const getHeadComponents = () => headComponents;
-
-  const replaceHeadComponents = components => {
-    headComponents = components;
-  };
-
-  const getPreBodyComponents = () => preBodyComponents;
-
-  const replacePreBodyComponents = components => {
-    preBodyComponents = components;
-  };
-
-  const getPostBodyComponents = () => postBodyComponents;
-
-  const replacePostBodyComponents = components => {
-    postBodyComponents = components;
-  };
-
-  _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3___default()(`onRenderBody`, {
-    setHeadComponents,
-    setHtmlAttributes,
-    setBodyAttributes,
-    setPreBodyComponents,
-    setPostBodyComponents,
-    setBodyProps,
-    pathname: pagePath
-  });
-  _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3___default()(`onPreRenderHTML`, {
-    getHeadComponents,
-    replaceHeadComponents,
-    getPreBodyComponents,
-    replacePreBodyComponents,
-    getPostBodyComponents,
-    replacePostBodyComponents,
-    pathname: pagePath
-  });
-  const htmlElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Html, { ...bodyProps,
-    body: ``,
-    headComponents: headComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
-      key: `io`,
-      src: "/socket.io/socket.io.js"
-    })]),
-    htmlAttributes,
-    bodyAttributes,
-    preBodyComponents,
-    postBodyComponents: postBodyComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
-      key: `polyfill`,
-      src: "/polyfill.js",
-      noModule: true
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
-      key: `commons`,
-      src: "/commons.js"
-    })])
-  });
-  htmlStr = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_2__["renderToStaticMarkup"])(htmlElement);
-  htmlStr = `<!DOCTYPE html>${htmlStr}`;
-  callback(null, htmlStr);
-});
+Dev404Page.propTypes = {
+  data: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
+  custom404: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.element,
+  location: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+};
+/* harmony default export */ __webpack_exports__["default"] = (Dev404Page);
+const pagesQuery = "713901024";
 
 /***/ }),
 
@@ -1548,6 +1566,377 @@ const preferDefault = m => m && m.default || m;
 if (false) {} else if (false) {} else {
   module.exports = () => null;
 }
+
+/***/ }),
+
+/***/ "./.cache/route-announcer-props.js":
+/*!*****************************************!*\
+  !*** ./.cache/route-announcer-props.js ***!
+  \*****************************************/
+/*! exports provided: RouteAnnouncerProps */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteAnnouncerProps", function() { return RouteAnnouncerProps; });
+// This is extracted to separate module because it's shared
+// between browser and SSR code
+const RouteAnnouncerProps = {
+  id: `gatsby-announcer`,
+  style: {
+    position: `absolute`,
+    top: 0,
+    width: 1,
+    height: 1,
+    padding: 0,
+    overflow: `hidden`,
+    clip: `rect(0, 0, 0, 0)`,
+    whiteSpace: `nowrap`,
+    border: 0
+  },
+  "aria-live": `assertive`,
+  "aria-atomic": `true`
+};
+
+/***/ }),
+
+/***/ "./.cache/ssr-develop-static-entry.js":
+/*!********************************************!*\
+  !*** ./.cache/ssr-develop-static-entry.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var lodash_concat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/concat */ "lodash/concat");
+/* harmony import */ var lodash_concat__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_concat__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash/uniqBy */ "lodash/uniqBy");
+/* harmony import */ var lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash_flatten__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/flatten */ "lodash/flatten");
+/* harmony import */ var lodash_flatten__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_flatten__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var lodash_isObject__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash/isObject */ "lodash/isObject");
+/* harmony import */ var lodash_isObject__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_isObject__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash/merge */ "lodash/merge");
+/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_merge__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash/get */ "lodash/get");
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash_get__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! fs */ "fs");
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! path */ "path");
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./api-runner-ssr */ "./.cache/api-runner-ssr.js");
+/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_api_runner_ssr__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _find_path__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./find-path */ "./.cache/find-path.js");
+/* harmony import */ var $virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! $virtual/ssr-sync-requires */ "./.cache/_this_is_virtual_fs_path_/$virtual/ssr-sync-requires");
+/* harmony import */ var $virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n($virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _route_announcer_props__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./route-announcer-props */ "./.cache/route-announcer-props.js");
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @reach/router */ "@reach/router");
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_14__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // import testRequireError from "./test-require-error"
+// For some extremely mysterious reason, webpack adds the above module *after*
+// this module so that when this code runs, testRequireError is undefined.
+// So in the meantime, we'll just inline it.
+
+const testRequireError = (moduleName, err) => {
+  const regex = new RegExp(`Error: Cannot find module\\s.${moduleName}`);
+  const firstLine = err.toString().split(`\n`)[0];
+  return regex.test(firstLine);
+};
+
+const stats = JSON.parse(fs__WEBPACK_IMPORTED_MODULE_7___default.a.readFileSync(`${process.cwd()}/public/webpack.stats.json`, `utf-8`));
+let Html;
+
+try {
+  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+} catch (err) {
+  if (testRequireError(`../src/html`, err)) {
+    Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
+  } else {
+    console.log(`There was an error requiring "src/html.js"\n\n`, err, `\n\n`);
+    process.exit();
+  }
+}
+
+Html = Html && Html.__esModule ? Html.default : Html;
+/* harmony default export */ __webpack_exports__["default"] = ((pagePath, isClientOnlyPage, callback) => {
+  let bodyHtml = ``;
+  let headComponents = [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("meta", {
+    key: "environment",
+    name: "note",
+    content: "environment=development"
+  })];
+  let htmlAttributes = {};
+  let bodyAttributes = {};
+  let preBodyComponents = [];
+  let postBodyComponents = [];
+  let bodyProps = {};
+
+  const generateBodyHTML = () => {
+    const setHeadComponents = components => {
+      headComponents = headComponents.concat(components);
+    };
+
+    const setHtmlAttributes = attributes => {
+      htmlAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_4___default()(htmlAttributes, attributes);
+    };
+
+    const setBodyAttributes = attributes => {
+      bodyAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_4___default()(bodyAttributes, attributes);
+    };
+
+    const setPreBodyComponents = components => {
+      preBodyComponents = preBodyComponents.concat(components);
+    };
+
+    const setPostBodyComponents = components => {
+      postBodyComponents = postBodyComponents.concat(components);
+    };
+
+    const setBodyProps = props => {
+      bodyProps = lodash_merge__WEBPACK_IMPORTED_MODULE_4___default()({}, bodyProps, props);
+    };
+
+    const getHeadComponents = () => headComponents;
+
+    const replaceHeadComponents = components => {
+      headComponents = components;
+    };
+
+    const replaceBodyHTMLString = body => {
+      bodyHtml = body;
+    };
+
+    const getPreBodyComponents = () => preBodyComponents;
+
+    const replacePreBodyComponents = components => {
+      preBodyComponents = components;
+    };
+
+    const getPostBodyComponents = () => postBodyComponents;
+
+    const replacePostBodyComponents = components => {
+      postBodyComponents = components;
+    };
+
+    const getPageDataPath = path => {
+      const fixedPagePath = path === `/` ? `index` : path;
+      return Object(path__WEBPACK_IMPORTED_MODULE_9__["join"])(`page-data`, fixedPagePath, `page-data.json`);
+    };
+
+    const getPageData = pagePath => {
+      const pageDataPath = getPageDataPath(pagePath);
+      const absolutePageDataPath = Object(path__WEBPACK_IMPORTED_MODULE_9__["join"])(process.cwd(), `public`, pageDataPath);
+      const pageDataJson = fs__WEBPACK_IMPORTED_MODULE_7___default.a.readFileSync(absolutePageDataPath, `utf8`);
+
+      try {
+        return JSON.parse(pageDataJson);
+      } catch (err) {
+        return null;
+      }
+    };
+
+    const pageData = getPageData(pagePath);
+    const {
+      componentChunkName,
+      staticQueryHashes = []
+    } = pageData;
+
+    let scriptsAndStyles = lodash_flatten__WEBPACK_IMPORTED_MODULE_2___default()([`commons`].map(chunkKey => {
+      const fetchKey = `assetsByChunkName[${chunkKey}]`;
+
+      let chunks = lodash_get__WEBPACK_IMPORTED_MODULE_5___default()(stats, fetchKey);
+
+      const namedChunkGroups = lodash_get__WEBPACK_IMPORTED_MODULE_5___default()(stats, `namedChunkGroups`);
+
+      if (!chunks) {
+        return null;
+      }
+
+      chunks = chunks.map(chunk => {
+        if (chunk === `/`) {
+          return null;
+        }
+
+        return {
+          rel: `preload`,
+          name: chunk
+        };
+      });
+      namedChunkGroups[chunkKey].assets.forEach(asset => chunks.push({
+        rel: `preload`,
+        name: asset
+      }));
+      const childAssets = namedChunkGroups[chunkKey].childAssets;
+
+      for (const rel in childAssets) {
+        chunks = lodash_concat__WEBPACK_IMPORTED_MODULE_0___default()(chunks, childAssets[rel].map(chunk => {
+          return {
+            rel,
+            name: chunk
+          };
+        }));
+      }
+
+      return chunks;
+    })).filter(s => lodash_isObject__WEBPACK_IMPORTED_MODULE_3___default()(s)).sort((s1, s2) => s1.rel == `preload` ? -1 : 1); // given priority to preload
+
+
+    scriptsAndStyles = lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1___default()(scriptsAndStyles, item => item.name);
+    const styles = scriptsAndStyles.filter(style => style.name && style.name.endsWith(`.css`));
+    styles.slice(0).reverse().forEach(style => {
+      headComponents.unshift( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
+        "data-identity": `gatsby-dev-css`,
+        key: style.name,
+        rel: "stylesheet",
+        type: "text/css",
+        href: `${""}/${style.name}`
+      }));
+    });
+    const createElement = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
+
+    class RouteHandler extends react__WEBPACK_IMPORTED_MODULE_6___default.a.Component {
+      render() {
+        var _pageData$result, _pageData$result$page;
+
+        const props = { ...this.props,
+          ...pageData.result,
+          params: { ...Object(_find_path__WEBPACK_IMPORTED_MODULE_11__["grabMatchParams"])(this.props.location.pathname),
+            ...(((_pageData$result = pageData.result) === null || _pageData$result === void 0 ? void 0 : (_pageData$result$page = _pageData$result.pageContext) === null || _pageData$result$page === void 0 ? void 0 : _pageData$result$page.__params) || {})
+          },
+          // pathContext was deprecated in v2. Renamed to pageContext
+          pathContext: pageData.result ? pageData.result.pageContext : undefined
+        };
+        let pageElement;
+
+        if ($virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12___default.a.ssrComponents[componentChunkName] && !isClientOnlyPage) {
+          pageElement = createElement($virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12___default.a.ssrComponents[componentChunkName], props);
+        } else {
+          // If this is a client-only page or the pageComponent didn't finish
+          // compiling yet, just render an empty component.
+          pageElement = () => null;
+        }
+
+        const wrappedPage = _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`wrapPageElement`, {
+          element: pageElement,
+          props
+        }, pageElement, ({
+          result
+        }) => {
+          return {
+            element: result,
+            props
+          };
+        }).pop();
+        return wrappedPage;
+      }
+
+    }
+
+    const routerElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_14__["ServerLocation"], {
+      url: `${""}${pagePath}`
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_14__["Router"], {
+      id: "gatsby-focus-wrapper",
+      baseuri: ""
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(RouteHandler, {
+      path: "/*"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", _route_announcer_props__WEBPACK_IMPORTED_MODULE_13__["RouteAnnouncerProps"]));
+    const bodyComponent = _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`wrapRootElement`, {
+      element: routerElement,
+      pathname: pagePath
+    }, routerElement, ({
+      result
+    }) => {
+      return {
+        element: result,
+        pathname: pagePath
+      };
+    }).pop(); // Let the site or plugin render the page component.
+
+    _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`replaceRenderer`, {
+      bodyComponent,
+      replaceBodyHTMLString,
+      setHeadComponents,
+      setHtmlAttributes,
+      setBodyAttributes,
+      setPreBodyComponents,
+      setPostBodyComponents,
+      setBodyProps,
+      pathname: pagePath,
+      pathPrefix: ""
+    }); // If no one stepped up, we'll handle it.
+
+    if (!bodyHtml) {
+      try {
+        bodyHtml = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_8__["renderToString"])(bodyComponent);
+      } catch (e) {
+        // ignore @reach/router redirect errors
+        if (!Object(_reach_router__WEBPACK_IMPORTED_MODULE_14__["isRedirect"])(e)) throw e;
+      }
+    }
+
+    _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`onRenderBody`, {
+      setHeadComponents,
+      setHtmlAttributes,
+      setBodyAttributes,
+      setPreBodyComponents,
+      setPostBodyComponents,
+      setBodyProps,
+      pathname: pagePath
+    });
+    _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`onPreRenderHTML`, {
+      getHeadComponents,
+      replaceHeadComponents,
+      getPreBodyComponents,
+      replacePreBodyComponents,
+      getPostBodyComponents,
+      replacePostBodyComponents,
+      pathname: pagePath
+    });
+    return bodyHtml;
+  };
+
+  const bodyStr = generateBodyHTML();
+  const htmlElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Html, { ...bodyProps,
+    body: bodyStr,
+    headComponents: headComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("script", {
+      key: `io`,
+      src: "/socket.io/socket.io.js"
+    })]),
+    htmlAttributes,
+    bodyAttributes,
+    preBodyComponents,
+    postBodyComponents: postBodyComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("script", {
+      key: `polyfill`,
+      src: "/polyfill.js",
+      noModule: true
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("script", {
+      key: `commons`,
+      src: "/commons.js"
+    })])
+  });
+  let htmlStr = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_8__["renderToStaticMarkup"])(htmlElement);
+  htmlStr = `<!DOCTYPE html>${htmlStr}`;
+  callback(null, htmlStr);
+});
 
 /***/ }),
 
@@ -2667,6 +3056,2453 @@ exports.resolve = resolve;
 exports.insertParams = insertParams;
 exports.validateRedirect = validateRedirect;
 exports.shallowCompare = shallowCompare;
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/internals.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/internals.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./lib/internals */ "./node_modules/@sanity/block-content-to-hyperscript/lib/internals.js")
+
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/blocksToNodes.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/blocksToNodes.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var objectAssign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var buildMarksTree = __webpack_require__(/*! ./buildMarksTree */ "./node_modules/@sanity/block-content-to-hyperscript/lib/buildMarksTree.js");
+
+var nestLists = __webpack_require__(/*! ./nestLists */ "./node_modules/@sanity/block-content-to-hyperscript/lib/nestLists.js");
+
+var generateKeys = __webpack_require__(/*! ./generateKeys */ "./node_modules/@sanity/block-content-to-hyperscript/lib/generateKeys.js");
+
+var mergeSerializers = __webpack_require__(/*! ./mergeSerializers */ "./node_modules/@sanity/block-content-to-hyperscript/lib/mergeSerializers.js"); // Properties to extract from props and pass to serializers as options
+
+
+var optionProps = ['projectId', 'dataset', 'imageOptions', 'ignoreUnknownTypes'];
+
+var isDefined = function isDefined(val) {
+  return typeof val !== 'undefined';
+};
+
+var defaults = {
+  imageOptions: {},
+  ignoreUnknownTypes: true
+};
+
+function blocksToNodes(h, properties, defaultSerializers, serializeSpan) {
+  var props = objectAssign({}, defaults, properties);
+  var rawBlocks = Array.isArray(props.blocks) ? props.blocks : [props.blocks];
+  var keyedBlocks = generateKeys(rawBlocks);
+  var blocks = nestLists(keyedBlocks, props.listNestMode);
+  var serializers = mergeSerializers(defaultSerializers, props.serializers || {});
+  var options = optionProps.reduce(function (opts, key) {
+    var value = props[key];
+
+    if (isDefined(value)) {
+      opts[key] = value;
+    }
+
+    return opts;
+  }, {});
+
+  function serializeNode(node, index, siblings, isInline) {
+    if (isList(node)) {
+      return serializeList(node);
+    }
+
+    if (isListItem(node)) {
+      return serializeListItem(node, findListItemIndex(node, siblings));
+    }
+
+    if (isSpan(node)) {
+      return serializeSpan(node, serializers, index, {
+        serializeNode: serializeNode
+      });
+    }
+
+    return serializeBlock(node, index, isInline);
+  }
+
+  function findListItemIndex(node, siblings) {
+    var index = 0;
+
+    for (var i = 0; i < siblings.length; i++) {
+      if (siblings[i] === node) {
+        return index;
+      }
+
+      if (!isListItem(siblings[i])) {
+        continue;
+      }
+
+      index++;
+    }
+
+    return index;
+  }
+
+  function serializeBlock(block, index, isInline) {
+    var tree = buildMarksTree(block);
+    var children = tree.map(function (node, i, siblings) {
+      return serializeNode(node, i, siblings, true);
+    });
+    var blockProps = {
+      key: block._key || "block-".concat(index),
+      node: block,
+      isInline: isInline,
+      serializers: serializers,
+      options: options
+    };
+    return h(serializers.block, blockProps, children);
+  }
+
+  function serializeListItem(block, index) {
+    var key = block._key;
+    var tree = buildMarksTree(block);
+    var children = tree.map(serializeNode);
+    return h(serializers.listItem, {
+      node: block,
+      serializers: serializers,
+      index: index,
+      key: key,
+      options: options
+    }, children);
+  }
+
+  function serializeList(list) {
+    var type = list.listItem;
+    var level = list.level;
+    var key = list._key;
+    var children = list.children.map(serializeNode);
+    return h(serializers.list, {
+      key: key,
+      level: level,
+      type: type,
+      options: options
+    }, children);
+  } // Default to false, so `undefined` will evaluate to the default here
+
+
+  var renderContainerOnSingleChild = Boolean(props.renderContainerOnSingleChild);
+  var nodes = blocks.map(serializeNode);
+
+  if (renderContainerOnSingleChild || nodes.length > 1) {
+    var containerProps = props.className ? {
+      className: props.className
+    } : {};
+    return h(serializers.container, containerProps, nodes);
+  }
+
+  if (nodes[0]) {
+    return nodes[0];
+  }
+
+  return typeof serializers.empty === 'function' ? h(serializers.empty) : serializers.empty;
+}
+
+function isList(block) {
+  return block._type === 'list' && block.listItem;
+}
+
+function isListItem(block) {
+  return block._type === 'block' && block.listItem;
+}
+
+function isSpan(block) {
+  return typeof block === 'string' || block.marks || block._type === 'span';
+}
+
+module.exports = blocksToNodes;
+//# sourceMappingURL=blocksToNodes.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/buildMarksTree.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/buildMarksTree.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var defaultMarks = ['strong', 'em', 'code', 'underline', 'strike-through'];
+
+var buildMarksTree = function buildMarksTree(block) {
+  var children = block.children,
+      markDefs = block.markDefs;
+
+  if (!children || !children.length) {
+    return [];
+  }
+
+  var sortedMarks = children.map(sortMarksByOccurences);
+  var rootNode = {
+    _type: 'span',
+    children: []
+  };
+  var nodeStack = [rootNode];
+  children.forEach(function (span, i) {
+    var marksNeeded = sortedMarks[i];
+
+    if (!marksNeeded) {
+      var lastNode = nodeStack[nodeStack.length - 1];
+      lastNode.children.push(span);
+      return;
+    }
+
+    var pos = 1; // Start at position one. Root is always plain and should never be removed. (?)
+
+    if (nodeStack.length > 1) {
+      for (pos; pos < nodeStack.length; pos++) {
+        var mark = nodeStack[pos].markKey;
+        var index = marksNeeded.indexOf(mark); // eslint-disable-next-line max-depth
+
+        if (index === -1) {
+          break;
+        }
+
+        marksNeeded.splice(index, 1);
+      }
+    } // Keep from beginning to first miss
+
+
+    nodeStack = nodeStack.slice(0, pos); // Add needed nodes
+
+    var currentNode = findLastParentNode(nodeStack);
+    marksNeeded.forEach(function (mark) {
+      var node = {
+        _type: 'span',
+        _key: span._key,
+        children: [],
+        mark: markDefs.find(function (def) {
+          return def._key === mark;
+        }) || mark,
+        markKey: mark
+      };
+      currentNode.children.push(node);
+      nodeStack.push(node);
+      currentNode = node;
+    }); // Split at newlines to make individual line chunks, but keep newline
+    // characters as individual elements in the array. We use these characters
+    // in the span serializer to trigger hard-break rendering
+
+    if (isTextSpan(span)) {
+      var lines = span.text.split('\n');
+
+      for (var line = lines.length; line-- > 1;) {
+        lines.splice(line, 0, '\n');
+      }
+
+      currentNode.children = currentNode.children.concat(lines);
+    } else {
+      currentNode.children = currentNode.children.concat(span);
+    }
+  });
+  return rootNode.children;
+}; // We want to sort all the marks of all the spans in the following order:
+// 1. Marks that are shared amongst the most adjacent siblings
+// 2. Non-default marks (links, custom metadata)
+// 3. Built-in, plain marks (bold, emphasis, code etc)
+
+
+function sortMarksByOccurences(span, i, spans) {
+  if (!span.marks || span.marks.length === 0) {
+    return span.marks || [];
+  }
+
+  var markOccurences = span.marks.reduce(function (occurences, mark) {
+    occurences[mark] = occurences[mark] ? occurences[mark] + 1 : 1;
+
+    for (var siblingIndex = i + 1; siblingIndex < spans.length; siblingIndex++) {
+      var sibling = spans[siblingIndex];
+
+      if (sibling.marks && Array.isArray(sibling.marks) && sibling.marks.indexOf(mark) !== -1) {
+        occurences[mark]++;
+      } else {
+        break;
+      }
+    }
+
+    return occurences;
+  }, {});
+  var sortByOccurence = sortMarks.bind(null, markOccurences); // Slicing because sort() mutates the input
+
+  return span.marks.slice().sort(sortByOccurence);
+}
+
+function sortMarks(occurences, markA, markB) {
+  var aOccurences = occurences[markA] || 0;
+  var bOccurences = occurences[markB] || 0;
+
+  if (aOccurences !== bOccurences) {
+    return bOccurences - aOccurences;
+  }
+
+  var aDefaultPos = defaultMarks.indexOf(markA);
+  var bDefaultPos = defaultMarks.indexOf(markB); // Sort default marks last
+
+  if (aDefaultPos !== bDefaultPos) {
+    return aDefaultPos - bDefaultPos;
+  } // Sort other marks simply by key
+
+
+  if (markA < markB) {
+    return -1;
+  } else if (markA > markB) {
+    return 1;
+  }
+
+  return 0;
+}
+
+function isTextSpan(node) {
+  return node._type === 'span' && typeof node.text === 'string' && (Array.isArray(node.marks) || typeof node.marks === 'undefined');
+}
+
+function findLastParentNode(nodes) {
+  for (var i = nodes.length - 1; i >= 0; i--) {
+    var node = nodes[i];
+
+    if (node._type === 'span' && node.children) {
+      return node;
+    }
+  }
+
+  return undefined;
+}
+
+module.exports = buildMarksTree;
+//# sourceMappingURL=buildMarksTree.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/generateKeys.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/generateKeys.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var objectAssign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+module.exports = function (blocks) {
+  return blocks.map(function (block) {
+    if (block._key) {
+      return block;
+    }
+
+    return objectAssign({
+      _key: getStaticKey(block)
+    }, block);
+  });
+};
+
+function getStaticKey(item) {
+  return checksum(JSON.stringify(item)).toString(36).replace(/[^A-Za-z0-9]/g, '');
+}
+/* eslint-disable no-bitwise */
+
+
+function checksum(str) {
+  var hash = 0;
+  var strlen = str.length;
+
+  if (strlen === 0) {
+    return hash;
+  }
+
+  for (var i = 0; i < strlen; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash &= hash; // Convert to 32bit integer
+  }
+
+  return hash;
+}
+/* eslint-enable no-bitwise */
+//# sourceMappingURL=generateKeys.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/getImageUrl.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/getImageUrl.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var generateHelpUrl = __webpack_require__(/*! @sanity/generate-help-url */ "./node_modules/@sanity/block-content-to-hyperscript/node_modules/@sanity/generate-help-url/index.js");
+
+var urlBuilder = __webpack_require__(/*! @sanity/image-url */ "./node_modules/@sanity/image-url/lib/node/index.js");
+
+var objectAssign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var enc = encodeURIComponent;
+var materializeError = "You must either:\n  - Pass `projectId` and `dataset` to the block renderer\n  - Materialize images to include the `url` field.\n\nFor more information, see ".concat(generateHelpUrl('block-content-image-materializing'));
+
+var getQueryString = function getQueryString(options) {
+  var query = options.imageOptions;
+  var keys = Object.keys(query);
+
+  if (!keys.length) {
+    return '';
+  }
+
+  var params = keys.map(function (key) {
+    return "".concat(enc(key), "=").concat(enc(query[key]));
+  });
+  return "?".concat(params.join('&'));
+};
+
+var buildUrl = function buildUrl(props) {
+  var node = props.node,
+      options = props.options;
+  var projectId = options.projectId,
+      dataset = options.dataset;
+  var asset = node.asset;
+
+  if (!asset) {
+    throw new Error('Image does not have required `asset` property');
+  }
+
+  if (asset.url) {
+    return asset.url + getQueryString(options);
+  }
+
+  if (!projectId || !dataset) {
+    throw new Error(materializeError);
+  }
+
+  var ref = asset._ref;
+
+  if (!ref) {
+    throw new Error('Invalid image reference in block, no `_ref` found on `asset`');
+  }
+
+  return urlBuilder(objectAssign({
+    projectId: projectId,
+    dataset: dataset
+  }, options.imageOptions || {})).image(node).toString();
+};
+
+module.exports = buildUrl;
+//# sourceMappingURL=getImageUrl.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/internals.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/internals.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var getSerializers = __webpack_require__(/*! ./serializers */ "./node_modules/@sanity/block-content-to-hyperscript/lib/serializers.js");
+
+var _blocksToNodes = __webpack_require__(/*! ./blocksToNodes */ "./node_modules/@sanity/block-content-to-hyperscript/lib/blocksToNodes.js");
+
+var getImageUrl = __webpack_require__(/*! ./getImageUrl */ "./node_modules/@sanity/block-content-to-hyperscript/lib/getImageUrl.js");
+
+var mergeSerializers = __webpack_require__(/*! ./mergeSerializers */ "./node_modules/@sanity/block-content-to-hyperscript/lib/mergeSerializers.js");
+
+module.exports = {
+  blocksToNodes: function blocksToNodes(renderNode, props, defaultSerializers, serializeSpan) {
+    if (defaultSerializers) {
+      return _blocksToNodes(renderNode, props, defaultSerializers, serializeSpan);
+    } // Backwards-compatibility
+
+
+    var serializers = getSerializers(renderNode);
+    return _blocksToNodes(renderNode, props, serializers.defaultSerializers, serializers.serializeSpan);
+  },
+  getSerializers: getSerializers,
+  getImageUrl: getImageUrl,
+  mergeSerializers: mergeSerializers
+};
+//# sourceMappingURL=internals.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/mergeSerializers.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/mergeSerializers.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+var objectAssign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var isDefined = function isDefined(val) {
+  return typeof val !== 'undefined';
+}; // Recursively merge/replace default serializers with user-specified serializers
+
+
+module.exports = function mergeSerializers(defaultSerializers, userSerializers) {
+  return Object.keys(defaultSerializers).reduce(function (acc, key) {
+    var type = _typeof(defaultSerializers[key]);
+
+    if (type === 'function') {
+      acc[key] = isDefined(userSerializers[key]) ? userSerializers[key] : defaultSerializers[key];
+    } else if (type === 'object') {
+      acc[key] = objectAssign({}, defaultSerializers[key], userSerializers[key]);
+    } else {
+      acc[key] = typeof userSerializers[key] === 'undefined' ? defaultSerializers[key] : userSerializers[key];
+    }
+
+    return acc;
+  }, {});
+};
+//# sourceMappingURL=mergeSerializers.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/nestLists.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/nestLists.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var objectAssign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+/* eslint-disable max-depth, complexity */
+
+
+function nestLists(blocks) {
+  var mode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'html';
+  var tree = [];
+  var currentList;
+
+  for (var i = 0; i < blocks.length; i++) {
+    var block = blocks[i];
+
+    if (!isListBlock(block)) {
+      tree.push(block);
+      currentList = null;
+      continue;
+    } // Start of a new list?
+
+
+    if (!currentList) {
+      currentList = listFromBlock(block);
+      tree.push(currentList);
+      continue;
+    } // New list item within same list?
+
+
+    if (blockMatchesList(block, currentList)) {
+      currentList.children.push(block);
+      continue;
+    } // Different list props, are we going deeper?
+
+
+    if (block.level > currentList.level) {
+      var newList = listFromBlock(block);
+
+      if (mode === 'html') {
+        // Because HTML is kinda weird, nested lists needs to be nested within list items
+        // So while you would think that we could populate the parent list with a new sub-list,
+        // We actually have to target the last list element (child) of the parent.
+        // However, at this point we need to be very careful - simply pushing to the list of children
+        // will mutate the input, and we don't want to blindly clone the entire tree.
+        // Clone the last child while adding our new list as the last child of it
+        var lastListItem = lastChild(currentList);
+        var newLastChild = objectAssign({}, lastListItem, {
+          children: lastListItem.children.concat(newList)
+        }); // Swap the last child
+
+        currentList.children[currentList.children.length - 1] = newLastChild;
+      } else {
+        currentList.children.push(newList);
+      } // Set the newly created, deeper list as the current
+
+
+      currentList = newList;
+      continue;
+    } // Different list props, are we going back up the tree?
+
+
+    if (block.level < currentList.level) {
+      // Current list has ended, and we need to hook up with a parent of the same level and type
+      var match = findListMatching(tree[tree.length - 1], block);
+
+      if (match) {
+        currentList = match;
+        currentList.children.push(block);
+        continue;
+      } // Similar parent can't be found, assume new list
+
+
+      currentList = listFromBlock(block);
+      tree.push(currentList);
+      continue;
+    } // Different list props, different list style?
+
+
+    if (block.listItem !== currentList.listItem) {
+      var _match = findListMatching(tree[tree.length - 1], {
+        level: block.level
+      });
+
+      if (_match && _match.listItem === block.listItem) {
+        currentList = _match;
+        currentList.children.push(block);
+        continue;
+      } else {
+        currentList = listFromBlock(block);
+        tree.push(currentList);
+        continue;
+      }
+    } // eslint-disable-next-line no-console
+
+
+    console.warn('Unknown state encountered for block', block);
+    tree.push(block);
+  }
+
+  return tree;
+}
+
+function isListBlock(block) {
+  return Boolean(block.listItem);
+}
+
+function blockMatchesList(block, list) {
+  return block.level === list.level && block.listItem === list.listItem;
+}
+
+function listFromBlock(block) {
+  return {
+    _type: 'list',
+    _key: "".concat(block._key, "-parent"),
+    level: block.level,
+    listItem: block.listItem,
+    children: [block]
+  };
+}
+
+function lastChild(block) {
+  return block.children && block.children[block.children.length - 1];
+}
+
+function findListMatching(rootNode, matching) {
+  var filterOnType = typeof matching.listItem === 'string';
+
+  if (rootNode._type === 'list' && rootNode.level === matching.level && filterOnType && rootNode.listItem === matching.listItem) {
+    return rootNode;
+  }
+
+  var node = lastChild(rootNode);
+
+  if (!node) {
+    return false;
+  }
+
+  return findListMatching(node, matching);
+}
+
+module.exports = nestLists;
+//# sourceMappingURL=nestLists.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/lib/serializers.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/lib/serializers.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var objectAssign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var getImageUrl = __webpack_require__(/*! ./getImageUrl */ "./node_modules/@sanity/block-content-to-hyperscript/lib/getImageUrl.js");
+
+module.exports = function (h, serializerOpts) {
+  var serializeOptions = serializerOpts || {
+    useDashedStyles: false
+  }; // Low-level block serializer
+
+  function BlockSerializer(props) {
+    var node = props.node,
+        serializers = props.serializers,
+        options = props.options,
+        isInline = props.isInline,
+        children = props.children;
+    var blockType = node._type;
+    var serializer = serializers.types[blockType];
+
+    if (!serializer) {
+      if (options.ignoreUnknownTypes) {
+        // eslint-disable-next-line no-console
+        console.warn("Unknown block type \"".concat(blockType, "\", please specify a serializer for it in the `serializers.types` prop"));
+        return h(serializers.unknownType, {
+          node: node,
+          options: options,
+          isInline: isInline
+        }, children);
+      }
+
+      throw new Error("Unknown block type \"".concat(blockType, "\", please specify a serializer for it in the `serializers.types` prop"));
+    }
+
+    return h(serializer, {
+      node: node,
+      options: options,
+      isInline: isInline
+    }, children);
+  } // Low-level span serializer
+
+
+  function SpanSerializer(props) {
+    var _props$node = props.node,
+        mark = _props$node.mark,
+        children = _props$node.children;
+    var isPlain = typeof mark === 'string';
+    var markType = isPlain ? mark : mark._type;
+    var serializer = props.serializers.marks[markType];
+
+    if (!serializer) {
+      // eslint-disable-next-line no-console
+      console.warn("Unknown mark type \"".concat(markType, "\", please specify a serializer for it in the `serializers.marks` prop"));
+      return h(props.serializers.unknownMark, null, children);
+    }
+
+    return h(serializer, props.node, children);
+  } // Low-level list serializer
+
+
+  function ListSerializer(props) {
+    var tag = props.type === 'bullet' ? 'ul' : 'ol';
+    return h(tag, null, props.children);
+  } // Low-level list item serializer
+
+
+  function ListItemSerializer(props) {
+    var children = !props.node.style || props.node.style === 'normal' ? // Don't wrap plain text in paragraphs inside of a list item
+    props.children : // But wrap any other style in whatever the block serializer says to use
+    h(props.serializers.types.block, props, props.children);
+    return h('li', null, children);
+  } // Unknown type default serializer
+
+
+  function DefaultUnknownTypeSerializer(props) {
+    return h('div', {
+      style: {
+        display: 'none'
+      }
+    }, "Unknown block type \"".concat(props.node._type, "\", please specify a serializer for it in the `serializers.types` prop"));
+  } // Renderer of an actual block of type `block`. Confusing, we know.
+
+
+  function BlockTypeSerializer(props) {
+    var style = props.node.style || 'normal';
+
+    if (/^h\d/.test(style)) {
+      return h(style, null, props.children);
+    }
+
+    return style === 'blockquote' ? h('blockquote', null, props.children) : h('p', null, props.children);
+  } // Serializers for things that can be directly attributed to a tag without any props
+  // We use partial application to do this, passing the tag name as the first argument
+
+
+  function RawMarkSerializer(tag, props) {
+    return h(tag, null, props.children);
+  }
+
+  function UnderlineSerializer(props) {
+    var style = serializeOptions.useDashedStyles ? {
+      'text-decoration': 'underline'
+    } : {
+      textDecoration: 'underline'
+    };
+    return h('span', {
+      style: style
+    }, props.children);
+  }
+
+  function StrikeThroughSerializer(props) {
+    return h('del', null, props.children);
+  }
+
+  function LinkSerializer(props) {
+    return h('a', {
+      href: props.mark.href
+    }, props.children);
+  }
+
+  function ImageSerializer(props) {
+    if (!props.node.asset) {
+      return null;
+    }
+
+    var img = h('img', {
+      src: getImageUrl(props)
+    });
+    return props.isInline ? img : h('figure', null, img);
+  } // Serializer that recursively calls itself, producing a hyperscript tree of spans
+
+
+  function serializeSpan(span, serializers, index, options) {
+    if (span === '\n' && serializers.hardBreak) {
+      return h(serializers.hardBreak, {
+        key: "hb-".concat(index)
+      });
+    }
+
+    if (typeof span === 'string') {
+      return serializers.text ? h(serializers.text, {
+        key: "text-".concat(index)
+      }, span) : span;
+    }
+
+    var children;
+
+    if (span.children) {
+      children = {
+        children: span.children.map(function (child, i) {
+          return options.serializeNode(child, i, span.children, true);
+        })
+      };
+    }
+
+    var serializedNode = objectAssign({}, span, children);
+    return h(serializers.span, {
+      key: span._key || "span-".concat(index),
+      node: serializedNode,
+      serializers: serializers
+    });
+  }
+
+  var HardBreakSerializer = function HardBreakSerializer() {
+    return h('br');
+  };
+
+  var defaultMarkSerializers = {
+    strong: RawMarkSerializer.bind(null, 'strong'),
+    em: RawMarkSerializer.bind(null, 'em'),
+    code: RawMarkSerializer.bind(null, 'code'),
+    underline: UnderlineSerializer,
+    'strike-through': StrikeThroughSerializer,
+    link: LinkSerializer
+  };
+  var defaultSerializers = {
+    // Common overrides
+    types: {
+      block: BlockTypeSerializer,
+      image: ImageSerializer
+    },
+    marks: defaultMarkSerializers,
+    // Less common overrides
+    list: ListSerializer,
+    listItem: ListItemSerializer,
+    block: BlockSerializer,
+    span: SpanSerializer,
+    hardBreak: HardBreakSerializer,
+    unknownType: DefaultUnknownTypeSerializer,
+    unknownMark: 'span',
+    // Container element
+    container: 'div',
+    // Allow overriding text renderer, but leave undefined to just use plain strings by default
+    text: undefined,
+    // Empty nodes (React uses null, hyperscript with empty strings)
+    empty: ''
+  };
+  return {
+    defaultSerializers: defaultSerializers,
+    serializeSpan: serializeSpan
+  };
+};
+//# sourceMappingURL=serializers.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-hyperscript/node_modules/@sanity/generate-help-url/index.js":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-hyperscript/node_modules/@sanity/generate-help-url/index.js ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var baseUrl = 'https://docs.sanity.io/help/'
+
+module.exports = function generateHelpUrl(slug) {
+  return baseUrl + slug
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-react/lib/BlockContent.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var React = __webpack_require__(/*! react */ "react");
+var PropTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+var internals = __webpack_require__(/*! @sanity/block-content-to-hyperscript/internals */ "./node_modules/@sanity/block-content-to-hyperscript/internals.js");
+
+var _require = __webpack_require__(/*! ./targets/dom */ "./node_modules/@sanity/block-content-to-react/lib/targets/dom.js"),
+    serializers = _require.serializers,
+    serializeSpan = _require.serializeSpan,
+    renderProps = _require.renderProps;
+
+var getImageUrl = internals.getImageUrl,
+    blocksToNodes = internals.blocksToNodes,
+    mergeSerializers = internals.mergeSerializers;
+
+var renderNode = React.createElement;
+
+var SanityBlockContent = function SanityBlockContent(props) {
+  var customSerializers = mergeSerializers(SanityBlockContent.defaultSerializers, props.serializers);
+
+  var blockProps = Object.assign({}, renderProps, props, {
+    serializers: customSerializers,
+    blocks: props.blocks || []
+  });
+
+  return blocksToNodes(renderNode, blockProps, serializers, serializeSpan);
+};
+
+// Expose default serializers to the user
+SanityBlockContent.defaultSerializers = serializers;
+
+// Expose logic for building image URLs from an image reference/node
+SanityBlockContent.getImageUrl = getImageUrl;
+
+SanityBlockContent.propTypes = {
+  className: PropTypes.string,
+  renderContainerOnSingleChild: PropTypes.bool,
+  ignoreUnknownTypes: PropTypes.bool,
+
+  // When rendering images, we need project id and dataset, unless images are materialized
+  projectId: PropTypes.string,
+  dataset: PropTypes.string,
+  imageOptions: PropTypes.object,
+
+  serializers: PropTypes.shape({
+    // Common overrides
+    types: PropTypes.object,
+    marks: PropTypes.object,
+
+    // Less common overrides
+    list: PropTypes.func,
+    listItem: PropTypes.func,
+
+    // Low-level serializers
+    block: PropTypes.func,
+    span: PropTypes.func
+  }),
+
+  blocks: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.shape({
+    _type: PropTypes.string.isRequired
+  })), PropTypes.shape({
+    _type: PropTypes.string.isRequired
+  })]).isRequired
+};
+
+SanityBlockContent.defaultProps = {
+  ignoreUnknownTypes: true,
+  renderContainerOnSingleChild: false,
+  serializers: {},
+  imageOptions: {}
+};
+
+module.exports = SanityBlockContent;
+//# sourceMappingURL=BlockContent.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/block-content-to-react/lib/targets/dom.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@sanity/block-content-to-react/lib/targets/dom.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var React = __webpack_require__(/*! react */ "react");
+
+var _require = __webpack_require__(/*! @sanity/block-content-to-hyperscript/internals */ "./node_modules/@sanity/block-content-to-hyperscript/internals.js"),
+    getSerializers = _require.getSerializers;
+
+var renderNode = React.createElement;
+
+var _getSerializers = getSerializers(renderNode),
+    defaultSerializers = _getSerializers.defaultSerializers,
+    serializeSpan = _getSerializers.serializeSpan;
+
+module.exports = {
+  serializeSpan: serializeSpan,
+  serializers: defaultSerializers,
+  renderProps: { nestMarks: true }
+};
+//# sourceMappingURL=dom.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/image-url/lib/node/builder.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@sanity/image-url/lib/node/builder.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var urlForImage_1 = __importStar(__webpack_require__(/*! ./urlForImage */ "./node_modules/@sanity/image-url/lib/node/urlForImage.js"));
+var validFits = ['clip', 'crop', 'fill', 'fillmax', 'max', 'scale', 'min'];
+var validCrops = ['top', 'bottom', 'left', 'right', 'center', 'focalpoint', 'entropy'];
+var validAutoModes = ['format'];
+function isSanityClientLike(client) {
+    return client ? typeof client.clientConfig === 'object' : false;
+}
+function rewriteSpecName(key) {
+    var specs = urlForImage_1.SPEC_NAME_TO_URL_NAME_MAPPINGS;
+    for (var _i = 0, specs_1 = specs; _i < specs_1.length; _i++) {
+        var entry = specs_1[_i];
+        var specName = entry[0], param = entry[1];
+        if (key === specName || key === param) {
+            return specName;
+        }
+    }
+    return key;
+}
+function urlBuilder(options) {
+    // Did we get a SanityClient?
+    var client = options;
+    if (isSanityClientLike(client)) {
+        // Inherit config from client
+        var _a = client.clientConfig, apiUrl = _a.apiHost, projectId = _a.projectId, dataset = _a.dataset;
+        var apiHost = apiUrl || 'https://api.sanity.io';
+        return new ImageUrlBuilder(null, {
+            baseUrl: apiHost.replace(/^https:\/\/api\./, 'https://cdn.'),
+            projectId: projectId,
+            dataset: dataset,
+        });
+    }
+    // Or just accept the options as given
+    return new ImageUrlBuilder(null, options);
+}
+exports.default = urlBuilder;
+var ImageUrlBuilder = /** @class */ (function () {
+    function ImageUrlBuilder(parent, options) {
+        this.options = parent
+            ? __assign(__assign({}, (parent.options || {})), (options || {})) : __assign({}, (options || {})); // Copy options
+    }
+    ImageUrlBuilder.prototype.withOptions = function (options) {
+        var baseUrl = options.baseUrl || this.options.baseUrl;
+        var newOptions = { baseUrl: baseUrl };
+        for (var key in options) {
+            if (options.hasOwnProperty(key)) {
+                var specKey = rewriteSpecName(key);
+                newOptions[specKey] = options[key];
+            }
+        }
+        return new ImageUrlBuilder(this, __assign({ baseUrl: baseUrl }, newOptions));
+    };
+    // The image to be represented. Accepts a Sanity 'image'-document, 'asset'-document or
+    // _id of asset. To get the benefit of automatic hot-spot/crop integration with the content
+    // studio, the 'image'-document must be provided.
+    ImageUrlBuilder.prototype.image = function (source) {
+        return this.withOptions({ source: source });
+    };
+    // Specify the dataset
+    ImageUrlBuilder.prototype.dataset = function (dataset) {
+        return this.withOptions({ dataset: dataset });
+    };
+    // Specify the projectId
+    ImageUrlBuilder.prototype.projectId = function (projectId) {
+        return this.withOptions({ projectId: projectId });
+    };
+    // Specify background color
+    ImageUrlBuilder.prototype.bg = function (bg) {
+        return this.withOptions({ bg: bg });
+    };
+    // Set DPR scaling factor
+    ImageUrlBuilder.prototype.dpr = function (dpr) {
+        return this.withOptions({ dpr: dpr });
+    };
+    // Specify the width of the image in pixels
+    ImageUrlBuilder.prototype.width = function (width) {
+        return this.withOptions({ width: width });
+    };
+    // Specify the height of the image in pixels
+    ImageUrlBuilder.prototype.height = function (height) {
+        return this.withOptions({ height: height });
+    };
+    // Specify focal point in fraction of image dimensions. Each component 0.0-1.0
+    ImageUrlBuilder.prototype.focalPoint = function (x, y) {
+        return this.withOptions({ focalPoint: { x: x, y: y } });
+    };
+    ImageUrlBuilder.prototype.maxWidth = function (maxWidth) {
+        return this.withOptions({ maxWidth: maxWidth });
+    };
+    ImageUrlBuilder.prototype.minWidth = function (minWidth) {
+        return this.withOptions({ minWidth: minWidth });
+    };
+    ImageUrlBuilder.prototype.maxHeight = function (maxHeight) {
+        return this.withOptions({ maxHeight: maxHeight });
+    };
+    ImageUrlBuilder.prototype.minHeight = function (minHeight) {
+        return this.withOptions({ minHeight: minHeight });
+    };
+    // Specify width and height in pixels
+    ImageUrlBuilder.prototype.size = function (width, height) {
+        return this.withOptions({ width: width, height: height });
+    };
+    // Specify blur between 0 and 100
+    ImageUrlBuilder.prototype.blur = function (blur) {
+        return this.withOptions({ blur: blur });
+    };
+    ImageUrlBuilder.prototype.sharpen = function (sharpen) {
+        return this.withOptions({ sharpen: sharpen });
+    };
+    // Specify the desired rectangle of the image
+    ImageUrlBuilder.prototype.rect = function (left, top, width, height) {
+        return this.withOptions({ rect: { left: left, top: top, width: width, height: height } });
+    };
+    // Specify the image format of the image. 'jpg', 'pjpg', 'png', 'webp'
+    ImageUrlBuilder.prototype.format = function (format) {
+        return this.withOptions({ format: format });
+    };
+    ImageUrlBuilder.prototype.invert = function (invert) {
+        return this.withOptions({ invert: invert });
+    };
+    // Rotation in degrees 0, 90, 180, 270
+    ImageUrlBuilder.prototype.orientation = function (orientation) {
+        return this.withOptions({ orientation: orientation });
+    };
+    // Compression quality 0-100
+    ImageUrlBuilder.prototype.quality = function (quality) {
+        return this.withOptions({ quality: quality });
+    };
+    // Make it a download link. Parameter is default filename.
+    ImageUrlBuilder.prototype.forceDownload = function (download) {
+        return this.withOptions({ download: download });
+    };
+    // Flip image horizontally
+    ImageUrlBuilder.prototype.flipHorizontal = function () {
+        return this.withOptions({ flipHorizontal: true });
+    };
+    // Flip image vertically
+    ImageUrlBuilder.prototype.flipVertical = function () {
+        return this.withOptions({ flipVertical: true });
+    };
+    // Ignore crop/hotspot from image record, even when present
+    ImageUrlBuilder.prototype.ignoreImageParams = function () {
+        return this.withOptions({ ignoreImageParams: true });
+    };
+    ImageUrlBuilder.prototype.fit = function (value) {
+        if (validFits.indexOf(value) === -1) {
+            throw new Error("Invalid fit mode \"" + value + "\"");
+        }
+        return this.withOptions({ fit: value });
+    };
+    ImageUrlBuilder.prototype.crop = function (value) {
+        if (validCrops.indexOf(value) === -1) {
+            throw new Error("Invalid crop mode \"" + value + "\"");
+        }
+        return this.withOptions({ crop: value });
+    };
+    // Saturation
+    ImageUrlBuilder.prototype.saturation = function (saturation) {
+        return this.withOptions({ saturation: saturation });
+    };
+    ImageUrlBuilder.prototype.auto = function (value) {
+        if (validAutoModes.indexOf(value) === -1) {
+            throw new Error("Invalid auto mode \"" + value + "\"");
+        }
+        return this.withOptions({ auto: value });
+    };
+    // Specify the number of pixels to pad the image
+    ImageUrlBuilder.prototype.pad = function (pad) {
+        return this.withOptions({ pad: pad });
+    };
+    // Gets the url based on the submitted parameters
+    ImageUrlBuilder.prototype.url = function () {
+        return urlForImage_1.default(this.options);
+    };
+    // Alias for url()
+    ImageUrlBuilder.prototype.toString = function () {
+        return this.url();
+    };
+    return ImageUrlBuilder;
+}());
+exports.ImageUrlBuilder = ImageUrlBuilder;
+//# sourceMappingURL=builder.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/image-url/lib/node/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@sanity/image-url/lib/node/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+var builder_1 = __importDefault(__webpack_require__(/*! ./builder */ "./node_modules/@sanity/image-url/lib/node/builder.js"));
+module.exports = builder_1.default;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/image-url/lib/node/parseAssetId.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@sanity/image-url/lib/node/parseAssetId.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var example = 'image-Tb9Ew8CXIwaY6R1kjMvI0uRR-2000x3000-jpg';
+function parseAssetId(ref) {
+    var _a = ref.split('-'), id = _a[1], dimensionString = _a[2], format = _a[3];
+    if (!id || !dimensionString || !format) {
+        throw new Error("Malformed asset _ref '" + ref + "'. Expected an id like \"" + example + "\".");
+    }
+    var _b = dimensionString.split('x'), imgWidthStr = _b[0], imgHeightStr = _b[1];
+    var width = +imgWidthStr;
+    var height = +imgHeightStr;
+    var isValidAssetId = isFinite(width) && isFinite(height);
+    if (!isValidAssetId) {
+        throw new Error("Malformed asset _ref '" + ref + "'. Expected an id like \"" + example + "\".");
+    }
+    return { id: id, width: width, height: height, format: format };
+}
+exports.default = parseAssetId;
+//# sourceMappingURL=parseAssetId.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/image-url/lib/node/parseSource.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@sanity/image-url/lib/node/parseSource.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var isRef = function (src) {
+    var source = src;
+    return source ? typeof source._ref === 'string' : false;
+};
+var isAsset = function (src) {
+    var source = src;
+    return source ? typeof source._id === 'string' : false;
+};
+var isAssetStub = function (src) {
+    var source = src;
+    return source && source.asset ? typeof source.asset.url === 'string' : false;
+};
+// Convert an asset-id, asset or image to an image record suitable for processing
+// eslint-disable-next-line complexity
+function parseSource(source) {
+    if (!source) {
+        return null;
+    }
+    var image;
+    if (typeof source === 'string' && isUrl(source)) {
+        // Someone passed an existing image url?
+        image = {
+            asset: { _ref: urlToId(source) },
+        };
+    }
+    else if (typeof source === 'string') {
+        // Just an asset id
+        image = {
+            asset: { _ref: source },
+        };
+    }
+    else if (isRef(source)) {
+        // We just got passed an asset directly
+        image = {
+            asset: source,
+        };
+    }
+    else if (isAsset(source)) {
+        // If we were passed an image asset document
+        image = {
+            asset: {
+                _ref: source._id || '',
+            },
+        };
+    }
+    else if (isAssetStub(source)) {
+        // If we were passed a partial asset (`url`, but no `_id`)
+        image = {
+            asset: {
+                _ref: urlToId(source.asset.url),
+            },
+        };
+    }
+    else if (typeof source.asset === 'object') {
+        // Probably an actual image with materialized asset
+        image = source;
+    }
+    else {
+        // We got something that does not look like an image, or it is an image
+        // that currently isn't sporting an asset.
+        return null;
+    }
+    var img = source;
+    if (img.crop) {
+        image.crop = img.crop;
+    }
+    if (img.hotspot) {
+        image.hotspot = img.hotspot;
+    }
+    return applyDefaults(image);
+}
+exports.default = parseSource;
+function isUrl(url) {
+    return /^https?:\/\//.test("" + url);
+}
+function urlToId(url) {
+    var parts = url.split('/').slice(-1);
+    return ("image-" + parts[0]).replace(/\.([a-z]+)$/, '-$1');
+}
+// Mock crop and hotspot if image lacks it
+function applyDefaults(image) {
+    if (image.crop && image.hotspot) {
+        return image;
+    }
+    // We need to pad in default values for crop or hotspot
+    var result = __assign({}, image);
+    if (!result.crop) {
+        result.crop = {
+            left: 0,
+            top: 0,
+            bottom: 0,
+            right: 0,
+        };
+    }
+    if (!result.hotspot) {
+        result.hotspot = {
+            x: 0.5,
+            y: 0.5,
+            height: 1.0,
+            width: 1.0,
+        };
+    }
+    return result;
+}
+//# sourceMappingURL=parseSource.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@sanity/image-url/lib/node/urlForImage.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@sanity/image-url/lib/node/urlForImage.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var parseAssetId_1 = __importDefault(__webpack_require__(/*! ./parseAssetId */ "./node_modules/@sanity/image-url/lib/node/parseAssetId.js"));
+var parseSource_1 = __importDefault(__webpack_require__(/*! ./parseSource */ "./node_modules/@sanity/image-url/lib/node/parseSource.js"));
+exports.parseSource = parseSource_1.default;
+exports.SPEC_NAME_TO_URL_NAME_MAPPINGS = [
+    ['width', 'w'],
+    ['height', 'h'],
+    ['format', 'fm'],
+    ['download', 'dl'],
+    ['blur', 'blur'],
+    ['sharpen', 'sharp'],
+    ['invert', 'invert'],
+    ['orientation', 'or'],
+    ['minHeight', 'min-h'],
+    ['maxHeight', 'max-h'],
+    ['minWidth', 'min-w'],
+    ['maxWidth', 'max-w'],
+    ['quality', 'q'],
+    ['fit', 'fit'],
+    ['crop', 'crop'],
+    ['saturation', 'sat'],
+    ['auto', 'auto'],
+    ['dpr', 'dpr'],
+    ['pad', 'pad'],
+];
+function urlForImage(options) {
+    var spec = __assign({}, (options || {}));
+    var source = spec.source;
+    delete spec.source;
+    var image = parseSource_1.default(source);
+    if (!image) {
+        return null;
+    }
+    var id = image.asset._ref || image.asset._id || '';
+    var asset = parseAssetId_1.default(id);
+    // Compute crop rect in terms of pixel coordinates in the raw source image
+    var cropLeft = Math.round(image.crop.left * asset.width);
+    var cropTop = Math.round(image.crop.top * asset.height);
+    var crop = {
+        left: cropLeft,
+        top: cropTop,
+        width: Math.round(asset.width - image.crop.right * asset.width - cropLeft),
+        height: Math.round(asset.height - image.crop.bottom * asset.height - cropTop),
+    };
+    // Compute hot spot rect in terms of pixel coordinates
+    var hotSpotVerticalRadius = (image.hotspot.height * asset.height) / 2;
+    var hotSpotHorizontalRadius = (image.hotspot.width * asset.width) / 2;
+    var hotSpotCenterX = image.hotspot.x * asset.width;
+    var hotSpotCenterY = image.hotspot.y * asset.height;
+    var hotspot = {
+        left: hotSpotCenterX - hotSpotHorizontalRadius,
+        top: hotSpotCenterY - hotSpotVerticalRadius,
+        right: hotSpotCenterX + hotSpotHorizontalRadius,
+        bottom: hotSpotCenterY + hotSpotVerticalRadius,
+    };
+    // If irrelevant, or if we are requested to: don't perform crop/fit based on
+    // the crop/hotspot.
+    if (!(spec.rect || spec.focalPoint || spec.ignoreImageParams || spec.crop)) {
+        spec = __assign(__assign({}, spec), fit({ crop: crop, hotspot: hotspot }, spec));
+    }
+    return specToImageUrl(__assign(__assign({}, spec), { asset: asset }));
+}
+exports.default = urlForImage;
+// eslint-disable-next-line complexity
+function specToImageUrl(spec) {
+    var cdnUrl = spec.baseUrl || 'https://cdn.sanity.io';
+    var filename = spec.asset.id + "-" + spec.asset.width + "x" + spec.asset.height + "." + spec.asset.format;
+    var baseUrl = cdnUrl + "/images/" + spec.projectId + "/" + spec.dataset + "/" + filename;
+    var params = [];
+    if (spec.rect) {
+        // Only bother url with a crop if it actually crops anything
+        var _a = spec.rect, left = _a.left, top_1 = _a.top, width = _a.width, height = _a.height;
+        var isEffectiveCrop = left !== 0 || top_1 !== 0 || height !== spec.asset.height || width !== spec.asset.width;
+        if (isEffectiveCrop) {
+            params.push("rect=" + left + "," + top_1 + "," + width + "," + height);
+        }
+    }
+    if (spec.bg) {
+        params.push("bg=" + spec.bg);
+    }
+    if (spec.focalPoint) {
+        params.push("fp-x=" + spec.focalPoint.x);
+        params.push("fp-y=" + spec.focalPoint.y);
+    }
+    var flip = [spec.flipHorizontal && 'h', spec.flipVertical && 'v'].filter(Boolean).join('');
+    if (flip) {
+        params.push("flip=" + flip);
+    }
+    // Map from spec name to url param name, and allow using the actual param name as an alternative
+    exports.SPEC_NAME_TO_URL_NAME_MAPPINGS.forEach(function (mapping) {
+        var specName = mapping[0], param = mapping[1];
+        if (typeof spec[specName] !== 'undefined') {
+            params.push(param + "=" + encodeURIComponent(spec[specName]));
+        }
+        else if (typeof spec[param] !== 'undefined') {
+            params.push(param + "=" + encodeURIComponent(spec[param]));
+        }
+    });
+    if (params.length === 0) {
+        return baseUrl;
+    }
+    return baseUrl + "?" + params.join('&');
+}
+function fit(source, spec) {
+    var cropRect;
+    var imgWidth = spec.width;
+    var imgHeight = spec.height;
+    // If we are not constraining the aspect ratio, we'll just use the whole crop
+    if (!(imgWidth && imgHeight)) {
+        return { width: imgWidth, height: imgHeight, rect: source.crop };
+    }
+    var crop = source.crop;
+    var hotspot = source.hotspot;
+    // If we are here, that means aspect ratio is locked and fitting will be a bit harder
+    var desiredAspectRatio = imgWidth / imgHeight;
+    var cropAspectRatio = crop.width / crop.height;
+    if (cropAspectRatio > desiredAspectRatio) {
+        // The crop is wider than the desired aspect ratio. That means we are cutting from the sides
+        var height = crop.height;
+        var width = height * desiredAspectRatio;
+        var top_2 = crop.top;
+        // Center output horizontally over hotspot
+        var hotspotXCenter = (hotspot.right - hotspot.left) / 2 + hotspot.left;
+        var left = hotspotXCenter - width / 2;
+        // Keep output within crop
+        if (left < crop.left) {
+            left = crop.left;
+        }
+        else if (left + width > crop.left + crop.width) {
+            left = crop.left + crop.width - width;
+        }
+        cropRect = {
+            left: Math.round(left),
+            top: Math.round(top_2),
+            width: Math.round(width),
+            height: Math.round(height),
+        };
+    }
+    else {
+        // The crop is taller than the desired ratio, we are cutting from top and bottom
+        var width = crop.width;
+        var height = width / desiredAspectRatio;
+        var left = crop.left;
+        // Center output vertically over hotspot
+        var hotspotYCenter = (hotspot.bottom - hotspot.top) / 2 + hotspot.top;
+        var top_3 = hotspotYCenter - height / 2;
+        // Keep output rect within crop
+        if (top_3 < crop.top) {
+            top_3 = crop.top;
+        }
+        else if (top_3 + height > crop.top + crop.height) {
+            top_3 = crop.top + crop.height - height;
+        }
+        cropRect = {
+            left: Math.max(0, Math.floor(left)),
+            top: Math.max(0, Math.floor(top_3)),
+            width: Math.round(width),
+            height: Math.round(height),
+        };
+    }
+    return {
+        width: imgWidth,
+        height: imgHeight,
+        rect: cropRect,
+    };
+}
+//# sourceMappingURL=urlForImage.js.map
+
+/***/ }),
+
+/***/ "./node_modules/decode-uri-component/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/decode-uri-component/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var token = '%[a-f0-9]{2}';
+var singleMatcher = new RegExp(token, 'gi');
+var multiMatcher = new RegExp('(' + token + ')+', 'gi');
+
+function decodeComponents(components, split) {
+	try {
+		// Try to decode the entire string first
+		return decodeURIComponent(components.join(''));
+	} catch (err) {
+		// Do nothing
+	}
+
+	if (components.length === 1) {
+		return components;
+	}
+
+	split = split || 1;
+
+	// Split the array in 2 parts
+	var left = components.slice(0, split);
+	var right = components.slice(split);
+
+	return Array.prototype.concat.call([], decodeComponents(left), decodeComponents(right));
+}
+
+function decode(input) {
+	try {
+		return decodeURIComponent(input);
+	} catch (err) {
+		var tokens = input.match(singleMatcher);
+
+		for (var i = 1; i < tokens.length; i++) {
+			input = decodeComponents(tokens, i).join('');
+
+			tokens = input.match(singleMatcher);
+		}
+
+		return input;
+	}
+}
+
+function customDecodeURIComponent(input) {
+	// Keep track of all the replacements and prefill the map with the `BOM`
+	var replaceMap = {
+		'%FE%FF': '\uFFFD\uFFFD',
+		'%FF%FE': '\uFFFD\uFFFD'
+	};
+
+	var match = multiMatcher.exec(input);
+	while (match) {
+		try {
+			// Decode as big chunks as possible
+			replaceMap[match[0]] = decodeURIComponent(match[0]);
+		} catch (err) {
+			var result = decode(match[0]);
+
+			if (result !== match[0]) {
+				replaceMap[match[0]] = result;
+			}
+		}
+
+		match = multiMatcher.exec(input);
+	}
+
+	// Add `%C2` at the end of the map to make sure it does not replace the combinator before everything else
+	replaceMap['%C2'] = '\uFFFD';
+
+	var entries = Object.keys(replaceMap);
+
+	for (var i = 0; i < entries.length; i++) {
+		// Replace all decoded components
+		var key = entries[i];
+		input = input.replace(new RegExp(key, 'g'), replaceMap[key]);
+	}
+
+	return input;
+}
+
+module.exports = function (encodedURI) {
+	if (typeof encodedURI !== 'string') {
+		throw new TypeError('Expected `encodedURI` to be of type `string`, got `' + typeof encodedURI + '`');
+	}
+
+	try {
+		encodedURI = encodedURI.replace(/\+/g, ' ');
+
+		// Try the built in decoder first
+		return decodeURIComponent(encodedURI);
+	} catch (err) {
+		// Fallback to a more advanced decoder
+		return customDecodeURIComponent(encodedURI);
+	}
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-image/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/gatsby-image/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/assertThisInitialized.js"));
+
+var _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/inheritsLoose.js"));
+
+var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/extends.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var logDeprecationNotice = function logDeprecationNotice(prop, replacement) {
+  if (false) {}
+
+  console.log("\n    The \"" + prop + "\" prop is now deprecated and will be removed in the next major version\n    of \"gatsby-image\".\n    ");
+
+  if (replacement) {
+    console.log("Please use " + replacement + " instead of \"" + prop + "\".");
+  }
+}; // Handle legacy props during their deprecation phase
+
+
+var convertProps = function convertProps(props) {
+  var convertedProps = (0, _extends2.default)({}, props);
+  var resolutions = convertedProps.resolutions,
+      sizes = convertedProps.sizes,
+      critical = convertedProps.critical;
+
+  if (resolutions) {
+    convertedProps.fixed = resolutions;
+    logDeprecationNotice("resolutions", "the gatsby-image v2 prop \"fixed\"");
+    delete convertedProps.resolutions;
+  }
+
+  if (sizes) {
+    convertedProps.fluid = sizes;
+    logDeprecationNotice("sizes", "the gatsby-image v2 prop \"fluid\"");
+    delete convertedProps.sizes;
+  }
+
+  if (critical) {
+    logDeprecationNotice("critical", "the native \"loading\" attribute");
+    convertedProps.loading = "eager";
+  } // convert fluid & fixed to arrays so we only have to work with arrays
+
+
+  if (convertedProps.fluid) {
+    convertedProps.fluid = groupByMedia([].concat(convertedProps.fluid));
+  }
+
+  if (convertedProps.fixed) {
+    convertedProps.fixed = groupByMedia([].concat(convertedProps.fixed));
+  }
+
+  return convertedProps;
+};
+/**
+ * Checks if fluid or fixed are art-direction arrays.
+ *
+ * @param currentData  {{media?: string}[]}   The props to check for images.
+ * @return {boolean}
+ */
+
+
+var hasArtDirectionSupport = function hasArtDirectionSupport(currentData) {
+  return !!currentData && Array.isArray(currentData) && currentData.some(function (image) {
+    return typeof image.media !== "undefined";
+  });
+};
+/**
+ * Tries to detect if a media query matches the current viewport.
+ * @property media   {{media?: string}}  A media query string.
+ * @return {boolean}
+ */
+
+
+var matchesMedia = function matchesMedia(_ref) {
+  var media = _ref.media;
+  return media ? isBrowser && !!window.matchMedia(media).matches : false;
+};
+/**
+ * Find the source of an image to use as a key in the image cache.
+ * Use `the first image in either `fixed` or `fluid`
+ * @param {{fluid: {src: string, media?: string}[], fixed: {src: string, media?: string}[]}} args
+ * @return {string?} Returns image src or undefined it not given.
+ */
+
+
+var getImageCacheKey = function getImageCacheKey(_ref2) {
+  var fluid = _ref2.fluid,
+      fixed = _ref2.fixed;
+  var srcData = getCurrentSrcData(fluid || fixed || []);
+  return srcData && srcData.src;
+};
+/**
+ * Returns the current src - Preferably with art-direction support.
+ * @param currentData  {{media?: string}[], maxWidth?: Number, maxHeight?: Number}   The fluid or fixed image array.
+ * @return {{src: string, media?: string, maxWidth?: Number, maxHeight?: Number}}
+ */
+
+
+var getCurrentSrcData = function getCurrentSrcData(currentData) {
+  if (isBrowser && hasArtDirectionSupport(currentData)) {
+    // Do we have an image for the current Viewport?
+    var foundMedia = currentData.findIndex(matchesMedia);
+
+    if (foundMedia !== -1) {
+      return currentData[foundMedia];
+    } // No media matches, select first element without a media condition
+
+
+    var noMedia = currentData.findIndex(function (image) {
+      return typeof image.media === "undefined";
+    });
+
+    if (noMedia !== -1) {
+      return currentData[noMedia];
+    }
+  } // Else return the first image.
+
+
+  return currentData[0];
+}; // Cache if we've seen an image before so we don't bother with
+// lazy-loading & fading in on subsequent mounts.
+
+
+var imageCache = Object.create({});
+
+var inImageCache = function inImageCache(props) {
+  var convertedProps = convertProps(props);
+  var cacheKey = getImageCacheKey(convertedProps);
+  return imageCache[cacheKey] || false;
+};
+
+var activateCacheForImage = function activateCacheForImage(props) {
+  var convertedProps = convertProps(props);
+  var cacheKey = getImageCacheKey(convertedProps);
+
+  if (cacheKey) {
+    imageCache[cacheKey] = true;
+  }
+}; // Native lazy-loading support: https://addyosmani.com/blog/lazy-loading/
+
+
+var hasNativeLazyLoadSupport = typeof HTMLImageElement !== "undefined" && "loading" in HTMLImageElement.prototype;
+var isBrowser = typeof window !== "undefined";
+var hasIOSupport = isBrowser && window.IntersectionObserver;
+var io;
+var listeners = new WeakMap();
+
+function getIO() {
+  if (typeof io === "undefined" && typeof window !== "undefined" && window.IntersectionObserver) {
+    io = new window.IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (listeners.has(entry.target)) {
+          var cb = listeners.get(entry.target); // Edge doesn't currently support isIntersecting, so also test for an intersectionRatio > 0
+
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            io.unobserve(entry.target);
+            listeners.delete(entry.target);
+            cb();
+          }
+        }
+      });
+    }, {
+      rootMargin: "200px"
+    });
+  }
+
+  return io;
+}
+
+function generateImageSources(imageVariants) {
+  return imageVariants.map(function (_ref3) {
+    var src = _ref3.src,
+        srcSet = _ref3.srcSet,
+        srcSetWebp = _ref3.srcSetWebp,
+        media = _ref3.media,
+        sizes = _ref3.sizes;
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, {
+      key: src
+    }, srcSetWebp && /*#__PURE__*/_react.default.createElement("source", {
+      type: "image/webp",
+      media: media,
+      srcSet: srcSetWebp,
+      sizes: sizes
+    }), srcSet && /*#__PURE__*/_react.default.createElement("source", {
+      media: media,
+      srcSet: srcSet,
+      sizes: sizes
+    }));
+  });
+} // Return an array ordered by elements having a media prop, does not use
+// native sort, as a stable sort is not guaranteed by all browsers/versions
+
+
+function groupByMedia(imageVariants) {
+  var withMedia = [];
+  var without = [];
+  imageVariants.forEach(function (variant) {
+    return (variant.media ? withMedia : without).push(variant);
+  });
+
+  if (without.length > 1 && "development" !== "production") {
+    console.warn("We've found " + without.length + " sources without a media property. They might be ignored by the browser, see: https://www.gatsbyjs.org/packages/gatsby-image/#art-directing-multiple-images");
+  }
+
+  return [].concat(withMedia, without);
+}
+
+function generateTracedSVGSources(imageVariants) {
+  return imageVariants.map(function (_ref4) {
+    var src = _ref4.src,
+        media = _ref4.media,
+        tracedSVG = _ref4.tracedSVG;
+    return /*#__PURE__*/_react.default.createElement("source", {
+      key: src,
+      media: media,
+      srcSet: tracedSVG
+    });
+  });
+}
+
+function generateBase64Sources(imageVariants) {
+  return imageVariants.map(function (_ref5) {
+    var src = _ref5.src,
+        media = _ref5.media,
+        base64 = _ref5.base64;
+    return /*#__PURE__*/_react.default.createElement("source", {
+      key: src,
+      media: media,
+      srcSet: base64
+    });
+  });
+}
+
+function generateNoscriptSource(_ref6, isWebp) {
+  var srcSet = _ref6.srcSet,
+      srcSetWebp = _ref6.srcSetWebp,
+      media = _ref6.media,
+      sizes = _ref6.sizes;
+  var src = isWebp ? srcSetWebp : srcSet;
+  var mediaAttr = media ? "media=\"" + media + "\" " : "";
+  var typeAttr = isWebp ? "type='image/webp' " : "";
+  var sizesAttr = sizes ? "sizes=\"" + sizes + "\" " : "";
+  return "<source " + typeAttr + mediaAttr + "srcset=\"" + src + "\" " + sizesAttr + "/>";
+}
+
+function generateNoscriptSources(imageVariants) {
+  return imageVariants.map(function (variant) {
+    return (variant.srcSetWebp ? generateNoscriptSource(variant, true) : "") + generateNoscriptSource(variant);
+  }).join("");
+}
+
+var listenToIntersections = function listenToIntersections(el, cb) {
+  var observer = getIO();
+
+  if (observer) {
+    observer.observe(el);
+    listeners.set(el, cb);
+  }
+
+  return function () {
+    observer.unobserve(el);
+    listeners.delete(el);
+  };
+};
+
+var noscriptImg = function noscriptImg(props) {
+  // Check if prop exists before adding each attribute to the string output below to prevent
+  // HTML validation issues caused by empty values like width="" and height=""
+  var src = props.src ? "src=\"" + props.src + "\" " : "src=\"\" "; // required attribute
+
+  var sizes = props.sizes ? "sizes=\"" + props.sizes + "\" " : "";
+  var srcSet = props.srcSet ? "srcset=\"" + props.srcSet + "\" " : "";
+  var title = props.title ? "title=\"" + props.title + "\" " : "";
+  var alt = props.alt ? "alt=\"" + props.alt + "\" " : "alt=\"\" "; // required attribute
+
+  var width = props.width ? "width=\"" + props.width + "\" " : "";
+  var height = props.height ? "height=\"" + props.height + "\" " : "";
+  var crossOrigin = props.crossOrigin ? "crossorigin=\"" + props.crossOrigin + "\" " : "";
+  var loading = props.loading ? "loading=\"" + props.loading + "\" " : "";
+  var draggable = props.draggable ? "draggable=\"" + props.draggable + "\" " : "";
+  var sources = generateNoscriptSources(props.imageVariants);
+  return "<picture>" + sources + "<img " + loading + width + height + sizes + srcSet + src + alt + title + crossOrigin + draggable + "style=\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\"/></picture>";
+}; // Earlier versions of gatsby-image during the 2.x cycle did not wrap
+// the `Img` component in a `picture` element. This maintains compatibility
+// until a breaking change can be introduced in the next major release
+
+
+var Placeholder = /*#__PURE__*/_react.default.forwardRef(function (props, ref) {
+  var src = props.src,
+      imageVariants = props.imageVariants,
+      generateSources = props.generateSources,
+      spreadProps = props.spreadProps,
+      ariaHidden = props.ariaHidden;
+
+  var baseImage = /*#__PURE__*/_react.default.createElement(Img, (0, _extends2.default)({
+    ref: ref,
+    src: src
+  }, spreadProps, {
+    ariaHidden: ariaHidden
+  }));
+
+  return imageVariants.length > 1 ? /*#__PURE__*/_react.default.createElement("picture", null, generateSources(imageVariants), baseImage) : baseImage;
+});
+
+var Img = /*#__PURE__*/_react.default.forwardRef(function (props, ref) {
+  var sizes = props.sizes,
+      srcSet = props.srcSet,
+      src = props.src,
+      style = props.style,
+      onLoad = props.onLoad,
+      onError = props.onError,
+      loading = props.loading,
+      draggable = props.draggable,
+      ariaHidden = props.ariaHidden,
+      otherProps = (0, _objectWithoutPropertiesLoose2.default)(props, ["sizes", "srcSet", "src", "style", "onLoad", "onError", "loading", "draggable", "ariaHidden"]);
+  return /*#__PURE__*/_react.default.createElement("img", (0, _extends2.default)({
+    "aria-hidden": ariaHidden,
+    sizes: sizes,
+    srcSet: srcSet,
+    src: src
+  }, otherProps, {
+    onLoad: onLoad,
+    onError: onError,
+    ref: ref,
+    loading: loading,
+    draggable: draggable,
+    style: (0, _extends2.default)({
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      objectPosition: "center"
+    }, style)
+  }));
+});
+
+Img.propTypes = {
+  style: _propTypes.default.object,
+  onError: _propTypes.default.func,
+  onLoad: _propTypes.default.func
+};
+
+var Image = /*#__PURE__*/function (_React$Component) {
+  (0, _inheritsLoose2.default)(Image, _React$Component);
+
+  function Image(props) {
+    var _this;
+
+    _this = _React$Component.call(this, props) || this; // If this image has already been loaded before then we can assume it's
+    // already in the browser cache so it's cheap to just show directly.
+
+    _this.seenBefore = isBrowser && inImageCache(props);
+    _this.isCritical = props.loading === "eager" || props.critical;
+    _this.addNoScript = !(_this.isCritical && !props.fadeIn);
+    _this.useIOSupport = !hasNativeLazyLoadSupport && hasIOSupport && !_this.isCritical && !_this.seenBefore;
+    var isVisible = _this.isCritical || isBrowser && (hasNativeLazyLoadSupport || !_this.useIOSupport);
+    _this.state = {
+      isVisible: isVisible,
+      imgLoaded: false,
+      imgCached: false,
+      fadeIn: !_this.seenBefore && props.fadeIn
+    };
+    _this.imageRef = /*#__PURE__*/_react.default.createRef();
+    _this.placeholderRef = props.placeholderRef || /*#__PURE__*/_react.default.createRef();
+    _this.handleImageLoaded = _this.handleImageLoaded.bind((0, _assertThisInitialized2.default)(_this));
+    _this.handleRef = _this.handleRef.bind((0, _assertThisInitialized2.default)(_this));
+    return _this;
+  }
+
+  var _proto = Image.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    if (this.state.isVisible && typeof this.props.onStartLoad === "function") {
+      this.props.onStartLoad({
+        wasCached: inImageCache(this.props)
+      });
+    }
+
+    if (this.isCritical) {
+      var img = this.imageRef.current;
+
+      if (img && img.complete) {
+        this.handleImageLoaded();
+      }
+    }
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    if (this.cleanUpListeners) {
+      this.cleanUpListeners();
+    }
+  } // Specific to IntersectionObserver based lazy-load support
+  ;
+
+  _proto.handleRef = function handleRef(ref) {
+    var _this2 = this;
+
+    if (this.useIOSupport && ref) {
+      this.cleanUpListeners = listenToIntersections(ref, function () {
+        var imageInCache = inImageCache(_this2.props);
+
+        if (!_this2.state.isVisible && typeof _this2.props.onStartLoad === "function") {
+          _this2.props.onStartLoad({
+            wasCached: imageInCache
+          });
+        } // imgCached and imgLoaded must update after isVisible,
+        // Once isVisible is true, imageRef becomes accessible, which imgCached needs access to.
+        // imgLoaded and imgCached are in a 2nd setState call to be changed together,
+        // avoiding initiating unnecessary animation frames from style changes.
+
+
+        _this2.setState({
+          isVisible: true
+        }, function () {
+          _this2.setState({
+            imgLoaded: imageInCache,
+            // `currentSrc` should be a string, but can be `undefined` in IE,
+            // !! operator validates the value is not undefined/null/""
+            // for lazyloaded components this might be null
+            // TODO fix imgCached behaviour as it's now false when it's lazyloaded
+            imgCached: !!(_this2.imageRef.current && _this2.imageRef.current.currentSrc)
+          });
+        });
+      });
+    }
+  };
+
+  _proto.handleImageLoaded = function handleImageLoaded() {
+    activateCacheForImage(this.props);
+    this.setState({
+      imgLoaded: true
+    });
+
+    if (this.props.onLoad) {
+      this.props.onLoad();
+    }
+  };
+
+  _proto.render = function render() {
+    var _convertProps = convertProps(this.props),
+        title = _convertProps.title,
+        alt = _convertProps.alt,
+        className = _convertProps.className,
+        _convertProps$style = _convertProps.style,
+        style = _convertProps$style === void 0 ? {} : _convertProps$style,
+        _convertProps$imgStyl = _convertProps.imgStyle,
+        imgStyle = _convertProps$imgStyl === void 0 ? {} : _convertProps$imgStyl,
+        _convertProps$placeho = _convertProps.placeholderStyle,
+        placeholderStyle = _convertProps$placeho === void 0 ? {} : _convertProps$placeho,
+        placeholderClassName = _convertProps.placeholderClassName,
+        fluid = _convertProps.fluid,
+        fixed = _convertProps.fixed,
+        backgroundColor = _convertProps.backgroundColor,
+        durationFadeIn = _convertProps.durationFadeIn,
+        Tag = _convertProps.Tag,
+        itemProp = _convertProps.itemProp,
+        loading = _convertProps.loading,
+        draggable = _convertProps.draggable;
+
+    var shouldReveal = this.state.fadeIn === false || this.state.imgLoaded;
+    var shouldFadeIn = this.state.fadeIn === true && !this.state.imgCached;
+    var imageStyle = (0, _extends2.default)({
+      opacity: shouldReveal ? 1 : 0,
+      transition: shouldFadeIn ? "opacity " + durationFadeIn + "ms" : "none"
+    }, imgStyle);
+    var bgColor = typeof backgroundColor === "boolean" ? "lightgray" : backgroundColor;
+    var delayHideStyle = {
+      transitionDelay: durationFadeIn + "ms"
+    };
+    var imagePlaceholderStyle = (0, _extends2.default)({
+      opacity: this.state.imgLoaded ? 0 : 1
+    }, shouldFadeIn && delayHideStyle, imgStyle, placeholderStyle);
+    var placeholderImageProps = {
+      title: title,
+      alt: !this.state.isVisible ? alt : "",
+      style: imagePlaceholderStyle,
+      className: placeholderClassName,
+      itemProp: itemProp
+    };
+
+    if (fluid) {
+      var imageVariants = fluid;
+      var image = getCurrentSrcData(fluid);
+      return /*#__PURE__*/_react.default.createElement(Tag, {
+        className: (className ? className : "") + " gatsby-image-wrapper",
+        style: (0, _extends2.default)({
+          position: "relative",
+          overflow: "hidden",
+          maxWidth: image.maxWidth ? image.maxWidth + "px" : null,
+          maxHeight: image.maxHeight ? image.maxHeight + "px" : null
+        }, style),
+        ref: this.handleRef,
+        key: "fluid-" + JSON.stringify(image.srcSet)
+      }, /*#__PURE__*/_react.default.createElement(Tag, {
+        "aria-hidden": true,
+        style: {
+          width: "100%",
+          paddingBottom: 100 / image.aspectRatio + "%"
+        }
+      }), bgColor && /*#__PURE__*/_react.default.createElement(Tag, {
+        "aria-hidden": true,
+        title: title,
+        style: (0, _extends2.default)({
+          backgroundColor: bgColor,
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          opacity: !this.state.imgLoaded ? 1 : 0,
+          right: 0,
+          left: 0
+        }, shouldFadeIn && delayHideStyle)
+      }), image.base64 && /*#__PURE__*/_react.default.createElement(Placeholder, {
+        ariaHidden: true,
+        ref: this.placeholderRef,
+        src: image.base64,
+        spreadProps: placeholderImageProps,
+        imageVariants: imageVariants,
+        generateSources: generateBase64Sources
+      }), image.tracedSVG && /*#__PURE__*/_react.default.createElement(Placeholder, {
+        ariaHidden: true,
+        ref: this.placeholderRef,
+        src: image.tracedSVG,
+        spreadProps: placeholderImageProps,
+        imageVariants: imageVariants,
+        generateSources: generateTracedSVGSources
+      }), this.state.isVisible && /*#__PURE__*/_react.default.createElement("picture", null, generateImageSources(imageVariants), /*#__PURE__*/_react.default.createElement(Img, {
+        alt: alt,
+        title: title,
+        sizes: image.sizes,
+        src: image.src,
+        crossOrigin: this.props.crossOrigin,
+        srcSet: image.srcSet,
+        style: imageStyle,
+        ref: this.imageRef,
+        onLoad: this.handleImageLoaded,
+        onError: this.props.onError,
+        itemProp: itemProp,
+        loading: loading,
+        draggable: draggable
+      })), this.addNoScript && /*#__PURE__*/_react.default.createElement("noscript", {
+        dangerouslySetInnerHTML: {
+          __html: noscriptImg((0, _extends2.default)({
+            alt: alt,
+            title: title,
+            loading: loading
+          }, image, {
+            imageVariants: imageVariants
+          }))
+        }
+      }));
+    }
+
+    if (fixed) {
+      var _imageVariants = fixed;
+
+      var _image = getCurrentSrcData(fixed);
+
+      var divStyle = (0, _extends2.default)({
+        position: "relative",
+        overflow: "hidden",
+        display: "inline-block",
+        width: _image.width,
+        height: _image.height
+      }, style);
+
+      if (style.display === "inherit") {
+        delete divStyle.display;
+      }
+
+      return /*#__PURE__*/_react.default.createElement(Tag, {
+        className: (className ? className : "") + " gatsby-image-wrapper",
+        style: divStyle,
+        ref: this.handleRef,
+        key: "fixed-" + JSON.stringify(_image.srcSet)
+      }, bgColor && /*#__PURE__*/_react.default.createElement(Tag, {
+        "aria-hidden": true,
+        title: title,
+        style: (0, _extends2.default)({
+          backgroundColor: bgColor,
+          width: _image.width,
+          opacity: !this.state.imgLoaded ? 1 : 0,
+          height: _image.height
+        }, shouldFadeIn && delayHideStyle)
+      }), _image.base64 && /*#__PURE__*/_react.default.createElement(Placeholder, {
+        ariaHidden: true,
+        ref: this.placeholderRef,
+        src: _image.base64,
+        spreadProps: placeholderImageProps,
+        imageVariants: _imageVariants,
+        generateSources: generateBase64Sources
+      }), _image.tracedSVG && /*#__PURE__*/_react.default.createElement(Placeholder, {
+        ariaHidden: true,
+        ref: this.placeholderRef,
+        src: _image.tracedSVG,
+        spreadProps: placeholderImageProps,
+        imageVariants: _imageVariants,
+        generateSources: generateTracedSVGSources
+      }), this.state.isVisible && /*#__PURE__*/_react.default.createElement("picture", null, generateImageSources(_imageVariants), /*#__PURE__*/_react.default.createElement(Img, {
+        alt: alt,
+        title: title,
+        width: _image.width,
+        height: _image.height,
+        sizes: _image.sizes,
+        src: _image.src,
+        crossOrigin: this.props.crossOrigin,
+        srcSet: _image.srcSet,
+        style: imageStyle,
+        ref: this.imageRef,
+        onLoad: this.handleImageLoaded,
+        onError: this.props.onError,
+        itemProp: itemProp,
+        loading: loading,
+        draggable: draggable
+      })), this.addNoScript && /*#__PURE__*/_react.default.createElement("noscript", {
+        dangerouslySetInnerHTML: {
+          __html: noscriptImg((0, _extends2.default)({
+            alt: alt,
+            title: title,
+            loading: loading
+          }, _image, {
+            imageVariants: _imageVariants
+          }))
+        }
+      }));
+    }
+
+    return null;
+  };
+
+  return Image;
+}(_react.default.Component);
+
+Image.defaultProps = {
+  fadeIn: true,
+  durationFadeIn: 500,
+  alt: "",
+  Tag: "div",
+  // We set it to `lazy` by default because it's best to default to a performant
+  // setting and let the user "opt out" to `eager`
+  loading: "lazy"
+};
+
+var fixedObject = _propTypes.default.shape({
+  width: _propTypes.default.number.isRequired,
+  height: _propTypes.default.number.isRequired,
+  src: _propTypes.default.string.isRequired,
+  srcSet: _propTypes.default.string.isRequired,
+  base64: _propTypes.default.string,
+  tracedSVG: _propTypes.default.string,
+  srcWebp: _propTypes.default.string,
+  srcSetWebp: _propTypes.default.string,
+  media: _propTypes.default.string
+});
+
+var fluidObject = _propTypes.default.shape({
+  aspectRatio: _propTypes.default.number.isRequired,
+  src: _propTypes.default.string.isRequired,
+  srcSet: _propTypes.default.string.isRequired,
+  sizes: _propTypes.default.string.isRequired,
+  base64: _propTypes.default.string,
+  tracedSVG: _propTypes.default.string,
+  srcWebp: _propTypes.default.string,
+  srcSetWebp: _propTypes.default.string,
+  media: _propTypes.default.string,
+  maxWidth: _propTypes.default.number,
+  maxHeight: _propTypes.default.number
+});
+
+function requireFixedOrFluid(originalPropTypes) {
+  return function (props, propName, componentName) {
+    var _PropTypes$checkPropT;
+
+    if (!props.fixed && !props.fluid) {
+      throw new Error("The prop `fluid` or `fixed` is marked as required in `" + componentName + "`, but their values are both `undefined`.");
+    }
+
+    _propTypes.default.checkPropTypes((_PropTypes$checkPropT = {}, _PropTypes$checkPropT[propName] = originalPropTypes, _PropTypes$checkPropT), props, "prop", componentName);
+  };
+} // If you modify these propTypes, please don't forget to update following files as well:
+// https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-image/index.d.ts
+// https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-image/README.md#gatsby-image-props
+// https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/gatsby-image.md#gatsby-image-props
+
+
+Image.propTypes = {
+  resolutions: fixedObject,
+  sizes: fluidObject,
+  fixed: requireFixedOrFluid(_propTypes.default.oneOfType([fixedObject, _propTypes.default.arrayOf(fixedObject)])),
+  fluid: requireFixedOrFluid(_propTypes.default.oneOfType([fluidObject, _propTypes.default.arrayOf(fluidObject)])),
+  fadeIn: _propTypes.default.bool,
+  durationFadeIn: _propTypes.default.number,
+  title: _propTypes.default.string,
+  alt: _propTypes.default.string,
+  className: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object]),
+  // Support Glamor's css prop.
+  critical: _propTypes.default.bool,
+  crossOrigin: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.bool]),
+  style: _propTypes.default.object,
+  imgStyle: _propTypes.default.object,
+  placeholderStyle: _propTypes.default.object,
+  placeholderClassName: _propTypes.default.string,
+  backgroundColor: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.bool]),
+  onLoad: _propTypes.default.func,
+  onError: _propTypes.default.func,
+  onStartLoad: _propTypes.default.func,
+  Tag: _propTypes.default.string,
+  itemProp: _propTypes.default.string,
+  loading: _propTypes.default.oneOf(["auto", "lazy", "eager"]),
+  draggable: _propTypes.default.bool
+};
+var _default = Image;
+exports.default = _default;
 
 /***/ }),
 
@@ -4907,6 +7743,465 @@ if (true) {
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+
+/***/ "./node_modules/query-string/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/query-string/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+const strictUriEncode = __webpack_require__(/*! strict-uri-encode */ "./node_modules/query-string/node_modules/strict-uri-encode/index.js");
+const decodeComponent = __webpack_require__(/*! decode-uri-component */ "./node_modules/decode-uri-component/index.js");
+const splitOnFirst = __webpack_require__(/*! split-on-first */ "./node_modules/split-on-first/index.js");
+const filterObject = __webpack_require__(/*! filter-obj */ "./node_modules/query-string/node_modules/filter-obj/index.js");
+
+const isNullOrUndefined = value => value === null || value === undefined;
+
+function encoderForArrayFormat(options) {
+	switch (options.arrayFormat) {
+		case 'index':
+			return key => (result, value) => {
+				const index = result.length;
+
+				if (
+					value === undefined ||
+					(options.skipNull && value === null) ||
+					(options.skipEmptyString && value === '')
+				) {
+					return result;
+				}
+
+				if (value === null) {
+					return [...result, [encode(key, options), '[', index, ']'].join('')];
+				}
+
+				return [
+					...result,
+					[encode(key, options), '[', encode(index, options), ']=', encode(value, options)].join('')
+				];
+			};
+
+		case 'bracket':
+			return key => (result, value) => {
+				if (
+					value === undefined ||
+					(options.skipNull && value === null) ||
+					(options.skipEmptyString && value === '')
+				) {
+					return result;
+				}
+
+				if (value === null) {
+					return [...result, [encode(key, options), '[]'].join('')];
+				}
+
+				return [...result, [encode(key, options), '[]=', encode(value, options)].join('')];
+			};
+
+		case 'comma':
+		case 'separator':
+			return key => (result, value) => {
+				if (value === null || value === undefined || value.length === 0) {
+					return result;
+				}
+
+				if (result.length === 0) {
+					return [[encode(key, options), '=', encode(value, options)].join('')];
+				}
+
+				return [[result, encode(value, options)].join(options.arrayFormatSeparator)];
+			};
+
+		default:
+			return key => (result, value) => {
+				if (
+					value === undefined ||
+					(options.skipNull && value === null) ||
+					(options.skipEmptyString && value === '')
+				) {
+					return result;
+				}
+
+				if (value === null) {
+					return [...result, encode(key, options)];
+				}
+
+				return [...result, [encode(key, options), '=', encode(value, options)].join('')];
+			};
+	}
+}
+
+function parserForArrayFormat(options) {
+	let result;
+
+	switch (options.arrayFormat) {
+		case 'index':
+			return (key, value, accumulator) => {
+				result = /\[(\d*)\]$/.exec(key);
+
+				key = key.replace(/\[\d*\]$/, '');
+
+				if (!result) {
+					accumulator[key] = value;
+					return;
+				}
+
+				if (accumulator[key] === undefined) {
+					accumulator[key] = {};
+				}
+
+				accumulator[key][result[1]] = value;
+			};
+
+		case 'bracket':
+			return (key, value, accumulator) => {
+				result = /(\[\])$/.exec(key);
+				key = key.replace(/\[\]$/, '');
+
+				if (!result) {
+					accumulator[key] = value;
+					return;
+				}
+
+				if (accumulator[key] === undefined) {
+					accumulator[key] = [value];
+					return;
+				}
+
+				accumulator[key] = [].concat(accumulator[key], value);
+			};
+
+		case 'comma':
+		case 'separator':
+			return (key, value, accumulator) => {
+				const isArray = typeof value === 'string' && value.includes(options.arrayFormatSeparator);
+				const isEncodedArray = (typeof value === 'string' && !isArray && decode(value, options).includes(options.arrayFormatSeparator));
+				value = isEncodedArray ? decode(value, options) : value;
+				const newValue = isArray || isEncodedArray ? value.split(options.arrayFormatSeparator).map(item => decode(item, options)) : value === null ? value : decode(value, options);
+				accumulator[key] = newValue;
+			};
+
+		default:
+			return (key, value, accumulator) => {
+				if (accumulator[key] === undefined) {
+					accumulator[key] = value;
+					return;
+				}
+
+				accumulator[key] = [].concat(accumulator[key], value);
+			};
+	}
+}
+
+function validateArrayFormatSeparator(value) {
+	if (typeof value !== 'string' || value.length !== 1) {
+		throw new TypeError('arrayFormatSeparator must be single character string');
+	}
+}
+
+function encode(value, options) {
+	if (options.encode) {
+		return options.strict ? strictUriEncode(value) : encodeURIComponent(value);
+	}
+
+	return value;
+}
+
+function decode(value, options) {
+	if (options.decode) {
+		return decodeComponent(value);
+	}
+
+	return value;
+}
+
+function keysSorter(input) {
+	if (Array.isArray(input)) {
+		return input.sort();
+	}
+
+	if (typeof input === 'object') {
+		return keysSorter(Object.keys(input))
+			.sort((a, b) => Number(a) - Number(b))
+			.map(key => input[key]);
+	}
+
+	return input;
+}
+
+function removeHash(input) {
+	const hashStart = input.indexOf('#');
+	if (hashStart !== -1) {
+		input = input.slice(0, hashStart);
+	}
+
+	return input;
+}
+
+function getHash(url) {
+	let hash = '';
+	const hashStart = url.indexOf('#');
+	if (hashStart !== -1) {
+		hash = url.slice(hashStart);
+	}
+
+	return hash;
+}
+
+function extract(input) {
+	input = removeHash(input);
+	const queryStart = input.indexOf('?');
+	if (queryStart === -1) {
+		return '';
+	}
+
+	return input.slice(queryStart + 1);
+}
+
+function parseValue(value, options) {
+	if (options.parseNumbers && !Number.isNaN(Number(value)) && (typeof value === 'string' && value.trim() !== '')) {
+		value = Number(value);
+	} else if (options.parseBooleans && value !== null && (value.toLowerCase() === 'true' || value.toLowerCase() === 'false')) {
+		value = value.toLowerCase() === 'true';
+	}
+
+	return value;
+}
+
+function parse(query, options) {
+	options = Object.assign({
+		decode: true,
+		sort: true,
+		arrayFormat: 'none',
+		arrayFormatSeparator: ',',
+		parseNumbers: false,
+		parseBooleans: false
+	}, options);
+
+	validateArrayFormatSeparator(options.arrayFormatSeparator);
+
+	const formatter = parserForArrayFormat(options);
+
+	// Create an object with no prototype
+	const ret = Object.create(null);
+
+	if (typeof query !== 'string') {
+		return ret;
+	}
+
+	query = query.trim().replace(/^[?#&]/, '');
+
+	if (!query) {
+		return ret;
+	}
+
+	for (const param of query.split('&')) {
+		if (param === '') {
+			continue;
+		}
+
+		let [key, value] = splitOnFirst(options.decode ? param.replace(/\+/g, ' ') : param, '=');
+
+		// Missing `=` should be `null`:
+		// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
+		value = value === undefined ? null : ['comma', 'separator'].includes(options.arrayFormat) ? value : decode(value, options);
+		formatter(decode(key, options), value, ret);
+	}
+
+	for (const key of Object.keys(ret)) {
+		const value = ret[key];
+		if (typeof value === 'object' && value !== null) {
+			for (const k of Object.keys(value)) {
+				value[k] = parseValue(value[k], options);
+			}
+		} else {
+			ret[key] = parseValue(value, options);
+		}
+	}
+
+	if (options.sort === false) {
+		return ret;
+	}
+
+	return (options.sort === true ? Object.keys(ret).sort() : Object.keys(ret).sort(options.sort)).reduce((result, key) => {
+		const value = ret[key];
+		if (Boolean(value) && typeof value === 'object' && !Array.isArray(value)) {
+			// Sort object keys, not values
+			result[key] = keysSorter(value);
+		} else {
+			result[key] = value;
+		}
+
+		return result;
+	}, Object.create(null));
+}
+
+exports.extract = extract;
+exports.parse = parse;
+
+exports.stringify = (object, options) => {
+	if (!object) {
+		return '';
+	}
+
+	options = Object.assign({
+		encode: true,
+		strict: true,
+		arrayFormat: 'none',
+		arrayFormatSeparator: ','
+	}, options);
+
+	validateArrayFormatSeparator(options.arrayFormatSeparator);
+
+	const shouldFilter = key => (
+		(options.skipNull && isNullOrUndefined(object[key])) ||
+		(options.skipEmptyString && object[key] === '')
+	);
+
+	const formatter = encoderForArrayFormat(options);
+
+	const objectCopy = {};
+
+	for (const key of Object.keys(object)) {
+		if (!shouldFilter(key)) {
+			objectCopy[key] = object[key];
+		}
+	}
+
+	const keys = Object.keys(objectCopy);
+
+	if (options.sort !== false) {
+		keys.sort(options.sort);
+	}
+
+	return keys.map(key => {
+		const value = object[key];
+
+		if (value === undefined) {
+			return '';
+		}
+
+		if (value === null) {
+			return encode(key, options);
+		}
+
+		if (Array.isArray(value)) {
+			return value
+				.reduce(formatter(key), [])
+				.join('&');
+		}
+
+		return encode(key, options) + '=' + encode(value, options);
+	}).filter(x => x.length > 0).join('&');
+};
+
+exports.parseUrl = (url, options) => {
+	options = Object.assign({
+		decode: true
+	}, options);
+
+	const [url_, hash] = splitOnFirst(url, '#');
+
+	return Object.assign(
+		{
+			url: url_.split('?')[0] || '',
+			query: parse(extract(url), options)
+		},
+		options && options.parseFragmentIdentifier && hash ? {fragmentIdentifier: decode(hash, options)} : {}
+	);
+};
+
+exports.stringifyUrl = (object, options) => {
+	options = Object.assign({
+		encode: true,
+		strict: true
+	}, options);
+
+	const url = removeHash(object.url).split('?')[0] || '';
+	const queryFromUrl = exports.extract(object.url);
+	const parsedQueryFromUrl = exports.parse(queryFromUrl, {sort: false});
+
+	const query = Object.assign(parsedQueryFromUrl, object.query);
+	let queryString = exports.stringify(query, options);
+	if (queryString) {
+		queryString = `?${queryString}`;
+	}
+
+	let hash = getHash(object.url);
+	if (object.fragmentIdentifier) {
+		hash = `#${encode(object.fragmentIdentifier, options)}`;
+	}
+
+	return `${url}${queryString}${hash}`;
+};
+
+exports.pick = (input, filter, options) => {
+	options = Object.assign({
+		parseFragmentIdentifier: true
+	}, options);
+
+	const {url, query, fragmentIdentifier} = exports.parseUrl(input, options);
+	return exports.stringifyUrl({
+		url,
+		query: filterObject(query, filter),
+		fragmentIdentifier
+	}, options);
+};
+
+exports.exclude = (input, filter, options) => {
+	const exclusionFilter = Array.isArray(filter) ? key => !filter.includes(key) : (key, value) => !filter(key, value);
+
+	return exports.pick(input, exclusionFilter, options);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/query-string/node_modules/filter-obj/index.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/query-string/node_modules/filter-obj/index.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+module.exports = function (obj, predicate) {
+	var ret = {};
+	var keys = Object.keys(obj);
+	var isArr = Array.isArray(predicate);
+
+	for (var i = 0; i < keys.length; i++) {
+		var key = keys[i];
+		var val = obj[key];
+
+		if (isArr ? predicate.indexOf(key) !== -1 : predicate(key, val, obj)) {
+			ret[key] = val;
+		}
+	}
+
+	return ret;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/query-string/node_modules/strict-uri-encode/index.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/query-string/node_modules/strict-uri-encode/index.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16).toUpperCase()}`);
 
 
 /***/ }),
@@ -31245,6 +34540,64 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.default:e}Object.defineProperty(exports,"__esModule",{value:!0});var React=_interopDefault(__webpack_require__(/*! react */ "react"));function AppContainer(e){return AppContainer.warnAboutHMRDisabled&&(AppContainer.warnAboutHMRDisabled=!0,console.error("React-Hot-Loader: misconfiguration detected, using production version in non-production environment."),console.error("React-Hot-Loader: Hot Module Replacement is not enabled.")),React.Children.only(e.children)}AppContainer.warnAboutHMRDisabled=!1;var hot=function e(){return e.shouldWrapWithAppContainer?function(e){return function(n){return React.createElement(AppContainer,null,React.createElement(e,n))}}:function(e){return e}};hot.shouldWrapWithAppContainer=!1;var areComponentsEqual=function(e,n){return e===n},setConfig=function(){},cold=function(e){return e},configureComponent=function(){};exports.AppContainer=AppContainer,exports.hot=hot,exports.areComponentsEqual=areComponentsEqual,exports.setConfig=setConfig,exports.cold=cold,exports.configureComponent=configureComponent;
+
+
+/***/ }),
+
+/***/ "./node_modules/react-hot-loader/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/react-hot-loader/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else if (false) {} else if (typeof window === 'undefined') {
+  // this is just server environment
+  module.exports = __webpack_require__(/*! ./dist/react-hot-loader.production.min.js */ "./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
+} else if (true) {
+  module.exports = __webpack_require__(/*! ./dist/react-hot-loader.production.min.js */ "./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
+  module.exports.AppContainer.warnAboutHMRDisabled = true;
+  module.exports.hot.shouldWrapWithAppContainer = true;
+} else { var jsFeaturesPresent, evalError, evalAllowed; }
+
+
+/***/ }),
+
+/***/ "./node_modules/react-hot-loader/root.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-hot-loader/root.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+if (true) {
+  var hot = __webpack_require__(/*! ./index */ "./node_modules/react-hot-loader/index.js").hot;
+  if (false) { var parent, cache; } else {
+    fallbackHot();
+  }
+} else {}
+
+function fallbackHot() {
+  exports.hot = function (a) {
+    return a;
+  };
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -31512,6 +34865,40 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 /***/ }),
 
+/***/ "./node_modules/split-on-first/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/split-on-first/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = (string, separator) => {
+	if (!(typeof string === 'string' && typeof separator === 'string')) {
+		throw new TypeError('Expected the arguments to be of type `string`');
+	}
+
+	if (separator === '') {
+		return [string];
+	}
+
+	const separatorIndex = string.indexOf(separator);
+
+	if (separatorIndex === -1) {
+		return [string];
+	}
+
+	return [
+		string.slice(0, separatorIndex),
+		string.slice(separatorIndex + separator.length)
+	];
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/styled-components/dist/styled-components.esm.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/styled-components/dist/styled-components.esm.js ***!
@@ -31641,6 +35028,203 @@ function Nav() {
 
 /***/ }),
 
+/***/ "./src/components/PressGrid.js":
+/*!*************************************!*\
+  !*** ./src/components/PressGrid.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PressGrid; });
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+
+
+const PressStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+  displayName: "PressGrid__PressStyle"
+})(["display:grid;@supports not (grid-template-rows:subgrid){grid-template-rows:auto auto;}grid-template-rows:subgrid;column-gap:10px;row-gap:10px;h2,p{margin:0;}"]);
+function PressGrid({
+  press
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PressStyle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: press.pressLink
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    fluid: press.image.asset.fluid,
+    alt: press.name
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "pressInfo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, press.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, press.year))));
+}
+
+/***/ }),
+
+/***/ "./src/components/PressList.js":
+/*!*************************************!*\
+  !*** ./src/components/PressList.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectsList; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _PressGrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PressGrid */ "./src/components/PressGrid.js");
+
+
+
+const PressGridStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "PressList__PressGridStyle"
+})(["display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6rem;grid-auto-rows:auto auto;"]);
+const PressGridCointainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "PressList__PressGridCointainer"
+})(["max-width:900px;margin-left:auto;margin-right:auto;margin-bottom:10rem;align-items:center;"]);
+function ProjectsList({
+  presses
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PressGridCointainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PressGridStyle, null, presses.map(press => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PressGrid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    key: press.id,
+    press: press
+  })))));
+}
+
+/***/ }),
+
+/***/ "./src/pages/404.js":
+/*!**************************!*\
+  !*** ./src/pages/404.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FourOFourPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function FourOFourPage() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "That page does not exist"));
+}
+
+/***/ }),
+
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AboutPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const serializers = {
+  marks: {
+    link: ({
+      children,
+      mark
+    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks",
+      href: mark.href,
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks",
+      href: mark.href
+    }, children)
+  }
+};
+function AboutPage({
+  data
+}) {
+  const about = data.about.nodes;
+  console.log(about);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutCointainer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "about"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    fluid: about[0].image.asset.fluid,
+    alt: about[0].name
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutText"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    blocks: about[0]._rawBodyPortableText,
+    serializers: serializers
+  })))));
+}
+const aboutQuery = "1423380314";
+
+/***/ }),
+
+/***/ "./src/pages/index.js":
+/*!****************************!*\
+  !*** ./src/pages/index.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HomePage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function HomePage() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagLine"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Mary John Frank"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "director \xB7 choreographer \xB7 filmmaker")));
+}
+
+/***/ }),
+
+/***/ "./src/pages/press.js":
+/*!****************************!*\
+  !*** ./src/pages/press.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PressPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_PressList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/PressList */ "./src/components/PressList.js");
+
+
+function PressPage({
+  data
+}) {
+  const presses = data.press.nodes;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PressList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    presses: presses
+  }));
+}
+const pressQuery = "2453052757";
+
+/***/ }),
+
 /***/ "./src/styles/globalStyles.css":
 /*!*************************************!*\
   !*** ./src/styles/globalStyles.css ***!
@@ -31696,6 +35280,61 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 
 /***/ }),
 
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
+
+/***/ }),
+
+/***/ "lodash/concat":
+/*!**********************************************************************************************!*\
+  !*** external "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js" ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_concat__;
+
+/***/ }),
+
+/***/ "lodash/flatten":
+/*!***********************************************************************************************!*\
+  !*** external "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js" ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_flatten__;
+
+/***/ }),
+
+/***/ "lodash/get":
+/*!*******************************************************************************************!*\
+  !*** external "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js" ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_get__;
+
+/***/ }),
+
+/***/ "lodash/isObject":
+/*!************************************************************************************************!*\
+  !*** external "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js" ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_isObject__;
+
+/***/ }),
+
 /***/ "lodash/merge":
 /*!*********************************************************************************************!*\
   !*** external "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js" ***!
@@ -31704,6 +35343,28 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_merge__;
+
+/***/ }),
+
+/***/ "lodash/uniqBy":
+/*!**********************************************************************************************!*\
+  !*** external "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js" ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__;
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_path__;
 
 /***/ }),
 
