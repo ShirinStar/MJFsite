@@ -70,6 +70,11 @@ export default {
         }),
     },
     {
+      name: 'featurePortableText',
+      type: 'portableText',
+      title: 'Feature links',
+    },
+    {
       name: 'tags',
       title: 'Tags',
       type: 'array',

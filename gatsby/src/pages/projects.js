@@ -1,5 +1,5 @@
-import { graphql } from 'gatsby';
 import React from 'react';
+import { graphql } from 'gatsby';
 import ProjectsList from '../components/ProjectsList';
 import TagFilter from '../components/TagFilter';
 
@@ -7,7 +7,7 @@ export default function ProjectsPage({ data }) {
   const projects = data.projects.nodes;
   return (
     <>
-      {/* <TagFilter /> */}
+      <TagFilter />
       <ProjectsList projects={projects} />
     </>
   );

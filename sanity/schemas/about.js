@@ -13,13 +13,8 @@ export default {
     },
     {
       name: 'bodyPortableText',
-      type: 'array',
-      title: 'About paragraph',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
+      type: 'portableText',
+      title: 'About text',
     },
     {
       name: 'image',

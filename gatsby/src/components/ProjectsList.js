@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProjectPage from './ProjectGrid';
+import ProjectGrid from './ProjectGrid';
 
 // const ProjectGridStyle = styled.div`
 /* display: grid;
@@ -25,7 +25,7 @@ export default function ProjectsList({ projects }) {
         .sort((a, b) => b.year - a.year)
         .map((project) => (
           <div className="heroImage">
-            <ProjectPage key={project.id} project={project} />
+            <ProjectGrid key={project.id} project={project} />
           </div>
         ))}
     </div>

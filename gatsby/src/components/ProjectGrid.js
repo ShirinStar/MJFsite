@@ -17,7 +17,7 @@ import styled from 'styled-components';
   } */
 // `;
 
-export default function ProjectPage({ project }) {
+export default function ProjectGrid({ project }) {
   return (
     <>
       <div className="imageContainer">

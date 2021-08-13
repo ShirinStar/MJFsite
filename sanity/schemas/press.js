@@ -8,18 +8,31 @@ export default {
   fields: [
     {
       name: 'name',
-      title: 'Title',
+      title: 'Magazine name',
       type: 'string',
     },
     {
-      name: 'bodyPortableText',
-      type: 'array',
-      title: 'Press description and link',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
+      name: 'year',
+      title: 'Year',
+      type: 'number',
+      description: 'year of publish',
+    },
+    {
+      name: 'pressLink',
+      title: 'Press link',
+      type: 'url',
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ['http', 'https', 'mailto', 'tel'],
+        }),
+    },
+    {
+      name: 'image',
+      title: 'Press hero image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     },
   ],
 };

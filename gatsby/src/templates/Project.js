@@ -45,6 +45,13 @@ export default function SingleProjectPage({ data }) {
           serializers={serializers}
         />
       </div>
+      <div className="featureDiv">
+        <p className="featureP">Featured: </p>
+        <PortableText
+          blocks={project._rawFeaturePortableText}
+          serializers={serializers}
+        />
+      </div>
       {/* <ul>
           {project.tags.map((tag) => (
             <li key={tag.id}>{tag.name}</li>
@@ -63,6 +70,7 @@ export const projectQuery = graphql`
       tagline
       videoLink
       _rawBodyPortableText
+      _rawFeaturePortableText
       bodyPortableText {
         children {
           text
