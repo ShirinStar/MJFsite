@@ -1,11 +1,30 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Img from 'gatsby-image';
+import PortableText from '@sanity/block-content-to-react';
 import VideoEmbed from '../components/VideoEmbed';
+
+const serializers = {
+  marks: {
+    link: ({ children, mark }) =>
+      mark.blank ? (
+        <a
+          className="bodyTextLinks"
+          href={mark.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      ) : (
+        <a className="bodyTextLinks" href={mark.href}>
+          {children}
+        </a>
+      ),
+  },
+};
 
 export default function SingleProjectPage({ data }) {
   const { project } = data;
-  console.log(project);
 
   return (
     <div className="projectMain">
@@ -16,23 +35,21 @@ export default function SingleProjectPage({ data }) {
         </p>
       </div>
 
-      <VideoEmbed project={project} />
-
       <div>
-        <div className="descriptionDiv">
-          <p className="projectDescription">
-            {project.bodyPortableText[0].children
-              .map((bodyText) => bodyText.text)
-              .join('')}
-          </p>
-          <p />
-        </div>
-        {/* <ul>
+        <VideoEmbed project={project} />
+      </div>
+
+      <div className="descriptionDiv">
+        <PortableText
+          blocks={project._rawBodyPortableText}
+          serializers={serializers}
+        />
+      </div>
+      {/* <ul>
           {project.tags.map((tag) => (
             <li key={tag.id}>{tag.name}</li>
           ))}
         </ul> */}
-      </div>
     </div>
   );
 }
@@ -45,6 +62,7 @@ export const projectQuery = graphql`
       year
       tagline
       videoLink
+      _rawBodyPortableText
       bodyPortableText {
         children {
           text

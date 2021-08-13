@@ -9,7 +9,7 @@ import videoEmbed from './videoEmbed';
 import projectTag from './projectTag';
 import press from './press';
 import about from './about';
-import imageGallery from './imageGallery';
+import bodyPortableText from './bodyPortableText';
 
 export default createSchema({
   // We name our schema
@@ -18,6 +18,7 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     singleProject,
+    bodyPortableText,
     videoEmbed,
     projectTag,
     press,

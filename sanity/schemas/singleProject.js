@@ -49,13 +49,8 @@ export default {
     },
     {
       name: 'bodyPortableText',
-      type: 'array',
+      type: 'portableText',
       title: 'Project description',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
     },
     {
       name: 'image',
@@ -90,19 +85,6 @@ export default {
     //     // },
     //     {
     //       type: 'imageGallery',
-    //     },
-    //   ],
-    // },
-    // {
-    //   name: 'videoPreview',
-    //   type: 'array',
-    //   title: 'Video embed',
-    //   of: [
-    //     {
-    //       type: 'block',
-    //     },
-    //     {
-    //       type: 'videoEmbed',
     //     },
     //   ],
     // },
