@@ -2,10 +2,9 @@ import { Link } from 'gatsby';
 import React from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import VideoEmbed from './VideoEmbed';
 
-const ProjectStyle = styled.div`
-  display: grid;
+// const ProjectStyle = styled.div`
+/* display: grid;
   @supports not (grid-template-rows: subgrid) {
     grid-template-rows: auto auto 1fr;
   }
@@ -15,19 +14,24 @@ const ProjectStyle = styled.div`
   h2,
   p {
     margin: 0;
-  }
-`;
+  } */
+// `;
 
 export default function ProjectPage({ project }) {
   return (
-    <ProjectStyle>
-      <Link to={`/project/${project.slug.current}`}>
-        <h2>{project.name}</h2>
-      </Link>
-      <p>{project.tags.map((tag) => tag.name).join(', ')}</p>
-      <Img fluid={project.image.asset.fluid} alt={project.name} />
-
-      {/* <VideoEmbed project={project} /> */}
-    </ProjectStyle>
+    <>
+      <div className="imageContainer">
+        <Link to={`/project/${project.slug.current}`}>
+          <div className="imageGrid">
+            <Img fixed={project.image.asset.fixed} alt={project.name} />
+          </div>
+          <div className="textImages textImages--blur">
+            <p className="mainImageTitle">{project.name}</p>
+            <p className="secondImageTitle">{project.tagline}</p>
+            {/* <p>{project.tags.map((tag) => tag.name).join(', ')}</p> */}
+          </div>
+        </Link>
+      </div>
+    </>
   );
 }

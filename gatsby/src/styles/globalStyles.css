@@ -1,24 +1,38 @@
+@font-face {
+  font-family: "Bigilla";
+  src: url("/fonts/bigilla/Bigilla.otf") format("otf"),
+       url("/fonts/bigilla/Bigilla-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Modernist";
+  src: url("/fonts/Sk-Modernist/Sk-Modernist-Regular.otf") format("otf"),
+       url("/fonts/Sk-Modernist/Sk-Modernist-Mono.otf") format("otf"),
+       url("/fonts/Sk-Modernist/Sk-Modernist-Bold.otf") format("otf");
+}
+
 html {
-  background-size: 450px;
-  background-attachment: fixed;
   font-size: 10px;
-  background-color: #E5E3DC;
 }
 
 body {
   font-size: 2rem;
+  background-color: #E5E3DC;
+  height: 100%;
 }
 
 .app {
- width: 100%;
+ max-width: 100%;
+ min-height: 100%;
+ margin-bottom: -50px;
 }
 
 h1 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Bigilla', serif;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Modernist', 'Roboto', sans-serif;
 }
 
 fieldset {
@@ -46,7 +60,7 @@ button:hover {
 a, a:visited {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Modernist', 'Roboto', sans-serif;
 
 }
 
@@ -90,11 +104,12 @@ img {
 
 
 .footer {
-  position: fixed;
+  bottom: 0;
   left: 0;
-  bottom: 5px;
+  margin-top: 40px;
   width: 100%;
   color: black;
   text-align: center;
   font-size: 14px;
 }
+

@@ -6,19 +6,32 @@ import VideoEmbed from '../components/VideoEmbed';
 export default function SingleProjectPage({ data }) {
   const { project } = data;
   console.log(project);
+
   return (
-    <div>
-      <Img fluid={project.image.asset.fluid} />
+    <div className="projectMain">
+      <div className="projectHeader">
+        <h2 className="projectTitle">{project.name}</h2>
+        <p>
+          {project.tagline} | {project.year}
+        </p>
+      </div>
+
+      <VideoEmbed project={project} />
+
       <div>
-        <h2>{project.name}</h2>
-        <p>{project.year}</p>
-        <p>{project.tagline}</p>
-        <ul>
+        <div className="descriptionDiv">
+          <p className="projectDescription">
+            {project.bodyPortableText[0].children
+              .map((bodyText) => bodyText.text)
+              .join('')}
+          </p>
+          <p />
+        </div>
+        {/* <ul>
           {project.tags.map((tag) => (
             <li key={tag.id}>{tag.name}</li>
           ))}
-        </ul>
-        <VideoEmbed project={project} />
+        </ul> */}
       </div>
     </div>
   );
@@ -32,6 +45,11 @@ export const projectQuery = graphql`
       year
       tagline
       videoLink
+      bodyPortableText {
+        children {
+          text
+        }
+      }
       image {
         asset {
           fluid(maxWidth: 800) {

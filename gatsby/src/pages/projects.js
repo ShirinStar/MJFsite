@@ -7,7 +7,7 @@ export default function ProjectsPage({ data }) {
   const projects = data.projects.nodes;
   return (
     <>
-      <TagFilter />
+      {/* <TagFilter /> */}
       <ProjectsList projects={projects} />
     </>
   );
@@ -19,16 +19,20 @@ export const projectQuery = graphql`
       nodes {
         name
         id
+        year
+        tagline
         slug {
           current
         }
+        showOnSite
         tags {
           id
           name
         }
         image {
           asset {
-            fixed(width: 200, height: 200) {
+            size
+            fixed(width: 450, height: 300) {
               ...GatsbySanityImageFixed
             }
             fluid(maxWidth: 400) {

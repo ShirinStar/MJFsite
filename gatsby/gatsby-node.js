@@ -1,7 +1,7 @@
 import path from 'path';
 
 async function turnProjectsIntoPages({ graphql, actions }) {
-  const projectTamlate = path.resolve('./src/templates/Project.js');
+  const projectTemplate = path.resolve('./src/templates/Project.js');
   const { data } = await graphql(`
     query {
       projects: allSanitySingleProject {
@@ -18,7 +18,7 @@ async function turnProjectsIntoPages({ graphql, actions }) {
   data.projects.nodes.forEach((project) => {
     actions.createPage({
       path: `project/${project.slug.current}`,
-      component: projectTamlate,
+      component: projectTemplate,
       context: {
         slug: project.slug.current,
       },

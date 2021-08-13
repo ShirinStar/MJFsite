@@ -1600,6 +1600,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/styles/homePage.css */ "./src/styles/homePage.css");
 /* harmony import */ var _src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/styles/projectsGrid.css */ "./src/styles/projectsGrid.css");
+/* harmony import */ var _src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/styles/projectPage.css */ "./src/styles/projectPage.css");
+/* harmony import */ var _src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_5__);
+
+
 
 
 
@@ -31561,7 +31567,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 function Footer() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 MJF ", new Date().getFullYear()));
 }
@@ -31650,6 +31656,28 @@ function Nav() {
 /*!*********************************!*\
   !*** ./src/styles/homePage.css ***!
   \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/styles/projectPage.css":
+/*!************************************!*\
+  !*** ./src/styles/projectPage.css ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/styles/projectsGrid.css":
+/*!*************************************!*\
+  !*** ./src/styles/projectsGrid.css ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

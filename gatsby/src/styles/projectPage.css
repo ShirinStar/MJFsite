@@ -1,0 +1,46 @@
+
+.projectMain {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.projectHeader {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  text-align: left;
+}
+
+.projectTitle {
+  font-size: 48px; /*make this responsive*/
+  display: inline-block;
+  margin:0;
+  padding: 0;
+}
+
+.descriptionDiv {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.projectDescription {
+  text-align: left;
+  margin-top: 40px;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+/* 
+.projectVideo {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  display: block;
+} */
+
+

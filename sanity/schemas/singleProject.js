@@ -13,12 +13,6 @@ export default {
       description: 'Name of the project',
     },
     {
-      // connect it to react- to render only true
-      name: 'showOnSite',
-      title: 'Show on site',
-      type: 'boolean',
-    },
-    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -26,6 +20,11 @@ export default {
         source: 'name',
         maxLength: 100,
       },
+    },
+    {
+      name: 'showOnSite',
+      title: 'Show on site',
+      type: 'boolean',
     },
     {
       name: 'tagline',
@@ -40,14 +39,8 @@ export default {
       description: 'year of release',
     },
     {
-      name: 'tags',
-      title: 'Tags',
-      type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'tag' }] }],
-    },
-    {
-      title: 'Project Link',
       name: 'projectLink',
+      title: 'Project external link',
       type: 'url',
       validation: (Rule) =>
         Rule.uri({
@@ -57,7 +50,7 @@ export default {
     {
       name: 'bodyPortableText',
       type: 'array',
-      title: 'Full description',
+      title: 'Project description',
       of: [
         {
           type: 'block',
@@ -66,7 +59,7 @@ export default {
     },
     {
       name: 'image',
-      title: 'Project image',
+      title: 'Prroject hero image',
       type: 'image',
       options: {
         hotspot: true,
@@ -80,6 +73,12 @@ export default {
         Rule.uri({
           scheme: ['http', 'https', 'mailto', 'tel'],
         }),
+    },
+    {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'tag' }] }],
     },
     // {
     //   name: 'imageGalley',
