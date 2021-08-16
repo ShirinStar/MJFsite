@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Bigilla";
+  src: url("/fonts/bigilla/Bigilla.otf") format("otf"),
+       url("/fonts/bigilla/Bigilla-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Modernist";
+  src: url("/fonts/Sk-Modernist/Sk-Modernist-Regular.otf") format("otf"),
+       url("/fonts/Sk-Modernist/Sk-Modernist-Mono.otf") format("otf"),
+       url("/fonts/Sk-Modernist/Sk-Modernist-Bold.otf") format("otf");
+}
+
+header {
+  height: 100px;
+  font-family: 'Modernist', 'Roboto', sans-serif;
+}
+
+.menuHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-header {
+  /* position: relative; */
+  z-index: 10;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  z-index: 10;
+}
+
+.navMenu {
+  z-index: 10;
+}
+
+.logoNav {
+  font-family: 'Modernist', 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+.btnMenu {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}
+
+.hamburger-menu {
+  display: none;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-secondary-background-color {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index: -1;
+}
+
+.menu-layer {
+  position: relative;
+  background: #5A6E41;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hamWrapper{
+  position: relative;
+}
+
+.hamLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 200px
+}
+
+nav {
+  display: block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 10rem;
+  font-weight: 700;
+  cursor: pointer;
+  overflow: hidden;
+  height: 150px;
+  position: relative;
+  width: 700px;
+}
+
+.meLink {
+  position: absolute;
+  color: white !important;
+  text-decoration: none;
+  font-family: "Bigilla";
+}
+
+.meLink:hover {
+  color: black !important;
+}
+
+.humSocialLinks {
+  width: 300px;
+  color: white;
+}

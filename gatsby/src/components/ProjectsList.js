@@ -19,15 +19,17 @@ import ProjectGrid from './ProjectGrid';
 
 export default function ProjectsList({ projects }) {
   return (
-    <div className="gridCointaner">
-      {projects
-        .filter((project) => project.showOnSite)
-        .sort((a, b) => b.year - a.year)
-        .map((project) => (
-          <div className="heroImage">
-            <ProjectGrid key={project.id} project={project} />
-          </div>
-        ))}
+    <div className="container">
+      <div className="wrapper imagesGrid">
+        {projects
+          .filter((project) => project.showOnSite)
+          .sort((a, b) => b.year - a.year)
+          .map((project) => (
+            <div className="heroImage">
+              <ProjectGrid key={project.id} project={project} />
+            </div>
+          ))}
+      </div>
     </div>
   );
 }

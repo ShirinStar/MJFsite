@@ -7,7 +7,7 @@ export default function ProjectsPage({ data }) {
   const projects = data.projects.nodes;
   return (
     <>
-      <TagFilter />
+      {/* <TagFilter /> */}
       <ProjectsList projects={projects} />
     </>
   );

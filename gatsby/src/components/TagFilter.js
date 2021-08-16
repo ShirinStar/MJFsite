@@ -69,7 +69,6 @@ export default function TagFilter() {
   `);
 
   const tagsWithCounts = countProjectsInTags(projects.nodes);
-  console.log(tagsWithCounts);
 
   return (
     <TagsContainer>

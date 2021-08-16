@@ -21,10 +21,30 @@ body {
   height: 100%;
 }
 
-.app {
- max-width: 100%;
- min-height: 100%;
- margin-bottom: -50px;
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto
+}
+
+.wrapper {
+  padding: 0 48px
+}
+
+.wrapper.imagesGrid {
+  margin-bottom: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 h1 {

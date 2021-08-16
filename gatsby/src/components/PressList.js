@@ -9,18 +9,18 @@ const PressGridStyle = styled.div`
   grid-auto-rows: auto auto;
 `;
 
-const PressGridCointainer = styled.div`
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10rem;
-  align-items: center;
-`;
+// const PressGridCointainer = styled.div`
+//   max-width: 900px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 10rem;
+//   align-items: center;
+// `;
 
 export default function ProjectsList({ presses }) {
   return (
-    <>
-      <PressGridCointainer>
+    <div className="container">
+      <div className="wrapper">
         <h2 className="pageTitle">Press</h2>
         <PressGridStyle>
           {presses.map((press) => (
@@ -29,7 +29,7 @@ export default function ProjectsList({ presses }) {
             </div>
           ))}
         </PressGridStyle>
-      </PressGridCointainer>
-    </>
+      </div>
+    </div>
   );
 }

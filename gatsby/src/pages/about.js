@@ -27,8 +27,8 @@ export default function AboutPage({ data }) {
   const about = data.about.nodes;
   console.log(about);
   return (
-    <>
-      <div className="aboutCointainer">
+    <div className="container">
+      <div className="wrapper">
         <h2 className="pageTitle">About</h2>
 
         <div className="aboutDiv">
@@ -43,7 +43,7 @@ export default function AboutPage({ data }) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

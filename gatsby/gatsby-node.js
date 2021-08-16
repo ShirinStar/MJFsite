@@ -15,6 +15,7 @@ async function turnProjectsIntoPages({ graphql, actions }) {
       }
     }
   `);
+
   data.projects.nodes.forEach((project) => {
     actions.createPage({
       path: `project/${project.slug.current}`,
@@ -26,6 +27,30 @@ async function turnProjectsIntoPages({ graphql, actions }) {
   });
 }
 
+// async function turnTagsIntoPages({ graphql, actions }) {
+//   const tagsTemplate = path.resolve('./src/pages/projects.js');
+//   const { data } = await graphql(`
+//     query {
+//       tags: allSanityTag {
+//         nodes {
+//           name
+//           id
+//         }
+//       }
+//     }
+//   `);
+
+//   data.tags.nodes.forEach((tag) => {
+//     actions.createPage({
+//       path: `tag/${tag.name}`,
+//       component: tagsTemplate,
+//       context: {
+//         tag: tag.name,
+//       },
+//     });
+//   });
+// }
+
 export async function createPages(params) {
-  await turnProjectsIntoPages(params);
+  await Promise.all([turnProjectsIntoPages(params)]);
 }
