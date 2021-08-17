@@ -142,7 +142,7 @@ li {
   li {
     font-size: 5rem;
     height: 100px;
-    width: 250px;
+    width: 200px;
     padding-left: 10px;
   }
 
@@ -164,11 +164,11 @@ li {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1040px) {
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
   li {
     font-size: 10rem;
     height: 200px;
     width: 400px;
-    padding-left: 10px;
+    padding-left: 40px;
   }
  }

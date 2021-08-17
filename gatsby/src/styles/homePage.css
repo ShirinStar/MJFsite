@@ -1,4 +1,80 @@
 .tagLine {
-  text-align: center;
-  margin-top: 20%;
+  text-align: left;
+  margin-top: 300px;
+  padding-left: 20px;
+}
+
+.homeName {
+  font-size: 120px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  -webkit-text-stroke: 1.5px black;
+  color: transparent;
+  position: relative;
+}
+
+.homeName:before {
+  background: linear-gradient(to right,black 95%, #E5E3DC 5% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  content: attr(data-text);
+  top:0;
+  left:0;
+  width: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  position: absolute;
+  animation: fillText 5s;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fillText {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.logline {
+  font-size: 48px;
+}
+
+
+
+@media screen and (max-width: 600px) {  
+  .tagLine {
+    margin-top: 250px;
+    padding-left: 10px;
+  }
+
+  .homeName {
+    font-size: 40px;
+  }
+  .logline {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .tagLine {
+    margin-top: 350px;
+    padding-left: 10px;
+  }
+  .homeName {
+    font-size: 84px;
+  }
+  .logline {
+    font-size: 36px;
+    }
+  }
+
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  .tagLine {
+    margin-top: 450px;
+  }
 }

@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import gsap from 'gsap';
 
 export default function Hamburger({ state }) {
-  // vars for the animated dom nodes.
   let menu = useRef(null);
   let revealMenu = useRef(null);
   let revealMenuBg = useRef(null);
