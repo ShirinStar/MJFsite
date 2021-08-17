@@ -157,3 +157,20 @@ img {
   font-size: 14px;
 }
 
+@media screen and (max-width: 600px) {
+ .wrapper {
+   padding: 0 10px
+ }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .wrapper {
+    padding: 0 60px
+  }
+ }
+
+ @media only screen and (min-width: 800px) and (max-width: 1040px) {
+  .wrapper {
+    padding: 0 84px
+  }
+ }

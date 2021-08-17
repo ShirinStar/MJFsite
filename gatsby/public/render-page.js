@@ -39265,8 +39265,8 @@ function ProjectGrid({
     to: `/project/${project.slug.current}`
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "imageGrid"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    fluid: project.image.asset.fluid,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: project.image.asset.url,
     alt: project.name
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "textImages textImages--blur"
@@ -39433,7 +39433,7 @@ __webpack_require__.r(__webpack_exports__);
 function HomePage() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tagLine"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Mary John Frank"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "director \xB7 choreographer \xB7 filmmaker"));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Mary John Frank"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Director \xB7 Choreographer \xB7 Filmmaker"));
 }
 
 /***/ }),

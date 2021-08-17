@@ -136,3 +136,39 @@ li {
   width: 300px;
   color: white;
 }
+
+
+@media screen and (max-width: 600px) {  
+  li {
+    font-size: 5rem;
+    height: 100px;
+    width: 250px;
+    padding-left: 10px;
+  }
+
+  .humSocialLinks {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  li {
+    font-size: 10rem;
+    height: 150px;
+    width: 400px;
+    padding-left: 10px;
+  }
+
+  .humSocialLinks {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1040px) {
+  li {
+    font-size: 10rem;
+    height: 200px;
+    width: 400px;
+    padding-left: 10px;
+  }
+ }
