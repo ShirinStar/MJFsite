@@ -8,7 +8,7 @@
   font-size: 120px;
   padding-bottom: 0;
   margin-bottom: 0;
-  -webkit-text-stroke: 1.5px black;
+  /* -webkit-text-stroke: 1.5px black; */
   color: transparent;
   position: relative;
 }
@@ -66,10 +66,10 @@
     padding-left: 10px;
   }
   .homeName {
-    font-size: 84px;
+    font-size: 72px;
   }
   .logline {
-    font-size: 36px;
+    font-size: 28px;
     }
   }
 
