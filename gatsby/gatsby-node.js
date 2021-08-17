@@ -27,30 +27,30 @@ async function turnProjectsIntoPages({ graphql, actions }) {
   });
 }
 
-// async function turnTagsIntoPages({ graphql, actions }) {
-//   const tagsTemplate = path.resolve('./src/pages/projects.js');
-//   const { data } = await graphql(`
-//     query {
-//       tags: allSanityTag {
-//         nodes {
-//           name
-//           id
-//         }
-//       }
-//     }
-//   `);
+async function turnTagsIntoPages({ graphql, actions }) {
+  const tagsTemplate = path.resolve('./src/pages/projects.js');
+  const { data } = await graphql(`
+    query {
+      tags: allSanityTag {
+        nodes {
+          name
+          id
+        }
+      }
+    }
+  `);
 
-//   data.tags.nodes.forEach((tag) => {
-//     actions.createPage({
-//       path: `tag/${tag.name}`,
-//       component: tagsTemplate,
-//       context: {
-//         tag: tag.name,
-//       },
-//     });
-//   });
-// }
+  data.tags.nodes.forEach((tag) => {
+    actions.createPage({
+      path: `tags/${tag.name}`,
+      component: tagsTemplate,
+      context: {
+        tag: tag.name,
+      },
+    });
+  });
+}
 
 export async function createPages(params) {
-  await Promise.all([turnProjectsIntoPages(params)]);
+  await Promise.all([turnProjectsIntoPages(params), turnTagsIntoPages(params)]);
 }

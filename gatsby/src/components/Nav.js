@@ -43,9 +43,7 @@ export default function Nav() {
   return (
     <>
       <div className="container">
-        <div className="wrapper">
-          <Header />
-        </div>
+        <Header />
       </div>
     </>
   );

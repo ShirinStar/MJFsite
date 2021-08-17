@@ -13,12 +13,12 @@
 
 header {
   height: 100px;
-  font-family: 'Modernist', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .menuHome {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -34,7 +34,7 @@ header {
 }
 
 .headerLogo {
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   color: black;
   z-index: 10;

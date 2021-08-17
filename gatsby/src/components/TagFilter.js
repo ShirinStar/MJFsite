@@ -2,12 +2,6 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
-const TagsContainer = styled.div`
-  max-width: 900px;
-  margin-right: auto;
-  margin-left: auto;
-`;
-
 const TagStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -21,14 +15,12 @@ const TagStyles = styled.div`
     align-items: center;
     padding: 5px;
     font-size: 14px;
-    background: grey;
-    border-radius: 2px;
-    .tagCount {
-      background: white;
-      padding: 2px 5px;
+    cursor: pointer;
+    &[aria-current='page'] {
+      border-bottom: 2px solid pink;
     }
-    .active {
-      background: pink;
+    &:hover {
+      color: white;
     }
   }
 `;
@@ -54,7 +46,7 @@ function countProjectsInTags(projects) {
   return sortedTags;
 }
 
-export default function TagFilter() {
+export default function TagFilter({ activeTag }) {
   const { projects } = useStaticQuery(graphql`
     query {
       projects: allSanitySingleProject {
@@ -71,15 +63,20 @@ export default function TagFilter() {
   const tagsWithCounts = countProjectsInTags(projects.nodes);
 
   return (
-    <TagsContainer>
-      <TagStyles>
-        {tagsWithCounts.map((tag) => (
-          <Link to={`/tags/${tag.name}`} key={tag.id}>
-            <span className="tagName">{tag.name}</span>
-            <span className="tagCount">{tag.count}</span>
+    <div className="container">
+      <div className="wrapper">
+        <h2 className="pageTitle">Projects</h2>
+        <TagStyles>
+          <Link to="/projects">
+            <span className="tagName">All</span>
           </Link>
-        ))}
-      </TagStyles>
-    </TagsContainer>
+          {tagsWithCounts.map((tag) => (
+            <Link to={`/tags/${tag.name}`} key={tag.id}>
+              <span className="tagName">{tag.name}</span>
+            </Link>
+          ))}
+        </TagStyles>
+      </div>
+    </div>
   );
 }

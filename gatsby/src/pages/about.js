@@ -25,7 +25,7 @@ const serializers = {
 
 export default function AboutPage({ data }) {
   const about = data.about.nodes;
-  console.log(about);
+
   return (
     <div className="container">
       <div className="wrapper">

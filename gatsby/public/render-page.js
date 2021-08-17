@@ -39036,6 +39036,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header() {
+  let logoRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const {
     0: state,
     1: setState
@@ -39048,6 +39049,23 @@ function Header() {
     0: disabled,
     1: setDisabled
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    0: logoPressed,
+    1: setLogoPressed
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false); // const checkingLogoPressed = () => {
+  //   setLogoPressed(true);
+  //   setTimeout(() => {
+  //     setLogoPressed(false);
+  //   }, 1000);
+  // };
+  // const showLogo = () => {
+  //   if (state.initial === false || logoPressed === true) {
+  //     logoRef.style.visibility = 'hidden';
+  //   } else {
+  //     logoRef.style.visibility = 'visible';
+  //   }
+  // };
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => _reach_router__WEBPACK_IMPORTED_MODULE_2__["globalHistory"].listen(({
     action
   }) => {
@@ -39087,26 +39105,25 @@ function Header() {
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "inner-header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "headerLogo"
+    className: "menuHome"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "headerLogo",
+    ref: el => logoRef = el
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "logoNav",
     to: "/"
-  }, "Mary John Frank")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "M\xB7J\xB7F")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navMenu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     disabled: disabled,
     className: "btnMenu",
     type: "button",
     onClick: handleMenu
-  }, state.menuName)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, state.menuName))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
     state: state
-  })))));
+  })));
 }
 
 /***/ }),
@@ -39200,9 +39217,7 @@ __webpack_require__.r(__webpack_exports__);
 function Nav() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 }
 
 /***/ }),
@@ -39251,7 +39266,7 @@ function ProjectGrid({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "imageGrid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    fixed: project.image.asset.fixed,
+    fluid: project.image.asset.fluid,
     alt: project.name
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "textImages textImages--blur"
@@ -39332,12 +39347,9 @@ var _public_page_data_sq_d_3398029838_json__WEBPACK_IMPORTED_MODULE_0___namespac
 
 
 
-const TagsContainer = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
-  displayName: "TagFilter__TagsContainer"
-})(["max-width:900px;margin-right:auto;margin-left:auto;"]);
 const TagStyles = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "TagFilter__TagStyles"
-})(["display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:4rem;text-align:center;a{display:grid;grid-template-columns:auto 1fr;grid-gap:0 1rem;align-items:center;padding:5px;font-size:14px;background:grey;border-radius:2px;.tagCount{background:white;padding:2px 5px;}.active{background:pink;}}"]);
+})(["display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:4rem;text-align:center;a{display:grid;grid-template-columns:auto 1fr;grid-gap:0 1rem;align-items:center;padding:5px;font-size:14px;cursor:pointer;&[aria-current='page']{border-bottom:2px solid pink;}&:hover{color:white;}}"]);
 
 function countProjectsInTags(projects) {
   const counts = projects.map(project => project.tags).flat().reduce((acc, tag) => {
@@ -39359,19 +39371,29 @@ function countProjectsInTags(projects) {
   return sortedTags;
 }
 
-function TagFilter() {
+function TagFilter({
+  activeTag
+}) {
   const {
     projects
   } = _public_page_data_sq_d_3398029838_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const tagsWithCounts = countProjectsInTags(projects.nodes);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TagsContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TagStyles, null, tagsWithCounts.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+    className: "pageTitle"
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TagStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/projects"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+    className: "tagName"
+  }, "All")), tagsWithCounts.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: `/tags/${tag.name}`,
     key: tag.id
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
     className: "tagName"
-  }, tag.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-    className: "tagCount"
-  }, tag.count)))));
+  }, tag.name))))));
 }
 
 /***/ }),
@@ -39434,14 +39456,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ProjectsPage({
-  data
+  data,
+  pageContext
 }) {
   const projects = data.projects.nodes;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ProjectsList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TagFilter__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    activeTag: pageContext.tag
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ProjectsList__WEBPACK_IMPORTED_MODULE_1__["default"], {
     projects: projects
   }));
 }
-const projectQuery = "3013726378";
+const projectQuery = "3840969198";
 
 /***/ }),
 

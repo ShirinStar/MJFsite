@@ -5,29 +5,32 @@
        url("/fonts/Sk-Modernist/Sk-Modernist-Bold.otf") format("otf");
 }
 
-/* .gridCointaner {
+.gridCointaner {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 10rem;
-} */
+}
 
 .heroImage { 
-  display: inline-block;
+  /* display: inline-block; */
   padding: 0;
   margin: 0;
-  margin-left: 2.5px;
-  margin-right: 2.5px;
+  /* margin-left: 2.5px;
+  margin-right: 2.5px; */
 } 
 
 .imageContainer {
- position: relative;
- width: 450px;
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
+ /* width: 450px; */
 }
 
 .imageGrid {
-  display: block;
-  width: 100%;
+  object-fit: cover;
+  max-height: 100%;
+  min-width: 100%;
 }
 
 .textImages {
@@ -35,7 +38,7 @@
   top:0;
   left: 0;
   width: 100%;
-  height: 98%;
+  height: 99%;
   background-color: rgba(0, 0, 0, 0.6);
   font-family: 'Modernist', 'Roboto', sans-serif;
   color: #E5E3DC;
