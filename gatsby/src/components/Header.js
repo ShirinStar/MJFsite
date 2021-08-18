@@ -4,11 +4,13 @@ import { globalHistory } from '@reach/router';
 import Humburger from './Hamburger.js';
 
 export default function Header() {
-  let logoRef = useRef(null);
+  let btnRef = useRef(null);
+  let circle = useRef(null);
+
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: 'Menu',
+    menuName: '☰',
   });
   const [disabled, setDisabled] = useState(false);
   const [logoPressed, setLogoPressed] = useState(false);
@@ -34,7 +36,7 @@ export default function Header() {
         if (action === 'PUSH')
           setState({
             clicked: false,
-            menuName: 'Menu',
+            menuName: '☰',
           });
       }),
     [setState]
@@ -53,18 +55,27 @@ export default function Header() {
       setState({
         initial: null,
         clicked: true,
-        menuName: 'Close',
+        menuName: 'X',
       });
+      btnRef.style.color = 'white';
+      btnRef.style.transform = 'scale(1.3)';
+      circle.style.filter = 'invert(1)';
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: 'Menu',
+        menuName: '☰',
       });
+      btnRef.style.color = 'black';
+      circle.style.filter = 'invert(0)';
+      btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: 'Close',
+        menuName: 'X',
       });
+      btnRef.style.color = 'white';
+      circle.style.filter = 'invert(1)';
+      btnRef.style.transform = 'scale(1.3)';
     }
   };
 
@@ -72,13 +83,15 @@ export default function Header() {
     <header>
       <div className="inner-header">
         <div className="menuHome">
-          <div className="headerLogo" ref={(el) => (logoRef = el)}>
+          <div className="headerLogo">
             <Link className="logoNav" to="/">
               M·J·F
             </Link>
           </div>
           <div className="navMenu">
+            <div className="circle1" ref={(el) => (circle = el)} />
             <button
+              ref={(el) => (btnRef = el)}
               disabled={disabled}
               className="btnMenu"
               type="button"

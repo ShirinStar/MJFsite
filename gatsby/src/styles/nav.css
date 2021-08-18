@@ -14,6 +14,7 @@
 header {
   height: 100px;
   font-family: 'Roboto', sans-serif;
+  padding-top: 10px;
 }
 
 .menuHome {
@@ -49,13 +50,42 @@ header {
   letter-spacing: 2px;
 }
 
+.circle1 {
+  background-image: url('../assets/images/circle.png');
+  display: block;
+  background-repeat:no-repeat;
+  background-size:contain;
+  padding: 55px;
+  background-color: transparent;
+  animation: rotation 2s infinite linear;
+  position: relative;
+  z-index: -10;
+}
+
+
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
 .btnMenu {
   border: none;
   background: none;
   outline: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3rem;
   color: black;
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 2%;
+}
+
+.btnMenu:hover {
+  color: white;
 }
 
 .hamburger-menu {
@@ -162,6 +192,11 @@ li {
   .humSocialLinks {
     width: 150px;
   }
+
+  .btnMenu {
+    margin-top: -10%;
+    margin-left: 3%;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1400px) {
@@ -171,4 +206,36 @@ li {
     width: 400px;
     padding-left: 40px;
   }
+  .btnMenu {
+    margin-top: -9%;
+    margin-left: 3%;
+  }
  }
+
+ @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .btnMenu {
+    margin-top: -6%;
+    margin-left: 2%;
+  }
+ }
+
+ @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .btnMenu {
+    margin-top: -7%;
+    margin-left: 2%;
+  }
+ }
+
+ @media only screen and (min-width: 600px) and (max-width: 715px) {
+  .btnMenu {
+    margin-top: -12%;
+    margin-left: 4%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .btnMenu {
+    margin-top: -15%;
+    margin-left: 5%;
+  }
+}
