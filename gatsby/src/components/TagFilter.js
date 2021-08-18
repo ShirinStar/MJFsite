@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
@@ -48,7 +48,6 @@ function countProjectsInTags(projects) {
 
 function getTagsWithShowOnSite(projects) {
   const tags = {};
-
   projects.forEach((project) => {
     if (project.showOnSite) {
       project.tags.forEach((tag) => (tags[tag.id] = tag));
@@ -73,7 +72,6 @@ export default function TagFilter({ activeTag }) {
   `);
 
   const tagsWithCounts = countProjectsInTags(projects.nodes);
-
   const tagsToShow = getTagsWithShowOnSite(projects.nodes);
 
   return (
