@@ -2,10 +2,12 @@ import { Link } from 'gatsby';
 import React from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
+import SEO from './SEO';
 
 export default function ProjectGrid({ project }) {
   return (
     <>
+      <SEO title="Projects" image={project.image?.asset?.fluid?.src} />
       <div className="imageContainer">
         <Link to={`/project/${project.slug.current}`}>
           <div className="imageGrid">

@@ -2,6 +2,9 @@ var plugins = [{
       plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
     },{
+      plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-source-sanity/gatsby-ssr'),
       options: {"plugins":[],"projectId":"yzzh7fu1","dataset":"production","watchMode":true,"token":"skiQzUE3qQsVtUxow6FF6xWQ3BwhBB0vZgXx784HE46uF7wzQEPfsS0QWHUrqfLImfJFzbIoDvSpV93mTUb0fMCnOD65mhTF6nKLFWONBs3vlthW6FOQK6rTK5JBBIRcrXkwX63wQ6MGlsBxzS8Uv63huPkBpKCNKekQz5iQeeK0Z0RqwhqA"},
     },{

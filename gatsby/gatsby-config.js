@@ -8,9 +8,11 @@ export default {
     siteUrl: 'http://www.maryjohnfrank.com/',
     description:
       'Mary John Frank is a New York-based choreographer and filmmaker',
+    instagram: '/maryjohnfrank/',
   },
   plugins: [
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
       options: {

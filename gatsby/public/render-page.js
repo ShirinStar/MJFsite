@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
+		module.exports = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js", "fs", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js", "path", "react", "react-dom/server"], factory);
+		define("lib", ["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js", "fs", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js", "/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js", "path", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
+		exports["lib"] = factory(require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"), require("/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"], root["fs"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"], root["path"], root["react"], root["react-dom/server"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_concat__, __WEBPACK_EXTERNAL_MODULE_lodash_flatten__, __WEBPACK_EXTERNAL_MODULE_lodash_get__, __WEBPACK_EXTERNAL_MODULE_lodash_isObject__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__) {
+		root["lib"] = factory(root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/@reach/router/index.js"], root["fs"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/concat.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/flatten.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/get.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/isObject.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/merge.js"], root["/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/lodash/uniqBy.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_concat__, __WEBPACK_EXTERNAL_MODULE_lodash_flatten__, __WEBPACK_EXTERNAL_MODULE_lodash_get__, __WEBPACK_EXTERNAL_MODULE_lodash_isObject__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -111,10 +111,9 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
-  "component---src-pages-about-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
-  "component---src-pages-press-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/press.js */ "./src/pages/press.js"))),
-  "component---src-pages-projects-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js")))
+  "component---src-pages-projects-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js"))),
+  "component---src-templates-project-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/Project.js */ "./src/templates/Project.js")))
   }
 
 
@@ -138,6 +137,11 @@ var plugins = [{
     "namespace": "",
     "transpileTemplateLiterals": true,
     "pure": false
+  }
+}, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
+  options: {
+    "plugins": []
   }
 }, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-source-sanity/gatsby-ssr */ "./node_modules/gatsby-source-sanity/gatsby-ssr.js"),
@@ -5913,6 +5917,44 @@ function parsePath(path) {
 
 /***/ }),
 
+/***/ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.onRenderBody = void 0;
+
+var _reactHelmet = __webpack_require__(/*! react-helmet */ "react-helmet");
+
+var onRenderBody = function onRenderBody(_ref) {
+  var setHeadComponents = _ref.setHeadComponents,
+      setHtmlAttributes = _ref.setHtmlAttributes,
+      setBodyAttributes = _ref.setBodyAttributes;
+
+  var helmet = _reactHelmet.Helmet.renderStatic(); // These action functions were added partway through the Gatsby 1.x cycle.
+
+
+  if (setHtmlAttributes) {
+    setHtmlAttributes(helmet.htmlAttributes.toComponent());
+  }
+
+  if (setBodyAttributes) {
+    setBodyAttributes(helmet.bodyAttributes.toComponent());
+  }
+
+  setHeadComponents([helmet.title.toComponent(), helmet.link.toComponent(), helmet.meta.toComponent(), helmet.noscript.toComponent(), helmet.script.toComponent(), helmet.style.toComponent(), helmet.base.toComponent()]);
+};
+
+exports.onRenderBody = onRenderBody;
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-plugin-styled-components/gatsby-ssr.js":
 /*!********************************************************************!*\
   !*** ./node_modules/gatsby-plugin-styled-components/gatsby-ssr.js ***!
@@ -6616,6 +6658,356 @@ function _typeof(obj) {
 
 module.exports = _typeof;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/get-video-id/dist/get-video-id.esm.js":
+/*!************************************************************!*\
+  !*** ./node_modules/get-video-id/dist/get-video-id.esm.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var getSrc = function (input) {
+	if (typeof input !== 'string') {
+		throw new TypeError('get-src expected a string');
+	}
+	var re = /src="(.*?)"/gm;
+	var url = re.exec(input);
+
+	if (url && url.length >= 2) {
+		return url[1];
+	}
+};
+
+/**
+ * Strip away any parameters following `?` or `/` or '&'
+ * @param str
+ * @returns {String}
+ */
+function stripParameters(str) {
+  // Split parameters or split folder separator
+  if (str.indexOf('?') > -1) {
+    return str.split('?')[0];
+  }
+
+  if (str.indexOf('/') > -1) {
+    return str.split('/')[0];
+  }
+
+  if (str.indexOf('&') > -1) {
+    return str.split('&')[0];
+  }
+
+  return str;
+}
+
+/**
+ * Get the Youtube Video id.
+ * @param {string} youtubeStr - the url from which you want to extract the id
+ * @returns {string|undefined}
+ */
+
+function youtube(youtubeStr) {
+  var str = youtubeStr; // remove time hash at the end of the string
+
+  str = str.replace(/#t=.*$/, ''); // shortcode
+
+  var shortcode = /youtube:\/\/|https?:\/\/youtu\.be\/|http:\/\/y2u\.be\//g;
+
+  if (shortcode.test(str)) {
+    var shortcodeid = str.split(shortcode)[1];
+    return stripParameters(shortcodeid);
+  } // /v/ or /vi/
+
+
+  var inlinev = /\/v\/|\/vi\//g;
+
+  if (inlinev.test(str)) {
+    var inlineid = str.split(inlinev)[1];
+    return stripParameters(inlineid);
+  } // v= or vi=
+
+
+  var parameterv = /v=|vi=/g;
+
+  if (parameterv.test(str)) {
+    var arr = str.split(parameterv);
+    return stripParameters(arr[1].split('&')[0]);
+  } // v= or vi=
+
+
+  var parameterwebp = /\/an_webp\//g;
+
+  if (parameterwebp.test(str)) {
+    var webp = str.split(parameterwebp)[1];
+    return stripParameters(webp);
+  } // embed
+
+
+  var embedreg = /\/embed\//g;
+
+  if (embedreg.test(str)) {
+    var embedid = str.split(embedreg)[1];
+    return stripParameters(embedid);
+  } // ignore /user/username pattern
+
+
+  var usernamereg = /\/user\/([a-zA-Z0-9]*)$/g;
+
+  if (usernamereg.test(str)) {
+    return undefined;
+  } // user
+
+
+  var userreg = /\/user\/(?!.*videos)/g;
+
+  if (userreg.test(str)) {
+    var elements = str.split('/');
+    return stripParameters(elements.pop());
+  } // attribution_link
+
+
+  var attrreg = /\/attribution_link\?.*v%3D([^%&]*)(%26|&|$)/;
+
+  if (attrreg.test(str)) {
+    return stripParameters(str.match(attrreg)[1]);
+  }
+
+  return undefined;
+}
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+/**
+ * Get the vimeo id.
+ * @param {string} vimeoStr - the url from which you want to extract the id
+ * @returns {string|undefined}
+ */
+function vimeo(vimeoStr) {
+  var str = vimeoStr;
+
+  if (str.indexOf('#') > -1) {
+    var _str$split = str.split('#');
+
+    var _str$split2 = _slicedToArray(_str$split, 1);
+
+    str = _str$split2[0];
+  }
+
+  if (str.indexOf('?') > -1 && str.indexOf('clip_id=') === -1) {
+    var _str$split3 = str.split('?');
+
+    var _str$split4 = _slicedToArray(_str$split3, 1);
+
+    str = _str$split4[0];
+  }
+
+  var id;
+  var arr;
+  var primary = /https?:\/\/vimeo\.com\/([0-9]+)/;
+  var matches = primary.exec(str);
+
+  if (matches && matches[1]) {
+    return matches[1];
+  }
+
+  var vimeoPipe = ['https?://player.vimeo.com/video/[0-9]+$', 'https?://vimeo.com/channels', 'groups', 'album'].join('|');
+  var vimeoRegex = new RegExp(vimeoPipe, 'gim');
+
+  if (vimeoRegex.test(str)) {
+    arr = str.split('/');
+
+    if (arr && arr.length) {
+      id = arr.pop();
+    }
+  } else if (/clip_id=/gim.test(str)) {
+    arr = str.split('clip_id=');
+
+    if (arr && arr.length) {
+      var _arr$1$split = arr[1].split('&');
+
+      var _arr$1$split2 = _slicedToArray(_arr$1$split, 1);
+
+      id = _arr$1$split2[0];
+    }
+  }
+
+  return id;
+}
+
+/**
+ * Get the vine id.
+ * @param {string} str - the url from which you want to extract the id
+ * @returns {string|undefined}
+ */
+function vine(str) {
+  var regex = /https:\/\/vine\.co\/v\/([a-zA-Z0-9]*)\/?/;
+  var matches = regex.exec(str);
+  return matches && matches[1];
+}
+
+/**
+ * Get the VideoPress id.
+ * @param {string} str - the url from which you want to extract the id
+ * @returns {string|undefined}
+ */
+function videopress(str) {
+  var idRegex;
+
+  if (str.indexOf('embed') > -1) {
+    idRegex = /embed\/(\w{8})/;
+    return str.match(idRegex)[1];
+  }
+
+  idRegex = /\/v\/(\w{8})/;
+  var match = str.match(idRegex);
+
+  if (match && match.length > 0) {
+    return str.match(idRegex)[1];
+  }
+
+  return undefined;
+}
+
+/**
+ * Get the Microsoft Stream id.
+ * @param {string} str - the url from which you want to extract the id
+ * @returns {string|undefined}
+ */
+function microsoftStream(str) {
+  var regex = str.indexOf('embed') > -1 ? /https:\/\/web\.microsoftstream\.com\/embed\/video\/([a-zA-Z0-9-]*)\/?/ : /https:\/\/web\.microsoftstream\.com\/video\/([a-zA-Z0-9-]*)\/?/;
+  var matches = regex.exec(str);
+  return matches && matches[1];
+}
+
+/**
+ * Get the id and service from a video url.
+ * @param {String} videoStr - the url from which you want to extract the id
+ * @returns {Object}
+ */
+
+function getVideoId(videoStr) {
+  if (typeof videoStr !== 'string') {
+    throw new TypeError('get-video-id expects a string');
+  }
+
+  var str = videoStr;
+
+  if (/<iframe/gi.test(str)) {
+    str = getSrc(str);
+  } // remove surrounding whitespaces or linefeeds
+
+
+  str = str.trim(); // remove the '-nocookie' flag from youtube urls
+
+  str = str.replace('-nocookie', ''); // remove any leading `www.`
+
+  str = str.replace('/www.', '/');
+  var metadata = {
+    id: null,
+    service: null
+  }; // Try to handle google redirection uri
+
+  if (/\/\/google/.test(str)) {
+    // Find the redirection uri
+    var matches = str.match(/url=([^&]+)&/); // Decode the found uri and replace current url string - continue with final link
+
+    if (matches) {
+      // JavaScript can get encoded URI
+      str = decodeURIComponent(matches[1]);
+    }
+  }
+
+  if (/youtube|youtu\.be|y2u\.be|i.ytimg\./.test(str)) {
+    metadata = {
+      id: youtube(str),
+      service: 'youtube'
+    };
+  } else if (/vimeo/.test(str)) {
+    metadata = {
+      id: vimeo(str),
+      service: 'vimeo'
+    };
+  } else if (/vine/.test(str)) {
+    metadata = {
+      id: vine(str),
+      service: 'vine'
+    };
+  } else if (/videopress/.test(str)) {
+    metadata = {
+      id: videopress(str),
+      service: 'videopress'
+    };
+  } else if (/microsoftstream/.test(str)) {
+    metadata = {
+      id: microsoftStream(str),
+      service: 'microsoftstream'
+    };
+  }
+
+  return metadata;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (getVideoId);
+//# sourceMappingURL=get-video-id.esm.js.map
+
 
 /***/ }),
 
@@ -40434,6 +40826,17 @@ function y(){return(y=Object.assign||function(e){for(var t=1;t<arguments.length;
 
 /***/ }),
 
+/***/ "./public/page-data/sq/d/3000541721.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3000541721.json ***!
+  \***********************************************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"Mary John Frank\",\"description\":\"Mary John Frank is a New York-based choreographer and filmmaker\"}}}}");
+
+/***/ }),
+
 /***/ "./public/page-data/sq/d/3398029838.json":
 /*!***********************************************!*\
   !*** ./public/page-data/sq/d/3398029838.json ***!
@@ -40853,88 +41256,6 @@ function Nav() {
 
 /***/ }),
 
-/***/ "./src/components/PressGrid.js":
-/*!*************************************!*\
-  !*** ./src/components/PressGrid.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PressGrid; });
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-
-
-
-
-const PressStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
-  displayName: "PressGrid__PressStyle"
-})(["display:grid;@supports not (grid-template-rows:subgrid){grid-template-rows:auto auto;}grid-template-rows:subgrid;column-gap:10px;row-gap:10px;justify-content:center;align-items:center;text-align:center;h2,p{margin:0;}.gatsby-image-wrapper{object-fit:contain;box-shadow:1px 1px 8px 4px rgba(225,112,52,0.1);}"]);
-function PressGrid({
-  press
-}) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PressStyle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: press.pressLink
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    fixed: press.image.asset.fixed,
-    alt: press.name
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "pressInfo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, press.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, press.year)));
-}
-
-/***/ }),
-
-/***/ "./src/components/PressList.js":
-/*!*************************************!*\
-  !*** ./src/components/PressList.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectsList; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _PressGrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PressGrid */ "./src/components/PressGrid.js");
-
-
-
-const PressGridStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "PressList__PressGridStyle"
-})(["display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6rem;"]); // const PressGridCointainer = styled.div`
-//   max-width: 900px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 10rem;
-//   align-items: center;
-// `;
-
-function ProjectsList({
-  presses
-}) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "pageTitle"
-  }, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PressGridStyle, null, presses.map(press => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PressGrid__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    key: press.id,
-    press: press
-  }))))));
-}
-
-/***/ }),
-
 /***/ "./src/components/ProjectGrid.js":
 /*!***************************************!*\
   !*** ./src/components/ProjectGrid.js ***!
@@ -40951,6 +41272,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
 /* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _SEO__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SEO */ "./src/components/SEO.js");
+
 
 
 
@@ -41026,6 +41349,67 @@ function ProjectsList({
 
 /***/ }),
 
+/***/ "./src/components/SEO.js":
+/*!*******************************!*\
+  !*** ./src/components/SEO.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SEO; });
+/* harmony import */ var _public_page_data_sq_d_3000541721_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3000541721.json */ "./public/page-data/sq/d/3000541721.json");
+var _public_page_data_sq_d_3000541721_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/3000541721.json */ "./public/page-data/sq/d/3000541721.json", 1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ "react-helmet");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function SEO({
+  children,
+  location,
+  description,
+  title,
+  image
+}) {
+  const {
+    site
+  } = _public_page_data_sq_d_3000541721_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2__["Helmet"], {
+    titleTemplate: `%s - ${site.siteMetadata.title}`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("html", {
+    lang: "en"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    charSet: "utf-8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    name: "description",
+    content: site.siteMetadata.descriptions
+  }), location && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    property: "og:url",
+    content: location.href
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    property: "og:image",
+    content: image
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    property: "og:title",
+    content: title,
+    key: "ogtitle"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    property: "og:site_name",
+    content: site.siteMetadata.title,
+    key: "ogsitename"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    property: "og:description",
+    content: description,
+    key: "ogdesc"
+  }), children);
+}
+
+/***/ }),
+
 /***/ "./src/components/TagFilter.js":
 /*!*************************************!*\
   !*** ./src/components/TagFilter.js ***!
@@ -41097,6 +41481,64 @@ function TagFilter({
 
 /***/ }),
 
+/***/ "./src/components/VideoEmbed.js":
+/*!**************************************!*\
+  !*** ./src/components/VideoEmbed.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return VideoEmbed; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var get_video_id__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! get-video-id */ "./node_modules/get-video-id/dist/get-video-id.esm.js");
+
+
+function VideoEmbed({
+  project
+}) {
+  const {
+    id
+  } = Object(get_video_id__WEBPACK_IMPORTED_MODULE_1__["default"])(project.videoLink);
+  const {
+    service
+  } = Object(get_video_id__WEBPACK_IMPORTED_MODULE_1__["default"])(project.videoLink);
+  const vimeoEmbedUrl = `https://player.vimeo.com/video/${id}`;
+  const youtubeEmbedUrl = `https://www.youtube.com/embed/${id}`;
+  const responsiveVideoContainer = {
+    padding: '56.25% 0 0 0',
+    position: 'relative'
+  };
+  const responsiveVideoPlayer = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%'
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, service === 'vimeo' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: responsiveVideoContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    src: vimeoEmbedUrl,
+    style: responsiveVideoPlayer,
+    frameBorder: "0",
+    allow: "autoplay; fullscreen",
+    allowFullScreen: true
+  })) : '', service === 'youtube' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: responsiveVideoContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    src: youtubeEmbedUrl,
+    style: responsiveVideoPlayer,
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true
+  })) : '');
+}
+
+/***/ }),
+
 /***/ "./src/pages/404.js":
 /*!**************************!*\
   !*** ./src/pages/404.js ***!
@@ -41116,68 +41558,6 @@ function FourOFourPage() {
 
 /***/ }),
 
-/***/ "./src/pages/about.js":
-/*!****************************!*\
-  !*** ./src/pages/about.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AboutPage; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
-/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-const serializers = {
-  marks: {
-    link: ({
-      children,
-      mark
-    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "bodyTextLinks",
-      href: mark.href,
-      target: "_blank",
-      rel: "noopener noreferrer"
-    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "bodyTextLinks",
-      href: mark.href
-    }, children)
-  }
-};
-function AboutPage({
-  data
-}) {
-  const about = data.about.nodes;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "pageTitle"
-  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "aboutDiv"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "imgAbout",
-    src: about[0].image.asset.url,
-    alt: about[0].name
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "aboutText"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    blocks: about[0]._rawBodyPortableText,
-    serializers: serializers
-  })))));
-}
-const aboutQuery = "3200291010";
-
-/***/ }),
-
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
@@ -41193,6 +41573,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function HomePage() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tagLine"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     "data-text": "Mary John Frank",
@@ -41201,35 +41583,8 @@ function HomePage() {
     className: "titleSpan"
   }, " Mary John Frank")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "logline"
-  }, "Director \xB7 Choreographer \xB7 Filmmaker"));
+  }, "Director \xB7 Choreographer \xB7 Filmmaker")));
 }
-
-/***/ }),
-
-/***/ "./src/pages/press.js":
-/*!****************************!*\
-  !*** ./src/pages/press.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PressPage; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_PressList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/PressList */ "./src/components/PressList.js");
-
-
-function PressPage({
-  data
-}) {
-  const presses = data.press.nodes;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PressList__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    presses: presses
-  }));
-}
-const pressQuery = "1264541287";
 
 /***/ }),
 
@@ -41328,6 +41683,72 @@ const projectQuery = "3840969198";
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ "./src/templates/Project.js":
+/*!**********************************!*\
+  !*** ./src/templates/Project.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SingleProjectPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_VideoEmbed__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/VideoEmbed */ "./src/components/VideoEmbed.js");
+
+
+
+const serializers = {
+  marks: {
+    link: ({
+      children,
+      mark
+    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks",
+      href: mark.href,
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks",
+      href: mark.href
+    }, children)
+  }
+};
+function SingleProjectPage({
+  data
+}) {
+  const {
+    project
+  } = data;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "projectMain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "projectHeader"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "projectTitle"
+  }, project.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, project.tagline, " | ", project.year)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoEmbed__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    project: project
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "descriptionDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    blocks: project._rawBodyPortableText,
+    serializers: serializers
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "featureDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "featureP"
+  }, "Featured: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    blocks: project._rawFeaturePortableText,
+    serializers: serializers
+  })));
+}
+const projectQuery = "466222974";
 
 /***/ }),
 
@@ -41449,6 +41870,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_react_dom_server__;
+
+/***/ }),
+
+/***/ "react-helmet":
+/*!*******************************!*\
+  !*** external "react-helmet" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_react_helmet__;
 
 /***/ }),
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PressGrid from './PressGrid';
+import SEO from './SEO';
 
 const PressGridStyle = styled.div`
   display: grid;
@@ -19,17 +20,20 @@ const PressGridStyle = styled.div`
 
 export default function ProjectsList({ presses }) {
   return (
-    <div className="container">
-      <div className="wrapper">
-        <h2 className="pageTitle">Press</h2>
-        <PressGridStyle>
-          {presses.map((press) => (
-            <div>
-              <PressGrid key={press.id} press={press} />
-            </div>
-          ))}
-        </PressGridStyle>
+    <>
+      <SEO title="Press" />
+      <div className="container">
+        <div className="wrapper">
+          <h2 className="pageTitle">Press</h2>
+          <PressGridStyle>
+            {presses.map((press) => (
+              <div>
+                <PressGrid key={press.id} press={press} />
+              </div>
+            ))}
+          </PressGridStyle>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

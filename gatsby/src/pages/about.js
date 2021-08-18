@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import Img from 'gatsby-image';
+import SEO from '../components/SEO';
 
 const serializers = {
   marks: {
@@ -27,26 +28,29 @@ export default function AboutPage({ data }) {
   const about = data.about.nodes;
 
   return (
-    <div className="container">
-      <div className="wrapper">
-        <h2 className="pageTitle">About</h2>
+    <>
+      <SEO title="About" image={about[0].image?.asset?.fluid?.src} />
+      <div className="container">
+        <div className="wrapper">
+          <h2 className="pageTitle">About</h2>
 
-        <div className="aboutDiv">
-          <img
-            className="imgAbout"
-            src={about[0].image.asset.url}
-            alt={about[0].name}
-          />
-          {/* <Img fixed={about[0].image.asset.fixed} alt={about[0].name} /> */}
-          <div className="aboutText">
-            <PortableText
-              blocks={about[0]._rawBodyPortableText}
-              serializers={serializers}
+          <div className="aboutDiv">
+            <img
+              className="imgAbout"
+              src={about[0].image.asset.url}
+              alt={about[0].name}
             />
+            {/* <Img fixed={about[0].image.asset.fixed} alt={about[0].name} /> */}
+            <div className="aboutText">
+              <PortableText
+                blocks={about[0]._rawBodyPortableText}
+                serializers={serializers}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
