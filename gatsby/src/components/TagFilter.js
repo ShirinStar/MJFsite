@@ -1,5 +1,5 @@
+import React, { useEffect } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import React from 'react';
 import styled from 'styled-components';
 
 const TagStyles = styled.div`
@@ -46,11 +46,23 @@ function countProjectsInTags(projects) {
   return sortedTags;
 }
 
+function getTagsWithShowOnSite(projects) {
+  const tags = {};
+
+  projects.forEach((project) => {
+    if (project.showOnSite) {
+      project.tags.forEach((tag) => (tags[tag.id] = tag));
+    }
+  });
+  return Object.values(tags);
+}
+
 export default function TagFilter({ activeTag }) {
   const { projects } = useStaticQuery(graphql`
     query {
       projects: allSanitySingleProject {
         nodes {
+          showOnSite
           tags {
             name
             id
@@ -62,6 +74,8 @@ export default function TagFilter({ activeTag }) {
 
   const tagsWithCounts = countProjectsInTags(projects.nodes);
 
+  const tagsToShow = getTagsWithShowOnSite(projects.nodes);
+
   return (
     <div className="container">
       <div className="wrapper">
@@ -70,7 +84,7 @@ export default function TagFilter({ activeTag }) {
           <Link to="/projects">
             <span className="tagName">All</span>
           </Link>
-          {tagsWithCounts.map((tag) => (
+          {tagsToShow.map((tag) => (
             <Link to={`/tags/${tag.name}`} key={tag.id}>
               <span className="tagName">{tag.name}</span>
             </Link>
