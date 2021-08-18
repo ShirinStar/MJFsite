@@ -1,17 +1,21 @@
 .tagLine {
   text-align: left;
-  margin-top: 300px;
+  margin-top: 350px;
   padding-left: 20px;
   max-width: 800px;
 }
 
 .homeName {
-  font-size: 120px;
+  font-size: 10rem;
   padding-bottom: 0;
   margin-bottom: 0;
-  /* -webkit-text-stroke: 1.5px black; */
   color: transparent;
   position: relative;
+}
+
+.titleSpan {
+  position: absolute;
+  -webkit-text-stroke: 1.5px black;
 }
 
 .homeName:before {
@@ -42,49 +46,62 @@
 }
 
 .logline {
-  font-size: 48px;
+  font-size: 4rem;
+  margin-top: 8%;
+  position: absolute;
 }
 
 
-@media screen and (max-width: 600px) {  
+
+@media only screen and (max-width: 370px) {
   .tagLine {
+    padding-left: 10px;
     margin-top: 250px;
-    padding-left: 10px;
   }
 
   .homeName {
-    font-size: 40px;
-  }
-  .logline {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 800px) {
-  .tagLine {
-    margin-top: 350px;
-    padding-left: 10px;
-  }
-
-  .homeName {
-    font-size: 72px;
+    font-size: 3.2rem;
   }
 
   .logline {
-    font-size: 28px;
+    font-size: 1.4rem;
     }
   }
 
-@media only screen and (min-width: 800px) and (max-width: 1400px) {
+@media screen and (max-width: 600px) {  
   .tagLine {
+    padding-left: 10px;
     margin-top: 300px;
   }
 
   .homeName {
-    font-size: 84px;
+    font-size: 4rem;
   }
 
   .logline {
-    font-size: 38px;
-  }
+    font-size: 1.6rem;
+    margin-top: 15%;
+    }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .tagLine {
+    padding-left: 10px;
+  }
+
+  .homeName {
+    font-size: 7.5rem;
+  }
+
+  .logline {
+    font-size: 3rem;
+    margin-top: 15%;
+    }
+  }
+
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+  .logline {
+    margin-top: 12%;
+  } 
+}
+

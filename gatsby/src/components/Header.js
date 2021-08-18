@@ -30,6 +30,14 @@ export default function Header() {
   //   }
   // };
 
+  useEffect(() => {
+    if (state.menuName === '☰') {
+      circle.style.filter = 'invert(0)';
+      btnRef.style.transform = 'scale(1)';
+      btnRef.style.color = 'black';
+    }
+  });
+
   useEffect(
     () =>
       globalHistory.listen(({ action }) => {
