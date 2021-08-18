@@ -5,12 +5,10 @@ import 'normalize.css';
 
 export default function Layout({ children }) {
   return (
-    <div className="container">
-      <div className="wrapper">
-        <Nav />
-        {children}
-        <Footer />
-      </div>
-    </div>
+    <>
+      <Nav />
+      {children}
+      <Footer />
+    </>
   );
 }

@@ -21,10 +21,10 @@ export const pressQuery = graphql`
         year
         image {
           asset {
-            fixed(width: 450, height: 300) {
+            fixed(width: 220, height: 300) {
               ...GatsbySanityImageFixed
             }
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 300) {
               ...GatsbySanityImageFluid
             }
           }

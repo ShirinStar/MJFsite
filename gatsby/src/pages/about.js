@@ -32,9 +32,12 @@ export default function AboutPage({ data }) {
         <h2 className="pageTitle">About</h2>
 
         <div className="aboutDiv">
-          <div className="imgAbout">
-            <Img fixed={about[0].image.asset.fixed} alt={about[0].name} />
-          </div>
+          <img
+            className="imgAbout"
+            src={about[0].image.asset.url}
+            alt={about[0].name}
+          />
+          {/* <Img fixed={about[0].image.asset.fixed} alt={about[0].name} /> */}
           <div className="aboutText">
             <PortableText
               blocks={about[0]._rawBodyPortableText}
@@ -56,6 +59,7 @@ export const aboutQuery = graphql`
         _rawBodyPortableText
         image {
           asset {
+            url
             fixed(width: 350, height: 500) {
               ...GatsbySanityImageFixed
             }

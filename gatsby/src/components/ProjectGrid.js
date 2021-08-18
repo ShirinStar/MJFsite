@@ -3,20 +3,6 @@ import React from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
-// const ProjectStyle = styled.div`
-/* display: grid;
-  @supports not (grid-template-rows: subgrid) {
-    grid-template-rows: auto auto 1fr;
-  }
-  grid-template-rows: subgrid;
-  column-gap: 20px;
-  row-gap: 10px;
-  h2,
-  p {
-    margin: 0;
-  } */
-// `;
-
 export default function ProjectGrid({ project }) {
   return (
     <>

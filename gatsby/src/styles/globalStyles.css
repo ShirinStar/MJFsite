@@ -13,13 +13,15 @@
 
 html {
   font-size: 10px;
-  height: 100%;
+  height: 100vh;
 }
 
 body {
   font-size: 2rem;
   background-color: #E5E3DC;
   min-height: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* Hide scrollbar */
@@ -27,18 +29,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
 .container {
   max-width: 1280px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .wrapper {
-  padding: 0 48px
+  padding: 0 42px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .wrapper.imagesGrid {
@@ -61,6 +60,8 @@ p {
   font-weight: 600;
   font-size: 68px;
   text-align: left;
+  margin: 0;
+  padding: 20px 0;
 }
 
 button {
@@ -104,49 +105,35 @@ img {
 
 .pressInfo {
   display: flex;
-  justify-content: space-between;
-}
-
-.aboutCointainer {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10rem;
+  justify-content: space-around;
+  max-width: 200px;
   align-items: center;
-}
-
-.aboutDiv {
-  display: flex;
-  justify-content: center;
-}
-
-.aboutText {
-  max-width: 700px;
-  padding-left: 5rem;
-  text-align: left;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 40px;
   color: black;
   text-align: center;
   font-size: 12px;
   position: fixed;
-  /* margin-top: auto; */
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 800px) {
+@media only screen and (min-width: 300px) and (max-width: 700px) {
   .wrapper {
-    padding: 0 60px
+    padding: 0 48px
+  }
+
+  .pageTitle {
+    font-size: 42px;
   }
  }
 
  @media only screen and (min-width: 800px) and (max-width: 1040px) {
-  .wrapper {
-    padding: 0 84px
-  }
  }

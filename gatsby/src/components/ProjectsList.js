@@ -20,7 +20,7 @@ import ProjectGrid from './ProjectGrid';
 export default function ProjectsList({ projects }) {
   return (
     <div className="container">
-      <div className="wrapper imagesGrid">
+      <div className="wrapper">
         {projects
           .filter((project) => project.showOnSite)
           .sort((a, b) => b.year - a.year)
