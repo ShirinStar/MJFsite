@@ -40826,6 +40826,17 @@ function y(){return(y=Object.assign||function(e){for(var t=1;t<arguments.length;
 
 /***/ }),
 
+/***/ "./public/page-data/sq/d/2571418397.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/2571418397.json ***!
+  \***********************************************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"data\":{\"projects\":{\"nodes\":[{\"showOnSite\":true,\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\"}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Film\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\"}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Film\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\"}]},{\"showOnSite\":false,\"tags\":[{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\"},{\"name\":\"Live\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\"}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Film\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\"}]}]}}}");
+
+/***/ }),
+
 /***/ "./public/page-data/sq/d/3000541721.json":
 /*!***********************************************!*\
   !*** ./public/page-data/sq/d/3000541721.json ***!
@@ -40834,17 +40845,6 @@ function y(){return(y=Object.assign||function(e){for(var t=1;t<arguments.length;
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"Mary John Frank\",\"description\":\"Mary John Frank is a New York-based choreographer and filmmaker\"}}}}");
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/3398029838.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3398029838.json ***!
-  \***********************************************/
-/*! exports provided: data, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"data\":{\"projects\":{\"nodes\":[{\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\"}]},{\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"}]},{\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Film\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\"}]},{\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Film\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\"}]},{\"tags\":[{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\"},{\"name\":\"Live\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\"}]},{\"tags\":[{\"name\":\"Dance\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\"},{\"name\":\"Film\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\"}]}]}}}");
 
 /***/ }),
 
@@ -41281,7 +41281,12 @@ __webpack_require__.r(__webpack_exports__);
 function ProjectGrid({
   project
 }) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  var _project$image, _project$image$asset, _project$image$asset$;
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "Projects",
+    image: (_project$image = project.image) === null || _project$image === void 0 ? void 0 : (_project$image$asset = _project$image.asset) === null || _project$image$asset === void 0 ? void 0 : (_project$image$asset$ = _project$image$asset.fluid) === null || _project$image$asset$ === void 0 ? void 0 : _project$image$asset$.src
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "imageContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
     to: `/project/${project.slug.current}`
@@ -41392,7 +41397,7 @@ function SEO({
     content: location.href
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     property: "og:image",
-    content: image
+    content: image || '/MJF.png'
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     property: "og:title",
     content: title,
@@ -41420,11 +41425,11 @@ function SEO({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return TagFilter; });
-/* harmony import */ var _public_page_data_sq_d_3398029838_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3398029838.json */ "./public/page-data/sq/d/3398029838.json");
-var _public_page_data_sq_d_3398029838_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/3398029838.json */ "./public/page-data/sq/d/3398029838.json", 1);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _public_page_data_sq_d_2571418397_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/2571418397.json */ "./public/page-data/sq/d/2571418397.json");
+var _public_page_data_sq_d_2571418397_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/2571418397.json */ "./public/page-data/sq/d/2571418397.json", 1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 
 
@@ -41454,27 +41459,38 @@ function countProjectsInTags(projects) {
   return sortedTags;
 }
 
+function getTagsWithShowOnSite(projects) {
+  const tags = {};
+  projects.forEach(project => {
+    if (project.showOnSite) {
+      project.tags.forEach(tag => tags[tag.id] = tag);
+    }
+  });
+  return Object.values(tags);
+}
+
 function TagFilter({
   activeTag
 }) {
   const {
     projects
-  } = _public_page_data_sq_d_3398029838_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  } = _public_page_data_sq_d_2571418397_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const tagsWithCounts = countProjectsInTags(projects.nodes);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  const tagsToShow = getTagsWithShowOnSite(projects.nodes);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
     className: "pageTitle"
-  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TagStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TagStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/projects"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "tagName"
-  }, "All")), tagsWithCounts.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "All")), tagsToShow.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: `/tags/${tag.name}`,
     key: tag.id
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "tagName"
   }, tag.name))))));
 }
@@ -41570,9 +41586,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HomePage; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
+
 
 function HomePage() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: "\u273F"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tagLine"
@@ -41583,7 +41603,7 @@ function HomePage() {
     className: "titleSpan"
   }, " Mary John Frank")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "logline"
-  }, "Director \xB7 Choreographer \xB7 Filmmaker")));
+  }, "Director \xB7 Choreographer \xB7 Filmmaker"))));
 }
 
 /***/ }),
@@ -41610,8 +41630,10 @@ function ProjectsPage({
   pageContext
 }) {
   const projects = data.projects.nodes;
+  console.log('xxx', projects);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TagFilter__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    activeTag: pageContext.tag
+    activeTag: pageContext.tag,
+    projectsProp: projects
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ProjectsList__WEBPACK_IMPORTED_MODULE_1__["default"], {
     projects: projects
   }));
@@ -41739,14 +41761,14 @@ function SingleProjectPage({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default.a, {
     blocks: project._rawBodyPortableText,
     serializers: serializers
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), project._rawFeaturePortableText !== null ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "featureDiv"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "featureP"
   }, "Featured: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default.a, {
     blocks: project._rawFeaturePortableText,
     serializers: serializers
-  })));
+  })) : '');
 }
 const projectQuery = "466222974";
 
