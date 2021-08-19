@@ -27,7 +27,7 @@ const PressStyle = styled.div`
 export default function PressGrid({ press }) {
   return (
     <PressStyle>
-      <a href={press.pressLink}>
+      <a href={press.pressLink} target="_blank" rel="noreferrer">
         <Img fixed={press.image.asset.fixed} alt={press.name} />
       </a>
 

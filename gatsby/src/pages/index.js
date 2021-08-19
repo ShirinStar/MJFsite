@@ -7,8 +7,8 @@ export default function HomePage() {
       <SEO title="✿" />
       <div className="wrapper">
         <div className="tagLine">
-          <h1 data-text="Mary John Frank" className="homeName">
-            <span className="titleSpan"> Mary John Frank</span>
+          <h1 data-text="MARY JOHN FRANK" className="homeName">
+            <span className="titleSpan"> MARY JOHN FRANK </span>
           </h1>
           <h1 className="logline">Director · Choreographer · Filmmaker</h1>
         </div>

@@ -142,6 +142,7 @@ export default function Hamburger({ state }) {
                 </ul>
               </nav>
               <div ref={(el) => (humSocial = el)} className="humSocialLinks">
+                <Link to="/values">♡ Values ♡ </Link>
                 <p>Linkdin</p>
                 <p>Instagram</p>
               </div>

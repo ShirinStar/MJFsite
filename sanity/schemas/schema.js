@@ -9,6 +9,8 @@ import videoEmbed from './videoEmbed';
 import projectTag from './projectTag';
 import press from './press';
 import about from './about';
+import value1 from './value1';
+import value2 from './value2';
 import bodyPortableText from './bodyPortableText';
 
 export default createSchema({
@@ -23,5 +25,7 @@ export default createSchema({
     projectTag,
     press,
     about,
+    value1,
+    value2,
   ]),
 });

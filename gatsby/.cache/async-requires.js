@@ -8,6 +8,7 @@ exports.components = {
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-press-js": () => import("./../../../src/pages/press.js" /* webpackChunkName: "component---src-pages-press-js" */),
   "component---src-pages-projects-js": () => import("./../../../src/pages/projects.js" /* webpackChunkName: "component---src-pages-projects-js" */),
+  "component---src-pages-values-js": () => import("./../../../src/pages/values.js" /* webpackChunkName: "component---src-pages-values-js" */),
   "component---src-templates-project-js": () => import("./../../../src/templates/Project.js" /* webpackChunkName: "component---src-templates-project-js" */)
 }
 

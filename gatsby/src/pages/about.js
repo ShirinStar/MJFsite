@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import Img from 'gatsby-image';
 import SEO from '../components/SEO';
@@ -46,6 +46,7 @@ export default function AboutPage({ data }) {
                 blocks={about[0]._rawBodyPortableText}
                 serializers={serializers}
               />
+              <Link to="/values">Check out my values page.</Link>
             </div>
           </div>
         </div>
