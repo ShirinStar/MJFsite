@@ -22,6 +22,7 @@ export const projectQuery = graphql`
         name
         id
         year
+        setOrder
         tagline
         slug {
           current
