@@ -16,13 +16,13 @@ export default function ProjectsPage({ data, pageContext }) {
 export const projectQuery = graphql`
   query ProjectQuery($tag: [String]) {
     projects: allSanitySingleProject(
+      sort: { fields: order, order: ASC }
       filter: { tags: { elemMatch: { name: { in: $tag } } } }
     ) {
       nodes {
         name
         id
         year
-        setOrder
         tagline
         slug {
           current

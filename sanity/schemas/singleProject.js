@@ -26,21 +26,21 @@ export default {
       title: 'Show on site',
       type: 'boolean',
     },
-    {
-      name: 'setOrder',
-      title: 'Set order',
-      type: 'number',
-      options: {
-        list: [
-          { value: 1, title: 1 },
-          { value: 2, title: 2 },
-          { value: 3, title: 3 },
-          { value: 4, title: 4 },
-          { value: 5, title: 5 },
-          { value: 6, title: 6 },
-        ],
-      },
-    },
+    // {
+    //   name: 'setOrder',
+    //   title: 'Set order',
+    //   type: 'number',
+    //   options: {
+    //     list: [
+    //       { value: 1, title: 1 },
+    //       { value: 2, title: 2 },
+    //       { value: 3, title: 3 },
+    //       { value: 4, title: 4 },
+    //       { value: 5, title: 5 },
+    //       { value: 6, title: 6 },
+    //     ],
+    //   },
+    // },
     {
       name: 'tagline',
       title: 'Project tagline',
@@ -95,6 +95,13 @@ export default {
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'tag' }] }],
     },
+    // order documents plugin
+    {
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+      hidden: true,
+    },
     // {
     //   name: 'imageGalley',
     //   type: 'array',
@@ -108,6 +115,13 @@ export default {
     //     },
     //   ],
     // },
+  ],
+  orderings: [
+    {
+      title: 'Manual Order',
+      name: 'manualOrder',
+      by: [{ field: 'order', direction: 'asc' }],
+    },
   ],
   preview: {
     select: {

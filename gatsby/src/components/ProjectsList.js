@@ -23,7 +23,7 @@ export default function ProjectsList({ projects }) {
       <div className="wrapper">
         {projects
           .filter((project) => project.showOnSite)
-          .sort((a, b) => a.setOrder - b.setOrder)
+          // .sort((a, b) => a.setOrder - b.setOrder)
           .map((project) => (
             <div className="heroImage">
               <ProjectGrid key={project.id} project={project} />
