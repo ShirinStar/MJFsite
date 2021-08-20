@@ -39833,12 +39833,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function Footer() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 MJF ", new Date().getFullYear()))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 MJF ", new Date().getFullYear()));
 }
 
 /***/ }),
@@ -40159,7 +40155,7 @@ __webpack_require__.r(__webpack_exports__);
 function Layout({
   children
 }) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null), children);
 }
 
 /***/ }),
@@ -40331,9 +40327,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
 /* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _SEO__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SEO */ "./src/components/SEO.js");
-
+/* harmony import */ var _SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SEO */ "./src/components/SEO.js");
 
 
 
@@ -40343,7 +40337,7 @@ function ProjectGrid({
 }) {
   var _project$image, _project$image$asset, _project$image$asset$;
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SEO__WEBPACK_IMPORTED_MODULE_3__["default"], {
     title: "Projects",
     image: (_project$image = project.image) === null || _project$image === void 0 ? void 0 : (_project$image$asset = _project$image.asset) === null || _project$image$asset === void 0 ? void 0 : (_project$image$asset$ = _project$image$asset.fluid) === null || _project$image$asset$ === void 0 ? void 0 : _project$image$asset$.src
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -40379,7 +40373,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _ProjectGrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProjectGrid */ "./src/components/ProjectGrid.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
+/* harmony import */ var _ProjectGrid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProjectGrid */ "./src/components/ProjectGrid.js");
+
 
 
  // const ProjectGridStyle = styled.div`
@@ -40400,17 +40396,17 @@ __webpack_require__.r(__webpack_exports__);
 function ProjectsList({
   projects
 }) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrapper"
   }, projects.filter(project => project.showOnSite) // .sort((a, b) => a.setOrder - b.setOrder)
   .map(project => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "heroImage"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProjectGrid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProjectGrid__WEBPACK_IMPORTED_MODULE_3__["default"], {
     key: project.id,
     project: project
-  })))));
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 }
 
 /***/ }),
@@ -40590,6 +40586,7 @@ function SketchSinLine(p5) {
   let canvas;
   const frameNumber = 80;
   let x = 0;
+  let y = 0;
 
   p5.setup = () => {
     canvas = p5.createCanvas(1000, 400);
@@ -40599,9 +40596,10 @@ function SketchSinLine(p5) {
   p5.draw = () => {
     const timer = p5.float(2.5 * p5.frameCount / frameNumber);
     x += 2;
+    y = 100 + 30 * p5.sin(p5.PI * (timer / 3));
     p5.stroke(255);
     p5.strokeWeight(8);
-    p5.point(x, 100 + 30 * p5.sin(p5.PI * (timer / 3)));
+    p5.point(x, y);
   };
 }
 
@@ -40641,6 +40639,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
 /* harmony import */ var _components_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/loadable */ "./src/components/loadable.js");
 /* harmony import */ var _components_sketchSinLine__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/sketchSinLine */ "./src/components/sketchSinLine.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+
 
 
 
@@ -40665,7 +40665,7 @@ function HomePage() {
     className: "titleSpan"
   }, " MARY JOHN FRANK ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "logline"
-  }, "Director \xB7 Choreographer \xB7 Filmmaker")))));
+  }, "Director \xB7 Choreographer \xB7 Filmmaker")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 }
 
 /***/ }),
