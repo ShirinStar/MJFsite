@@ -1,3 +1,10 @@
+.p5Div {
+  position: absolute;
+  z-index: -10;
+  margin: 0;
+  padding: 0;
+}
+
 .tagLine {
   text-align: left;
   margin-top: 350px;
@@ -16,9 +23,10 @@
 .titleSpan {
   position: absolute;
   -webkit-text-stroke: 1.5px black;
+  color: black;
 }
 
-.homeName:before {
+/* .homeName:before {
   background: linear-gradient(to right,black 95%, #E5E3DC 5% );
   background-clip: text;
   -webkit-background-clip: text;
@@ -34,16 +42,16 @@
   animation: fillText 5s;
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
-}
+} */
 
-@keyframes fillText {
+/* @keyframes fillText {
   0% {
     width: 0;
   }
   100% {
     width: 100%;
   }
-}
+} */
 
 .logline {
   font-size: 4rem;
