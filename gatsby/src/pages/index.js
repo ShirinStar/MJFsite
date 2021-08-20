@@ -3,13 +3,14 @@ import SEO from '../components/SEO';
 import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
 import Footer from '../components/Footer';
+import SketchMovingLine from '../components/sketchMovingLine';
 
 export default function HomePage() {
   return (
     <div>
       <SEO title="✿" />
       <div className="p5Div">
-        <P5Wrapper sketch={SketchSinLine} />
+        <P5Wrapper sketch={SketchMovingLine} />
       </div>
       <div className="container">
         <div className="wrapper">
