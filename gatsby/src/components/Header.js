@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'gatsby';
 import { globalHistory } from '@reach/router';
+import { window } from 'browser-monads';
 import Humburger from './Hamburger.js';
 
 export default function Header() {
@@ -13,30 +14,22 @@ export default function Header() {
     menuName: '☰',
   });
   const [disabled, setDisabled] = useState(false);
-  const [logoPressed, setLogoPressed] = useState(false);
-
-  // const checkingLogoPressed = () => {
-  //   setLogoPressed(true);
-  //   setTimeout(() => {
-  //     setLogoPressed(false);
-  //   }, 1000);
-  // };
-
-  // const showLogo = () => {
-  //   if (state.initial === false || logoPressed === true) {
-  //     logoRef.style.visibility = 'hidden';
-  //   } else {
-  //     logoRef.style.visibility = 'visible';
-  //   }
-  // };
+  const [logoShow, setLogoShow] = useState(true);
 
   useEffect(() => {
+    // change url in production
+    if (window.location.href === 'http://localhost:8000/') {
+      setLogoShow(true);
+    } else {
+      setLogoShow(false);
+    }
+
     if (state.menuName === '☰') {
       circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
       btnRef.style.color = 'black';
     }
-  });
+  }, [window.location.href]);
 
   useEffect(
     () =>
@@ -92,7 +85,11 @@ export default function Header() {
       <div className="inner-header">
         <div className="menuHome">
           <div className="headerLogo">
-            <Link className="logoNav" to="/">
+            <Link
+              className="logoNav"
+              to="/"
+              style={logoShow ? { display: 'none' } : {}}
+            >
               M·J·F
             </Link>
           </div>
