@@ -39839,6 +39839,27 @@ function Footer() {
 
 /***/ }),
 
+/***/ "./src/components/FooterNoFixed.js":
+/*!*****************************************!*\
+  !*** ./src/components/FooterNoFixed.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FooterNotFixed; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function FooterNotFixed() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer footerNot"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 MJF ", new Date().getFullYear()));
+}
+
+/***/ }),
+
 /***/ "./src/components/Hamburger.js":
 /*!*************************************!*\
   !*** ./src/components/Hamburger.js ***!
@@ -40279,6 +40300,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var _PressGrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PressGrid */ "./src/components/PressGrid.js");
 /* harmony import */ var _SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SEO */ "./src/components/SEO.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
+
 
 
 
@@ -40307,7 +40330,7 @@ function ProjectsList({
   }, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PressGridStyle, null, presses.map(press => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PressGrid__WEBPACK_IMPORTED_MODULE_2__["default"], {
     key: press.id,
     press: press
-  })))))));
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 }
 
 /***/ }),
@@ -40373,7 +40396,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
+/* harmony import */ var _FooterNoFixed__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FooterNoFixed */ "./src/components/FooterNoFixed.js");
 /* harmony import */ var _ProjectGrid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProjectGrid */ "./src/components/ProjectGrid.js");
 
 
@@ -40406,7 +40429,7 @@ function ProjectsList({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProjectGrid__WEBPACK_IMPORTED_MODULE_3__["default"], {
     key: project.id,
     project: project
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FooterNoFixed__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 }
 
 /***/ }),
@@ -40572,6 +40595,41 @@ const loadableP5 = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_1__["defa
 
 /***/ }),
 
+/***/ "./src/components/sketchMovingLine.js":
+/*!********************************************!*\
+  !*** ./src/components/sketchMovingLine.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SketchMovingLine; });
+function SketchMovingLine(p5) {
+  let canvas;
+  let angle = 0;
+  let x;
+  let y;
+  const angleVel = 0.1;
+
+  p5.setup = () => {
+    canvas = p5.createCanvas(600, 400);
+    p5.noStroke();
+  };
+
+  p5.draw = () => {
+    p5.fill(255);
+    x += 2;
+    y = p5.map(p5.cos(angle), -1, 1, 0, canvas.height);
+    p5.stroke(255);
+    p5.strokeWeight(8);
+    p5.ellipse(x, y, 10, 10);
+    angle += angleVel;
+  };
+}
+
+/***/ }),
+
 /***/ "./src/components/sketchSinLine.js":
 /*!*****************************************!*\
   !*** ./src/components/sketchSinLine.js ***!
@@ -40640,6 +40698,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/loadable */ "./src/components/loadable.js");
 /* harmony import */ var _components_sketchSinLine__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/sketchSinLine */ "./src/components/sketchSinLine.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/sketchMovingLine */ "./src/components/sketchMovingLine.js");
+
 
 
 
@@ -40651,7 +40711,7 @@ function HomePage() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "p5Div"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loadable__WEBPACK_IMPORTED_MODULE_2__["loadableP5"], {
-    sketch: _components_sketchSinLine__WEBPACK_IMPORTED_MODULE_3__["default"]
+    sketch: _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_5__["default"]
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
