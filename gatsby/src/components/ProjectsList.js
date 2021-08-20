@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import FooterNotFixed from './FooterNoFixed';
 import ProjectGrid from './ProjectGrid';
 
 // const ProjectGridStyle = styled.div`
@@ -19,17 +20,20 @@ import ProjectGrid from './ProjectGrid';
 
 export default function ProjectsList({ projects }) {
   return (
-    <div className="container">
-      <div className="wrapper">
-        {projects
-          .filter((project) => project.showOnSite)
-          // .sort((a, b) => a.setOrder - b.setOrder)
-          .map((project) => (
-            <div className="heroImage">
-              <ProjectGrid key={project.id} project={project} />
-            </div>
-          ))}
+    <>
+      <div className="container">
+        <div className="wrapper">
+          {projects
+            .filter((project) => project.showOnSite)
+            // .sort((a, b) => a.setOrder - b.setOrder)
+            .map((project) => (
+              <div className="heroImage">
+                <ProjectGrid key={project.id} project={project} />
+              </div>
+            ))}
+        </div>
+        <FooterNotFixed />
       </div>
-    </div>
+    </>
   );
 }

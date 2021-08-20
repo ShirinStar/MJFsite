@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PressGrid from './PressGrid';
 import SEO from './SEO';
+import Footer from './Footer';
 
 const PressGridStyle = styled.div`
   display: grid;
@@ -34,6 +35,7 @@ export default function ProjectsList({ presses }) {
           </PressGridStyle>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -22,6 +22,7 @@ body {
   min-height: 100%;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  
 }
 
 /* Hide scrollbar */
@@ -122,6 +123,10 @@ img {
   text-align: center;
   font-size: 12px;
   position: fixed;
+}
+
+.footer.footerNot {
+  position: relative;
 }
 
 

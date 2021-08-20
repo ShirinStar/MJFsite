@@ -1,7 +1,8 @@
-import { graphql } from 'gatsby';
 import React from 'react';
+import { graphql, Link } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import VideoEmbed from '../components/VideoEmbed';
+import FooterNoFixed from '../components/FooterNoFixed';
 
 const serializers = {
   marks: {
@@ -27,41 +28,46 @@ export default function SingleProjectPage({ data }) {
   const { project } = data;
 
   return (
-    <div className="projectMain">
-      <div className="projectHeader">
-        <h2 className="projectTitle">{project.name}</h2>
-        <p>
-          {project.tagline} | {project.year}
-        </p>
-      </div>
+    <>
+      <div className="container">
+        <div className="wrapper">
+          <Link to="/projects"> ← Back to projects</Link>
+          <br /> <br />
+          <h2 className="projectTitle">{project.name}</h2>
+          <p>
+            {project.tagline} | {project.year}
+          </p>
+        </div>
 
-      <div>
-        <VideoEmbed project={project} />
-      </div>
+        <div>
+          <VideoEmbed project={project} />
+        </div>
 
-      <div className="descriptionDiv">
-        <PortableText
-          blocks={project._rawBodyPortableText}
-          serializers={serializers}
-        />
-      </div>
-      {project._rawFeaturePortableText !== null ? (
-        <div className="featureDiv">
-          <p className="featureP">Featured: </p>
+        <div className="descriptionDiv">
           <PortableText
-            blocks={project._rawFeaturePortableText}
+            blocks={project._rawBodyPortableText}
             serializers={serializers}
           />
         </div>
-      ) : (
-        ''
-      )}
-      {/* <ul>
+        {project._rawFeaturePortableText !== null ? (
+          <div className="featureDiv">
+            <p className="featureP">Featured: </p>
+            <PortableText
+              blocks={project._rawFeaturePortableText}
+              serializers={serializers}
+            />
+          </div>
+        ) : (
+          ''
+        )}
+        {/* <ul>
           {project.tags.map((tag) => (
             <li key={tag.id}>{tag.name}</li>
           ))}
         </ul> */}
-    </div>
+      </div>
+      <FooterNoFixed />
+    </>
   );
 }
 

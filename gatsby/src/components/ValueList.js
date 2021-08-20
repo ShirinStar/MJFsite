@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import SEO from './SEO';
 import ValuesOneGrid from './ValuesOneGrid';
 import ValuesTwoGrid from './ValuesTwoGrid';
+import FooterNoFixed from './FooterNoFixed';
 
 const ValuesGridStyle = styled.div`
   display: grid;
@@ -49,6 +50,7 @@ export default function ValueList({ value1, value2 }) {
           </div>
         </div>
       </div>
+      <FooterNoFixed />
     </>
   );
 }

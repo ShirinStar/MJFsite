@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import SEO from '../components/SEO';
 import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
+import Footer from '../components/Footer';
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
