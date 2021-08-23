@@ -41869,12 +41869,13 @@ const isMobile = () => {
 function Cursor({
   eventTrigger
 }) {
+  if (typeof navigator !== 'undefined' && isMobile()) return null;
   const {
     0: position,
     1: setPosition
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    x: 20,
-    y: 20
+    x: 200,
+    y: 200
   });
   const {
     0: hidden,
@@ -41952,8 +41953,6 @@ function Cursor({
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    if (typeof navigator !== 'undefined' && isMobile()) return null;
-    console.log('calling trigger');
     addEventListeners();
     handleLinkHoverEvents();
     handleMouseEnterVideo();
@@ -42223,7 +42222,7 @@ function Header() {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     // change url in production
-    if (browser_monads__WEBPACK_IMPORTED_MODULE_3__["window"].location.href === 'http://localhost:8000/') {
+    if (browser_monads__WEBPACK_IMPORTED_MODULE_3__["window"].location.href === 'http://localhost:8000/' || browser_monads__WEBPACK_IMPORTED_MODULE_3__["window"].location.href === 'http://localhost:8000/#videoDiv') {
       setLogoShow(true);
     } else {
       setLogoShow(false);
@@ -42938,9 +42937,9 @@ function SketchMovingLine(p5) {
 
   let theta = 0.0; // Start angle at 0
 
-  const amplitude = 45.0; // Height of wave
+  const amplitude = 75.0; // Height of wave
 
-  const period = 300.0; // How many pixels before the wave repeats
+  const period = 250.0; // How many pixels before the wave repeats
 
   let dx; // Value for incrementing x
 
@@ -42967,7 +42966,7 @@ function SketchMovingLine(p5) {
   }
 
   p5.setup = () => {
-    canvas = p5.createCanvas(800, 400);
+    canvas = p5.createCanvas(700, 50);
     p5.noStroke();
     w = canvas.width + 10;
     dx = p5.TWO_PI / period * xspacing;
@@ -43127,28 +43126,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HomePage; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
-/* harmony import */ var _components_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/loadable */ "./src/components/loadable.js");
-/* harmony import */ var _components_sketchSinLine__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/sketchSinLine */ "./src/components/sketchSinLine.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
-/* harmony import */ var _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/sketchMovingLine */ "./src/components/sketchMovingLine.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
+/* harmony import */ var _components_loadable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/loadable */ "./src/components/loadable.js");
+/* harmony import */ var _components_sketchSinLine__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/sketchSinLine */ "./src/components/sketchSinLine.js");
+/* harmony import */ var _components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/FooterNoFixed */ "./src/components/FooterNoFixed.js");
+/* harmony import */ var _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/sketchMovingLine */ "./src/components/sketchMovingLine.js");
+/* harmony import */ var _components_VideoEmbed__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/VideoEmbed */ "./src/components/VideoEmbed.js");
 
 
 
 
 
 
-function HomePage() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_1__["default"], {
+
+
+function HomePage({
+  eventTrigger,
+  setEventTrigger
+}) {
+  const {
+    0: divDisplay,
+    1: setDivDispaly
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  const handleShowDiv = () => {
+    setDivDispaly(true);
+    console.log('true');
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "\u273F"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "p5Div"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loadable__WEBPACK_IMPORTED_MODULE_2__["loadableP5"], {
-    sketch: _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loadable__WEBPACK_IMPORTED_MODULE_3__["loadableP5"], {
+    sketch: _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_6__["default"]
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "indexPageOne"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tagLine"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -43158,7 +43179,20 @@ function HomePage() {
     className: "titleSpan"
   }, " MARY JOHN FRANK ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "logline"
-  }, "Director \xB7 Choreographer \xB7 Filmmaker")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+  }, "Director \xB7 Choreographer \xB7 Filmmaker")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "arrow"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#videoDiv",
+    onClick: handleShowDiv
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "downArrow"
+  }, " \u1401")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: divDisplay ? 'videoDiv' : 'videoNone'
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "videoDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoEmbed__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    link: "https://vimeo.com/205550428"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 }
 
 /***/ }),
