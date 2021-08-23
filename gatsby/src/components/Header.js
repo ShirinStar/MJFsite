@@ -18,7 +18,10 @@ export default function Header() {
 
   useEffect(() => {
     // change url in production
-    if (window.location.href === 'http://localhost:8000/') {
+    if (
+      window.location.href === 'http://localhost:8000/' ||
+      window.location.href === 'http://localhost:8000/#videoDiv'
+    ) {
       setLogoShow(true);
     } else {
       setLogoShow(false);

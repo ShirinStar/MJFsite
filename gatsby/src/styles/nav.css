@@ -170,14 +170,15 @@ li {
 
 @media screen and (max-width: 600px) {  
   li {
-    font-size: 5rem;
+    font-size: 4rem;
     height: 100px;
     width: 200px;
     padding-left: 10px;
   }
 
   .humSocialLinks {
-    width: 100px;
+    width: 130px;
+    font-size: 12px;
   }
 }
 

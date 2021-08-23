@@ -3,14 +3,24 @@
   z-index: -1000;
   margin: 0;
   padding: 0;
-  margin-top: -5%;
-  margin-left: 10%;
+  margin-top: 5%;
+  margin-left: 28%;
+}
+
+.indexPageOne {
+  min-height: 510px;
+}
+
+.indexPageTwo {
+  min-height: 600px;
+  padding-bottom: 50px;
 }
 
 .tagLine {
-  text-align: left;
-  margin-top: 350px;
-  padding-left: 20px;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 800px;
 }
 
@@ -19,12 +29,12 @@
   padding-bottom: 0;
   margin-bottom: 0;
   color: transparent;
-  position: relative;
+  /* position: relative; */
 }
 
 .titleSpan {
-  position: absolute;
-  -webkit-text-stroke: 1.5px black;
+  /* position: absolute; */
+  /* -webkit-text-stroke: 1.5px black; */
   color: black;
 }
 
@@ -57,47 +67,82 @@
 
 .logline {
   font-size: 4rem;
-  margin-top: 8%;
-  position: absolute;
+  /* margin-top: 8%;
+  position: absolute; */
 }
 
 
+.arrow {
+  margin: 0;
+  padding:0;
+  display: inline-block;
+  padding-top: 80px;
+  /* margin-left: -100px; */
+}
 
-@media only screen and (max-width: 370px) {
+.arrowImg{
+  height: 150px;
+  width: 120px;
+}
+
+.arrowImg:hover {
+  filter: invert(0.8);
+}
+
+.downArrow {
+  font-size: 32px;
+}
+
+.videoDiv {
+  display: block;
+  min-height: 600px;
+  padding-bottom: 50px;
+}
+
+.videoNone {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {  
   .tagLine {
-    padding-left: 10px;
-    margin-top: 250px;
+    margin-top: 100px;
   }
 
   .homeName {
-    font-size: 3.2rem;
+    font-size: 5rem;
   }
 
   .logline {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
+    margin-top: 10%;
     }
-  }
 
-@media screen and (max-width: 600px) {  
-  .tagLine {
-    padding-left: 10px;
-    margin-top: 300px;
-  }
-
-  .homeName {
-    font-size: 4rem;
-  }
-
-  .logline {
-    font-size: 1.6rem;
-    margin-top: 15%;
+    .p5Div {
+      display: none;
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  .tagLine {
-    padding-left: 10px;
+@media only screen and (min-width: 300px) and (max-width: 650px) { 
+   .tagLine {
+  margin-top: 150px;
+}
+
+.homeName {
+  font-size: 3.5rem;
+}
+
+.logline {
+  font-size: 1.5rem;
+  margin-top: 5%;
   }
+
+  .p5Div {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 900px) {
 
   .homeName {
     font-size: 7.5rem;
@@ -105,13 +150,23 @@
 
   .logline {
     font-size: 3rem;
-    margin-top: 15%;
+    margin-top: 5%;
+    }
+
+  .p5Div {
+     margin-left: 5%;
+     margin-top: 8%;
     }
   }
 
 @media only screen and (min-width: 900px) and (max-width: 1400px) {
   .logline {
-    margin-top: 12%;
+    margin-top: 5%;
   } 
+
+  .p5Div {
+    margin-left: 15%;
+    margin-top: 10%;
+   }
 }
 

@@ -3,8 +3,8 @@ export default function SketchMovingLine(p5) {
   const xspacing = 1; // Distance between each horizontal location
   let w; // Width of entire wave
   let theta = 0.0; // Start angle at 0
-  const amplitude = 45.0; // Height of wave
-  const period = 300.0; // How many pixels before the wave repeats
+  const amplitude = 75.0; // Height of wave
+  const period = 250.0; // How many pixels before the wave repeats
   let dx; // Value for incrementing x
   let yvalues; // Using an array to store height values for the wave
 
@@ -26,7 +26,7 @@ export default function SketchMovingLine(p5) {
     }
   }
   p5.setup = () => {
-    canvas = p5.createCanvas(800, 400);
+    canvas = p5.createCanvas(700, 50);
     p5.noStroke();
     w = canvas.width + 10;
     dx = (p5.TWO_PI / period) * xspacing;

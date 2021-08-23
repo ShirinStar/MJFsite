@@ -7,7 +7,9 @@ const isMobile = () => {
 };
 
 export default function Cursor({ eventTrigger }) {
-  const [position, setPosition] = useState({ x: 20, y: 20 });
+  if (typeof navigator !== 'undefined' && isMobile()) return null;
+
+  const [position, setPosition] = useState({ x: 200, y: 200 });
   const [hidden, setHidden] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [linkHovered, setLinkHovered] = useState(false);
@@ -71,8 +73,6 @@ export default function Cursor({ eventTrigger }) {
   };
 
   useEffect(() => {
-    if (typeof navigator !== 'undefined' && isMobile()) return null;
-    console.log('calling trigger');
     addEventListeners();
     handleLinkHoverEvents();
     handleMouseEnterVideo();
