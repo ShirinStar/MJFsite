@@ -15,7 +15,6 @@ const TagStyles = styled.div`
     align-items: center;
     padding: 5px;
     font-size: 14px;
-    cursor: pointer;
     &[aria-current='page'] {
       border-bottom: 2px solid pink;
     }

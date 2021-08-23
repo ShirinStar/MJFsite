@@ -29,6 +29,7 @@
     "@sanity/block-content-to-react": "^3.0.0",
     "babel-plugin-styled-components": "^1.11.1",
     "browser-monads": "^1.0.0",
+    "classnames": "^2.3.1",
     "dotenv": "^8.6.0",
     "gatsby": "^2.24.63",
     "gatsby-cli": "^3.11.0",

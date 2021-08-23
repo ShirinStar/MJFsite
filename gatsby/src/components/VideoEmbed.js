@@ -1,9 +1,9 @@
 import React from 'react';
 import getVideoId from 'get-video-id';
 
-export default function VideoEmbed({ project }) {
-  const { id } = getVideoId(project.videoLink);
-  const { service } = getVideoId(project.videoLink);
+export default function VideoEmbed({ link }) {
+  const { id } = getVideoId(link);
+  const { service } = getVideoId(link);
   const vimeoEmbedUrl = `https://player.vimeo.com/video/${id}`;
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${id}`;
 

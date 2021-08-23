@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import VideoEmbed from '../components/VideoEmbed';
@@ -24,8 +24,16 @@ const serializers = {
   },
 };
 
-export default function SingleProjectPage({ data }) {
+export default function SingleProjectPage({
+  data,
+  setEventTrigger,
+  eventTrigger,
+}) {
   const { project } = data;
+
+  useEffect(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
 
   return (
     <>
@@ -39,8 +47,8 @@ export default function SingleProjectPage({ data }) {
           </p>
         </div>
 
-        <div>
-          <VideoEmbed project={project} />
+        <div className="videoDiv">
+          <VideoEmbed link={project.videoLink} />
         </div>
 
         <div className="descriptionDiv">

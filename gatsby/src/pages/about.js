@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import Img from 'gatsby-image';
@@ -25,8 +25,12 @@ const serializers = {
   },
 };
 
-export default function AboutPage({ data }) {
+export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
   const about = data.about.nodes;
+
+  useEffect(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
 
   return (
     <>

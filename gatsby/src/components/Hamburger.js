@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
+import { window } from 'browser-monads';
 import gsap from 'gsap';
 
 export default function Hamburger({ state }) {
@@ -10,6 +11,10 @@ export default function Hamburger({ state }) {
   let line2 = useRef(null);
   let line3 = useRef(null);
   let humSocial = useRef(null);
+
+  const hardRefresh = () => {
+    window.location.reload(true);
+  };
 
   const staggerReveal = (node1, node2) => {
     gsap.from([node1, node2], {
@@ -142,7 +147,7 @@ export default function Hamburger({ state }) {
                 </ul>
               </nav>
               <div ref={(el) => (humSocial = el)} className="humSocialLinks">
-                <Link to="/values">♡ Values ♡ </Link>
+                <Link to="/values">♡ Values ♡</Link>
                 <p>Linkdin</p>
                 <p>Instagram</p>
               </div>

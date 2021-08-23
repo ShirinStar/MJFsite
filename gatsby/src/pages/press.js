@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import PressList from '../components/PressList';
 
-export default function PressPage({ data }) {
+export default function PressPage({ data, setEventTrigger, eventTrigger }) {
   const presses = data.press.nodes;
+  useEffect(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
+
   return (
     <>
       <PressList presses={presses} />

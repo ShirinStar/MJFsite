@@ -9,10 +9,7 @@ export default function SketchMovingLine(p5) {
   let yvalues; // Using an array to store height values for the wave
 
   function calcWave() {
-    // Increment theta (try different values for
-    // 'angular velocity' here)
     theta += 0.03;
-
     // For every x value, calculate a y value with sine function
     let x = theta;
     for (let i = 0; i < yvalues.length; i++) {
@@ -23,8 +20,7 @@ export default function SketchMovingLine(p5) {
 
   function renderWave() {
     p5.noStroke();
-    p5.fill(255);
-    // A simple way to draw the wave with an ellipse at each location
+    p5.fill(0);
     for (let x = 0; x < yvalues.length; x++) {
       p5.ellipse(x * xspacing, canvas.height / 2 + yvalues[x], 2, 2);
     }

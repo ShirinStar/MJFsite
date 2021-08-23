@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import ProjectsList from '../components/ProjectsList';
 import TagFilter from '../components/TagFilter';
 
-export default function ProjectsPage({ data, pageContext }) {
+export default function ProjectsPage({
+  data,
+  pageContext,
+  setEventTrigger,
+  eventTrigger,
+}) {
   const projects = data.projects.nodes;
+
+  useEffect(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
+
   return (
     <>
       <TagFilter activeTag={pageContext.tag} />

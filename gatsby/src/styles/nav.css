@@ -76,7 +76,7 @@ header {
   border: none;
   background: none;
   outline: none;
-  cursor: pointer;
+  cursor: none;
   font-size: 3rem;
   color: black;
   position: absolute;
@@ -144,7 +144,7 @@ li {
   list-style: none;
   font-size: 10rem;
   font-weight: 700;
-  cursor: pointer;
+  cursor: none;
   overflow: hidden;
   height: 150px;
   position: relative;
