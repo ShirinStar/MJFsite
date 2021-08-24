@@ -157,11 +157,11 @@ export default function Hamburger({ state }) {
                     <img
                       src="./instagram_icon.png"
                       alt="instagram"
-                      height="30"
+                      className="socialLink"
                     />
                   </a>
                   <a href="mailto:maryjohn.frank@gmail.com">
-                    <img src="./email_icon.png" alt="email" height="30" />
+                    <img className="socialLink" src="./email_icon.png" alt="email" />
                   </a>
                 </div>
               </div>

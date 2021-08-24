@@ -181,6 +181,10 @@ li {
   padding: 15px 0;
 }
 
+.socialLink {
+  height: 30px;
+}
+
 @media only screen and (max-width: 340px) {
   .circle1 {
     display: none;
@@ -191,7 +195,7 @@ li {
   li {
     font-size: 3.6rem;
     height: 80px;
-    width: 150px;
+    width: 100px;
     padding-left: 0;
   }
 
@@ -211,13 +215,17 @@ li {
   li {
     font-size: 4rem;
     height: 100px;
-    width: 200px;
+    width: 160px;
     padding-left: 10px;
   }
 
   .humSocialLinks {
-    width: 130px;
-    font-size: 12px;
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .socialLink {
+    height: 20px;
   }
 
   .tagName {
