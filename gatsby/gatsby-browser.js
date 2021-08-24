@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from './src/components/Layout';
+import "@fontsource/work-sans";
+import "@fontsource/barrio";
 
 import './src/styles/globalStyles.css';
 import './src/styles/homePage.css';

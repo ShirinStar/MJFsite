@@ -88,11 +88,11 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-family: 'Bigilla', serif;
+  font-family: 'Bigilla', sans-serif;
 }
 
 p {
-  font-family: 'Modernist', 'Roboto', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .pageTitle {
@@ -125,7 +125,7 @@ button:hover {
 a, a:visited {
   text-decoration: none;
   color: black;
-  font-family: 'Modernist', 'Roboto', sans-serif;
+  font-family: "Work Sans" , sans-serif;
   cursor: none;
 }
 
@@ -133,8 +133,6 @@ a:hover {
   color: #fefefe;
   /* border-bottom: .5px solid white; */
 }
-
-
 
 /* .gatsby-image-wrapper img[src*=base64\\] {
   image-rendering: -moz-crisp-edges;
@@ -153,8 +151,8 @@ img {
 
 .pressInfo {
   display: flex;
-  justify-content: space-around;
-  max-width: 200px;
+  justify-content: space-between;
+  max-width: 210px;
   align-items: center;
   text-align: center;
   font-size: 16px;
@@ -176,14 +174,20 @@ img {
   position: relative;
 }
 
+.fourofour {
+  font-family: "Barrio" , sans-serif;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
   .wrapper {
-    padding: 0 48px
+    padding: 0 50px
   }
 
   .pageTitle {
-    font-size: 42px;
+    font-size: 38px;
   }
  }
 

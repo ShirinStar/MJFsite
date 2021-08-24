@@ -93,7 +93,7 @@ export default function Header() {
               to="/"
               style={logoShow ? { display: 'none' } : {}}
             >
-              M·J·F
+              MJF
             </Link>
           </div>
           <div className="navMenu">

@@ -46,7 +46,13 @@ header {
 }
 
 .logoNav {
-  font-family: 'Modernist', 'Roboto', sans-serif;
+  font-family: "Barrio" , sans-serif;
+  letter-spacing: 4px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logoNav:hover {
   letter-spacing: 2px;
 }
 
@@ -61,7 +67,6 @@ header {
   position: relative;
   z-index: -10;
 }
-
 
 @keyframes rotation {
   from {
@@ -108,13 +113,13 @@ header {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: black;
+  background: #BEC9D5;
   z-index: -1;
 }
 
 .menu-layer {
   position: relative;
-  background: #5A6E41;
+  background: #7E99A6;
   height: 100%;
   overflow: hidden;
 }
@@ -167,8 +172,42 @@ li {
   color: white;
 }
 
+.socialLinkDiv {
+  display: flex;
+  max-width: 100px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
 
-@media screen and (max-width: 600px) {  
+@media only screen and (max-width: 340px) {
+  .circle1 {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    font-size: 3.6rem;
+    height: 80px;
+    width: 150px;
+    padding-left: 0;
+  }
+
+  .btnMenu {
+    margin-left: -1%;
+  }
+}
+
+
+@media screen and (max-width: 650px) {  
+  .circle1 {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
   li {
     font-size: 4rem;
     height: 100px;
@@ -180,9 +219,13 @@ li {
     width: 130px;
     font-size: 12px;
   }
+
+  .tagName {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 800px) {
+@media only screen and (min-width: 650px) and (max-width: 800px) {
   li {
     font-size: 10rem;
     height: 150px;
@@ -207,6 +250,7 @@ li {
     width: 400px;
     padding-left: 40px;
   }
+
   .btnMenu {
     margin-top: -9%;
     margin-left: 3%;
@@ -234,14 +278,4 @@ li {
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .circle1 {
-    display: none;
-    padding: 0;
-    margin: 0;
-  }
 
-  .btnMenu {
-    margin-left: -1%;
-  }
-}

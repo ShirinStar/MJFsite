@@ -39,15 +39,17 @@ export default function SingleProjectPage({
     <>
       <div className="container">
         <div className="wrapper">
-          <Link to="/projects"> ← Back to projects</Link>
+          <Link to="/projects" className="downArrow backArrow"> ᐊ </Link>
           <br /> <br />
-          <h2 className="projectTitle">{project.name}</h2>
-          <p>
-            {project.tagline} | {project.year}
+          <div className="projectHead">
+          <h2 className="pageTitle singleProject">{project.name}</h2>
+          <p className="projectYear">
+            {project.year}
           </p>
-        </div>
+          </div>
+        
 
-        <div className="videoDiv">
+        <div className="videoDiv singleProject">
           <VideoEmbed link={project.videoLink} />
         </div>
 
@@ -73,6 +75,7 @@ export default function SingleProjectPage({
             <li key={tag.id}>{tag.name}</li>
           ))}
         </ul> */}
+      </div>
       </div>
       <FooterNoFixed />
     </>

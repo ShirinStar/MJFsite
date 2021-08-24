@@ -16,11 +16,14 @@ const TagStyles = styled.div`
     padding: 5px;
     font-size: 14px;
     &[aria-current='page'] {
-      border-bottom: 2px solid pink;
+      border-bottom: 2px solid #B05B4F;
     }
     &:hover {
       color: white;
     }
+  }
+  @media (max-width: 768px) {
+    grid-gap: 0 0rem;
   }
 `;
 

@@ -20,7 +20,6 @@ const PressStyle = styled.div`
   }
   .gatsby-image-wrapper {
     object-fit: contain;
-    box-shadow: 1px 1px 8px 4px rgba(225, 112, 52, 0.1);
   }
 `;
 

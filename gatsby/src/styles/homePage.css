@@ -153,24 +153,33 @@
     
 }
 
-@media only screen and (min-width: 300px) and (max-width: 650px) { 
+@media only screen and (min-width: 300px) and (max-width: 560px) { 
   .tagLine {
   margin-top: 150px;
 }
 
 .homeName {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .logline {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-top: 5%;
   }
 
   .p5Div {
     display: none;
   }
+ 
 
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 130px;
+    }
+    50% {
+      bottom: 140px;
+    }
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 850px) {

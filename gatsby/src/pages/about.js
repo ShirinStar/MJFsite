@@ -4,13 +4,14 @@ import PortableText from '@sanity/block-content-to-react';
 import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer';
+import FooterNotFixed from '../components/FooterNoFixed';
 
 const serializers = {
   marks: {
     link: ({ children, mark }) =>
       mark.blank ? (
         <a
-          className="bodyTextLinks"
+          className="bodyTextLinks about"
           href={mark.href}
           target="_blank"
           rel="noopener noreferrer"
@@ -18,7 +19,7 @@ const serializers = {
           {children}
         </a>
       ) : (
-        <a className="bodyTextLinks" href={mark.href}>
+        <a className="bodyTextLinks about" href={mark.href}>
           {children}
         </a>
       ),
@@ -51,12 +52,29 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
                 blocks={about[0]._rawBodyPortableText}
                 serializers={serializers}
               />
-              <Link to="/values">Check out my values page.</Link>
+           
+            <div className="contact">
+            <p>Contact me: <a className="bodyTextLinks about" href="mailto:maryjohn.frank@gmail.com">maryjohn.frank [at] gmail.com</a> </p>
+                {/* <div className="socialLinkDiv">
+                  <a
+                    href="https://www.instagram.com/maryjohnfrank/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="./instagram_icon.png"
+                      alt="instagram"
+                      height="30"
+                    />
+                  </a>
+                  </div> */}
+                  <p>Check out my<Link className="bodyTextLinks about" to="/values"> values page ♡</Link></p>
+                  </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
+      <FooterNotFixed />
     </>
   );
 }

@@ -24,6 +24,8 @@
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@fontsource/barrio": "^4.5.0",
+    "@fontsource/work-sans": "^4.5.1",
     "@loadable/component": "^5.15.0",
     "@reach/router": "^1.3.4",
     "@sanity/block-content-to-react": "^3.0.0",
