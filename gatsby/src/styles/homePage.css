@@ -8,12 +8,7 @@
 }
 
 .indexPageOne {
-  min-height: 510px;
-}
-
-.indexPageTwo {
-  min-height: 600px;
-  padding-bottom: 50px;
+  min-height: 520px;
 }
 
 .tagLine {
@@ -71,26 +66,34 @@
   position: absolute; */
 }
 
-
 .arrow {
   margin: 0;
   padding:0;
   display: inline-block;
   padding-top: 80px;
+  left: 200px;
+  bottom: 100px;
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
   /* margin-left: -100px; */
 }
 
-.arrowImg{
-  height: 150px;
-  width: 120px;
-}
-
-.arrowImg:hover {
-  filter: invert(0.8);
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 110px;
+  }
 }
 
 .downArrow {
   font-size: 32px;
+  transition: all 150ms ease;
+}
+
+.downArrow:hover {
+  transform: scale(1.2);
 }
 
 .videoDiv {
@@ -104,12 +107,21 @@
 }
 
 @media screen and (max-width: 650px) {  
+  .indexPageOne {
+    min-height: 370px;
+  }
+
+  .videoDiv {
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+  
   .tagLine {
     margin-top: 100px;
   }
 
   .homeName {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
 
   .logline {
@@ -120,10 +132,29 @@
     .p5Div {
       display: none;
     }
+
+
+    .downArrow {
+      font-size: 28px;
+    }
+
+    .arrow {
+      left: 80px;
+    }
+
+    @keyframes MoveUpDown {
+      0%, 100% {
+        bottom: 170px;
+      }
+      50% {
+        bottom: 180px;
+      }
+    }
+    
 }
 
 @media only screen and (min-width: 300px) and (max-width: 650px) { 
-   .tagLine {
+  .tagLine {
   margin-top: 150px;
 }
 
@@ -132,7 +163,7 @@
 }
 
 .logline {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 5%;
   }
 
@@ -142,7 +173,10 @@
 
 }
 
-@media only screen and (min-width: 650px) and (max-width: 900px) {
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+  .tagLine {
+    margin-top: 200px;
+  }
 
   .homeName {
     font-size: 7.5rem;
@@ -154,12 +188,35 @@
     }
 
   .p5Div {
-     margin-left: 5%;
+     margin-left: -5%;
      margin-top: 8%;
+    }
+
+    .downArrow {
+      font-size: 28px;
+    }
+
+    .arrow {
+      left: 100px;
+    }
+
+    @keyframes MoveUpDown {
+      0%, 100% {
+        bottom: 300px;
+      }
+      50% {
+        bottom: 310px;
+      }
     }
   }
 
-@media only screen and (min-width: 900px) and (max-width: 1400px) {
+@media only screen and (min-width: 850px) and (max-width: 1100px) {
+
+  .videoDiv {
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+  
   .logline {
     margin-top: 5%;
   } 
@@ -167,6 +224,20 @@
   .p5Div {
     margin-left: 15%;
     margin-top: 10%;
+   }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1250px) {
+  .p5Div {
+    margin-left: 18%;
+    margin-top: 8%;
+   }
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1400px) {
+  .p5Div {
+    margin-left: 24%;
+    margin-top: 7%;
    }
 }
 

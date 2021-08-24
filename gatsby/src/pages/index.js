@@ -5,10 +5,22 @@ import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
 import FooterNoFixed from '../components/FooterNoFixed';
 import SketchMovingLine from '../components/sketchMovingLine';
-import VideoEmbed from '../components/VideoEmbed';
 
 export default function HomePage({ eventTrigger, setEventTrigger }) {
   const [divDisplay, setDivDispaly] = useState(false);
+
+  const responsiveVideoContainer = {
+    padding: '56.25% 0 0 0',
+    position: 'relative',
+  };
+
+  const responsiveVideoPlayer = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  };
 
   const handleShowDiv = () => {
     setDivDispaly(true);
@@ -40,12 +52,18 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
               </a>
             </div>
           </div>
-          {/* <img className="arrowImg" src="/arrow2.png" alt="arrow" /> */}
-
-          <div className={divDisplay ? 'videoDiv' : 'videoNone'}>
-            <div id="videoDiv">
-              <VideoEmbed link="https://vimeo.com/205550428" />
-            </div>
+        </div>
+      </div>
+      <div className={divDisplay ? 'videoDiv' : 'videoNone'}>
+        <div id="videoDiv">
+          <div style={responsiveVideoContainer}>
+            <iframe
+              src="https://player.vimeo.com/video/205550428?h=007989203f?&autoplay=1&loop=1&byline=0&title=0&muted=1"
+              style={responsiveVideoPlayer}
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+            />
           </div>
         </div>
       </div>
