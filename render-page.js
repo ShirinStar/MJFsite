@@ -111,6 +111,7 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
+  "component---src-pages-about-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
   "component---src-pages-projects-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js"))),
   "component---src-templates-project-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/Project.js */ "./src/templates/Project.js")))
@@ -42245,6 +42246,7 @@ __webpack_require__.r(__webpack_exports__);
 function Header() {
   let btnRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   let circle = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  let nameMenuRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const {
     0: state,
     1: setState
@@ -42272,7 +42274,7 @@ function Header() {
     if (state.menuName === '☰') {
       circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
-      btnRef.style.color = 'black';
+      nameMenuRef.style.color = 'black';
     }
   }, [browser_monads__WEBPACK_IMPORTED_MODULE_3__["window"].location.href]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => _reach_router__WEBPACK_IMPORTED_MODULE_2__["globalHistory"].listen(({
@@ -42300,7 +42302,7 @@ function Header() {
         clicked: true,
         menuName: 'X'
       });
-      btnRef.style.color = 'white';
+      nameMenuRef.style.color = 'white';
       btnRef.style.transform = 'scale(1.3)';
       circle.style.filter = 'invert(1)';
     } else if (state.clicked === true) {
@@ -42308,7 +42310,7 @@ function Header() {
         clicked: !state.clicked,
         menuName: '☰'
       });
-      btnRef.style.color = 'black';
+      nameMenuRef.style.color = 'black';
       circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
@@ -42316,9 +42318,9 @@ function Header() {
         clicked: !state.clicked,
         menuName: 'X'
       });
-      btnRef.style.color = 'white';
       circle.style.filter = 'invert(1)';
       btnRef.style.transform = 'scale(1.3)';
+      nameMenuRef.style.color = 'white';
     }
   };
 
@@ -42334,7 +42336,7 @@ function Header() {
     style: logoShow ? {
       display: 'none'
     } : {}
-  }, "MJF")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "MARY JOHN FRANK")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navMenu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "circle1",
@@ -42345,7 +42347,10 @@ function Header() {
     className: "btnMenu",
     type: "button",
     onClick: handleMenu
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, state.menuName, " ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Hamburger_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    ref: el => nameMenuRef = el,
+    className: "menuName"
+  }, state.menuName)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Hamburger_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     state: state
   })));
 }
@@ -42749,7 +42754,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SketchMovingLine; });
 function SketchMovingLine(p5) {
   let canvas;
-  const xspacing = 1; // Distance between each horizontal location
+  const xspacing = 5; // Distance between each horizontal location
 
   let w; // Width of entire wave
 
@@ -42757,20 +42762,20 @@ function SketchMovingLine(p5) {
 
   const amplitude = 75.0; // Height of wave
 
-  const period = 250.0; // How many pixels before the wave repeats
+  const period = 150.0; // How many pixels before the wave repeats
 
   let dx; // Value for incrementing x
 
   let yvalues; // Using an array to store height values for the wave
 
   function calcWave() {
-    theta += 0.03; // For every x value, calculate a y value with sine function
+    theta += 0.05; // For every x value, calculate a y value with sine function
 
     let x = theta;
 
     for (let i = 0; i < yvalues.length; i++) {
       yvalues[i] = p5.sin(x) * amplitude * 0.5 / 2;
-      x += dx / 1.5;
+      x += dx;
     }
   }
 
@@ -42792,7 +42797,7 @@ function SketchMovingLine(p5) {
   };
 
   p5.draw = () => {
-    p5.background(229, 227, 220);
+    p5.background(179, 200, 226);
     calcWave();
     renderWave();
   };
@@ -42861,6 +42866,94 @@ function FourOFourPage() {
 
 /***/ }),
 
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AboutPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/FooterNoFixed */ "./src/components/FooterNoFixed.js");
+
+
+
+
+
+
+
+const serializers = {
+  marks: {
+    link: ({
+      children,
+      mark
+    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks about",
+      href: mark.href,
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks about",
+      href: mark.href
+    }, children)
+  }
+};
+function AboutPage({
+  data,
+  setEventTrigger,
+  eventTrigger
+}) {
+  var _about$0$image, _about$0$image$asset, _about$0$image$asset$;
+
+  const about = data.about.nodes;
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "About",
+    image: (_about$0$image = about[0].image) === null || _about$0$image === void 0 ? void 0 : (_about$0$image$asset = _about$0$image.asset) === null || _about$0$image$asset === void 0 ? void 0 : (_about$0$image$asset$ = _about$0$image$asset.fluid) === null || _about$0$image$asset$ === void 0 ? void 0 : _about$0$image$asset$.src
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "pageTitle"
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "imgAbout",
+    src: about[0].image.asset.url,
+    alt: about[0].name
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutText"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    blocks: about[0]._rawBodyPortableText,
+    serializers: serializers
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Contact me:", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "bodyTextLinks about",
+    href: "mailto:maryjohn.frank@gmail.com"
+  }, "maryjohn.frank [at] gmail.com"), ' '), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Check out my", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "bodyTextLinks about",
+    to: "/values"
+  }, ' ', "values page \u2661"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_6__["default"], null));
+}
+const aboutQuery = "3200291010";
+
+/***/ }),
+
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
@@ -42908,7 +43001,6 @@ function HomePage({
 
   const handleShowDiv = () => {
     setDivDispaly(true);
-    console.log('true');
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -42917,15 +43009,9 @@ function HomePage({
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "\u273F"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "p5Div"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loadable__WEBPACK_IMPORTED_MODULE_3__["loadableP5"], {
-    sketch: _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_6__["default"]
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "indexPageOne"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tagLine"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -42935,17 +43021,25 @@ function HomePage({
     className: "titleSpan"
   }, " MARY JOHN FRANK ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "logline"
-  }, "Director \xB7 Choreographer \xB7 Filmmaker")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "arrow"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#videoDiv",
-    onClick: handleShowDiv
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "downArrow"
-  }, " \u1401")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: divDisplay ? 'videoDiv' : 'videoNone'
+  }, "CHOREOGRAPHER \xB7 FILMMAKER \xB7 DIRECTOR")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "videoImageContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "videoDiv"
+    className: "imageWrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: divDisplay ? 'imageHome none' : 'imageHome'
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "imageSize",
+    src: "./homeImage.png",
+    alt: "home"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: divDisplay ? 'playIcon none' : 'playIcon'
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./play-button.png",
+    alt: "play",
+    onClick: handleShowDiv
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "videoDiv",
+    className: divDisplay ? 'videoDiv' : 'videoNone'
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: responsiveVideoContainer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
@@ -42954,7 +43048,7 @@ function HomePage({
     frameBorder: "0",
     allow: "autoplay; fullscreen",
     allowFullScreen: true
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+  })))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 }
 
 /***/ }),
@@ -43115,10 +43209,12 @@ function SingleProjectPage({
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "backArrow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/projects",
     className: "downArrow backArrow"
-  }, " \u140A "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\u140A")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "projectHead"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "pageTitle singleProject"
