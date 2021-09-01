@@ -1,6 +1,6 @@
 .p5Div {
   position: absolute;
-  z-index: -1000;
+  z-index: -8;
   margin: 0;
   padding: 0;
   margin-top: 15%;
@@ -62,29 +62,54 @@
   padding-bottom: 15px;
 }
 
+.responsiveContainer {
+  position: relative;
+
+}
 .videoImageContainer {
   width: 100%;
-  min-height: 700px;
-  /* min-height: 100%; */
+ 
+  /* padding-bottom: 40px; */
 }
 
-.imageWrapper {
+/* .imageWrapper {
   position:relative;
-
-}
+} */
 
 .imageHome {
   position: absolute;
-  z-index: 99;
+  z-index: 5;
+  padding-bottom: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .imageHome.none {
+  /* animation: fadeOut ease 2s normal forwards; */
   display: none;
 }
+
+/* @keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+    
+  }
+  100% {
+    opacity:0;
+    display: none;
+  } */
+/* } */
 
 .imageSize {
   height: 675px;
   object-fit: cover;
+  padding-bottom: 40px;
 } 
 
 .playIcon {
@@ -96,7 +121,7 @@
   width: 48px;
   margin-top: 25%;
   cursor: pointer;
-  z-index: 100;
+  z-index: 6;
 }
 
 .playIcon.none {
@@ -110,7 +135,8 @@
 .videoDiv {
   /* position: absolute; */
   display: block;
-  z-index: -100;
+  z-index: -8;
+  padding-bottom: 40px;
 }
 
 .videoNone {
@@ -118,17 +144,14 @@
 }
 
 @media screen and (max-width: 650px) {  
-  .indexPageOne {
-    min-height: 370px;
+
+  .imageSize {
+    height: 260px;
   }
 
   .videoDiv {
-    min-height: 400px;
+    /* min-height: 400px; */
     padding-bottom: 20px;
-  }
-  
-  .tagLine {
-    margin-top: 100px;
   }
 
   .homeName {
@@ -139,64 +162,23 @@
     font-size: 2.2rem;
     margin-top: 10%;
     }
-
-    .p5Div {
-      display: none;
-    }
-
-
-    .downArrow {
-      font-size: 28px;
-    }
-
-    .arrow {
-      left: 80px;
-    }
-
-    @keyframes MoveUpDown {
-      0%, 100% {
-        bottom: 170px;
-      }
-      50% {
-        bottom: 180px;
-      }
-    }
-    
 }
 
 @media only screen and (min-width: 300px) and (max-width: 560px) { 
-  .tagLine {
-  margin-top: 150px;
-}
-
-.homeName {
+  .imageSize {
+    height: 220px;
+  }
+  
+  .homeName {
   font-size: 3rem;
 }
 
 .logline {
   font-size: 1.2rem;
-  margin-top: 5%;
-  }
-
-  .p5Div {
-    display: none;
-  }
- 
-
-  @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 130px;
-    }
-    50% {
-      bottom: 140px;
-    }
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 850px) {
-  .tagLine {
-    margin-top: 200px;
-  }
 
   .homeName {
     font-size: 7.5rem;
@@ -205,28 +187,6 @@
   .logline {
     font-size: 3rem;
     margin-top: 5%;
-    }
-
-  .p5Div {
-     margin-left: -5%;
-     margin-top: 8%;
-    }
-
-    .downArrow {
-      font-size: 28px;
-    }
-
-    .arrow {
-      left: 100px;
-    }
-
-    @keyframes MoveUpDown {
-      0%, 100% {
-        bottom: 300px;
-      }
-      50% {
-        bottom: 310px;
-      }
     }
   }
 
@@ -240,24 +200,6 @@
   .logline {
     margin-top: 5%;
   } 
-
-  .p5Div {
-    margin-left: 15%;
-    margin-top: 10%;
-   }
 }
 
-@media only screen and (min-width: 1100px) and (max-width: 1250px) {
-  .p5Div {
-    margin-left: 18%;
-    margin-top: 8%;
-   }
-}
-
-@media only screen and (min-width: 1250px) and (max-width: 1400px) {
-  .p5Div {
-    margin-left: 24%;
-    margin-top: 7%;
-   }
-}
 

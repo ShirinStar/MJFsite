@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'gatsby';
+import Player from '@vimeo/player';
 import SEO from '../components/SEO';
 import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
-import FooterNoFixed from '../components/FooterNoFixed';
+import FooterNotFixed from '../components/FooterNoFixed';
 import SketchMovingLine from '../components/sketchMovingLine';
 
 export default function HomePage({ eventTrigger, setEventTrigger }) {
   const [divDisplay, setDivDispaly] = useState(false);
+  const iframRef = useRef(null);
 
   const responsiveVideoContainer = {
     padding: '56.25% 0 0 0',
@@ -23,7 +25,10 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
   };
 
   const handleShowDiv = () => {
+    const player = new Player(iframRef.current);
+
     setDivDispaly(true);
+    player.play();
   };
 
   useEffect(() => {
@@ -45,30 +50,31 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
             <h1 className="logline">CHOREOGRAPHER · FILMMAKER · DIRECTOR</h1>
           </div>
 
-          <div className="videoImageContainer">
-            <div className="imageWrapper">
-              <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
-                <img className="imageSize" src="./homeImage.png" alt="home" />
-              </div>
+          <div className="responsiveContainer">
+            <div className="videoImageContainer">
+              <div className="imageWrapper">
+                <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
+                  <img className="imageSize" src="./homeImage.png" alt="home" />
+                </div>
 
-              <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
-                <a>
-                  <img
-                    src="./play-button.png"
-                    alt="play"
-                    onClick={handleShowDiv}
-                  />
-                </a>
-              </div>
+                <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
+                  <a>
+                    <img
+                      src="./play-button.png"
+                      alt="play"
+                      onClick={handleShowDiv}
+                    />
+                  </a>
+                </div>
 
-              <div>
                 <div
                   id="videoDiv"
                   className={divDisplay ? 'videoDiv' : 'videoNone'}
                 >
                   <div style={responsiveVideoContainer}>
                     <iframe
-                      src="https://player.vimeo.com/video/205550428?h=007989203f?&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                      ref={iframRef}
+                      src="https://player.vimeo.com/video/205550428?api=1&h=007989203f?&loop=1&byline=0&title=0"
                       style={responsiveVideoPlayer}
                       frameBorder="0"
                       allow="autoplay; fullscreen"
@@ -81,7 +87,7 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
           </div>
         </div>
       </div>
-      <FooterNoFixed />
+      <FooterNotFixed />
     </div>
   );
 }

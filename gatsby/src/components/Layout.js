@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
 import Nav from './Nav';
 import 'normalize.css';
 import Cursor from './Cursor';
+import Footer from './Footer';
 
 export default function Layout({ children }) {
   // TODO: update each page tp setEventTrigger with new val + inside single page

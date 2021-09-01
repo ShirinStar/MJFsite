@@ -136,7 +136,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 200px
+  top: 100px
 }
 
 nav {
@@ -181,11 +181,15 @@ li {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 25px 0;
+}
+
+.valueLink {
+  font-size: 22px;
 }
 
 .socialLink {
-  height: 30px;
+  height: 40px;
 }
 
 @media only screen and (max-width: 340px) {
@@ -208,7 +212,13 @@ li {
 }
 
 
-@media screen and (max-width: 650px) {  
+@media screen and (max-width: 650px) {
+  
+  .menuHome{
+    margin-bottom: 100px;
+    padding: 0 20px;
+  }
+
   .circle1 {
     display: none;
     padding: 0;

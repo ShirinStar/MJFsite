@@ -10,6 +10,8 @@ export default function Hamburger({ state }) {
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
+  let line4 = useRef(null);
+  let line5 = useRef(null);
   let humSocial = useRef(null);
 
   const hardRefresh = () => {
@@ -39,8 +41,8 @@ export default function Hamburger({ state }) {
     });
   };
 
-  const staggerText = (node1, node2, node3) => {
-    gsap.from([node1, node2, node3], {
+  const staggerText = (node1, node2, node3, node4, node5) => {
+    gsap.from([node1, node2, node3, node4, node5], {
       duration: 0.8,
       y: 100,
       delay: 0.1,
@@ -98,7 +100,7 @@ export default function Hamburger({ state }) {
       });
       staggerReveal(revealMenuBg, revealMenu);
       fadeInUp(humSocial);
-      staggerText(line1, line2, line3);
+      staggerText(line1, line2, line3, line4, line5);
     }
   }, [state]);
 
@@ -129,12 +131,22 @@ export default function Hamburger({ state }) {
                       onMouseEnter={(e) => handleHover(e)}
                       onMouseLeave={(e) => handleHoverExit(e)}
                       className="meLink"
+                      to="/reels"
+                    >
+                      Reels
+                    </Link>
+                  </li>
+                  <li ref={(el) => (line3 = el)}>
+                    <Link
+                      onMouseEnter={(e) => handleHover(e)}
+                      onMouseLeave={(e) => handleHoverExit(e)}
+                      className="meLink"
                       to="/press"
                     >
                       Press
                     </Link>
                   </li>
-                  <li ref={(el) => (line3 = el)}>
+                  <li ref={(el) => (line4 = el)}>
                     <Link
                       onMouseEnter={(e) => handleHover(e)}
                       onMouseLeave={(e) => handleHoverExit(e)}
@@ -144,10 +156,22 @@ export default function Hamburger({ state }) {
                       About
                     </Link>
                   </li>
+                  <li ref={(el) => (line5 = el)}>
+                    <a
+                      onMouseEnter={(e) => handleHover(e)}
+                      onMouseLeave={(e) => handleHoverExit(e)}
+                      className="meLink"
+                      href="mailto:maryjohn.frank@gmail.com"
+                    >
+                      contact
+                    </a>
+                  </li>
                 </ul>
               </nav>
               <div ref={(el) => (humSocial = el)} className="humSocialLinks">
-                <Link to="/values">♡ Values ♡</Link>
+                <Link className="valueLink" to="/values">
+                  ♡ Values ♡
+                </Link>
                 <div className="socialLinkDiv">
                   <a
                     href="https://www.instagram.com/maryjohnfrank/"
