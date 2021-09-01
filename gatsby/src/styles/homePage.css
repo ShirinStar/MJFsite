@@ -3,26 +3,23 @@
   z-index: -1000;
   margin: 0;
   padding: 0;
-  margin-top: 5%;
+  margin-top: 15%;
   margin-left: 28%;
 }
 
-.indexPageOne {
-  min-height: 520px;
-}
 
 .tagLine {
   text-align: center;
-  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
+  padding-top: 20px;
 }
 
 .homeName {
   font-size: 10rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
   color: transparent;
   /* position: relative; */
 }
@@ -62,44 +59,58 @@
 
 .logline {
   font-size: 4rem;
-  /* margin-top: 8%;
-  position: absolute; */
+  padding-bottom: 15px;
 }
 
-.arrow {
-  margin: 0;
-  padding:0;
-  display: inline-block;
-  padding-top: 80px;
-  left: 200px;
-  bottom: 100px;
-  animation: MoveUpDown 1s linear infinite;
+.videoImageContainer {
+  width: 100%;
+  min-height: 700px;
+  /* min-height: 100%; */
+}
+
+.imageWrapper {
+  position:relative;
+
+}
+
+.imageHome {
   position: absolute;
-  /* margin-left: -100px; */
+  z-index: 99;
 }
 
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 100px;
-  }
-  50% {
-    bottom: 110px;
-  }
+.imageHome.none {
+  display: none;
 }
 
-.downArrow {
-  font-size: 32px;
-  transition: all 150ms ease;
+.imageSize {
+  height: 675px;
+  object-fit: cover;
+} 
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* background: transparent url('/play-button.png') center center no-repeat; */
+  height: 48px;
+  width: 48px;
+  margin-top: 25%;
+  cursor: pointer;
+  z-index: 100;
 }
 
-.downArrow:hover {
+.playIcon.none {
+  display: none;
+}
+
+.playIcon:hover{
   transform: scale(1.2);
 }
 
 .videoDiv {
+  /* position: absolute; */
   display: block;
-  min-height: 600px;
-  padding-bottom: 50px;
+  z-index: -100;
 }
 
 .videoNone {

@@ -39,43 +39,43 @@ export default function SingleProjectPage({
     <>
       <div className="container">
         <div className="wrapper">
-          <Link to="/projects" className="downArrow backArrow"> ᐊ </Link>
-          <br /> <br />
-          <div className="projectHead">
-          <h2 className="pageTitle singleProject">{project.name}</h2>
-          <p className="projectYear">
-            {project.year}
-          </p>
+          <div className="backArrow">
+            <Link to="/projects" className="downArrow backArrow">
+              ᐊ
+            </Link>
           </div>
-        
+          <div className="projectHead">
+            <h2 className="pageTitle singleProject">{project.name}</h2>
+            <p className="projectYear">{project.year}</p>
+          </div>
 
-        <div className="videoDiv singleProject">
-          <VideoEmbed link={project.videoLink} />
-        </div>
+          <div className="videoDiv singleProject">
+            <VideoEmbed link={project.videoLink} />
+          </div>
 
-        <div className="descriptionDiv">
-          <PortableText
-            blocks={project._rawBodyPortableText}
-            serializers={serializers}
-          />
-        </div>
-        {project._rawFeaturePortableText !== null ? (
-          <div className="featureDiv">
-            <p className="featureP">Featured: </p>
+          <div className="descriptionDiv">
             <PortableText
-              blocks={project._rawFeaturePortableText}
+              blocks={project._rawBodyPortableText}
               serializers={serializers}
             />
           </div>
-        ) : (
-          ''
-        )}
-        {/* <ul>
+          {project._rawFeaturePortableText !== null ? (
+            <div className="featureDiv">
+              <p className="featureP">Featured: </p>
+              <PortableText
+                blocks={project._rawFeaturePortableText}
+                serializers={serializers}
+              />
+            </div>
+          ) : (
+            ''
+          )}
+          {/* <ul>
           {project.tags.map((tag) => (
             <li key={tag.id}>{tag.name}</li>
           ))}
         </ul> */}
-      </div>
+        </div>
       </div>
       <FooterNoFixed />
     </>

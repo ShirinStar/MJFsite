@@ -13,7 +13,7 @@
 
 header {
   height: 100px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Work Sans", sans-serif;
   padding-top: 10px;
 }
 
@@ -28,7 +28,7 @@ header {
 .inner-header {
   /* position: relative; */
   z-index: 10;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,13 +47,13 @@ header {
 
 .logoNav {
   font-family: "Barrio" , sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 10px;
   font-size: 22px;
   font-weight: 600;
 }
 
 .logoNav:hover {
-  letter-spacing: 2px;
+  letter-spacing: 12px;
 }
 
 .circle1 {
@@ -83,7 +83,6 @@ header {
   outline: none;
   cursor: none;
   font-size: 3rem;
-  color: black;
   position: absolute;
   margin-top: -5%;
   margin-left: 2%;
@@ -91,6 +90,10 @@ header {
 
 .btnMenu:hover {
   color: white;
+}
+
+.menuName {
+  font-family: "Barrio" , sans-serif;
 }
 
 .hamburger-menu {
@@ -113,13 +116,13 @@ header {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: #BEC9D5;
+  background: white;
   z-index: -1;
 }
 
 .menu-layer {
   position: relative;
-  background: #7E99A6;
+  background: #94B1D5;
   height: 100%;
   overflow: hidden;
 }
@@ -160,7 +163,7 @@ li {
   position: absolute;
   color: white !important;
   text-decoration: none;
-  font-family: "Bigilla";
+  font-family: "Barrio" , sans-serif;
 }
 
 .meLink:hover {

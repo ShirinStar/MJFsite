@@ -7,6 +7,7 @@ import Humburger from './Hamburger.js';
 export default function Header() {
   let btnRef = useRef(null);
   let circle = useRef(null);
+  let nameMenuRef = useRef(null);
 
   const [state, setState] = useState({
     initial: false,
@@ -30,7 +31,7 @@ export default function Header() {
     if (state.menuName === '☰') {
       circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
-      btnRef.style.color = 'black';
+      nameMenuRef.style.color = 'black';
     }
   }, [window.location.href]);
 
@@ -61,7 +62,7 @@ export default function Header() {
         clicked: true,
         menuName: 'X',
       });
-      btnRef.style.color = 'white';
+      nameMenuRef.style.color = 'white';
       btnRef.style.transform = 'scale(1.3)';
       circle.style.filter = 'invert(1)';
     } else if (state.clicked === true) {
@@ -69,7 +70,7 @@ export default function Header() {
         clicked: !state.clicked,
         menuName: '☰',
       });
-      btnRef.style.color = 'black';
+      nameMenuRef.style.color = 'black';
       circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
@@ -77,9 +78,9 @@ export default function Header() {
         clicked: !state.clicked,
         menuName: 'X',
       });
-      btnRef.style.color = 'white';
       circle.style.filter = 'invert(1)';
       btnRef.style.transform = 'scale(1.3)';
+      nameMenuRef.style.color = 'white';
     }
   };
 
@@ -93,7 +94,7 @@ export default function Header() {
               to="/"
               style={logoShow ? { display: 'none' } : {}}
             >
-              MJF
+              MARY JOHN FRANK
             </Link>
           </div>
           <div className="navMenu">
@@ -105,7 +106,9 @@ export default function Header() {
               type="button"
               onClick={handleMenu}
             >
-              <a>{state.menuName} </a>
+              <a ref={(el) => (nameMenuRef = el)} className="menuName">
+                {state.menuName}
+              </a>
             </button>
           </div>
         </div>

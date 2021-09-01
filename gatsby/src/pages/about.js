@@ -52,9 +52,17 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
                 blocks={about[0]._rawBodyPortableText}
                 serializers={serializers}
               />
-           
-            <div className="contact">
-            <p>Contact me: <a className="bodyTextLinks about" href="mailto:maryjohn.frank@gmail.com">maryjohn.frank [at] gmail.com</a> </p>
+
+              <div className="contact">
+                <p>
+                  Contact me:{' '}
+                  <a
+                    className="bodyTextLinks about"
+                    href="mailto:maryjohn.frank@gmail.com"
+                  >
+                    maryjohn.frank [at] gmail.com
+                  </a>{' '}
+                </p>
                 {/* <div className="socialLinkDiv">
                   <a
                     href="https://www.instagram.com/maryjohnfrank/"
@@ -68,8 +76,14 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
                     />
                   </a>
                   </div> */}
-                  <p>Check out my<Link className="bodyTextLinks about" to="/values"> values page ♡</Link></p>
-                  </div>
+                <p>
+                  Check out my
+                  <Link className="bodyTextLinks about" to="/values">
+                    {' '}
+                    values page ♡
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -23,6 +23,7 @@ export default function ProjectsList({ projects }) {
     <>
       <div className="container">
         <div className="wrapper">
+          {/* <h2 className="pageTitle">Projects</h2> */}
           {projects
             .filter((project) => project.showOnSite)
             // .sort((a, b) => a.setOrder - b.setOrder)

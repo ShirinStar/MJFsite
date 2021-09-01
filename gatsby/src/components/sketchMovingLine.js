@@ -1,20 +1,20 @@
 export default function SketchMovingLine(p5) {
   let canvas;
-  const xspacing = 1; // Distance between each horizontal location
+  const xspacing = 5; // Distance between each horizontal location
   let w; // Width of entire wave
   let theta = 0.0; // Start angle at 0
   const amplitude = 75.0; // Height of wave
-  const period = 250.0; // How many pixels before the wave repeats
+  const period = 150.0; // How many pixels before the wave repeats
   let dx; // Value for incrementing x
   let yvalues; // Using an array to store height values for the wave
 
   function calcWave() {
-    theta += 0.03;
+    theta += 0.05;
     // For every x value, calculate a y value with sine function
     let x = theta;
     for (let i = 0; i < yvalues.length; i++) {
       yvalues[i] = (p5.sin(x) * amplitude * 0.5) / 2;
-      x += dx / 1.5;
+      x += dx;
     }
   }
 
@@ -34,7 +34,7 @@ export default function SketchMovingLine(p5) {
   };
 
   p5.draw = () => {
-    p5.background(229, 227, 220);
+    p5.background(179, 200, 226);
     calcWave();
     renderWave();
   };

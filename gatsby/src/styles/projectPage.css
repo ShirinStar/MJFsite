@@ -16,11 +16,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+
+.backArrow {
+  padding-top: 100px;
+}
+
+.pageTitle.singleProject {
+  font-family: "Barrio" , sans-serif;
 }
 
 .projectYear {
   font-family: "Barrio" , sans-serif;
-  font-size: 28px;
+  font-size: 38px;
+  padding-top: 50px;
 }
 
 .videoDiv.singleProject {

@@ -24,7 +24,6 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
 
   const handleShowDiv = () => {
     setDivDispaly(true);
-    console.log('true');
   };
 
   useEffect(() => {
@@ -34,36 +33,51 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
   return (
     <div>
       <SEO title="✿" />
-      <div className="p5Div">
+      {/* <div className="p5Div">
         <P5Wrapper sketch={SketchMovingLine} />
-      </div>
+      </div> */}
       <div className="container">
         <div className="wrapper">
-          <div className="indexPageOne">
-            <div className="tagLine">
-              <h1 data-text="MARY JOHN FRANK" className="homeName">
-                <span className="titleSpan"> MARY JOHN FRANK </span>
-              </h1>
-              <h1 className="logline">Director · Choreographer · Filmmaker</h1>
-            </div>
-            <div className="arrow">
-              <a href="#videoDiv" onClick={handleShowDiv}>
-                <p className="downArrow"> ᐁ</p>
-              </a>
-            </div>
+          <div className="tagLine">
+            <h1 data-text="MARY JOHN FRANK" className="homeName">
+              <span className="titleSpan"> MARY JOHN FRANK </span>
+            </h1>
+            <h1 className="logline">CHOREOGRAPHER · FILMMAKER · DIRECTOR</h1>
           </div>
-        </div>
-      </div>
-      <div className={divDisplay ? 'videoDiv' : 'videoNone'}>
-        <div id="videoDiv">
-          <div style={responsiveVideoContainer}>
-            <iframe
-              src="https://player.vimeo.com/video/205550428?h=007989203f?&autoplay=1&loop=1&byline=0&title=0&muted=1"
-              style={responsiveVideoPlayer}
-              frameBorder="0"
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            />
+
+          <div className="videoImageContainer">
+            <div className="imageWrapper">
+              <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
+                <img className="imageSize" src="./homeImage.png" alt="home" />
+              </div>
+
+              <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
+                <a>
+                  <img
+                    src="./play-button.png"
+                    alt="play"
+                    onClick={handleShowDiv}
+                  />
+                </a>
+              </div>
+
+              <div>
+                <div
+                  id="videoDiv"
+                  className={divDisplay ? 'videoDiv' : 'videoNone'}
+                >
+                  <div style={responsiveVideoContainer}>
+                    <iframe
+                      src="https://player.vimeo.com/video/205550428?h=007989203f?&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                      style={responsiveVideoPlayer}
+                      frameBorder="0"
+                      allow="autoplay; fullscreen"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
