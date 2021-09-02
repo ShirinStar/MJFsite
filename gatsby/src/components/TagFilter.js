@@ -9,19 +9,23 @@ const TagStyles = styled.div`
   margin-bottom: 5rem;
   margin-top: 1.5rem;
   text-align: center;
+  max-width: 600px;
   a {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 0 1rem;
     align-items: center;
-    padding: 5px;
+    padding: 0 8px;
     padding-right: 0px;
     margin-right: 0px;
-    font-size: 14px;
-    font-family: 'Roboto';
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Barriecito', sans-serif;
+    color: #ec5cff;
     &[aria-current='page'] {
       background: white;
-      border-radius: 2px;
+      color: black;
+      border-radius: 4px;
       font-weight: 700;
     }
     &:hover {
@@ -30,6 +34,15 @@ const TagStyles = styled.div`
   }
   @media (max-width: 768px) {
     grid-gap: 0 0rem;
+    margin-top: 0.6rem;
+    text-align: center;
+    justify-content: center;
+    a {
+      padding: 0 4px;
+      font-size: 12px;
+      grid-gap: 0 1rem;
+      line-height: 1.8;
+    }
   }
 `;
 

@@ -93,7 +93,11 @@ header {
 }
 
 .menuName {
-  font-family: "Barrio" , sans-serif;
+  font-family: "Barrio" , sans-serif !important;
+}
+
+.menuName:hover {
+  filter: invert(1);
 }
 
 .hamburger-menu {
@@ -187,11 +191,21 @@ li {
 
 .valueLink {
   font-size: 22px;
+  font-family: 'Barriecito', sans-serif;
+  color: black !important;
+}
+
+.valueLink:hover {
+  color: #ec5cff !important;
 }
 
 .socialLink {
   height: 40px;
-  padding: 10px 5px;
+  padding: 10px 10px;
+}
+
+.socialLink:hover {
+  filter: invert(1);
 }
 
 @media only screen and (max-width: 340px) {
@@ -215,7 +229,17 @@ li {
 
 
 @media screen and (max-width: 650px) {
-  
+  .logoNav {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-left: -10%;
+  }
+
+  .menuName {
+    font-size: 22px;
+  }
+
   .menuHome{
     margin-bottom: 100px;
     padding: 0 20px;
@@ -228,19 +252,28 @@ li {
   }
 
   li {
-    font-size: 4rem;
-    height: 100px;
-    width: 160px;
-    padding-left: 10px;
+    font-size: 3.6rem;
+    height: 80px;
+    width: 200px;
+    /* padding-left: 10px; */
+  }
+
+  .valueLink {
+    font-size: 14px;
+  }
+
+  .heart {
+    font-size: 10px;
   }
 
   .humSocialLinks {
-    width: 100px;
-    font-size: 16px;
+    width: 80px;
+    font-size: 12px;
   }
 
   .socialLink {
     height: 20px;
+    padding: 0px 0px;
   }
 
   .tagName {
@@ -250,8 +283,8 @@ li {
 
 @media only screen and (min-width: 650px) and (max-width: 800px) {
   li {
-    font-size: 10rem;
-    height: 150px;
+    font-size: 7rem;
+    height: 120px;
     width: 400px;
     padding-left: 10px;
   }
@@ -268,9 +301,9 @@ li {
 
 @media only screen and (min-width: 800px) and (max-width: 1400px) {
   li {
-    font-size: 10rem;
-    height: 200px;
-    width: 400px;
+    font-size: 9rem;
+    height: 140px;
+    width: 450px;
     padding-left: 40px;
   }
 

@@ -39,8 +39,8 @@ export default function SingleProjectPage({
     <>
       <div className="container">
         <div className="wrapper">
-          <div className="backArrow">
-            <Link to="/projects" className="downArrow backArrow">
+          <div className="backToProjects">
+            <Link className="backText" to="/projects">
               Back
             </Link>
           </div>
@@ -71,7 +71,7 @@ export default function SingleProjectPage({
             ''
           )}
           <div className="imagesContainer">
-            <h2>Behind The Scene</h2>
+            <h2 className="BHSTitle">Behind The Scene</h2>
             <div className="imageBHSGallery">
               <img
                 className="BHSimage"

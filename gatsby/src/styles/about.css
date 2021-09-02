@@ -24,8 +24,49 @@
   line-height: 1.3;
 }
 
+.contact {
+  text-align: left;
+  /* width: 70%; */
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.contactTitle {
+  font-family: "Barriecito", sans-serif;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px 15px;
+  letter-spacing: 2px;
+}
+
 .bodyTextLinks.about {
   font-size: 18px;
+  font-family: 'Roboto', sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.aboutSocialWrapper {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 10px;
+}
+
+.socialLinkDivAbout {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
+  text-align: center;
+}
+
+.socialLinkAbout {
+  height: 30px;
+}
+
+.socialLinkAbout:hover {
+  filter: invert(1);
 }
 
 
@@ -42,6 +83,31 @@
     padding-left: 10px;
     font-size: 14px;
     line-height: 1.3;
+  }
+
+  .contact {
+    text-align: center;
+    width: 70%;
+    margin-top: 40px;
+  }
+
+  .contactTitle {
+    font-size: 18px;
+  }
+
+  .aboutSocialWrapper {
+    justify-content: center;
+  }
+
+  .socialLinkAbout {
+    height: 25px;
+  }
+  
+  
+  .bodyTextLinks.about {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif !important;
+    letter-spacing: 1px;
   }
   
   .bodyTextLinks.about {

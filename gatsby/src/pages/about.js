@@ -55,34 +55,60 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
 
               <div className="contact">
                 <p>
-                  Contact me:{' '}
-                  <a
-                    className="bodyTextLinks about"
-                    href="mailto:maryjohn.frank@gmail.com"
-                  >
-                    maryjohn.frank [at] gmail.com
-                  </a>{' '}
+                  <span className="contactTitle">Contact me </span>
                 </p>
-                {/* <div className="socialLinkDiv">
-                  <a
-                    href="https://www.instagram.com/maryjohnfrank/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="./instagram_icon.png"
-                      alt="instagram"
-                      height="30"
-                    />
-                  </a>
-                  </div> */}
-                <p>
+                <br />
+                <a
+                  className="bodyTextLinks about"
+                  href="mailto:maryjohn.frank@gmail.com"
+                >
+                  maryjohn.frank@gmail.com
+                </a>
+
+                <div className="aboutSocialWrapper">
+                  <div className="socialLinkDivAbout">
+                    <a
+                      href="https://www.instagram.com/maryjohnfrank/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="/instagram_icon.png"
+                        alt="instagram"
+                        className="socialLinkAbout"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/maryjohnfrank/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="/linkedin_icon.png"
+                        alt="linkedin"
+                        className="socialLinkAbout"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/maryjohnfrank/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="/facebook_icon.png"
+                        alt="facebook"
+                        className="socialLinkAbout"
+                      />
+                    </a>
+                  </div>
+                </div>
+                {/* <p>
                   Check out my
                   <Link className="bodyTextLinks about" to="/values">
                     {' '}
                     values page ♡
                   </Link>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

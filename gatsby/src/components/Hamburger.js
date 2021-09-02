@@ -170,7 +170,8 @@ export default function Hamburger({ state }) {
               </nav>
               <div ref={(el) => (humSocial = el)} className="humSocialLinks">
                 <Link className="valueLink" to="/values">
-                  ♡ Values ♡
+                  <span className="heart">♡</span> Values
+                  <span className="heart"> ♡</span>
                 </Link>
                 <div className="socialLinkDiv">
                   <a
@@ -179,7 +180,7 @@ export default function Hamburger({ state }) {
                     rel="noreferrer"
                   >
                     <img
-                      src="./instagram_icon.png"
+                      src="/instagram_icon.png"
                       alt="instagram"
                       className="socialLink"
                     />
@@ -187,7 +188,7 @@ export default function Hamburger({ state }) {
                   <a href="mailto:maryjohn.frank@gmail.com">
                     <img
                       className="socialLink"
-                      src="./email_icon.png"
+                      src="/email_icon.png"
                       alt="email"
                     />
                   </a>

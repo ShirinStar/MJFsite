@@ -37,20 +37,22 @@ export default function ReelsPage({ data, setEventTrigger, eventTrigger }) {
       <SEO title="Reels" />
       <div className="container">
         <div className="wrapper">
-          {reels.map((reel) => (
-            <div key={reel.id}>
-              <h2 className="pageTitle">{reel.name}</h2>
-              <div className="videoDiv">
-                <VideoEmbed link={reel.reelLink} />
-              </div>
-              {/* <div className="descriptionDiv">
+          <div className="reelWrapper">
+            {reels.map((reel) => (
+              <div key={reel.id}>
+                <h2 className="reeltitle">{reel.name}</h2>
+                <div className="videoDiv">
+                  <VideoEmbed link={reel.reelLink} />
+                </div>
+                {/* <div className="descriptionDiv">
                 <PortableText
                   blocks={reel._rawBodyPortableText}
                   serializers={serializers}
                 />
               </div> */}
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
           <FooterNoFixed />
         </div>
       </div>

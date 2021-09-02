@@ -8,6 +8,9 @@ var plugins = [{
       plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-source-sanity/gatsby-ssr'),
       options: {"plugins":[],"projectId":"yzzh7fu1","dataset":"production","watchMode":true,"token":"skiQzUE3qQsVtUxow6FF6xWQ3BwhBB0vZgXx784HE46uF7wzQEPfsS0QWHUrqfLImfJFzbIoDvSpV93mTUb0fMCnOD65mhTF6nKLFWONBs3vlthW6FOQK6rTK5JBBIRcrXkwX63wQ6MGlsBxzS8Uv63huPkBpKCNKekQz5iQeeK0Z0RqwhqA"},
     },{
+      plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":[{"family":"Oswald","subsets":["latin"]},{"family":"Open Sans","variants":["400","700"]}]},
+    },{
       plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/gatsby-ssr'),
       options: {"plugins":[]},
     }]

@@ -11,6 +11,14 @@ export default function ProjectGrid({ project }) {
         <Link to={`/project/${project.slug.current}`}>
           <div className="imageGrid">
             <img src={project.image.asset.url} alt={project.name} />
+            <div className="textImagesmobile">
+              <p className="mainImageTitleMobile">
+                {project.name} |
+                <span className="secondImageTitleMobile">
+                  {project.tagline}
+                </span>
+              </p>
+            </div>
             {/* <Img fluid={project.image.asset.fluid} alt={project.name} /> */}
           </div>
           <div className="textImages textImages--blur">
