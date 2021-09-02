@@ -111,7 +111,6 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
-  "component---src-pages-about-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
   "component---src-pages-projects-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js"))),
   "component---src-templates-project-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/Project.js */ "./src/templates/Project.js")))
@@ -73617,7 +73616,7 @@ function Header() {
         menuName: '☰'
       });
       nameMenuRef.style.color = 'black';
-      circle.style.filter = 'invert(0)';
+      circle.style.filter = 'invert(1)';
       btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
       setState({
@@ -73918,7 +73917,7 @@ var _public_page_data_sq_d_1255589345_json__WEBPACK_IMPORTED_MODULE_0___namespac
 
 const TagStyles = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "TagFilter__TagStyles"
-})(["display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:5rem;margin-top:1.5rem;text-align:center;max-width:600px;a{display:grid;grid-template-columns:auto 1fr;grid-gap:0 1rem;align-items:center;padding:0 8px;padding-right:0px;margin-right:0px;font-size:16px;letter-spacing:2px;font-family:'Barriecito',sans-serif;color:#ec5cff;&[aria-current='page']{background:white;color:black;border-radius:4px;font-weight:700;}&:hover{color:white;}}@media (max-width:768px){grid-gap:0 0rem;margin-top:0.6rem;text-align:center;justify-content:center;a{padding:0 4px;font-size:12px;grid-gap:0 1rem;line-height:1.8;}}"]);
+})(["display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:5rem;margin-top:1.5rem;text-align:center;max-width:700px;a{display:grid;grid-template-columns:auto 1fr;grid-gap:0 1rem;align-items:center;padding:0 8px;padding-right:0px;margin-right:0px;font-size:18px;letter-spacing:2px;font-family:'Barriecito',sans-serif;color:#f0471d;&[aria-current='page']{background:white;color:black;border-radius:4px;font-weight:700 !important;}&:hover{color:#95b1d5;}}@media (max-width:768px){grid-gap:0 0rem;margin-top:0.6rem;text-align:center;justify-content:center;a{padding:0 4px;font-size:12px;grid-gap:0 1rem;line-height:1.8;}}"]);
 
 function countProjectsInTags(projects) {
   const counts = projects.map(project => project.tags).flat().reduce((acc, tag) => {
@@ -74175,121 +74174,6 @@ function FourOFourPage() {
     to: "/"
   }, " Go back to Home page"));
 }
-
-/***/ }),
-
-/***/ "./src/pages/about.js":
-/*!****************************!*\
-  !*** ./src/pages/about.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AboutPage; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
-/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
-/* harmony import */ var _components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/FooterNoFixed */ "./src/components/FooterNoFixed.js");
-
-
-
-
-
-
-
-const serializers = {
-  marks: {
-    link: ({
-      children,
-      mark
-    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "bodyTextLinks about",
-      href: mark.href,
-      target: "_blank",
-      rel: "noopener noreferrer"
-    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "bodyTextLinks about",
-      href: mark.href
-    }, children)
-  }
-};
-function AboutPage({
-  data,
-  setEventTrigger,
-  eventTrigger
-}) {
-  var _about$0$image, _about$0$image$asset, _about$0$image$asset$;
-
-  const about = data.about.nodes;
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    setEventTrigger(eventTrigger + 1);
-  }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "About",
-    image: (_about$0$image = about[0].image) === null || _about$0$image === void 0 ? void 0 : (_about$0$image$asset = _about$0$image.asset) === null || _about$0$image$asset === void 0 ? void 0 : (_about$0$image$asset$ = _about$0$image$asset.fluid) === null || _about$0$image$asset$ === void 0 ? void 0 : _about$0$image$asset$.src
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "pageTitle"
-  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "aboutDiv"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "imgAbout",
-    src: about[0].image.asset.url,
-    alt: about[0].name
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "aboutText"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    blocks: about[0]._rawBodyPortableText,
-    serializers: serializers
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "contact"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "contactTitle"
-  }, "Contact me ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "bodyTextLinks about",
-    href: "mailto:maryjohn.frank@gmail.com"
-  }, "maryjohn.frank@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "aboutSocialWrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "socialLinkDivAbout"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/maryjohnfrank/",
-    target: "_blank",
-    rel: "noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/instagram_icon.png",
-    alt: "instagram",
-    className: "socialLinkAbout"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/maryjohnfrank/",
-    target: "_blank",
-    rel: "noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/linkedin_icon.png",
-    alt: "linkedin",
-    className: "socialLinkAbout"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/maryjohnfrank/",
-    target: "_blank",
-    rel: "noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/facebook_icon.png",
-    alt: "facebook",
-    className: "socialLinkAbout"
-  }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_6__["default"], null));
-}
-const aboutQuery = "3200291010";
 
 /***/ }),
 
@@ -74589,27 +74473,27 @@ function SingleProjectPage({
     serializers: serializers
   })) : '', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "imagesContainer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, project.BHSimage1 == null && project.BHSimage2 == null && project.BHSimage3 == null && project.BHSimage4 == null ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "BHSTitle"
   }, "Behind The Scene"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "imageBHSGallery"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, project.BHSimage1 == null ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "BHSimage",
     src: project.BHSimage1.asset.url,
     alt: "BHS1"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }), project.BHSimage2 == null ? ' ' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "BHSimage",
     src: project.BHSimage2.asset.url,
     alt: "BHS2"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }), project.BHSimage3 == null ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "BHSimage",
     src: project.BHSimage3.asset.url,
     alt: "BHS3"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }), project.BHSimage4 == null ? ' ' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "BHSimage",
     src: project.BHSimage4.asset.url,
     alt: "BHS4"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 }
 const projectQuery = "2823368065";
 
