@@ -69,7 +69,7 @@ export default {
     },
     {
       name: 'image',
-      title: 'Prroject hero image',
+      title: 'Project hero image',
       type: 'image',
       options: {
         hotspot: true,
@@ -95,6 +95,38 @@ export default {
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'tag' }] }],
     },
+    {
+      name: 'BHSimage1',
+      title: 'BHS image 1',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'BHSimage2',
+      title: 'BHS image 2',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'BHSimage3',
+      title: 'BHS image 3',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'BHSimage4',
+      title: 'BHS image 4',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
     // order documents plugin
     {
       name: 'order',
@@ -102,19 +134,6 @@ export default {
       type: 'number',
       hidden: true,
     },
-    // {
-    //   name: 'imageGalley',
-    //   type: 'array',
-    //   title: 'Image Gallery',
-    //   of: [
-    //     // {
-    //     //   type: 'block',
-    //     // },
-    //     {
-    //       type: 'imageGallery',
-    //     },
-    //   ],
-    // },
   ],
   orderings: [
     {

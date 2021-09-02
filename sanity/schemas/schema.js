@@ -12,6 +12,7 @@ import about from './about';
 import value1 from './value1';
 import value2 from './value2';
 import bodyPortableText from './bodyPortableText';
+import reels from './reels';
 
 export default createSchema({
   // We name our schema
@@ -24,6 +25,7 @@ export default createSchema({
     videoEmbed,
     projectTag,
     press,
+    reels,
     about,
     value1,
     value2,
