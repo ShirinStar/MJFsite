@@ -74,6 +74,29 @@
   font-weight: 700;
 }
 
+.imagesContainer {
+    max-width: 1200px;
+    padding: 4vw;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.imageBHSGallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: row;
+}
+
+.BHSimage {
+  /* height: 400px; */
+  width: 500px;
+  object-fit: cover;
+  padding: 5px;
+}
+
 @media screen and (max-width: 650px) {  
   .downArrow.backArrow {
     font-size: 22px;

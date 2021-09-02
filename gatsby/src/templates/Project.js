@@ -70,11 +70,31 @@ export default function SingleProjectPage({
           ) : (
             ''
           )}
-          {/* <ul>
-          {project.tags.map((tag) => (
-            <li key={tag.id}>{tag.name}</li>
-          ))}
-        </ul> */}
+          <div className="imagesContainer">
+            <h2>Behind The Scene</h2>
+            <div className="imageBHSGallery">
+              <img
+                className="BHSimage"
+                src={project.BHSimage1.asset.url}
+                alt="BHS1"
+              />
+              <img
+                className="BHSimage"
+                src={project.BHSimage2.asset.url}
+                alt="BHS2"
+              />
+              <img
+                className="BHSimage"
+                src={project.BHSimage3.asset.url}
+                alt="BHS3"
+              />
+              <img
+                className="BHSimage"
+                src={project.BHSimage4.asset.url}
+                alt="BHS4"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <FooterNoFixed />
@@ -102,6 +122,26 @@ export const projectQuery = graphql`
           fluid(maxWidth: 800) {
             ...GatsbySanityImageFluid
           }
+        }
+      }
+      BHSimage1 {
+        asset {
+          url
+        }
+      }
+      BHSimage2 {
+        asset {
+          url
+        }
+      }
+      BHSimage3 {
+        asset {
+          url
+        }
+      }
+      BHSimage4 {
+        asset {
+          url
         }
       }
       tags {
