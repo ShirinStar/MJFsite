@@ -4,13 +4,6 @@
        url("/fonts/bigilla/Bigilla-Bold.otf") format("otf");
 }
 
-@font-face {
-  font-family: "Modernist";
-  src: url("/fonts/Sk-Modernist/Sk-Modernist-Regular.otf") format("otf"),
-       url("/fonts/Sk-Modernist/Sk-Modernist-Mono.otf") format("otf"),
-       url("/fonts/Sk-Modernist/Sk-Modernist-Bold.otf") format("otf");
-}
-
 html {
   font-size: 10px;
   height: 100vh;
@@ -20,10 +13,15 @@ html {
 body {
   font-size: 2rem;
   background-color: #8CD0B4;
+  /* background-color: #CDE1C3; */
   min-height: 100%;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   cursor: none;
+  /* background: rgb(205,225,195);
+  background: linear-gradient(45deg, rgba(205,225,195,1) 12%, rgba(141,186,173,1) 31%, rgba(163,156,195,1) 62%, rgba(249,255,227,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
 html *,
@@ -36,6 +34,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+::selection {
+  background: #95B1D5;
+}
+
 .cursorZ {
   position: fixed;
   z-index: 1000;
@@ -44,7 +46,7 @@ body::-webkit-scrollbar {
 .cursor {
   width: 30px;
   height: 30px;
-  border: 2px solid #EC5CFF;
+  border: 4px solid #F0471D;
   border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
@@ -61,12 +63,12 @@ body::-webkit-scrollbar {
 
 .cursor--clicked {
   transform: translate(-50%, -50%) scale(0.5);
-  background-color: #EC5CFF;
+  background-color: #F0471D;
 }
 
 .cursor--link-hovered {
   transform: translate(-50%, -50%) scale(0.5);
-  background-color: #EC5CFF;
+  background-color: #F0471D;
 }
 
 .container {

@@ -71,7 +71,7 @@ export default function Header() {
         menuName: '☰',
       });
       nameMenuRef.style.color = 'black';
-      circle.style.filter = 'invert(0)';
+      circle.style.filter = 'invert(1)';
       btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
       setState({

@@ -1,19 +1,6 @@
-@font-face {
-  font-family: "Bigilla";
-  src: url("/fonts/bigilla/Bigilla.otf") format("otf"),
-       url("/fonts/bigilla/Bigilla-Bold.otf") format("otf");
-}
-
-@font-face {
-  font-family: "Modernist";
-  src: url("/fonts/Sk-Modernist/Sk-Modernist-Regular.otf") format("otf"),
-       url("/fonts/Sk-Modernist/Sk-Modernist-Mono.otf") format("otf"),
-       url("/fonts/Sk-Modernist/Sk-Modernist-Bold.otf") format("otf");
-}
-
 header {
   height: 100px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roborto", sans-serif;
   padding-top: 10px;
 }
 
@@ -120,13 +107,13 @@ header {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: white;
+  background: #CDE1C3;
   z-index: -1;
 }
 
 .menu-layer {
   position: relative;
-  background: #94B1D5;
+  background: #8E92C1;
   height: 100%;
   overflow: hidden;
 }
@@ -196,7 +183,7 @@ li {
 }
 
 .valueLink:hover {
-  color: #ec5cff !important;
+  color: #F0471D !important;
 }
 
 .socialLink {

@@ -71,29 +71,54 @@ export default function SingleProjectPage({
             ''
           )}
           <div className="imagesContainer">
-            <h2 className="BHSTitle">Behind The Scene</h2>
-            <div className="imageBHSGallery">
-              <img
-                className="BHSimage"
-                src={project.BHSimage1.asset.url}
-                alt="BHS1"
-              />
-              <img
-                className="BHSimage"
-                src={project.BHSimage2.asset.url}
-                alt="BHS2"
-              />
-              <img
-                className="BHSimage"
-                src={project.BHSimage3.asset.url}
-                alt="BHS3"
-              />
-              <img
-                className="BHSimage"
-                src={project.BHSimage4.asset.url}
-                alt="BHS4"
-              />
-            </div>
+            {project.BHSimage1 == null &&
+            project.BHSimage2 == null &&
+            project.BHSimage3 == null &&
+            project.BHSimage4 == null ? (
+              ''
+            ) : (
+              <>
+                <h2 className="BHSTitle">Behind The Scene</h2>
+                <div className="imageBHSGallery">
+                  {project.BHSimage1 == null ? (
+                    ''
+                  ) : (
+                    <img
+                      className="BHSimage"
+                      src={project.BHSimage1.asset.url}
+                      alt="BHS1"
+                    />
+                  )}
+                  {project.BHSimage2 == null ? (
+                    ' '
+                  ) : (
+                    <img
+                      className="BHSimage"
+                      src={project.BHSimage2.asset.url}
+                      alt="BHS2"
+                    />
+                  )}
+                  {project.BHSimage3 == null ? (
+                    ''
+                  ) : (
+                    <img
+                      className="BHSimage"
+                      src={project.BHSimage3.asset.url}
+                      alt="BHS3"
+                    />
+                  )}
+                  {project.BHSimage4 == null ? (
+                    ' '
+                  ) : (
+                    <img
+                      className="BHSimage"
+                      src={project.BHSimage4.asset.url}
+                      alt="BHS4"
+                    />
+                  )}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

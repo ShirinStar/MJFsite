@@ -9,7 +9,7 @@ const TagStyles = styled.div`
   margin-bottom: 5rem;
   margin-top: 1.5rem;
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   a {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -18,18 +18,18 @@ const TagStyles = styled.div`
     padding: 0 8px;
     padding-right: 0px;
     margin-right: 0px;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 2px;
     font-family: 'Barriecito', sans-serif;
-    color: #ec5cff;
+    color: #f0471d;
     &[aria-current='page'] {
       background: white;
       color: black;
       border-radius: 4px;
-      font-weight: 700;
+      font-weight: 700 !important;
     }
     &:hover {
-      color: white;
+      color: #95b1d5;
     }
   }
   @media (max-width: 768px) {
