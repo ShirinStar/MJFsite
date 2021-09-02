@@ -28,7 +28,7 @@ header {
 .inner-header {
   /* position: relative; */
   z-index: 10;
-  height: 180px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,7 +185,7 @@ li {
   max-width: 140px;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 25px 0;
 }
 

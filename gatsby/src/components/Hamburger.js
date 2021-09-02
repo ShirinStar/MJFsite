@@ -180,7 +180,7 @@ export default function Hamburger({ state }) {
                     rel="noreferrer"
                   >
                     <img
-                      src="/instagram_icon.png"
+                      src="/instagram_icon_nofill.png"
                       alt="instagram"
                       className="socialLink"
                     />

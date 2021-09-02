@@ -33,11 +33,14 @@
 
 .contactTitle {
   font-family: "Barriecito", sans-serif;
-  font-size: 22px;
-  background-color: white;
+  font-size: 26px;
+  /* background-color: white;
   border-radius: 5px;
-  padding: 1px 15px;
+  padding: 1px 15px; */
   letter-spacing: 2px;
+  color: #ec5cff !important;
+  padding: 0;
+  margin: 0;
 }
 
 .bodyTextLinks.about {
