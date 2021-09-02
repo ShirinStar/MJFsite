@@ -7,7 +7,6 @@
   margin-left: 28%;
 }
 
-
 .tagLine {
   text-align: center;
   margin-left: auto;
@@ -68,13 +67,13 @@
 }
 .videoImageContainer {
   width: 100%;
- 
   /* padding-bottom: 40px; */
 }
 
-/* .imageWrapper {
-  position:relative;
-} */
+.blackimageCon {
+  position: relative;
+}
+
 
 .imageHome {
   position: absolute;
@@ -88,29 +87,33 @@
 }
 
 .imageHome.none {
-  /* animation: fadeOut ease 2s normal forwards; */
   display: none;
 }
 
-/* @keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  50% {
-    opacity:0;
-    
-  }
-  100% {
-    opacity:0;
-    display: none;
-  } */
-/* } */
 
 .imageSize {
   height: 675px;
   object-fit: cover;
   padding-bottom: 40px;
 } 
+
+.imageWrapper {
+  position: absolute;
+    width: 100%;
+    height: 94%;
+    background: #000;
+    opacity: 0;
+    animation: fadeInBlack ease 6s forwards;
+}
+
+@keyframes fadeInBlack {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+ }
 
 .playIcon {
   position: absolute;
@@ -122,6 +125,7 @@
   margin-top: 25%;
   cursor: pointer;
   z-index: 6;
+  transform: scale(1.2);
 }
 
 .playIcon.none {
@@ -129,15 +133,25 @@
 }
 
 .playIcon:hover{
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 .videoDiv {
   /* position: absolute; */
   display: block;
-  z-index: -8;
   padding-bottom: 40px;
+  animation: fadeIn ease 5s forwards;
 }
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+ }
 
 .videoNone {
   display: none;

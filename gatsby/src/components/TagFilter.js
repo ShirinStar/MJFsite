@@ -6,7 +6,8 @@ const TagStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 1.5rem;
   text-align: center;
   a {
     display: grid;
@@ -14,9 +15,14 @@ const TagStyles = styled.div`
     grid-gap: 0 1rem;
     align-items: center;
     padding: 5px;
+    padding-right: 0px;
+    margin-right: 0px;
     font-size: 14px;
+    font-family: 'Roboto';
     &[aria-current='page'] {
-      border-bottom: 2px solid #B05B4F;
+      background: white;
+      border-radius: 2px;
+      font-weight: 700;
     }
     &:hover {
       color: white;
@@ -67,6 +73,7 @@ export default function TagFilter({ activeTag }) {
           tags {
             name
             id
+            setOrder
           }
         }
       }
@@ -74,7 +81,9 @@ export default function TagFilter({ activeTag }) {
   `);
 
   const tagsWithCounts = countProjectsInTags(projects.nodes);
-  const tagsToShow = getTagsWithShowOnSite(projects.nodes);
+  const tagsToShow = getTagsWithShowOnSite(projects.nodes).sort(
+    (a, b) => a.setOrder - b.setOrder
+  );
 
   return (
     <div className="container">

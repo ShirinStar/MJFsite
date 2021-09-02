@@ -28,7 +28,7 @@ header {
 .inner-header {
   /* position: relative; */
   z-index: 10;
-  height: 200px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,13 +47,13 @@ header {
 
 .logoNav {
   font-family: "Barrio" , sans-serif;
-  letter-spacing: 10px;
-  font-size: 22px;
+  letter-spacing: 8px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .logoNav:hover {
-  letter-spacing: 12px;
+  letter-spacing: 10px;
 }
 
 .circle1 {
@@ -146,6 +146,7 @@ nav {
 ul {
   padding: 0;
   margin: 0;
+  margin-top: 50px;
 }
 
 li {
@@ -177,7 +178,7 @@ li {
 
 .socialLinkDiv {
   display: flex;
-  max-width: 100px;
+  max-width: 140px;
   align-items: center;
   text-align: center;
   justify-content: space-between;
@@ -190,6 +191,7 @@ li {
 
 .socialLink {
   height: 40px;
+  padding: 10px 5px;
 }
 
 @media only screen and (max-width: 340px) {

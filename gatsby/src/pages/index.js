@@ -4,7 +4,7 @@ import Player from '@vimeo/player';
 import SEO from '../components/SEO';
 import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
-import FooterNotFixed from '../components/FooterNoFixed';
+import Footer from '../components/Footer';
 import SketchMovingLine from '../components/sketchMovingLine';
 
 export default function HomePage({ eventTrigger, setEventTrigger }) {
@@ -52,42 +52,43 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
 
           <div className="responsiveContainer">
             <div className="videoImageContainer">
-              <div className="imageWrapper">
+              <div className="blackimageCon">
                 <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
                   <img className="imageSize" src="./homeImage.png" alt="home" />
                 </div>
+                <div className="imageWrapper" />
+              </div>
+              <div className="imageWrapper" />
+              <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
+                <a>
+                  <img
+                    src="./play-button.png"
+                    alt="play"
+                    onClick={handleShowDiv}
+                  />
+                </a>
+              </div>
 
-                <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
-                  <a>
-                    <img
-                      src="./play-button.png"
-                      alt="play"
-                      onClick={handleShowDiv}
-                    />
-                  </a>
-                </div>
-
-                <div
-                  id="videoDiv"
-                  className={divDisplay ? 'videoDiv' : 'videoNone'}
-                >
-                  <div style={responsiveVideoContainer}>
-                    <iframe
-                      ref={iframRef}
-                      src="https://player.vimeo.com/video/205550428?api=1&h=007989203f?&loop=1&byline=0&title=0"
-                      style={responsiveVideoPlayer}
-                      frameBorder="0"
-                      allow="autoplay; fullscreen"
-                      allowFullScreen
-                    />
-                  </div>
+              <div
+                id="videoDiv"
+                className={divDisplay ? 'videoDiv' : 'videoNone'}
+              >
+                <div style={responsiveVideoContainer}>
+                  <iframe
+                    ref={iframRef}
+                    src="https://player.vimeo.com/video/205550428?api=1&h=007989203f?&loop=1&byline=0&title=0"
+                    style={responsiveVideoPlayer}
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
-      <FooterNotFixed />
     </div>
   );
 }

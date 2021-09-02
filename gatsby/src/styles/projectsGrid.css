@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "Modernist";
-  src: url("/fonts/Sk-Modernist/Sk-Modernist-Regular.otf") format("otf"),
-       url("/fonts/Sk-Modernist/Sk-Modernist-Mono.otf") format("otf"),
-       url("/fonts/Sk-Modernist/Sk-Modernist-Bold.otf") format("otf");
-}
-
-/* .gridCointaner {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 10rem;
-} */
-
 .heroImage { 
   /* display: inline-block; */
   padding: 0;

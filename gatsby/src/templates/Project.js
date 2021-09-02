@@ -41,7 +41,7 @@ export default function SingleProjectPage({
         <div className="wrapper">
           <div className="backArrow">
             <Link to="/projects" className="downArrow backArrow">
-              ᐊ
+              Back
             </Link>
           </div>
           <div className="projectHead">
