@@ -73512,7 +73512,7 @@ function Hamburger({
     target: "_blank",
     rel: "noreferrer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/instagram_icon.png",
+    src: "/instagram_icon_nofill.png",
     alt: "instagram",
     className: "socialLink"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -74256,7 +74256,7 @@ function AboutPage({
     className: "contact"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "contactTitle"
-  }, "Contact me ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Contact me ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "bodyTextLinks about",
     href: "mailto:maryjohn.frank@gmail.com"
   }, "maryjohn.frank@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -74270,7 +74270,7 @@ function AboutPage({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/instagram_icon.png",
     alt: "instagram",
-    height: "35"
+    className: "socialLinkAbout"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.instagram.com/maryjohnfrank/",
     target: "_blank",
@@ -74278,7 +74278,7 @@ function AboutPage({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/linkedin_icon.png",
     alt: "linkedin",
-    height: "35"
+    className: "socialLinkAbout"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.instagram.com/maryjohnfrank/",
     target: "_blank",
@@ -74286,7 +74286,7 @@ function AboutPage({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/facebook_icon.png",
     alt: "facebook",
-    height: "30"
+    className: "socialLinkAbout"
   }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_6__["default"], null));
 }
 const aboutQuery = "3200291010";
