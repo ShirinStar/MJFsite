@@ -9,8 +9,8 @@ const PressStyle = styled.div`
     grid-template-rows: auto auto;
   }
   grid-template-rows: subgrid;
-  column-gap: 10px;
-  row-gap: 10px;
+  /* column-gap: 10px; */
+  row-gap: 2px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -18,8 +18,14 @@ const PressStyle = styled.div`
   p {
     margin: 0;
   }
-  .gatsby-image-wrapper {
+  .pressImage {
+    height: 100%;
+    /* width: 100%; */
     object-fit: contain;
+    border: 1px solid black;
+  }
+  .pressImage::hover {
+    border: 1px solid white;
   }
 `;
 
@@ -27,13 +33,16 @@ export default function PressGrid({ press }) {
   return (
     <PressStyle>
       <a href={press.pressLink} target="_blank" rel="noreferrer">
-        <Img fixed={press.image.asset.fixed} alt={press.name} />
+        <img
+          className="pressImage"
+          src={press.image.asset.url}
+          alt={press.name}
+        />
+        <div className="pressInfo">
+          <p className="presstext">{press.name}</p>
+          <p>{press.year}</p>
+        </div>
       </a>
-
-      <div className="pressInfo">
-        <p>{press.name}</p>
-        <p>{press.year}</p>
-      </div>
     </PressStyle>
   );
 }

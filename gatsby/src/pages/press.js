@@ -25,6 +25,7 @@ export const pressQuery = graphql`
         year
         image {
           asset {
+            url
             fixed(width: 220, height: 300) {
               ...GatsbySanityImageFixed
             }

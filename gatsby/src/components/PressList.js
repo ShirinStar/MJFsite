@@ -7,17 +7,10 @@ import Footer from './Footer';
 const PressGridStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 6rem;
+  gap: 2.2rem;
+  margin-top: 20px;
   /* grid-auto-rows: auto auto; */
 `;
-
-// const PressGridCointainer = styled.div`
-//   max-width: 900px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 10rem;
-//   align-items: center;
-// `;
 
 export default function ProjectsList({ presses }) {
   return (
@@ -27,11 +20,13 @@ export default function ProjectsList({ presses }) {
         <div className="wrapper">
           <h2 className="pageTitle">Press</h2>
           <PressGridStyle>
-            {presses.map((press) => (
-              <div>
-                <PressGrid key={press.id} press={press} />
-              </div>
-            ))}
+            {presses
+              .sort((a, b) => b.year - a.year)
+              .map((press) => (
+                <div>
+                  <PressGrid key={press.id} press={press} />
+                </div>
+              ))}
           </PressGridStyle>
         </div>
       </div>

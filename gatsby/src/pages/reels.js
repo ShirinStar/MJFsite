@@ -40,10 +40,25 @@ export default function ReelsPage({ data, setEventTrigger, eventTrigger }) {
           <div className="reelWrapper">
             {reels.map((reel) => (
               <div key={reel.id}>
-                <h2 className="reeltitle">{reel.name}</h2>
-                <div className="videoDiv">
-                  <VideoEmbed link={reel.reelLink} />
-                </div>
+                {reel.reelLink === null ? (
+                  <div>
+                    <h2 className="reeltitle">{reel.name}</h2>
+                    <div className="reelPlaceholder">
+                      <p className="reelPlaceholderText">
+                        My directing reel is currently being updated,
+                        <br />
+                        thank you for your patience!
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    <h2 className="reeltitle">{reel.name}</h2>
+                    <div className="videoDiv">
+                      <VideoEmbed link={reel.reelLink} />
+                    </div>
+                  </>
+                )}
                 {/* <div className="descriptionDiv">
                 <PortableText
                   blocks={reel._rawBodyPortableText}

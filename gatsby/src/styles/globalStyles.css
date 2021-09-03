@@ -164,9 +164,10 @@ img {
   justify-content: space-between;
   max-width: 210px;
   align-items: center;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   margin-top: 10px;
+  font-size: 16px;
 }
 
 .reelWrapper {
@@ -175,7 +176,18 @@ img {
 
 .reeltitle {
   font-size: 38px;
-  color: black !important;
+}
+
+.reelPlaceholder {
+  min-height: 600px;
+  min-width: 700px;
+  background-color: black;
+  text-align: center;
+}
+
+.reelPlaceholderText {
+  color: #95B1D5;
+  padding: 20% 0;
 }
 
 .footer {
