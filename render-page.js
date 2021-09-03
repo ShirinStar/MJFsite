@@ -73325,7 +73325,9 @@ __webpack_require__.r(__webpack_exports__);
 function Footer() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 MJF ", new Date().getFullYear()));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "footerText"
+  }, "\xA9 MJF ", new Date().getFullYear()));
 }
 
 /***/ }),
@@ -73346,7 +73348,9 @@ __webpack_require__.r(__webpack_exports__);
 function FooterNotFixed() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer footerNot"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 MJF ", new Date().getFullYear()));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "footerText"
+  }, "\xA9 MJF ", new Date().getFullYear()));
 }
 
 /***/ }),
@@ -74426,7 +74430,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
 /* harmony import */ var _components_loadable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/loadable */ "./src/components/loadable.js");
 /* harmony import */ var _components_sketchSinLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/sketchSinLine */ "./src/components/sketchSinLine.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/FooterNoFixed */ "./src/components/FooterNoFixed.js");
 /* harmony import */ var _components_sketchMovingLine__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/sketchMovingLine */ "./src/components/sketchMovingLine.js");
 
 
@@ -74519,7 +74523,7 @@ function HomePage({
     frameBorder: "0",
     allow: "autoplay; fullscreen",
     allowFullScreen: true
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], null))));
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_6__["default"], null));
 }
 
 /***/ }),
