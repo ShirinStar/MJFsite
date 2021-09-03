@@ -111,6 +111,7 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
+  "component---src-pages-about-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
   "component---src-pages-press-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/press.js */ "./src/pages/press.js"))),
   "component---src-pages-projects-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js"))),
@@ -2013,18 +2014,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fontsource_barriecito__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fontsource_barriecito__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _fontsource_roboto__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fontsource/roboto */ "./node_modules/@fontsource/roboto/index.css");
 /* harmony import */ var _fontsource_roboto__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fontsource_roboto__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/styles/globalStyles.css */ "./src/styles/globalStyles.css");
-/* harmony import */ var _src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/styles/homePage.css */ "./src/styles/homePage.css");
-/* harmony import */ var _src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/styles/projectsGrid.css */ "./src/styles/projectsGrid.css");
-/* harmony import */ var _src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/styles/projectPage.css */ "./src/styles/projectPage.css");
-/* harmony import */ var _src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _src_styles_nav_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/styles/nav.css */ "./src/styles/nav.css");
-/* harmony import */ var _src_styles_nav_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_src_styles_nav_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _src_styles_about_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/styles/about.css */ "./src/styles/about.css");
-/* harmony import */ var _src_styles_about_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_src_styles_about_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _fontsource_roboto_slab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fontsource/roboto-slab */ "./node_modules/@fontsource/roboto-slab/index.css");
+/* harmony import */ var _fontsource_roboto_slab__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_fontsource_roboto_slab__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _fontsource_montserrat_alternates__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fontsource/montserrat-alternates */ "./node_modules/@fontsource/montserrat-alternates/index.css");
+/* harmony import */ var _fontsource_montserrat_alternates__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_fontsource_montserrat_alternates__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/styles/globalStyles.css */ "./src/styles/globalStyles.css");
+/* harmony import */ var _src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_src_styles_globalStyles_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/styles/homePage.css */ "./src/styles/homePage.css");
+/* harmony import */ var _src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_src_styles_homePage_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/styles/projectsGrid.css */ "./src/styles/projectsGrid.css");
+/* harmony import */ var _src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_src_styles_projectsGrid_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/styles/projectPage.css */ "./src/styles/projectPage.css");
+/* harmony import */ var _src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_src_styles_projectPage_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _src_styles_nav_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/styles/nav.css */ "./src/styles/nav.css");
+/* harmony import */ var _src_styles_nav_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_src_styles_nav_css__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _src_styles_about_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/styles/about.css */ "./src/styles/about.css");
+/* harmony import */ var _src_styles_about_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_src_styles_about_css__WEBPACK_IMPORTED_MODULE_14__);
+
+
 
 
 
@@ -2811,10 +2818,32 @@ var unitlessKeys = {
 
 /***/ }),
 
+/***/ "./node_modules/@fontsource/montserrat-alternates/index.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fontsource/montserrat-alternates/index.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@fontsource/open-sans/index.css":
 /*!******************************************************!*\
   !*** ./node_modules/@fontsource/open-sans/index.css ***!
   \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@fontsource/roboto-slab/index.css":
+/*!********************************************************!*\
+  !*** ./node_modules/@fontsource/roboto-slab/index.css ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -73551,7 +73580,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Header() {
   let btnRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  let circle = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const circle = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   let nameMenuRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const {
     0: state,
@@ -73559,7 +73588,7 @@ function Header() {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     initial: false,
     clicked: null,
-    menuName: '☰'
+    menuName: 'MENU'
   });
   const {
     0: disabled,
@@ -73571,14 +73600,14 @@ function Header() {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     // change url in production
-    if (browser_monads__WEBPACK_IMPORTED_MODULE_3__["window"].location.href === 'http://localhost:8000/' || browser_monads__WEBPACK_IMPORTED_MODULE_3__["window"].location.href === 'http://localhost:8000/#videoDiv') {
+    if (browser_monads__WEBPACK_IMPORTED_MODULE_3__["window"].location.href === 'http://localhost:8000/') {
       setLogoShow(true);
     } else {
       setLogoShow(false);
     }
 
-    if (state.menuName === '☰') {
-      circle.style.filter = 'invert(0)';
+    if (state.menuName === 'MENU') {
+      // circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
       nameMenuRef.style.color = 'black';
     }
@@ -73588,7 +73617,7 @@ function Header() {
   }) => {
     if (action === 'PUSH') setState({
       clicked: false,
-      menuName: '☰'
+      menuName: 'MENU'
     });
   }), [setState]);
 
@@ -73606,31 +73635,34 @@ function Header() {
       setState({
         initial: null,
         clicked: true,
-        menuName: 'X'
+        menuName: 'CLOSE'
       });
-      nameMenuRef.style.color = 'white';
-      btnRef.style.transform = 'scale(1.3)';
-      circle.style.filter = 'invert(1)';
+      nameMenuRef.style.color = 'white'; // btnRef.style.transform = 'scale(1.3)';
+      // circle.style.filter = 'invert(1)';
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: '☰'
+        menuName: 'MENU'
       });
-      nameMenuRef.style.color = 'black';
-      circle.style.filter = 'invert(1)';
+      nameMenuRef.style.color = 'black'; // circle.style.filter = 'invert(1)';
+
       btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: 'X'
-      });
-      circle.style.filter = 'invert(1)';
-      btnRef.style.transform = 'scale(1.3)';
+        menuName: 'CLOSE'
+      }); // circle.style.filter = 'invert(1)';
+      // btnRef.style.transform = 'scale(1.3)';
+
       nameMenuRef.style.color = 'white';
     }
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "inner-header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menuHome"
@@ -73644,10 +73676,7 @@ function Header() {
     } : {}
   }, "MARY JOHN FRANK")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navMenu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "circle1",
-    ref: el => circle = el
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     ref: el => btnRef = el,
     disabled: disabled,
     className: "btnMenu",
@@ -73658,7 +73687,7 @@ function Header() {
     className: "menuName"
   }, state.menuName)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Hamburger_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     state: state
-  })));
+  })))));
 }
 
 /***/ }),
@@ -73752,7 +73781,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const PressStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "PressGrid__PressStyle"
-})(["display:grid;@supports not (grid-template-rows:subgrid){grid-template-rows:auto auto;}grid-template-rows:subgrid;row-gap:2px;justify-content:center;align-items:center;text-align:center;h2,p{margin:0;}.pressImageWWrapper{border:2px solid white;}.pressImage{padding:5px;padding-left:10px;height:100%;object-fit:contain;}"]);
+})(["display:grid;@supports not (grid-template-rows:subgrid){grid-template-rows:auto auto;}grid-template-rows:subgrid;row-gap:2px;justify-content:center;align-items:center;text-align:center;h2,p{margin:0;}.pressImage{height:100%;object-fit:contain;border:1px solid black;}.pressImage::hover{border:1px solid white;}"]);
 function PressGrid({
   press
 }) {
@@ -73760,15 +73789,15 @@ function PressGrid({
     href: press.pressLink,
     target: "_blank",
     rel: "noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "pressImageWWrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "pressImage",
     src: press.image.asset.url,
     alt: press.name
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "pressInfo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, press.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, press.year))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "presstext"
+  }, press.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, press.year))));
 }
 
 /***/ }),
@@ -73796,14 +73825,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const PressGridStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "PressList__PressGridStyle"
-})(["display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:4rem;"]); // const PressGridCointainer = styled.div`
-//   max-width: 900px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 10rem;
-//   align-items: center;
-// `;
-
+})(["display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:2.2rem;margin-top:20px;"]);
 function ProjectsList({
   presses
 }) {
@@ -74271,6 +74293,122 @@ function FourOFourPage() {
 
 /***/ }),
 
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AboutPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+
+
+
+
+
+
+const serializers = {
+  marks: {
+    link: ({
+      children,
+      mark
+    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks about",
+      href: mark.href,
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks about",
+      href: mark.href
+    }, children)
+  }
+};
+function AboutPage({
+  data,
+  setEventTrigger,
+  eventTrigger
+}) {
+  var _about$0$image, _about$0$image$asset, _about$0$image$asset$;
+
+  const about = data.about.nodes;
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "About",
+    image: (_about$0$image = about[0].image) === null || _about$0$image === void 0 ? void 0 : (_about$0$image$asset = _about$0$image.asset) === null || _about$0$image$asset === void 0 ? void 0 : (_about$0$image$asset$ = _about$0$image$asset.fluid) === null || _about$0$image$asset$ === void 0 ? void 0 : _about$0$image$asset$.src
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "pageTitle"
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cropImageDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutImageCrop"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bgImageCrop"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutText"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    blocks: about[0]._rawBodyPortableText,
+    serializers: serializers,
+    className: "aboutParag"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "contactTitle"
+  }, "Contact me ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "bodyTextLinks about",
+    href: "mailto:maryjohn.frank@gmail.com"
+  }, "maryjohn.frank@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "aboutSocialWrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "socialLinkDivAbout"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.instagram.com/maryjohnfrank/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/instagram_icon.png",
+    alt: "instagram",
+    className: "socialLinkAbout"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.instagram.com/maryjohnfrank/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/linkedin_icon.png",
+    alt: "linkedin",
+    className: "socialLinkAbout"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.instagram.com/maryjohnfrank/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/facebook_icon.png",
+    alt: "facebook",
+    className: "socialLinkAbout"
+  })))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+}
+const aboutQuery = "3200291010";
+
+/***/ }),
+
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
@@ -74343,7 +74481,11 @@ function HomePage({
     className: "titleSpan"
   }, " MARY JOHN FRANK ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "logline"
-  }, "CHOREOGRAPHER \xB7 FILMMAKER \xB7 DIRECTOR")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "CHOREOGRAPHER ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "loglineDot"
+  }, "\xB7"), " FILMMAKER", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "loglineDot"
+  }, "\xB7"), " DIRECTOR")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "responsiveContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "videoImageContainer"
@@ -74353,7 +74495,7 @@ function HomePage({
     className: divDisplay ? 'imageHome none' : 'imageHome'
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "imageSize",
-    src: "./homeImage.png",
+    src: "/homeImage.gif",
     alt: "home"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "imageWrapper"
