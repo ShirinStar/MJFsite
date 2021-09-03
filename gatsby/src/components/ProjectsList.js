@@ -33,8 +33,8 @@ export default function ProjectsList({ projects }) {
               </div>
             ))}
         </div>
-        <FooterNotFixed />
       </div>
+      <FooterNotFixed />
     </>
   );
 }

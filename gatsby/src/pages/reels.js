@@ -68,8 +68,8 @@ export default function ReelsPage({ data, setEventTrigger, eventTrigger }) {
               </div>
             ))}
           </div>
-          <FooterNoFixed />
         </div>
+        <FooterNoFixed />
       </div>
     </>
   );

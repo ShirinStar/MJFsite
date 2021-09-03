@@ -73785,7 +73785,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const PressStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "PressGrid__PressStyle"
-})(["display:grid;@supports not (grid-template-rows:subgrid){grid-template-rows:auto auto;}grid-template-rows:subgrid;row-gap:2px;justify-content:center;align-items:center;text-align:center;h2,p{margin:0;}.pressImage{height:100%;object-fit:contain;border:1px solid black;}.pressImage::hover{border:1px solid white;}"]);
+})(["display:grid;@supports not (grid-template-rows:subgrid){grid-template-rows:auto auto;}grid-template-rows:subgrid;row-gap:2px;justify-content:center;align-items:center;text-align:center;h2,p{margin:0;}.pressImage{max-height:100%;object-fit:contain;border:1px solid black;}.pressImage::hover{border:1px solid white;}"]);
 function PressGrid({
   press
 }) {
@@ -73801,7 +73801,7 @@ function PressGrid({
     className: "pressInfo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "presstext"
-  }, press.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, press.year))));
+  }, press.name, " | ", press.year))));
 }
 
 /***/ }),
@@ -73821,7 +73821,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var _PressGrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PressGrid */ "./src/components/PressGrid.js");
 /* harmony import */ var _SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SEO */ "./src/components/SEO.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
+/* harmony import */ var _FooterNoFixed__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FooterNoFixed */ "./src/components/FooterNoFixed.js");
 
 
 
@@ -73829,7 +73829,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const PressGridStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "PressList__PressGridStyle"
-})(["display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:2.2rem;margin-top:20px;"]);
+})(["display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:2.8rem;margin-top:20px;@media only screen and (min-width:300px) and (max-width:700px){gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));}"]);
 function ProjectsList({
   presses
 }) {
@@ -73844,7 +73844,7 @@ function ProjectsList({
   }, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PressGridStyle, null, presses.sort((a, b) => b.year - a.year).map(press => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PressGrid__WEBPACK_IMPORTED_MODULE_2__["default"], {
     key: press.id,
     press: press
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FooterNoFixed__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 }
 
 /***/ }),
@@ -74315,7 +74315,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
 /* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/FooterNoFixed */ "./src/components/FooterNoFixed.js");
 
 
 
@@ -74407,7 +74407,7 @@ function AboutPage({
     src: "/facebook_icon.png",
     alt: "facebook",
     className: "socialLinkAbout"
-  })))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+  }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 }
 const aboutQuery = "3200291010";
 
@@ -74666,7 +74666,7 @@ function ReelsPage({
     className: "videoDiv"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoEmbed__WEBPACK_IMPORTED_MODULE_2__["default"], {
     link: reel.reelLink
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 }
 const reelsQuery = "4290792992";
 

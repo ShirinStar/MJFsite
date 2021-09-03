@@ -2,14 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import PressGrid from './PressGrid';
 import SEO from './SEO';
-import Footer from './Footer';
+import FooterNotFixed from './FooterNoFixed';
 
 const PressGridStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 2.2rem;
+  gap: 2.8rem;
   margin-top: 20px;
-  /* grid-auto-rows: auto auto; */
+
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
 `;
 
 export default function ProjectsList({ presses }) {
@@ -30,7 +34,7 @@ export default function ProjectsList({ presses }) {
           </PressGridStyle>
         </div>
       </div>
-      <Footer />
+      <FooterNotFixed />
     </>
   );
 }

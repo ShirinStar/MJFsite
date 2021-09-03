@@ -28,7 +28,7 @@ export default function ValueList({ value1, value2 }) {
       <div className="container">
         <div className="wrapper">
           <h2 className="pageTitle">Values</h2>
-          <div>
+          {/* <div>
             <h3>Section one</h3>
             <ValuesGridStyle>
               {value1.map((value) => (
@@ -47,7 +47,7 @@ export default function ValueList({ value1, value2 }) {
                 </div>
               ))}
             </ValuesGridStyle>
-          </div>
+          </div> */}
         </div>
       </div>
       <FooterNoFixed />

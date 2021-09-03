@@ -19,7 +19,7 @@ const PressStyle = styled.div`
     margin: 0;
   }
   .pressImage {
-    height: 100%;
+    max-height: 100%;
     /* width: 100%; */
     object-fit: contain;
     border: 1px solid black;
@@ -39,8 +39,9 @@ export default function PressGrid({ press }) {
           alt={press.name}
         />
         <div className="pressInfo">
-          <p className="presstext">{press.name}</p>
-          <p>{press.year}</p>
+          <p className="presstext">
+            {press.name} | {press.year}
+          </p>
         </div>
       </a>
     </PressStyle>

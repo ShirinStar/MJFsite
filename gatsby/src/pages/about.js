@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import Img from 'gatsby-image';
 import SEO from '../components/SEO';
-import Footer from '../components/Footer';
+import FooterNoFixed from '../components/FooterNoFixed';
 
 const serializers = {
   marks: {
@@ -109,8 +109,8 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+      <FooterNoFixed />
     </>
   );
 }
