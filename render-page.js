@@ -112,8 +112,9 @@ exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
+  "component---src-pages-press-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/press.js */ "./src/pages/press.js"))),
   "component---src-pages-projects-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js"))),
-  "component---src-templates-project-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/Project.js */ "./src/templates/Project.js")))
+  "component---src-pages-reels-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/reels.js */ "./src/pages/reels.js")))
   }
 
 
@@ -73139,7 +73140,7 @@ function wrappy (fn, cb) {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"data\":{\"projects\":{\"nodes\":[{\"showOnSite\":true,\"tags\":[{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Music Videos\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\",\"setOrder\":2}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Music Videos\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\",\"setOrder\":2}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Music Videos\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\",\"setOrder\":2}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\",\"setOrder\":1},{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":null,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\",\"setOrder\":1},{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3}]}]}}}");
+module.exports = JSON.parse("{\"data\":{\"projects\":{\"nodes\":[{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Music Videos\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\",\"setOrder\":2}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Music Videos\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\",\"setOrder\":2}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Music Videos\",\"id\":\"-2f894930-65b0-57f0-9c72-2cf46ae2cef5\",\"setOrder\":2}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Commercial\",\"id\":\"-d98e40c1-c8c0-58e6-b10f-780a97265118\",\"setOrder\":5}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":null,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\",\"setOrder\":1},{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3},{\"name\":\"Film\",\"id\":\"-2659b24d-ca7c-5538-8cac-11822a8a8cc0\",\"setOrder\":4}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Immersive\",\"id\":\"-5fdbfd95-bb0b-5868-b958-2012d6908c2c\",\"setOrder\":1},{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3}]},{\"showOnSite\":true,\"tags\":[{\"name\":\"Musicals\",\"id\":\"-70fbc1e7-7975-56a8-a5ea-5502288af8d0\",\"setOrder\":3}]}]}}}");
 
 /***/ }),
 
@@ -73729,6 +73730,99 @@ function Nav() {
 
 /***/ }),
 
+/***/ "./src/components/PressGrid.js":
+/*!*************************************!*\
+  !*** ./src/components/PressGrid.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PressGrid; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
+/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+
+
+const PressStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+  displayName: "PressGrid__PressStyle"
+})(["display:grid;@supports not (grid-template-rows:subgrid){grid-template-rows:auto auto;}grid-template-rows:subgrid;row-gap:2px;justify-content:center;align-items:center;text-align:center;h2,p{margin:0;}.pressImageWWrapper{border:2px solid white;}.pressImage{padding:5px;padding-left:10px;height:100%;object-fit:contain;}"]);
+function PressGrid({
+  press
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PressStyle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: press.pressLink,
+    target: "_blank",
+    rel: "noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pressImageWWrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "pressImage",
+    src: press.image.asset.url,
+    alt: press.name
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pressInfo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, press.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, press.year))));
+}
+
+/***/ }),
+
+/***/ "./src/components/PressList.js":
+/*!*************************************!*\
+  !*** ./src/components/PressList.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectsList; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _PressGrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PressGrid */ "./src/components/PressGrid.js");
+/* harmony import */ var _SEO__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SEO */ "./src/components/SEO.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
+
+
+
+
+
+const PressGridStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "PressList__PressGridStyle"
+})(["display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:4rem;"]); // const PressGridCointainer = styled.div`
+//   max-width: 900px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 10rem;
+//   align-items: center;
+// `;
+
+function ProjectsList({
+  presses
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SEO__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Press"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "pageTitle"
+  }, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PressGridStyle, null, presses.sort((a, b) => b.year - a.year).map(press => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PressGrid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    key: press.id,
+    press: press
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+}
+
+/***/ }),
+
 /***/ "./src/components/ProjectGrid.js":
 /*!***************************************!*\
   !*** ./src/components/ProjectGrid.js ***!
@@ -74288,6 +74382,38 @@ function HomePage({
 
 /***/ }),
 
+/***/ "./src/pages/press.js":
+/*!****************************!*\
+  !*** ./src/pages/press.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PressPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_PressList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/PressList */ "./src/components/PressList.js");
+
+
+function PressPage({
+  data,
+  setEventTrigger,
+  eventTrigger
+}) {
+  const presses = data.press.nodes;
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PressList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    presses: presses
+  }));
+}
+const pressQuery = "2114534837";
+
+/***/ }),
+
 /***/ "./src/pages/projects.js":
 /*!*******************************!*\
   !*** ./src/pages/projects.js ***!
@@ -74322,6 +74448,81 @@ function ProjectsPage({
   }));
 }
 const projectQuery = "168027489";
+
+/***/ }),
+
+/***/ "./src/pages/reels.js":
+/*!****************************!*\
+  !*** ./src/pages/reels.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReelsPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
+/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_VideoEmbed__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/VideoEmbed */ "./src/components/VideoEmbed.js");
+/* harmony import */ var _components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/FooterNoFixed */ "./src/components/FooterNoFixed.js");
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
+
+
+
+
+
+const serializers = {
+  marks: {
+    link: ({
+      children,
+      mark
+    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks",
+      href: mark.href,
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "bodyTextLinks",
+      href: mark.href
+    }, children)
+  }
+};
+function ReelsPage({
+  data,
+  setEventTrigger,
+  eventTrigger
+}) {
+  const reels = data.reels.nodes;
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setEventTrigger(eventTrigger + 1);
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "Reels"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "reelWrapper"
+  }, reels.map(reel => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    key: reel.id
+  }, reel.reelLink === null ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "reeltitle"
+  }, reel.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "reelPlaceholder"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "reelPlaceholderText"
+  }, "My directing reel is currently being updated,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thank you for your patience!"))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "reeltitle"
+  }, reel.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "videoDiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoEmbed__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    link: reel.reelLink
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
+}
+const reelsQuery = "4290792992";
 
 /***/ }),
 
@@ -74388,114 +74589,6 @@ const projectQuery = "168027489";
 /***/ (function(module, exports) {
 
 
-
-/***/ }),
-
-/***/ "./src/templates/Project.js":
-/*!**********************************!*\
-  !*** ./src/templates/Project.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SingleProjectPage; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @sanity/block-content-to-react */ "./node_modules/@sanity/block-content-to-react/lib/BlockContent.js");
-/* harmony import */ var _sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_VideoEmbed__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/VideoEmbed */ "./src/components/VideoEmbed.js");
-/* harmony import */ var _components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/FooterNoFixed */ "./src/components/FooterNoFixed.js");
-
-
-
-
-
-const serializers = {
-  marks: {
-    link: ({
-      children,
-      mark
-    }) => mark.blank ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "bodyTextLinks",
-      href: mark.href,
-      target: "_blank",
-      rel: "noopener noreferrer"
-    }, children) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "bodyTextLinks",
-      href: mark.href
-    }, children)
-  }
-};
-function SingleProjectPage({
-  data,
-  setEventTrigger,
-  eventTrigger
-}) {
-  const {
-    project
-  } = data;
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    setEventTrigger(eventTrigger + 1);
-  }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "backToProjects"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "backText",
-    to: "/projects"
-  }, "Back")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "projectHead"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "pageTitle singleProject"
-  }, project.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "projectYear"
-  }, project.year)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "videoDiv singleProject"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoEmbed__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    link: project.videoLink
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "descriptionDiv"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    blocks: project._rawBodyPortableText,
-    serializers: serializers
-  })), project._rawFeaturePortableText !== null ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "featureDiv"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "featureP"
-  }, "Featured: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sanity_block_content_to_react__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    blocks: project._rawFeaturePortableText,
-    serializers: serializers
-  })) : '', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "imagesContainer"
-  }, project.BHSimage1 == null && project.BHSimage2 == null && project.BHSimage3 == null && project.BHSimage4 == null ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "BHSTitle"
-  }, "Behind The Scene"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "imageBHSGallery"
-  }, project.BHSimage1 == null ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "BHSimage",
-    src: project.BHSimage1.asset.url,
-    alt: "BHS1"
-  }), project.BHSimage2 == null ? ' ' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "BHSimage",
-    src: project.BHSimage2.asset.url,
-    alt: "BHS2"
-  }), project.BHSimage3 == null ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "BHSimage",
-    src: project.BHSimage3.asset.url,
-    alt: "BHS3"
-  }), project.BHSimage4 == null ? ' ' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "BHSimage",
-    src: project.BHSimage4.asset.url,
-    alt: "BHS4"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterNoFixed__WEBPACK_IMPORTED_MODULE_4__["default"], null));
-}
-const projectQuery = "2823368065";
 
 /***/ }),
 
