@@ -4,7 +4,7 @@ import Player from '@vimeo/player';
 import SEO from '../components/SEO';
 import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
-import Footer from '../components/Footer';
+import Footer from '../components/FooterNoFixed';
 import SketchMovingLine from '../components/sketchMovingLine';
 
 export default function HomePage({ eventTrigger, setEventTrigger }) {
@@ -89,9 +89,9 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
               </div>
             </div>
           </div>
-          <Footer />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

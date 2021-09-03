@@ -24,37 +24,8 @@
 }
 
 .titleSpan {
-  /* position: absolute; */
-  /* -webkit-text-stroke: 1.5px black; */
   color: black;
 }
-
-/* .homeName:before {
-  background: linear-gradient(to right,black 95%, #E5E3DC 5% );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-  content: attr(data-text);
-  top:0;
-  left:0;
-  width: 0;
-  transition: 0.5s;
-  overflow: hidden;
-  position: absolute;
-  animation: fillText 5s;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-} */
-
-/* @keyframes fillText {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-} */
 
 .logline {
   font-size: 4rem;
@@ -62,22 +33,20 @@
 }
 
 .loglineDot {
-  color: white;
+  color: #EBFA42;
 }
 
 .responsiveContainer {
   position: relative;
-
 }
+
 .videoImageContainer {
   width: 100%;
-  /* padding-bottom: 40px; */
 }
 
 .blackimageCon {
   position: relative;
 }
-
 
 .imageHome {
   position: absolute;
@@ -87,16 +56,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  
 }
 
 .imageHome.none {
   display: none;
 }
 
-
 .imageSize {
   height: 675px;
+  width: 100%;
   object-fit: cover;
   padding-bottom: 40px;
 } 
@@ -161,42 +129,136 @@
   display: none;
 }
 
-@media screen and (max-width: 650px) {  
 
+
+@media only screen and (min-width: 320px) and (max-width: 400px) { 
+  .tagLine {
+    margin-top: 20px;
+  }
+  
   .imageSize {
-    height: 260px;
+    height: 159px;
   }
 
-  .videoDiv {
-    /* min-height: 400px; */
-    padding-bottom: 20px;
+  .imageWrapper {
+    height: 80%;
   }
 
-  .homeName {
-    font-size: 5.5rem;
-  }
-
-  .logline {
-    font-size: 2.2rem;
-    margin-top: 10%;
-    }
-}
-
-@media only screen and (min-width: 300px) and (max-width: 560px) { 
-  .imageSize {
-    height: 220px;
+  .playIcon {
+    left: 40%;
+    margin-top: 15%;
+    transform: scale(1);
   }
   
   .homeName {
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
 .logline {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   }
 }
 
-@media only screen and (min-width: 650px) and (max-width: 850px) {
+@media only screen and (max-width: 320px) {
+  .imageSize {
+    height: 109px;
+  }
+
+  .imageWrapper {
+    height: 70%;
+  }
+
+  .playIcon {
+    left: 40%;
+    margin-top: 8%;
+    transform: scale(.8);
+  }
+
+  .homeName {
+    font-size: 2.2rem;
+  }
+  
+  .logline {
+    font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 650px) { 
+  .tagLine { 
+    margin-top: 30px;
+  }
+  
+  .imageSize {
+    height: 179px;
+  }
+
+  .imageWrapper {
+    height: 80%;
+  }
+  
+  .playIcon {
+    left: 45%;
+    margin-top: 15%;
+  }
+
+  .homeName {
+  font-size: 3.6rem;
+}
+
+.logline {
+  font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 700px) {
+  .imageSize {
+    height: 325px;
+  }
+
+  .imageWrapper {
+    height: 90%;
+  }
+
+  .homeName {
+    font-size: 7rem;
+  }
+
+  .logline {
+    font-size: 3rem;
+
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  .tagLine { 
+    margin-top: 20px;
+  }
+    
+  .imageSize {
+    height: 359px;
+  }
+
+  .imageWrapper {
+    height: 90%;
+  }
+
+  .playIcon {
+    margin-top: 20%;
+  }
+
+  .homeName {
+    font-size: 7.5rem;
+  }
+
+  .logline {
+    font-size: 3rem;
+    }
+  }
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+  .imageSize {
+      height: 420px;
+  }
 
   .homeName {
     font-size: 7.5rem;
@@ -206,9 +268,57 @@
     font-size: 3rem;
     margin-top: 5%;
     }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 950px) {
+  .imageSize {
+    height: 450px;
   }
 
-@media only screen and (min-width: 850px) and (max-width: 1100px) {
+  .videoDiv {
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+  
+  .logline {
+    margin-top: 5%;
+  } 
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1050px) {
+  .imageSize {
+    height: 500px;
+  }
+
+  .videoDiv {
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+  
+  .logline {
+    margin-top: 5%;
+  } 
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1100px) {
+  .imageSize {
+    height: 539px;
+  }
+
+  .videoDiv {
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+  
+  .logline {
+    margin-top: 5%;
+  } 
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1350px) {
+  .imageSize {
+    height: 589px;
+  }
 
   .videoDiv {
     min-height: 400px;

@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
 .wrapper {
   padding: 0 38px;
   margin: 0 auto;
-  
+  padding-bottom: 20px;
 }
 
 .wrapper.imagesGrid {
@@ -197,12 +197,16 @@ img {
   height: 40px;
   color: black;
   text-align: center;
-  font-size: 12px;
   position: fixed;
 }
 
 .footer.footerNot {
   position: relative;
+}
+
+.footerText {
+  font-size: 10px !important;
+  font-family: "Montserrat Alternates" , sans-serif !important;
 }
 
 .fourofourDiv {
