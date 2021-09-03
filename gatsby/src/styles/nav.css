@@ -1,13 +1,14 @@
 header {
   height: 100px;
-  font-family: "Roborto", sans-serif;
-  padding-top: 10px;
+  padding: 10px;
+  padding-top: 0;
 }
 
 .menuHome {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   height: 100%;
   width: 100%;
 }
@@ -15,17 +16,19 @@ header {
 .inner-header {
   /* position: relative; */
   z-index: 10;
-  height: 150px;
+  height: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .headerLogo {
-  font-weight: 500;
+  font-weight: 300;
   text-decoration: none;
   color: black;
   z-index: 10;
+  margin-top: 20px;
+  margin-left: -50px;
 }
 
 .navMenu {
@@ -34,13 +37,13 @@ header {
 
 .logoNav {
   font-family: "Barrio" , sans-serif;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   font-size: 18px;
   font-weight: 600;
 }
 
 .logoNav:hover {
-  letter-spacing: 10px;
+  letter-spacing: 8px;
 }
 
 .circle1 {
@@ -69,10 +72,10 @@ header {
   background: none;
   outline: none;
   cursor: none;
-  font-size: 3rem;
+  font-size: 2.6rem;
   position: absolute;
-  margin-top: -5%;
-  margin-left: 2%;
+  /* margin-top: -5%;
+  margin-left: 2%; */
 }
 
 .btnMenu:hover {
@@ -80,11 +83,11 @@ header {
 }
 
 .menuName {
-  font-family: "Barrio" , sans-serif !important;
+  font-family: "Montserrat Alternates" , sans-serif !important;
 }
 
 .menuName:hover {
-  filter: invert(1);
+  color: #F0471D !important;
 }
 
 .hamburger-menu {
@@ -172,18 +175,18 @@ li {
   max-width: 140px;
   align-items: center;
   text-align: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding: 25px 0;
 }
 
 .valueLink {
   font-size: 22px;
-  font-family: 'Barriecito', sans-serif;
+  font-family: "Montserrat Alternates" , sans-serif !important;
   color: black !important;
 }
 
 .valueLink:hover {
-  color: #F0471D !important;
+  color: white !important;
 }
 
 .socialLink {
@@ -196,11 +199,11 @@ li {
 }
 
 @media only screen and (max-width: 340px) {
-  .circle1 {
+  /* .circle1 {
     display: none;
     padding: 0;
     margin: 0;
-  }
+  } */
 
   li {
     font-size: 3.6rem;
@@ -209,34 +212,33 @@ li {
     padding-left: 0;
   }
 
+  .logoNav {
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+/* 
   .btnMenu {
     margin-left: -1%;
-  }
+  } */
 }
 
 
 @media screen and (max-width: 650px) {
+  .btnMenu { 
+    font-size: 1.6rem;
+  }
+
   .logoNav {
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
+    letter-spacing: 2px;
+    font-size: 14px;
     margin-left: -10%;
   }
 
-  .menuName {
-    font-size: 22px;
-  }
-
-  .menuHome{
-    margin-bottom: 100px;
-    padding: 0 20px;
-  }
-
-  .circle1 {
+  /* .circle1 {
     display: none;
     padding: 0;
     margin: 0;
-  }
+  } */
 
   li {
     font-size: 3.6rem;
@@ -269,6 +271,15 @@ li {
 }
 
 @media only screen and (min-width: 650px) and (max-width: 800px) {
+  .btnMenu { 
+    font-size: 1.8rem;
+  }
+
+  header {
+    padding-right: 30px;
+    height: 130px;
+  }
+  
   li {
     font-size: 7rem;
     height: 120px;
@@ -280,45 +291,50 @@ li {
     width: 150px;
   }
 
-  .btnMenu {
+  /* .btnMenu {
     margin-top: -10%;
     margin-left: 3%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1400px) {
+  header {
+    padding-right: 50px;
+    height: 150px;
+  }
+  
   li {
     font-size: 9rem;
     height: 140px;
     width: 450px;
     padding-left: 40px;
   }
-
+/* 
   .btnMenu {
     margin-top: -9%;
     margin-left: 3%;
-  }
+  } */
  }
 
  @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-  .btnMenu {
+  /* .btnMenu {
     margin-top: -6%;
     margin-left: 2%;
-  }
+  } */
  }
 
  @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-  .btnMenu {
+  /* .btnMenu {
     margin-top: -7%;
     margin-left: 2%;
-  }
+  } */
  }
 
  @media only screen and (min-width: 600px) and (max-width: 715px) {
-  .btnMenu {
+  /* .btnMenu {
     margin-top: -12%;
     margin-left: 4%;
-  }
+  } */
 }
 
 

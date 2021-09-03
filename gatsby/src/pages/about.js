@@ -40,16 +40,20 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
           <h2 className="pageTitle">About</h2>
 
           <div className="aboutDiv">
-            <img
+            <div className="cropImageDiv">
+              <div className="aboutImageCrop" />
+              <div className="bgImageCrop" />
+            </div>
+            {/* <img
               className="imgAbout"
               src={about[0].image.asset.url}
               alt={about[0].name}
-            />
-            {/* <Img fixed={about[0].image.asset.fixed} alt={about[0].name} /> */}
+            /> */}
             <div className="aboutText">
               <PortableText
                 blocks={about[0]._rawBodyPortableText}
                 serializers={serializers}
+                className="aboutParag"
               />
 
               <div className="contact">
@@ -101,19 +105,12 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
                     </a>
                   </div>
                 </div>
-                {/* <p>
-                  Check out my
-                  <Link className="bodyTextLinks about" to="/values">
-                    {' '}
-                    values page ♡
-                  </Link>
-                </p> */}
               </div>
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

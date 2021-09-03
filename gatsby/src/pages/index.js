@@ -47,14 +47,17 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
             <h1 data-text="MARY JOHN FRANK" className="homeName">
               <span className="titleSpan"> MARY JOHN FRANK </span>
             </h1>
-            <h1 className="logline">CHOREOGRAPHER · FILMMAKER · DIRECTOR</h1>
+            <h1 className="logline">
+              CHOREOGRAPHER <span className="loglineDot">·</span> FILMMAKER{' '}
+              <span className="loglineDot">·</span> DIRECTOR
+            </h1>
           </div>
 
           <div className="responsiveContainer">
             <div className="videoImageContainer">
               <div className="blackimageCon">
                 <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
-                  <img className="imageSize" src="./homeImage.png" alt="home" />
+                  <img className="imageSize" src="/homeImage.gif" alt="home" />
                 </div>
                 <div className="imageWrapper" />
               </div>

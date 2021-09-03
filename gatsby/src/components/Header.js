@@ -6,30 +6,27 @@ import Humburger from './Hamburger.js';
 
 export default function Header() {
   let btnRef = useRef(null);
-  let circle = useRef(null);
+  const circle = useRef(null);
   let nameMenuRef = useRef(null);
 
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: '☰',
+    menuName: 'MENU',
   });
   const [disabled, setDisabled] = useState(false);
   const [logoShow, setLogoShow] = useState(true);
 
   useEffect(() => {
     // change url in production
-    if (
-      window.location.href === 'http://localhost:8000/' ||
-      window.location.href === 'http://localhost:8000/#videoDiv'
-    ) {
+    if (window.location.href === 'http://localhost:8000/') {
       setLogoShow(true);
     } else {
       setLogoShow(false);
     }
 
-    if (state.menuName === '☰') {
-      circle.style.filter = 'invert(0)';
+    if (state.menuName === 'MENU') {
+      // circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
       nameMenuRef.style.color = 'black';
     }
@@ -41,7 +38,7 @@ export default function Header() {
         if (action === 'PUSH')
           setState({
             clicked: false,
-            menuName: '☰',
+            menuName: 'MENU',
           });
       }),
     [setState]
@@ -60,60 +57,64 @@ export default function Header() {
       setState({
         initial: null,
         clicked: true,
-        menuName: 'X',
+        menuName: 'CLOSE',
       });
       nameMenuRef.style.color = 'white';
-      btnRef.style.transform = 'scale(1.3)';
-      circle.style.filter = 'invert(1)';
+      // btnRef.style.transform = 'scale(1.3)';
+      // circle.style.filter = 'invert(1)';
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: '☰',
+        menuName: 'MENU',
       });
       nameMenuRef.style.color = 'black';
-      circle.style.filter = 'invert(1)';
+      // circle.style.filter = 'invert(1)';
       btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: 'X',
+        menuName: 'CLOSE',
       });
-      circle.style.filter = 'invert(1)';
-      btnRef.style.transform = 'scale(1.3)';
+      // circle.style.filter = 'invert(1)';
+      // btnRef.style.transform = 'scale(1.3)';
       nameMenuRef.style.color = 'white';
     }
   };
 
   return (
-    <header>
-      <div className="inner-header">
-        <div className="menuHome">
-          <div className="headerLogo">
-            <Link
-              className="logoNav"
-              to="/"
-              style={logoShow ? { display: 'none' } : {}}
-            >
-              MARY JOHN FRANK
-            </Link>
+    <div className="container">
+      <div className="wrapper">
+        <header>
+          <div className="inner-header">
+            <div className="menuHome">
+              <div className="headerLogo">
+                <Link
+                  className="logoNav"
+                  to="/"
+                  style={logoShow ? { display: 'none' } : {}}
+                >
+                  MARY JOHN FRANK
+                </Link>
+              </div>
+              <div className="navMenu">
+                {/* <div className="circle1" ref={(el) => (circle = el)} /> */}
+                <button
+                  ref={(el) => (btnRef = el)}
+                  disabled={disabled}
+                  className="btnMenu"
+                  type="button"
+                  onClick={handleMenu}
+                >
+                  <a ref={(el) => (nameMenuRef = el)} className="menuName">
+                    {state.menuName}
+                  </a>
+                </button>
+              </div>
+            </div>
+            <Humburger state={state} />
           </div>
-          <div className="navMenu">
-            <div className="circle1" ref={(el) => (circle = el)} />
-            <button
-              ref={(el) => (btnRef = el)}
-              disabled={disabled}
-              className="btnMenu"
-              type="button"
-              onClick={handleMenu}
-            >
-              <a ref={(el) => (nameMenuRef = el)} className="menuName">
-                {state.menuName}
-              </a>
-            </button>
-          </div>
-        </div>
-        <Humburger state={state} />
+        </header>
       </div>
-    </header>
+    </div>
   );
 }

@@ -5,6 +5,8 @@ import '@fontsource/barrio';
 import '@fontsource/open-sans';
 import '@fontsource/barriecito';
 import '@fontsource/roboto';
+import '@fontsource/roboto-slab';
+import '@fontsource/montserrat-alternates';
 
 import './src/styles/globalStyles.css';
 import './src/styles/homePage.css';
