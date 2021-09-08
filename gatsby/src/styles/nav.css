@@ -87,7 +87,7 @@ header {
 }
 
 .menuName:hover {
-  color: #C170D3 !important;
+  color: #EC5CFF !important;
 }
 
 .hamburger-menu {
@@ -225,7 +225,7 @@ li {
 
 @media screen and (max-width: 650px) {
   .btnMenu { 
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .logoNav {
@@ -266,7 +266,7 @@ li {
   }
 
   .tagName {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 

@@ -27,7 +27,7 @@ export default function ProjectsList({ presses }) {
             {presses
               .sort((a, b) => b.year - a.year)
               .map((press) => (
-                <div>
+                <div key={press.id}>
                   <PressGrid key={press.id} press={press} />
                 </div>
               ))}

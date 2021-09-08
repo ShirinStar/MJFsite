@@ -111,11 +111,10 @@
 
 .imageInfo {
   float: right;
-  margin-top: -1%;
+  margin-top: -1.5%;
   padding-top: 0;
   padding-bottom: 50px;
   font-size: 14px;
-  z-index: 10;
 }
 
 .videoDiv {
@@ -167,6 +166,11 @@
 .logline {
   font-size: 1.4rem;
   }
+
+  .imageInfo {
+    margin-top: -12%;
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -217,6 +221,11 @@
 
 .logline {
   font-size: 1.6rem;
+  }
+
+  .imageInfo {
+    margin-top: -12%;
+    font-size: 10px;
   }
 }
 

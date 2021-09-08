@@ -39,7 +39,7 @@ const TagStyles = styled.div`
     justify-content: center;
     a {
       padding: 0 4px;
-      font-size: 12px;
+      font-size: 14px;
       grid-gap: 0 1rem;
       line-height: 1.8;
     }
