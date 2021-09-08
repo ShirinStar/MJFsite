@@ -6,7 +6,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/node_modules/gatsby-source-sanity/gatsby-ssr'),
-      options: {"plugins":[],"projectId":"yzzh7fu1","dataset":"production","watchMode":true,"token":"skiQzUE3qQsVtUxow6FF6xWQ3BwhBB0vZgXx784HE46uF7wzQEPfsS0QWHUrqfLImfJFzbIoDvSpV93mTUb0fMCnOD65mhTF6nKLFWONBs3vlthW6FOQK6rTK5JBBIRcrXkwX63wQ6MGlsBxzS8Uv63huPkBpKCNKekQz5iQeeK0Z0RqwhqA"},
+      options: {"plugins":[],"projectId":"yzzh7fu1","dataset":"production","watchMode":true,"token":"sk3Yww9hakwx8SFdRjEm8ebXHBLcf990pqorLTgwOzIMx7AmH2JRiPl3MDOVVNyLYXzOhti53y24E1Or6uCZ7aMwbBkZrXWITeVqOgvmid1jQGH4nuTLIkPll30JAFjI1kfgja6886xJVVbPh8vge4uTu4cYdFTX0H3aJSm4qkBXWDUfvrkx"},
     },{
       plugin: require('/Users/shirin/other_projects/MJwebsite/gatsby/gatsby-ssr'),
       options: {"plugins":[]},

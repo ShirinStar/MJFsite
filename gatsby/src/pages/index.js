@@ -57,7 +57,12 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
             <div className="videoImageContainer">
               <div className="blackimageCon">
                 <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
-                  <img className="imageSize" src="/homeImage.gif" alt="home" />
+                  <img
+                    className="imageSize"
+                    src="/homeImage.gif"
+                    alt="home"
+                    onClick={handleShowDiv}
+                  />
                   <p className="imageInfo">
                     <a href="/">“Meticulous Bird”</a> | Choreographer
                   </p>
