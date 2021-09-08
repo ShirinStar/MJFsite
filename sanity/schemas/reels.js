@@ -27,17 +27,15 @@ export default {
         }),
     },
     {
-      name: 'order',
-      title: 'Order',
+      name: 'setOrder',
+      title: 'Set order',
       type: 'number',
-      hidden: true,
-    },
-  ],
-  orderings: [
-    {
-      title: 'Manual Order',
-      name: 'manualOrder',
-      by: [{ field: 'order', direction: 'asc' }],
+      options: {
+        list: [
+          { value: 1, title: 1 },
+          { value: 2, title: 2 },
+        ],
+      },
     },
   ],
 };
