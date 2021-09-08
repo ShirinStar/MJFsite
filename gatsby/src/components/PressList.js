@@ -6,8 +6,8 @@ import FooterNotFixed from './FooterNoFixed';
 
 const PressGridStyle = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 2.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 4rem;
   margin-top: 20px;
 
   @media only screen and (min-width: 300px) and (max-width: 700px) {

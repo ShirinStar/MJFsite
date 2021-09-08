@@ -21,7 +21,7 @@ const TagStyles = styled.div`
     font-size: 18px;
     letter-spacing: 2px;
     font-family: 'Barriecito', sans-serif;
-    color: #f0471d;
+    color: #c170d3;
     &[aria-current='page'] {
       background: white;
       color: black;

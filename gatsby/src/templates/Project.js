@@ -48,10 +48,13 @@ export default function SingleProjectPage({
             <h2 className="pageTitle singleProject">{project.name}</h2>
             <p className="projectYear">{project.year}</p>
           </div>
-
-          <div className="videoDiv singleProject">
-            <VideoEmbed link={project.videoLink} />
-          </div>
+          {project.videoLink === null ? (
+            ''
+          ) : (
+            <div className="videoDiv singleProject">
+              <VideoEmbed link={project.videoLink} />
+            </div>
+          )}
 
           <div className="descriptionDiv">
             <PortableText

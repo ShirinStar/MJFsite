@@ -99,7 +99,7 @@
 }
 
 .BHSTitle {
-  color: #f0471d !important;
+  color: #C170D3 !important;
   font-size: 32px;
 }
 
@@ -120,7 +120,6 @@
 }
 
 .BHSimage {
-  /* height: 400px; */
   width: 500px;
   object-fit: cover;
   padding: 5px;

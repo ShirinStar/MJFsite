@@ -81,7 +81,7 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
                         className="socialLinkAbout"
                       />
                     </a>
-                    <a
+                    {/* <a
                       href="https://www.instagram.com/maryjohnfrank/"
                       target="_blank"
                       rel="noreferrer"
@@ -91,9 +91,9 @@ export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
                         alt="linkedin"
                         className="socialLinkAbout"
                       />
-                    </a>
+                    </a> */}
                     <a
-                      href="https://www.instagram.com/maryjohnfrank/"
+                      href="https://www.facebook.com/mary.j.frank.9/"
                       target="_blank"
                       rel="noreferrer"
                     >

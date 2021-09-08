@@ -33,7 +33,8 @@
 }
 
 .loglineDot {
-  color: #EBFA42;
+  color: #C170D3;
+  /* color: #EBFA42; */
 }
 
 .responsiveContainer {
@@ -106,6 +107,15 @@
 
 .playIcon:hover{
   transform: scale(1.4);
+}
+
+.imageInfo {
+  float: right;
+  margin-top: -1%;
+  padding-top: 0;
+  padding-bottom: 50px;
+  font-size: 14px;
+  z-index: 10;
 }
 
 .videoDiv {

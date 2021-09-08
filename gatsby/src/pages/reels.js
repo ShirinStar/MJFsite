@@ -38,35 +38,37 @@ export default function ReelsPage({ data, setEventTrigger, eventTrigger }) {
       <div className="container">
         <div className="wrapper">
           <div className="reelWrapper">
-            {reels.map((reel) => (
-              <div key={reel.id}>
-                {reel.reelLink === null ? (
-                  <div>
-                    <h2 className="reeltitle">{reel.name}</h2>
-                    <div className="reelPlaceholder">
-                      <p className="reelPlaceholderText">
-                        My directing reel is currently being updated,
-                        <br />
-                        thank you for your patience!
-                      </p>
+            {reels
+              .sort((a, b) => a.setOrder - b.setOrder)
+              .map((reel) => (
+                <div key={reel.id}>
+                  {reel.reelLink === null ? (
+                    <div>
+                      <h2 className="reeltitle">{reel.name}</h2>
+                      <div className="reelPlaceholder">
+                        <p className="reelPlaceholderText">
+                          My directing reel is currently being updated,
+                          <br />
+                          thank you for your patience!
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ) : (
-                  <>
-                    <h2 className="reeltitle">{reel.name}</h2>
-                    <div className="videoDiv">
-                      <VideoEmbed link={reel.reelLink} />
-                    </div>
-                  </>
-                )}
-                {/* <div className="descriptionDiv">
+                  ) : (
+                    <>
+                      <h2 className="reeltitle">{reel.name}</h2>
+                      <div className="videoDiv">
+                        <VideoEmbed link={reel.reelLink} />
+                      </div>
+                    </>
+                  )}
+                  {/* <div className="descriptionDiv">
                 <PortableText
                   blocks={reel._rawBodyPortableText}
                   serializers={serializers}
                 />
               </div> */}
-              </div>
-            ))}
+                </div>
+              ))}
           </div>
         </div>
         <FooterNoFixed />
@@ -82,6 +84,7 @@ export const reelsQuery = graphql`
         id
         name
         reelLink
+        setOrder
         # _rawReelPortableText
       }
     }
