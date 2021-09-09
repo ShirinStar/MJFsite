@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 }
 
 ::selection {
-  background: #95B1D5;
+  background: #C4FFE7;
 }
 
 .cursorZ {
@@ -183,7 +183,7 @@ img {
 }
 
 .reelPlaceholderText {
-  color: #95B1D5;
+  color: #C4FFE7;
   padding: 20% 0;
 }
 
