@@ -14,12 +14,12 @@
   font-family: "Barriecito";
   font-size: 20px;
   letter-spacing: 4px;
-  color: black !important;
+  color: #C4FFE7 !important;
   padding: 0px 5px;
 }
 
 .backText:hover {
-  background: white;
+  background: #d0978c;
   border-radius: 4px;
   font-weight: 700;
 }
@@ -71,15 +71,15 @@
 
 .bodyTextLinks {
   font-size: 20px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #d0978c;
   font-family: 'Roboto', sans-serif !important;
-  padding: 0 2px;
+  padding: 0px 2px;
 }
 
 .bodyTextLinks:hover {
-  background-color: white;
+  background-color: #d0978c;
   border-radius: 5px;
-  color: black;
+  color: #C4FFE7;
 }
 
 .featureDiv {
@@ -99,7 +99,7 @@
 }
 
 .BHSTitle {
-  color: #C170D3 !important;
+  color: #D65C5A !important;
   font-size: 32px;
 }
 

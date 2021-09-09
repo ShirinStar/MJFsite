@@ -64,7 +64,10 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
                     onClick={handleShowDiv}
                   />
                   <p className="imageInfo">
-                    <a href="/">“Meticulous Bird”</a> | Choreographer
+                    <a className="imageInfolink" href="/">
+                      “Meticulous Bird”
+                    </a>{' '}
+                    | Choreographer
                   </p>
                 </div>
                 <div className="imageWrapper" />

@@ -37,13 +37,14 @@ header {
 
 .logoNav {
   font-family: "Barrio" , sans-serif;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   font-size: 18px;
   font-weight: 600;
 }
 
 .logoNav:hover {
-  letter-spacing: 8px;
+  letter-spacing: 6px;
+  color: #C4FFE7 !important;
 }
 
 .circle1 {
@@ -87,7 +88,7 @@ header {
 }
 
 .menuName:hover {
-  color: #EC5CFF !important;
+  color: #C4FFE7 !important;
 }
 
 .hamburger-menu {
@@ -110,13 +111,13 @@ header {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: #CDE1C3;
+  background: #85493E;
   z-index: -1;
 }
 
 .menu-layer {
   position: relative;
-  background: #8E92C1;
+  background: #D1978C;
   height: 100%;
   overflow: hidden;
 }

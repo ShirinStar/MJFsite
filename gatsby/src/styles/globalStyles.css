@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
 .cursor {
   width: 30px;
   height: 30px;
-  border: 4px solid #EBFA42;
+  border: 4px solid #c4ffe7;
   border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
@@ -63,12 +63,13 @@ body::-webkit-scrollbar {
 
 .cursor--clicked {
   transform: translate(-50%, -50%) scale(0.5);
-  background-color: #EBFA42;
+  background-color: #c4ffe7;
 }
 
 .cursor--link-hovered {
   transform: translate(-50%, -50%) scale(0.5);
-  background-color: #EBFA42;
+  background-color: #c4ffe7;
+  /* background-color: #EBFA42; */
 }
 
 .container {
@@ -171,7 +172,7 @@ img {
 
 .reeltitle {
   font-size: 38px;
-  color: #C170D3 !important;
+  color: #D65C5A !important;
 }
 
 .reelPlaceholder {

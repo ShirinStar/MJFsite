@@ -21,15 +21,15 @@ const TagStyles = styled.div`
     font-size: 18px;
     letter-spacing: 2px;
     font-family: 'Barriecito', sans-serif;
-    color: #c170d3;
+    color: #d65c5a;
     &[aria-current='page'] {
-      background: white;
-      color: black;
+      background: #d0978c;
+      color: #c4ffe7;
       border-radius: 4px;
       font-weight: 700 !important;
     }
     &:hover {
-      color: #95b1d5;
+      color: #c4ffe7;
     }
   }
   @media (max-width: 768px) {

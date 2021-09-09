@@ -22,10 +22,16 @@ const PressStyle = styled.div`
     max-height: 100%;
     /* width: 100%; */
     object-fit: contain;
-    border: 1px solid black;
+    border: 1px solid #85493e;
   }
-  .pressImage::hover {
-    border: 1px solid white;
+  .pressImage:hover {
+    border: 1px solid #c4ffe7;
+  }
+  a {
+    color: #85493e;
+  }
+  a:hover {
+    color: #c4ffe7;
   }
 `;
 

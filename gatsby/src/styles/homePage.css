@@ -33,7 +33,7 @@
 }
 
 .loglineDot {
-  color: #C170D3;
+  color: #D65C5A;
   /* color: #EBFA42; */
 }
 
@@ -111,10 +111,21 @@
 
 .imageInfo {
   float: right;
-  margin-top: -1.5%;
+  margin-top: -1%;
   padding-top: 0;
   padding-bottom: 50px;
   font-size: 14px;
+  color: #D65C5A !important;
+}
+
+
+.imageInfolink {
+  color: #D65C5A !important;
+  
+}
+
+.imageInfolink:hover {
+  color: #C4FFE7 !important;
 }
 
 .videoDiv {
