@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import FooterNotFixed from './FooterNoFixed';
 import ProjectGrid from './ProjectGrid';
 
 // const ProjectGridStyle = styled.div`
@@ -34,7 +33,6 @@ export default function ProjectsList({ projects }) {
             ))}
         </div>
       </div>
-      <FooterNotFixed />
     </>
   );
 }

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import VideoEmbed from '../components/VideoEmbed';
-import FooterNoFixed from '../components/FooterNoFixed';
 import SEO from '../components/SEO';
 
 const serializers = {
@@ -71,7 +70,6 @@ export default function ReelsPage({ data, setEventTrigger, eventTrigger }) {
               ))}
           </div>
         </div>
-        <FooterNoFixed />
       </div>
     </>
   );

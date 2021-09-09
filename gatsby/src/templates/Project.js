@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import PortableText from '@sanity/block-content-to-react';
 import VideoEmbed from '../components/VideoEmbed';
-import FooterNoFixed from '../components/FooterNoFixed';
 
 const serializers = {
   marks: {
@@ -125,7 +124,6 @@ export default function SingleProjectPage({
           </div>
         </div>
       </div>
-      <FooterNoFixed />
     </>
   );
 }

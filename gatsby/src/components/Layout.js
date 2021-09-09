@@ -13,6 +13,7 @@ export default function Layout({ children }) {
       <Nav />
       {React.cloneElement(children, { setEventTrigger, eventTrigger })}
       <Cursor eventTrigger={eventTrigger} />
+      <Footer />
     </>
   );
 }

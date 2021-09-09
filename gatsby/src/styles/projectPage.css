@@ -114,6 +114,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
+  padding-bottom: 40px;
   justify-content: center;
   max-width: 100%;
   flex-direction: row;
