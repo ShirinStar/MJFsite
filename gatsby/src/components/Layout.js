@@ -10,9 +10,11 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <Nav />
-      {React.cloneElement(children, { setEventTrigger, eventTrigger })}
-      <Cursor eventTrigger={eventTrigger} />
+      <div>
+        <Nav />
+        {React.cloneElement(children, { setEventTrigger, eventTrigger })}
+        <Cursor eventTrigger={eventTrigger} />
+      </div>
       <Footer />
     </>
   );
