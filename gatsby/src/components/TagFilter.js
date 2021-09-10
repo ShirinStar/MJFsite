@@ -7,9 +7,10 @@ const TagStyles = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 5rem;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   text-align: center;
-  max-width: 700px;
+  justify-content: center;
+  align-items: center;
   a {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -19,14 +20,10 @@ const TagStyles = styled.div`
     padding-right: 0px;
     margin-right: 0px;
     font-size: 18px;
-    letter-spacing: 2px;
-    font-family: 'Barriecito', sans-serif;
-    color: #d65c5a;
+    font-family: 'Avenir', sans-serif;
+    color: 'black';
     &[aria-current='page'] {
-      background: #d0978c;
-      color: #c4ffe7;
-      border-radius: 4px;
-      font-weight: 700 !important;
+      border-bottom: 3px solid #fff;
     }
     &:hover {
       color: #c4ffe7;
@@ -99,20 +96,18 @@ export default function TagFilter({ activeTag }) {
   );
 
   return (
-    <div className="container">
-      <div className="wrapper">
-        <h2 className="pageTitle">Projects</h2>
-        <TagStyles>
-          <Link to="/projects">
-            <span className="tagName">All</span>
+    <>
+      <h2 className="pageTitle">Projects</h2>
+      <TagStyles>
+        <Link to="/projects">
+          <span className="tagName">All</span>
+        </Link>
+        {tagsToShow.map((tag) => (
+          <Link to={`/tags/${tag.name}`} key={tag.id}>
+            <span className="tagName">{tag.name}</span>
           </Link>
-          {tagsToShow.map((tag) => (
-            <Link to={`/tags/${tag.name}`} key={tag.id}>
-              <span className="tagName">{tag.name}</span>
-            </Link>
-          ))}
-        </TagStyles>
-      </div>
-    </div>
+        ))}
+      </TagStyles>
+    </>
   );
 }

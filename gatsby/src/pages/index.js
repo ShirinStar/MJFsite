@@ -6,7 +6,7 @@ import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
 import SketchMovingLine from '../components/sketchMovingLine';
 
-export default function HomePage({ eventTrigger, setEventTrigger }) {
+export default function HomePage() {
   const [divDisplay, setDivDispaly] = useState(false);
   const iframRef = useRef(null);
 
@@ -29,10 +29,6 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
     setDivDispaly(true);
     player.play();
   };
-
-  useEffect(() => {
-    setEventTrigger(eventTrigger + 1);
-  }, []);
 
   return (
     <div>
@@ -58,7 +54,7 @@ export default function HomePage({ eventTrigger, setEventTrigger }) {
                 <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
                   <img
                     className="imageSize"
-                    src="/homeImage.gif"
+                    src="/homeImage.png"
                     alt="home"
                     onClick={handleShowDiv}
                   />

@@ -24,18 +24,15 @@ const serializers = {
   },
 };
 
-export default function ReelsPage({ data, setEventTrigger, eventTrigger }) {
+export default function ReelsPage({ data }) {
   const reels = data.reels.nodes;
-
-  useEffect(() => {
-    setEventTrigger(eventTrigger + 1);
-  }, []);
 
   return (
     <>
       <SEO title="Reels" />
       <div className="container">
         <div className="wrapper">
+          <h2 className="pageTitle">Reels</h2>
           <div className="reelWrapper">
             {reels
               .sort((a, b) => a.setOrder - b.setOrder)

@@ -111,89 +111,81 @@ export default function Hamburger({ state }) {
         className="menu-secondary-background-color"
       />
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
-        <div className="container">
-          <div className="wrapper">
-            <div className="hamLinks">
-              <nav>
-                <ul>
-                  <li ref={(el) => (line1 = el)}>
-                    <Link
-                      onMouseEnter={(e) => handleHover(e)}
-                      onMouseLeave={(e) => handleHoverExit(e)}
-                      className="meLink"
-                      to="/projects"
-                    >
-                      Projects
-                    </Link>
-                  </li>
-                  <li ref={(el) => (line2 = el)}>
-                    <Link
-                      onMouseEnter={(e) => handleHover(e)}
-                      onMouseLeave={(e) => handleHoverExit(e)}
-                      className="meLink"
-                      to="/reels"
-                    >
-                      Reels
-                    </Link>
-                  </li>
-                  <li ref={(el) => (line3 = el)}>
-                    <Link
-                      onMouseEnter={(e) => handleHover(e)}
-                      onMouseLeave={(e) => handleHoverExit(e)}
-                      className="meLink"
-                      to="/press"
-                    >
-                      Press
-                    </Link>
-                  </li>
-                  <li ref={(el) => (line4 = el)}>
-                    <Link
-                      onMouseEnter={(e) => handleHover(e)}
-                      onMouseLeave={(e) => handleHoverExit(e)}
-                      className="meLink"
-                      to="/about"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li ref={(el) => (line5 = el)}>
-                    <a
-                      onMouseEnter={(e) => handleHover(e)}
-                      onMouseLeave={(e) => handleHoverExit(e)}
-                      className="meLink"
-                      href="mailto:maryjohn.frank@gmail.com"
-                    >
-                      contact
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div ref={(el) => (humSocial = el)} className="humSocialLinks">
-                <Link className="valueLink" to="/values">
-                  <span className="heart">♡</span> Values
-                  <span className="heart"> ♡</span>
+        <div className="hamLinks">
+          <nav>
+            <ul>
+              <li ref={(el) => (line1 = el)}>
+                <Link
+                  onMouseEnter={(e) => handleHover(e)}
+                  onMouseLeave={(e) => handleHoverExit(e)}
+                  className="meLink"
+                  to="/projects"
+                >
+                  Projects
                 </Link>
-                <div className="socialLinkDiv">
-                  <a
-                    href="https://www.instagram.com/maryjohnfrank/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="/instagram_icon_nofill.png"
-                      alt="instagram"
-                      className="socialLink"
-                    />
-                  </a>
-                  <a href="mailto:maryjohn.frank@gmail.com">
-                    <img
-                      className="socialLink"
-                      src="/email_icon.png"
-                      alt="email"
-                    />
-                  </a>
-                </div>
-              </div>
+              </li>
+              <li ref={(el) => (line2 = el)}>
+                <Link
+                  onMouseEnter={(e) => handleHover(e)}
+                  onMouseLeave={(e) => handleHoverExit(e)}
+                  className="meLink"
+                  to="/reels"
+                >
+                  Reels
+                </Link>
+              </li>
+              <li ref={(el) => (line3 = el)}>
+                <Link
+                  onMouseEnter={(e) => handleHover(e)}
+                  onMouseLeave={(e) => handleHoverExit(e)}
+                  className="meLink"
+                  to="/press"
+                >
+                  Press
+                </Link>
+              </li>
+              <li ref={(el) => (line4 = el)}>
+                <Link
+                  onMouseEnter={(e) => handleHover(e)}
+                  onMouseLeave={(e) => handleHoverExit(e)}
+                  className="meLink"
+                  to="/about"
+                >
+                  About
+                </Link>
+              </li>
+              <li ref={(el) => (line5 = el)}>
+                <a
+                  onMouseEnter={(e) => handleHover(e)}
+                  onMouseLeave={(e) => handleHoverExit(e)}
+                  className="meLink"
+                  href="mailto:maryjohn.frank@gmail.com"
+                >
+                  contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div ref={(el) => (humSocial = el)} className="humSocialLinks">
+            <Link className="valueLink" to="/values">
+              <span className="heart">♡</span> Values
+              <span className="heart"> ♡</span>
+            </Link>
+            <div className="socialLinkDiv">
+              <a
+                href="https://www.instagram.com/maryjohnfrank/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/instagram_icon_nofill.png"
+                  alt="instagram"
+                  className="socialLink"
+                />
+              </a>
+              <a href="mailto:maryjohn.frank@gmail.com">
+                <img className="socialLink" src="/email_icon.png" alt="email" />
+              </a>
             </div>
           </div>
         </div>

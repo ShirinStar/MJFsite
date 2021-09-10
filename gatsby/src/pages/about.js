@@ -24,12 +24,8 @@ const serializers = {
   },
 };
 
-export default function AboutPage({ data, setEventTrigger, eventTrigger }) {
+export default function AboutPage({ data }) {
   const about = data.about.nodes;
-
-  useEffect(() => {
-    setEventTrigger(eventTrigger + 1);
-  }, []);
 
   return (
     <>

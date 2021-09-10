@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/AvenirLTStd-Black.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Roman.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
+}
+
 .aboutDiv {
   width: 90%;
   display: flex;
@@ -195,7 +202,7 @@
   
   .bodyTextLinks.about {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Avenir', sans-serif !important;
     letter-spacing: 1px;
   }
   
@@ -257,7 +264,7 @@
   
   .bodyTextLinks.about {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Avenir', sans-serif !important;
     letter-spacing: 1px;
   }
   
@@ -323,7 +330,7 @@
   
   .bodyTextLinks.about {
     font-size: 18px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Avenir', sans-serif !important;
     letter-spacing: 1px;
   }
   

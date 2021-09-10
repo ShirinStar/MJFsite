@@ -19,20 +19,16 @@ export default function ProjectsList({ presses }) {
   return (
     <>
       <SEO title="Press" />
-      <div className="container">
-        <div className="wrapper">
-          <h2 className="pageTitle">Press</h2>
-          <PressGridStyle>
-            {presses
-              .sort((a, b) => b.year - a.year)
-              .map((press) => (
-                <div key={press.id}>
-                  <PressGrid key={press.id} press={press} />
-                </div>
-              ))}
-          </PressGridStyle>
-        </div>
-      </div>
+      <h2 className="pageTitle">Press</h2>
+      <PressGridStyle>
+        {presses
+          .sort((a, b) => b.year - a.year)
+          .map((press) => (
+            <div key={press.id}>
+              <PressGrid key={press.id} press={press} />
+            </div>
+          ))}
+      </PressGridStyle>
     </>
   );
 }

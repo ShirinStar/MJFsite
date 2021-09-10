@@ -23,10 +23,8 @@ export default function ValueList({ value1, value2 }) {
   return (
     <>
       <SEO title="Values" />
-      <div className="container">
-        <div className="wrapper">
-          <h2 className="pageTitle">Values</h2>
-          {/* <div>
+      <h2 className="pageTitle">Values</h2>
+      {/* <div>
             <h3>Section one</h3>
             <ValuesGridStyle>
               {value1.map((value) => (
@@ -46,8 +44,6 @@ export default function ValueList({ value1, value2 }) {
               ))}
             </ValuesGridStyle>
           </div> */}
-        </div>
-      </div>
     </>
   );
 }

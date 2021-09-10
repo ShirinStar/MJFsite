@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/AvenirLTStd-Black.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Roman.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
+}
+
 .heroImage { 
   /* display: inline-block; */
   padding: 0;
@@ -30,8 +37,8 @@
   width: 100%;
   height: 99.5%;
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: 'Roboto', sans-serif !important;
-  letter-spacing: 4px;
+  font-family: 'Avenir', sans-serif !important;
+  font-size: 28px;
   color: #E5E3DC;
   display: flex;
   flex-direction: column;
@@ -42,12 +49,8 @@
 }
 
 .mainImageTitle {
-  font-family: 'Roboto', sans-serif !important;
-  letter-spacing: 6px !important;
-}
-
-.secondImageTitle {
-  font-family: 'Roboto', sans-serif !important;
+  padding: 10px 0;
+  margin: 0;
 }
 
 .textImages > * {
@@ -89,7 +92,7 @@
   }
   
   .mainImageTitleMobile {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Avenir', sans-serif !important;
     margin: 0;
     padding: 0;
     padding-top: 10px;
@@ -98,13 +101,9 @@
     font-size: 12px;
     text-transform: capitalize;
   }
-
-  .mainImageTitleMobile:hover {
-    color: #F0471D !important;
-  }
   
   .secondImageTitleMobile {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Avenir', sans-serif !important;
     margin: 0;
     padding: 0;
     padding-left: 5px;

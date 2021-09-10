@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/AvenirLTStd-Black.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Roman.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
+}
+
 .projectMain {
   margin-right: auto;
   margin-left: auto;
@@ -71,15 +78,14 @@
 
 .bodyTextLinks {
   font-size: 20px;
-  border-bottom: 2px solid #d0978c;
-  font-family: 'Roboto', sans-serif !important;
+  border-bottom: 2px solid white;
+  font-family: 'Avenir', sans-serif !important;
   padding: 0px 2px;
 }
 
 .bodyTextLinks:hover {
-  background-color: #d0978c;
-  border-radius: 5px;
   color: #C4FFE7;
+  border-bottom: 2px solid #C4FFE7;
 }
 
 .featureDiv {
@@ -99,12 +105,12 @@
 }
 
 .BHSTitle {
-  color: #D65C5A !important;
   font-size: 32px;
+  text-align: center;
 }
 
 .imagesContainer {
-  max-width: 1200px;
+  max-width: 1460px;
   padding: 0 4vw;
   margin-left: auto;
   margin-right: auto;   
@@ -121,7 +127,7 @@
 }
 
 .BHSimage {
-  width: 500px;
+  width: 640px;
   object-fit: cover;
   padding: 5px;
 }

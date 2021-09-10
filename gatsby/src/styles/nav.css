@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/AvenirLTStd-Black.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Roman.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
+}
+
 header {
   height: 100px;
   padding: 10px;
@@ -14,7 +21,6 @@ header {
 }
 
 .inner-header {
-  /* position: relative; */
   z-index: 10;
   height: 120px;
   display: flex;
@@ -84,7 +90,7 @@ header {
 }
 
 .menuName {
-  font-family: "Montserrat Alternates" , sans-serif !important;
+  font-family: "Avenir" , sans-serif !important;
 }
 
 .menuName:hover {
@@ -111,13 +117,13 @@ header {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: #85493E;
+  background: white;
   z-index: -1;
 }
 
 .menu-layer {
   position: relative;
-  background: #D1978C;
+  background: #A39CC3;
   height: 100%;
   overflow: hidden;
 }
@@ -131,7 +137,8 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 100px
+  top: 150px;
+  padding: 0 10%;
 }
 
 nav {
@@ -141,7 +148,6 @@ nav {
 ul {
   padding: 0;
   margin: 0;
-  margin-top: 50px;
 }
 
 li {
@@ -150,7 +156,7 @@ li {
   font-weight: 700;
   cursor: none;
   overflow: hidden;
-  height: 150px;
+  height: 130px;
   position: relative;
   width: 700px;
 }
@@ -182,7 +188,7 @@ li {
 
 .valueLink {
   font-size: 22px;
-  font-family: "Montserrat Alternates" , sans-serif !important;
+  font-family: "Avenir" , sans-serif !important;
   color: black !important;
 }
 

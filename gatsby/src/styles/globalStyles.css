@@ -1,7 +1,8 @@
 @font-face {
-  font-family: "Bigilla";
-  src: url("/fonts/bigilla/Bigilla.otf") format("otf"),
-       url("/fonts/bigilla/Bigilla-Bold.otf") format("otf");
+  font-family: "Avenir";
+  src: url("/fonts/avenir/AvenirLTStd-Black.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Roman.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
 }
 
 html {
@@ -13,20 +14,9 @@ html {
 body {
   font-size: 2rem;
   background-color: #8CD0B4;
-  /* background-color: #CDE1C3; */
   min-height: 100%;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  cursor: none;
-  /* background: rgb(205,225,195);
-  background: linear-gradient(45deg, rgba(205,225,195,1) 12%, rgba(141,186,173,1) 31%, rgba(163,156,195,1) 62%, rgba(249,255,227,1) 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-}
-
-html *,
-body * {
-    cursor: none;
 }
 
 /* Hide scrollbar */
@@ -42,6 +32,8 @@ body::-webkit-scrollbar {
   position: fixed;
   z-index: 1000;
 }
+
+/* alternative cursor */
 
 .cursor {
   width: 30px;
@@ -73,14 +65,14 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1460px;
   margin: 0 auto;
 }
 
 .wrapper {
-  padding: 0 38px;
+  padding: 0 25px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .wrapper.imagesGrid {
@@ -100,8 +92,7 @@ h2 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-  /* font-family: "Montserrat Alternates" , sans-serif ; */
+  font-family: 'Avenir', sans-serif;
   line-height: 1.4;
 }
 
@@ -109,7 +100,7 @@ p {
   font-family: "Barrio" , sans-serif;
   font-weight: 600;
   font-size: 68px;
-  text-align: left;
+  text-align: center;
   margin: 0;
   padding: 20px 0;
   padding-top: 70px;
@@ -121,12 +112,11 @@ button {
   border: 0;
   padding: 0.6rem 1rem;
   border-radius: 2px;
-  cursor: none;
   --cast: 2px;
   box-shadow: var(--cast) var(--cast) 0 var(--grey);
   text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
   transition: all 0.2s;
-
+  cursor: pointer;
 }
 
 button:hover {
@@ -136,8 +126,8 @@ button:hover {
 a, a:visited {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
-  cursor: none;
+  font-family: 'Avenir', sans-serif;
+  cursor: pointer;
 }
 
 a:hover {
@@ -194,8 +184,6 @@ img {
   text-align: center;
   background: #8CD1B4;
   margin: 0;
-  padding-bottom: 10px;
-
 }
 
 .footer.footerNot {
@@ -204,7 +192,7 @@ img {
 
 .footerText {
   font-size: 12px !important;
-  font-family: "Montserrat Alternates" , sans-serif !important;
+  font-family: "Avenir" , sans-serif !important;
   color: #4D866C;
 }
 
@@ -236,9 +224,6 @@ img {
     min-width: 200px;
   }
 
-  .wrapper {
-    padding: 0 40px
-  }
   .reelPlaceholderText {
     font-size: 10px;
   }
@@ -255,10 +240,6 @@ img {
 
 
 @media only screen and (min-width: 350px) and (max-width: 700px) {
-  .wrapper {
-    padding: 0 40px
-  }
-
   .pageTitle {
     font-size: 38px;
     padding-top: 30px

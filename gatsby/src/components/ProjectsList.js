@@ -20,19 +20,15 @@ import ProjectGrid from './ProjectGrid';
 export default function ProjectsList({ projects }) {
   return (
     <>
-      <div className="container">
-        <div className="wrapper">
-          {/* <h2 className="pageTitle">Projects</h2> */}
-          {projects
-            .filter((project) => project.showOnSite)
-            // .sort((a, b) => a.setOrder - b.setOrder)
-            .map((project) => (
-              <div className="heroImage" key={project.id}>
-                <ProjectGrid key={project.id} project={project} />
-              </div>
-            ))}
-        </div>
-      </div>
+      {/* <h2 className="pageTitle">Projects</h2> */}
+      {projects
+        .filter((project) => project.showOnSite)
+        // .sort((a, b) => a.setOrder - b.setOrder)
+        .map((project) => (
+          <div className="heroImage" key={project.id}>
+            <ProjectGrid key={project.id} project={project} />
+          </div>
+        ))}
     </>
   );
 }

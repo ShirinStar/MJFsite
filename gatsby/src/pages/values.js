@@ -2,13 +2,9 @@ import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import ValueList from '../components/ValueList';
 
-export default function ValuePage({ data, setEventTrigger, eventTrigger }) {
+export default function ValuePage({ data }) {
   const value1 = data.value1.nodes;
   const value2 = data.value2.nodes;
-
-  useEffect(() => {
-    setEventTrigger(eventTrigger + 1);
-  }, []);
 
   return (
     <>

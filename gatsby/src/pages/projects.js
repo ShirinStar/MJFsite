@@ -3,17 +3,8 @@ import { graphql } from 'gatsby';
 import ProjectsList from '../components/ProjectsList';
 import TagFilter from '../components/TagFilter';
 
-export default function ProjectsPage({
-  data,
-  pageContext,
-  setEventTrigger,
-  eventTrigger,
-}) {
+export default function ProjectsPage({ data, pageContext }) {
   const projects = data.projects.nodes;
-
-  useEffect(() => {
-    setEventTrigger(eventTrigger + 1);
-  }, []);
 
   return (
     <>

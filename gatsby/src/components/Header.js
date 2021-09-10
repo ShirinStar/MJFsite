@@ -85,39 +85,35 @@ export default function Header() {
   };
 
   return (
-    <div className="container">
-      <div className="wrapper">
-        <header>
-          <div className="inner-header">
-            <div className="menuHome">
-              <div className="headerLogo">
-                <Link
-                  className="logoNav"
-                  to="/"
-                  style={logoShow ? { display: 'none' } : {}}
-                >
-                  MARY JOHN FRANK
-                </Link>
-              </div>
-              <div className="navMenu">
-                {/* <div className="circle1" ref={(el) => (circle = el)} /> */}
-                <button
-                  ref={(el) => (btnRef = el)}
-                  disabled={disabled}
-                  className="btnMenu"
-                  type="button"
-                  onClick={handleMenu}
-                >
-                  <a ref={(el) => (nameMenuRef = el)} className="menuName">
-                    {state.menuName}
-                  </a>
-                </button>
-              </div>
-            </div>
-            <Humburger state={state} />
+    <header>
+      <div className="inner-header">
+        <div className="menuHome">
+          <div className="headerLogo">
+            <Link
+              className="logoNav"
+              to="/"
+              style={logoShow ? { display: 'none' } : {}}
+            >
+              MARY JOHN FRANK
+            </Link>
           </div>
-        </header>
+          <div className="navMenu">
+            {/* <div className="circle1" ref={(el) => (circle = el)} /> */}
+            <button
+              ref={(el) => (btnRef = el)}
+              disabled={disabled}
+              className="btnMenu"
+              type="button"
+              onClick={handleMenu}
+            >
+              <a ref={(el) => (nameMenuRef = el)} className="menuName">
+                {state.menuName}
+              </a>
+            </button>
+          </div>
+        </div>
+        <Humburger state={state} />
       </div>
-    </div>
+    </header>
   );
 }
