@@ -111,6 +111,13 @@ export default function Hamburger({ state }) {
         className="menu-secondary-background-color"
       />
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
+        <div className="menuLogo">
+          <Link className="menuNavLogo" to="/">
+            MARY <br /> JOHN <br />
+            FRANK
+          </Link>
+        </div>
+
         <div className="hamLinks">
           <nav>
             <ul>
@@ -119,9 +126,9 @@ export default function Hamburger({ state }) {
                   onMouseEnter={(e) => handleHover(e)}
                   onMouseLeave={(e) => handleHoverExit(e)}
                   className="meLink"
-                  to="/projects"
+                  to="/reels"
                 >
-                  Projects
+                  Reels
                 </Link>
               </li>
               <li ref={(el) => (line2 = el)}>
@@ -129,9 +136,9 @@ export default function Hamburger({ state }) {
                   onMouseEnter={(e) => handleHover(e)}
                   onMouseLeave={(e) => handleHoverExit(e)}
                   className="meLink"
-                  to="/reels"
+                  to="/projects"
                 >
-                  Reels
+                  Videos
                 </Link>
               </li>
               <li ref={(el) => (line3 = el)}>
@@ -155,22 +162,19 @@ export default function Hamburger({ state }) {
                 </Link>
               </li>
               <li ref={(el) => (line5 = el)}>
-                <a
+                <Link
                   onMouseEnter={(e) => handleHover(e)}
                   onMouseLeave={(e) => handleHoverExit(e)}
                   className="meLink"
-                  href="mailto:maryjohn.frank@gmail.com"
+                  to="/values"
                 >
-                  contact
-                </a>
+                  Values
+                </Link>
               </li>
             </ul>
           </nav>
           <div ref={(el) => (humSocial = el)} className="humSocialLinks">
-            <Link className="valueLink" to="/values">
-              <span className="heart">♡</span> Values
-              <span className="heart"> ♡</span>
-            </Link>
+            <p>Contact me</p>
             <div className="socialLinkDiv">
               <a
                 href="https://www.instagram.com/maryjohnfrank/"

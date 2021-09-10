@@ -28,11 +28,6 @@ export default function SingleProjectPage({ data }) {
 
   return (
     <>
-      <div className="backToProjects">
-        <Link className="backText" to="/projects">
-          Back
-        </Link>
-      </div>
       <div className="projectHead">
         <h2 className="pageTitle singleProject">{project.name}</h2>
         <p className="projectYear">{project.year}</p>

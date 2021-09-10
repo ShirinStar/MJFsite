@@ -36,6 +36,7 @@
   margin-bottom: 50px;
   align-items: center;
   text-align: left;
+
 }
 
 .projectHead {
@@ -43,6 +44,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin-top: 50px;
 }
 
 .pageTitle.singleProject {
@@ -127,7 +129,7 @@
 }
 
 .BHSimage {
-  width: 640px;
+  width: 600px;
   object-fit: cover;
   padding: 5px;
 }

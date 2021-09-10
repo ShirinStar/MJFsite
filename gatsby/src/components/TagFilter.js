@@ -97,7 +97,7 @@ export default function TagFilter({ activeTag }) {
 
   return (
     <>
-      <h2 className="pageTitle">Projects</h2>
+      <h2 className="pageTitle">Videos</h2>
       <TagStyles>
         <Link to="/projects">
           <span className="tagName">All</span>

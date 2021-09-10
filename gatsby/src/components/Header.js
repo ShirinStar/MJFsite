@@ -2,17 +2,24 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'gatsby';
 import { globalHistory } from '@reach/router';
 import { window } from 'browser-monads';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from 'react-device-detect';
 import Humburger from './Hamburger.js';
+import InnerNav from './InnerNav.js';
 
 export default function Header() {
   let btnRef = useRef(null);
-  const circle = useRef(null);
+  let circle = useRef(null);
   let nameMenuRef = useRef(null);
 
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: 'MENU',
+    menuName: '☰',
   });
   const [disabled, setDisabled] = useState(false);
   const [logoShow, setLogoShow] = useState(true);
@@ -29,7 +36,7 @@ export default function Header() {
     }
 
     if (state.menuName === 'MENU') {
-      // circle.style.filter = 'invert(0)';
+      circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
       nameMenuRef.style.color = 'black';
     }
@@ -41,7 +48,7 @@ export default function Header() {
         if (action === 'PUSH')
           setState({
             clicked: false,
-            menuName: 'MENU',
+            menuName: '☰',
           });
       }),
     [setState]
@@ -60,26 +67,26 @@ export default function Header() {
       setState({
         initial: null,
         clicked: true,
-        menuName: 'CLOSE',
+        menuName: 'X',
       });
       nameMenuRef.style.color = 'white';
-      // btnRef.style.transform = 'scale(1.3)';
-      // circle.style.filter = 'invert(1)';
+      btnRef.style.transform = 'scale(1.2)';
+      circle.style.filter = 'invert(1)';
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: 'MENU',
+        menuName: '☰',
       });
       nameMenuRef.style.color = 'black';
-      // circle.style.filter = 'invert(1)';
+      circle.style.filter = 'invert(0)';
       btnRef.style.transform = 'scale(1)';
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: 'CLOSE',
+        menuName: 'X',
       });
-      // circle.style.filter = 'invert(1)';
-      // btnRef.style.transform = 'scale(1.3)';
+      circle.style.filter = 'invert(1)';
+      btnRef.style.transform = 'scale(1.2)';
       nameMenuRef.style.color = 'white';
     }
   };
@@ -94,23 +101,31 @@ export default function Header() {
               to="/"
               style={logoShow ? { display: 'none' } : {}}
             >
-              MARY JOHN FRANK
+              MARY <br />
+              JOHN <br />
+              FRANK
             </Link>
           </div>
-          <div className="navMenu">
-            {/* <div className="circle1" ref={(el) => (circle = el)} /> */}
-            <button
-              ref={(el) => (btnRef = el)}
-              disabled={disabled}
-              className="btnMenu"
-              type="button"
-              onClick={handleMenu}
-            >
-              <a ref={(el) => (nameMenuRef = el)} className="menuName">
-                {state.menuName}
-              </a>
-            </button>
-          </div>
+          {logoShow || isMobile ? (
+            <div className="navMenu">
+              <div className="circle1" ref={(el) => (circle = el)} />
+              <button
+                ref={(el) => (btnRef = el)}
+                disabled={disabled}
+                className="btnMenu"
+                type="button"
+                onClick={handleMenu}
+              >
+                <a ref={(el) => (nameMenuRef = el)} className="menuName">
+                  {state.menuName}
+                </a>
+              </button>
+            </div>
+          ) : (
+            <div className="innerPageNav">
+              <InnerNav />
+            </div>
+          )}
         </div>
         <Humburger state={state} />
       </div>
