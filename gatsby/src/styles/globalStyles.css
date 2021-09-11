@@ -84,7 +84,6 @@ body::-webkit-scrollbar {
 
 h1 {
   font-family: "Barrio", sans-serif;
-  /* font-family: "Bigilla"; */
 }
 
 h2 {
@@ -103,7 +102,7 @@ p {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  padding-top: 70px;
+
 }
 
 button {

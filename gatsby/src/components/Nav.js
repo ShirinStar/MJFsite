@@ -4,8 +4,8 @@ import Header from './Header.js';
 
 export default function Nav() {
   return (
-    <>
+    <div className="navWrapper">
       <Header />
-    </>
+    </div>
   );
 }

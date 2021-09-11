@@ -5,8 +5,12 @@
        url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
 }
 
+.navWrapper {
+  padding: 20px 50px;
+}
+
 header {
-  height: 100px;
+  height: 80px;
   padding: 0;
 }
 
@@ -21,7 +25,7 @@ header {
 
 .inner-header {
   z-index: 10;
-  height: 120px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +37,6 @@ header {
   color: black;
   /* z-index: 10; */
   margin-top: 30px;
-  margin-left: -15px;
   text-align: left !important;
 }
 
@@ -53,7 +56,7 @@ header {
 }
 
 .menuLogo {
-  padding: 0 200px;
+  padding: 0 50px;
   padding-top: 20px;
 }
 
@@ -183,7 +186,7 @@ li {
 }
 
 .humSocialLinks {
-  width: 300px;
+  width: 400px;
   color: white;
 }
 
@@ -196,14 +199,13 @@ li {
   padding: 25px 0;
 }
 
-.valueLink {
+.contactLink {
   font-size: 22px;
+  letter-spacing: 2px;
   font-family: "Avenir" , sans-serif !important;
   color: black !important;
-}
-
-.valueLink:hover {
-  color: white !important;
+  padding: 0;
+  margin: 0;
 }
 
 .socialLink {
@@ -225,14 +227,13 @@ li {
 
   li {
     font-size: 3.6rem;
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 180px;
     padding-left: 0;
   }
 
   .menuLogo {
-    padding: 0 20px;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   .menuNavLogo {
@@ -248,24 +249,32 @@ li {
     margin-left: -5%;
     font-size: 1.8rem;
   }
+
+  .socialLink {
+    height: 25px;
+    padding: 0px 0px;
+  }
+
+  .contactLink {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 340px) and (max-width: 650px) {
   .btnMenu { 
     font-size: 2rem;
     margin-left: -5%;
   }
 
   .logoNav {
-    letter-spacing: 2px;
     font-size: 14px;
-    margin-left: -10%;
   }
 
   .menuLogo {
-    padding: 0 20px;
-    padding-top: 30px;
+    padding: 0px 40px;
+    padding-top: 40px;
   }
 
   .menuNavLogo {
@@ -285,8 +294,9 @@ li {
     /* padding-left: 10px; */
   }
 
-  .valueLink {
+  .contactLink {
     font-size: 14px;
+    letter-spacing: 0;
   }
 
   .heart {
@@ -310,8 +320,15 @@ li {
 
 @media only screen and (min-width: 650px) and (max-width: 800px) {
   header {
-    padding: 0 80px;
     height: 130px;
+  }
+
+  .logoNav {
+    font-size: 22px;
+  }
+  
+  .menuNavLogo {
+    font-size: 22px;
   }
 
   .menuLogo {
@@ -343,9 +360,21 @@ li {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1400px) {
+  .navWrapper {
+    padding: 20px 80px;
+  }
+  
   header {
-    padding: 0 80px;
-    height: 130px;
+    height: 100px;
+  }
+
+  .logoNav {
+    font-size: 26px;
+    line-height: -.5rem;
+  }
+
+  .menuNavLogo {
+    font-size: 26px;
   }
 
   .menuLogo {

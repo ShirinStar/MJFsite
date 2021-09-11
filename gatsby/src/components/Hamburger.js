@@ -174,7 +174,7 @@ export default function Hamburger({ state }) {
             </ul>
           </nav>
           <div ref={(el) => (humSocial = el)} className="humSocialLinks">
-            <p>Contact me</p>
+            <p className="contactLink">Contact me</p>
             <div className="socialLinkDiv">
               <a
                 href="https://www.instagram.com/maryjohnfrank/"
