@@ -20,6 +20,7 @@ export const pressQuery = graphql`
         id
         pressLink
         year
+        setOrder
         image {
           asset {
             url

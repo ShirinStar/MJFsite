@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 const PressStyle = styled.div`
-  display: grid;
+  display: flex;
   @supports not (grid-template-rows: subgrid) {
     grid-template-rows: auto auto;
   }
@@ -28,7 +28,8 @@ const PressStyle = styled.div`
     border: 1px solid #c4ffe7;
   }
   a {
-    color: #85493e;
+    color: 'black';
+    font-family: 'Avenir', sans-serif;
   }
   a:hover {
     color: #c4ffe7;
@@ -39,11 +40,11 @@ export default function PressGrid({ press }) {
   return (
     <PressStyle>
       <a href={press.pressLink} target="_blank" rel="noreferrer">
-        <img
+        {/* <img
           className="pressImage"
           src={press.image.asset.url}
           alt={press.name}
-        />
+        /> */}
         <div className="pressInfo">
           <p className="presstext">
             {press.name} | {press.year}

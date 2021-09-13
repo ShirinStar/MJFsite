@@ -5,13 +5,12 @@ import SEO from './SEO';
 
 const PressGridStyle = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 4rem;
-  margin-top: 20px;
-
+  grid-template-columns: repeat(auto-fill, minmax(1fr));
+  gap: 2rem;
+  padding-bottom: 70px;
   @media only screen and (min-width: 300px) and (max-width: 700px) {
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    /* gap: 1.5rem; */
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
   }
 `;
 
@@ -22,7 +21,7 @@ export default function ProjectsList({ presses }) {
       <h2 className="pageTitle">Press</h2>
       <PressGridStyle>
         {presses
-          .sort((a, b) => b.year - a.year)
+          .sort((a, b) => a.setOrder - b.setOrder)
           .map((press) => (
             <div key={press.id}>
               <PressGrid key={press.id} press={press} />

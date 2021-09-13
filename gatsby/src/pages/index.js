@@ -71,7 +71,7 @@ export default function HomePage() {
               <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
                 <a>
                   <img
-                    src="./play-button.png"
+                    src="/play-button.png"
                     alt="play"
                     onClick={handleShowDiv}
                   />
