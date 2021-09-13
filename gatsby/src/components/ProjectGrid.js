@@ -6,7 +6,7 @@ import SEO from './SEO';
 export default function ProjectGrid({ project }) {
   return (
     <>
-      <SEO title="Projects" image={project.image?.asset?.fluid?.src} />
+      <SEO title="Videos" image={project.image?.asset?.fluid?.src} />
       <div className="imageContainer">
         <Link to={`/project/${project.slug.current}`}>
           <div className="imageGrid">
