@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Img from 'gatsby-image';
 import SEO from './SEO';
 
 export default function ProjectGrid({ project }) {
@@ -19,7 +18,6 @@ export default function ProjectGrid({ project }) {
                 </span>
               </p>
             </div>
-            {/* <Img fluid={project.image.asset.fluid} alt={project.name} /> */}
           </div>
           <div className="textImages textImages--blur">
             <p className="mainImageTitle">{project.name}</p>

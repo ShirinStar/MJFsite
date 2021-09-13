@@ -1,12 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Player from '@vimeo/player';
 import SEO from '../components/SEO';
 import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
 import SketchMovingLine from '../components/sketchMovingLine';
 
-export default function HomePage() {
+export default function HomePage({ data }) {
+  const homeImage = data.homeImage.nodes;
   const [divDisplay, setDivDispaly] = useState(false);
   const iframRef = useRef(null);
 
@@ -54,7 +55,7 @@ export default function HomePage() {
                 <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
                   <img
                     className="imageSize"
-                    src="/homeImage.png"
+                    src={homeImage[0].image.asset.url}
                     alt="home"
                     onClick={handleShowDiv}
                   />
@@ -100,3 +101,17 @@ export default function HomePage() {
     </div>
   );
 }
+
+export const reelsQuery = graphql`
+  query {
+    homeImage: allSanityHomePageImage {
+      nodes {
+        image {
+          asset {
+            url
+          }
+        }
+      }
+    }
+  }
+`;

@@ -68,7 +68,7 @@
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {  
   .reelTitleContainer {
-    height: 75%;
+    height: 80%;
     width: 100%;
     margin-bottom: 0px;
   }
@@ -83,7 +83,7 @@
   }
 
   .reelPlaceholder {
-    height: 130px;
+    height: 150px;
   }
 
   .reelPlaceholderText {
@@ -120,7 +120,7 @@
   }
 
   .reelPlaceholder {
-    height: 180px;
+    height: 200px;
   }
   
   .reelPlaceholderText {

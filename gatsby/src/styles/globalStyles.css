@@ -13,7 +13,7 @@ html {
 
 body {
   font-size: 2rem;
-  background-color: #8CD0B4;
+  background-color: #8ec8b0;
   min-height: 100%;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -102,7 +102,6 @@ p {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-
 }
 
 button {
@@ -149,9 +148,8 @@ img {
   max-width: 100%;
   align-items: center;
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 10px;
-  font-size: 16px;
 }
 
 .footer {
@@ -159,8 +157,9 @@ img {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background: #8CD1B4;
+  background: #8ec8b0;
   margin: 0;
+  z-index: 7;
 }
 
 .footer.footerNot {
@@ -168,7 +167,7 @@ img {
 }
 
 .footerText {
-  font-size: 12px !important;
+  font-size: 11px !important;
   font-family: "Avenir" , sans-serif !important;
   color: #4D866C;
 }
@@ -189,7 +188,7 @@ img {
 @media only screen and (min-width: 300px) and (max-width: 350px) {  
   .pageTitle {
     font-size: 38px;
-    padding-top: 30px
+    padding: 5px 0;
   }
 
   p {
@@ -201,20 +200,16 @@ img {
 @media only screen and (min-width: 350px) and (max-width: 700px) {
   .pageTitle {
     font-size: 38px;
-    padding-top: 30px
+    padding: 10px 0;
   }
 
   p {
     font-size: 14px;
   }
-
-  .pressInfo {
-    font-size: 12px !important;
-  }
  }
 
  @media only screen and (min-width: 700px) and (max-width: 1400px) {
   .pageTitle {
-    padding-top: 0px;
+    padding: 0 0;
   }
  }

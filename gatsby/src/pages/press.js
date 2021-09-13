@@ -14,13 +14,12 @@ export default function PressPage({ data }) {
 
 export const pressQuery = graphql`
   query {
-    press: allSanityPress {
+    press: allSanityPress(sort: { fields: order, order: ASC }) {
       nodes {
         name
         id
         pressLink
         year
-        setOrder
         image {
           asset {
             url

@@ -29,20 +29,21 @@ const TagStyles = styled.div`
       color: #c4ffe7;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 650px) {
     grid-gap: 0 0rem;
     margin-top: 0.6rem;
     text-align: center;
     justify-content: center;
+    margin-bottom: 3rem;
     a {
-      padding: 0 4px;
-      font-size: 12px;
-      grid-gap: 0 1rem;
-      line-height: 1.8;
+      padding: 0 2px;
+      font-size: 11px;
+      grid-gap: 0 0.8rem;
     }
   }
 `;
 
+// sorting tags based on count --- currently not in used.
 function countProjectsInTags(projects) {
   const counts = projects
     .map((project) => project.tags)
@@ -64,6 +65,7 @@ function countProjectsInTags(projects) {
   return sortedTags;
 }
 
+// filtering tags based on if project is mark to show.
 function getTagsWithShowOnSite(projects) {
   const tags = {};
   projects.forEach((project) => {

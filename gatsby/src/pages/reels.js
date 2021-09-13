@@ -28,7 +28,7 @@ const serializers = {
 export default function ReelsPage({ data }) {
   const reels = data.reels.nodes;
   const [divDisplay, setDivDispaly] = useState(false);
-  const iframRef = useRef(null);
+  // const iframRef = useRef(null);
 
   const handleShowDiv = () => {
     setDivDispaly(true);
@@ -39,60 +39,60 @@ export default function ReelsPage({ data }) {
   return (
     <>
       <SEO title="Reels" />
-      <div className="container">
-        <div className="wrapper">
-          <h2 className="pageTitle">Reels</h2>
 
-          {reels
-            .sort((a, b) => a.setOrder - b.setOrder)
-            .map((reel) => (
-              <div key={reel.id}>
-                <div className="reelWrapper">
-                  {reel.reelLink === null ? (
-                    <div className="reelPlaceholder">
+      <h2 className="pageTitle">Reels</h2>
+      <div>
+        {reels
+          .sort((a, b) => a.setOrder - b.setOrder)
+          .map((reel) => (
+            <div key={reel.id}>
+              <div className="reelWrapper">
+                {/* place holder for the reels without video */}
+                {reel.reelLink === null ? (
+                  <div className="reelPlaceholder">
+                    <h2 className="reeltitle">{reel.name}</h2>
+                    <p className="reelPlaceholderText">
+                      the reel is currently being updated,
+                      <br />
+                      thank you for your patience!
+                    </p>
+                  </div>
+                ) : (
+                  <>
+                    {/* overlay black */}
+                    <div
+                      className={
+                        divDisplay
+                          ? 'reelTitleContainer none'
+                          : 'reelTitleContainer'
+                      }
+                      onClick={handleShowDiv}
+                    >
                       <h2 className="reeltitle">{reel.name}</h2>
-                      <p className="reelPlaceholderText">
-                        the reel is currently being updated,
-                        <br />
-                        thank you for your patience!
-                      </p>
-                    </div>
-                  ) : (
-                    <>
                       <div
                         className={
-                          divDisplay
-                            ? 'reelTitleContainer none'
-                            : 'reelTitleContainer'
+                          divDisplay ? 'playIconReel none' : 'playIconReel'
                         }
-                        onClick={handleShowDiv}
                       >
-                        <h2 className="reeltitle">{reel.name}</h2>
-                        <div
-                          className={
-                            divDisplay ? 'playIconReel none' : 'playIconReel'
-                          }
-                        >
-                          <a>
-                            <img
-                              src="/play-button.png"
-                              alt="play"
-                              onClick={handleShowDiv}
-                            />
-                          </a>
-                        </div>
+                        <a>
+                          <img
+                            src="/play-button.png"
+                            alt="play"
+                            onClick={handleShowDiv}
+                          />
+                        </a>
                       </div>
-                      <div className="reelVideoContainer">
-                        <div className="videoDiv">
-                          <VideoEmbed link={reel.reelLink} />
-                        </div>
+                    </div>
+                    <div className="reelVideoContainer">
+                      <div className="videoDiv">
+                        <VideoEmbed link={reel.reelLink} />
                       </div>
-                    </>
-                  )}
-                </div>
+                    </div>
+                  </>
+                )}
               </div>
-            ))}
-        </div>
+            </div>
+          ))}
       </div>
     </>
   );
