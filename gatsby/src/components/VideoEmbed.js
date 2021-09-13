@@ -4,7 +4,7 @@ import getVideoId from 'get-video-id';
 export default function VideoEmbed({ link }) {
   const { id } = getVideoId(link);
   const { service } = getVideoId(link);
-  const vimeoEmbedUrl = `https://player.vimeo.com/video/${id}`;
+  const vimeoEmbedUrl = `https://player.vimeo.com/video/${id}?api=1&h=007989203f?&loop=1&byline=0&title=0`;
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${id}`;
 
   const responsiveVideoContainer = {

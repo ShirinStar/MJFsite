@@ -35,15 +35,11 @@ export default function AboutPage({ data }) {
           <h2 className="pageTitle">About</h2>
 
           <div className="aboutDiv">
-            <div className="cropImageDiv">
-              <div className="aboutImageCrop" />
-              <div className="bgImageCrop" />
-            </div>
-            {/* <img
+            <img
               className="imgAbout"
               src={about[0].image.asset.url}
               alt={about[0].name}
-            /> */}
+            />
             <div className="aboutText">
               <PortableText
                 blocks={about[0]._rawBodyPortableText}
@@ -52,10 +48,7 @@ export default function AboutPage({ data }) {
               />
 
               <div className="contact">
-                <p>
-                  <span className="contactTitle">Contact me </span>
-                </p>
-                <br />
+                <h2> Contact me </h2>
                 <a
                   className="bodyTextLinks about"
                   href="mailto:maryjohn.frank@gmail.com"

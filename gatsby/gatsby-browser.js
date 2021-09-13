@@ -14,6 +14,7 @@ import './src/styles/projectsGrid.css';
 import './src/styles/projectPage.css';
 import './src/styles/nav.css';
 import './src/styles/about.css';
+import './src/styles/reels.css';
 
 export function wrapPageElement({ element, props }) {
   return <Layout {...props}>{element}</Layout>;

@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/AvenirLTStd-Black.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Roman.otf") format("otf"),
+       url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
+}
+
+.reelWrapper {
+  position: relative;
+}
+
+.reelTitleContainer {
+  position:absolute;
+  margin-bottom: 20px;
+  background-color: black;
+  height: 91%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.reelTitleContainer.none {
+  display: none;
+}
+
+.reelVideoContainer {
+  display: block;
+  padding-bottom: 40px;
+}
+
+.reeltitle {
+  font-size: 38px;
+  color: white !important;
+  padding-top: 20%;
+}
+
+.playIconReel {
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  height: 48px;
+  width: 48px;
+  margin-top: 25%;
+  cursor: pointer;
+  z-index: 6;
+  transform: scale(1);
+}
+
+.playIconReel.none {
+  display: none;
+}
+
+.reelPlaceholder {
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  z-index: -10;
+}
+
+.reelPlaceholderText {
+  color: white;
+  font-family: "Avenir", sans-serif;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {  
+  .reelTitleContainer {
+    height: 75%;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .reelVideoContainer {
+    padding-bottom: 0px;
+  }
+
+  .reeltitle {
+    font-size: 16px;
+    padding-top: 10%;
+  }
+
+  .reelPlaceholder {
+    height: 130px;
+  }
+
+  .reelPlaceholderText {
+    font-size: 10px;
+  }
+
+  .playIconReel {
+    left: 40%;
+    margin-top: 20%;
+    transform: scale(.7);
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+  .reelTitleContainer {
+    height: 85%;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .reelVideoContainer {
+    padding-bottom: 0px;
+  }
+
+  .reeltitle {
+    font-size: 18px;
+    padding-top: 10%;
+  }
+
+  .playIconReel {
+    left: 42%;
+    margin-top: 20%;
+    transform: scale(.6);
+  }
+
+  .reelPlaceholder {
+    height: 180px;
+  }
+  
+  .reelPlaceholderText {
+    font-size: 12px;
+  }
+ }
+
+ @media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .reelTitleContainer {
+    height: 91%;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .reelVideoContainer {
+    padding-bottom: 0px;
+  }
+
+  .reeltitle {
+    font-size: 24px;
+    padding-top: 10%;
+  }
+
+  .playIconReel {
+    left: 48%;
+    margin-top: 20%;
+    transform: scale(.8);
+  }
+
+  .reelPlaceholder {
+    height: 400px;
+  }
+  
+  .reelPlaceholderText {
+    font-size: 14px;
+  }
+ }
+
+ @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  .reelTitleContainer {
+    height: 98%;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .reelVideoContainer {
+    padding-bottom: 0px;
+  }
+
+  .reeltitle {
+    font-size: 32px;
+    padding-top: 15%;
+  }
+
+  .playIconReel {
+    left: 48%;
+    margin-top: 20%;
+    transform: scale(1);
+  }
+
+  .reelPlaceholder {
+    height: 600px;
+    margin-top: 3%;
+  }
+  
+  .reelPlaceholderText {
+    font-size: 14px;
+  }
+ }

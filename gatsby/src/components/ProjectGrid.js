@@ -24,7 +24,6 @@ export default function ProjectGrid({ project }) {
           <div className="textImages textImages--blur">
             <p className="mainImageTitle">{project.name}</p>
             <p className="secondImageTitle">{project.tagline}</p>
-            {/* <p>{project.tags.map((tag) => tag.name).join(', ')}</p> */}
           </div>
         </Link>
       </div>

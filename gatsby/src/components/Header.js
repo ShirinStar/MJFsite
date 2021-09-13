@@ -21,6 +21,7 @@ export default function Header() {
     labelClasses += ' ex';
   }
 
+  // checking if main page to hide the logo
   useEffect(() => {
     // change url in production
     if (
@@ -33,6 +34,7 @@ export default function Header() {
     }
   }, [window.location.href]);
 
+  // checking if inner pages where clicked from the menu screen
   useEffect(
     () =>
       globalHistory.listen(({ action }) => {
@@ -54,6 +56,7 @@ export default function Header() {
     }, 1200);
   };
 
+  // showing menu page
   const handleMenu = () => {
     disabledMenu();
     if (state.initial === false) {

@@ -154,27 +154,6 @@ img {
   font-size: 16px;
 }
 
-.reelWrapper {
-  padding: 50px 0;
-}
-
-.reeltitle {
-  font-size: 38px;
-  color: #D65C5A !important;
-}
-
-.reelPlaceholder {
-  min-height: 600px;
-  min-width: 700px;
-  background-color: black;
-  text-align: center;
-}
-
-.reelPlaceholderText {
-  color: #C4FFE7;
-  padding: 20% 0;
-}
-
 .footer {
   position: fixed;
   bottom: 0;
@@ -208,24 +187,6 @@ img {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {  
-  .reelWrapper {
-    padding: 0;
-    margin: 0;
-  }
-
-  .reeltitle {
-    font-size: 22px;
-  }
-
-  .reelPlaceholder {
-    min-height: 100px;
-    min-width: 200px;
-  }
-
-  .reelPlaceholderText {
-    font-size: 10px;
-  }
-
   .pageTitle {
     font-size: 38px;
     padding-top: 30px
@@ -247,24 +208,6 @@ img {
     font-size: 14px;
   }
 
-  .reelWrapper {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .reeltitle {
-    font-size: 28px;
-  }
-
-  .reelPlaceholder {
-    min-height: 180px;
-    min-width: 200px;
-  }
-  
-  .reelPlaceholderText {
-    font-size: 12px;
-  }
-
   .pressInfo {
     font-size: 12px !important;
   }
@@ -273,18 +216,5 @@ img {
  @media only screen and (min-width: 700px) and (max-width: 1400px) {
   .pageTitle {
     padding-top: 0px;
-  }
-
-  .reelWrapper {
-    padding: 0;
-    margin: 0;
-  }
-
-  .reelPlaceholder {
-    min-height: 380px;
-  }
-
-  .reelPlaceholderText {
-    font-size: 16px;
   }
  }
