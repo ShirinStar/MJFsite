@@ -2,27 +2,24 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'gatsby';
 import { globalHistory } from '@reach/router';
 import { window } from 'browser-monads';
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 import Humburger from './Hamburger.js';
 import InnerNav from './InnerNav.js';
 
 export default function Header() {
-  let btnRef = useRef(null);
-  let circle = useRef(null);
-  let nameMenuRef = useRef(null);
-
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: '☰',
+    menuName: 'bars',
   });
   const [disabled, setDisabled] = useState(false);
   const [logoShow, setLogoShow] = useState(true);
+  const [black, setBlack] = useState(true);
+  let labelClasses = 'barsMenu';
+
+  if (state.menuName !== 'bars') {
+    labelClasses += ' ex';
+  }
 
   useEffect(() => {
     // change url in production
@@ -34,12 +31,6 @@ export default function Header() {
     } else {
       setLogoShow(false);
     }
-
-    if (state.menuName === 'MENU') {
-      circle.style.filter = 'invert(0)';
-      btnRef.style.transform = 'scale(1)';
-      nameMenuRef.style.color = 'black';
-    }
   }, [window.location.href]);
 
   useEffect(
@@ -47,9 +38,11 @@ export default function Header() {
       globalHistory.listen(({ action }) => {
         if (action === 'PUSH')
           setState({
+            initial: false,
             clicked: false,
-            menuName: '☰',
+            menuName: 'bars',
           });
+        setBlack(true);
       }),
     [setState]
   );
@@ -67,27 +60,21 @@ export default function Header() {
       setState({
         initial: null,
         clicked: true,
-        menuName: 'X',
+        menuName: 'ex',
       });
-      nameMenuRef.style.color = 'white';
-      btnRef.style.transform = 'scale(1.2)';
-      circle.style.filter = 'invert(1)';
+      setBlack(false);
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: '☰',
+        menuName: 'bars',
       });
-      nameMenuRef.style.color = 'black';
-      circle.style.filter = 'invert(0)';
-      btnRef.style.transform = 'scale(1)';
+      setBlack(true);
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: 'X',
+        menuName: 'ex',
       });
-      circle.style.filter = 'invert(1)';
-      btnRef.style.transform = 'scale(1.2)';
-      nameMenuRef.style.color = 'white';
+      setBlack(false);
     }
   };
 
@@ -108,18 +95,21 @@ export default function Header() {
           </div>
           {logoShow || isMobile ? (
             <div className="navMenu">
-              <div className="circle1" ref={(el) => (circle = el)} />
-              <button
-                ref={(el) => (btnRef = el)}
-                disabled={disabled}
-                className="btnMenu"
-                type="button"
-                onClick={handleMenu}
-              >
-                <a ref={(el) => (nameMenuRef = el)} className="menuName">
-                  {state.menuName}
-                </a>
-              </button>
+              <div className={black ? 'circle1 black' : 'circle1 white'} />
+              <div className="barsDiv">
+                <label className={labelClasses} htmlFor="check">
+                  <input
+                    className="barsCheck"
+                    type="checkbox"
+                    id="check"
+                    onClick={handleMenu}
+                    disabled={disabled}
+                  />
+                  <span className={black ? 'barSpan black' : 'barSpan white'} />
+                  <span className={black ? 'barSpan black' : 'barSpan white'} />
+                  <span className={black ? 'barSpan black' : 'barSpan white'} />
+                </label>
+              </div>
             </div>
           ) : (
             <div className="innerPageNav">

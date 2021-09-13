@@ -67,7 +67,7 @@ header {
   font-weight: 600;
 }
 
-.circle1 {
+.circle1.black {
   background-image: url('../assets/images/circle.png');
   display: block;
   background-repeat:no-repeat;
@@ -77,6 +77,20 @@ header {
   animation: rotation 2s infinite linear;
   position: relative;
   z-index: -10;
+  filter: invert(0);
+}
+
+.circle1.white {
+  background-image: url('../assets/images/circle.png');
+  display: block;
+  background-repeat:no-repeat;
+  background-size:contain;
+  padding: 55px;
+  background-color: transparent;
+  animation: rotation 2s infinite linear;
+  position: relative;
+  z-index: -10;
+  filter: invert(1);
 }
 
 @keyframes rotation {
@@ -88,23 +102,70 @@ header {
   }
 }
 
-.btnMenu {
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 3rem;
+.barsDiv {
+  display:grid;
+  place-items:center;
+  margin-top: -4%;
+  margin-left: 2%;
+  padding:0;
   position: absolute;
-  margin-top: -4.5%;
-  margin-left: -1%;
 }
 
-.btnMenu:hover {
-  color: white;
+.barsMenu {
+  display:flex;
+  flex-direction:column;
+  width: 30px;
+  cursor:pointer;
 }
 
-.menuName {
-  font-family: "Avenir" , sans-serif !important;
+.barSpan.black{
+  background: #000;
+  border-radius:10px;
+  height: 4px;
+  margin: 5px 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+
+.barSpan.white{
+  background: #fff;
+  border-radius:10px;
+  height: 4px;
+  margin: 5px 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.barSpan:nth-of-type(1){
+  width:50%;
+}
+
+.barSpan:nth-of-type(2){
+  width:100%;
+}
+
+.barSpan:nth-of-type(3){
+  width:75%;
+}
+
+input[type="checkbox"]{
+  display:none;
+}
+
+.ex input[type="checkbox"] ~ .barSpan:nth-of-type(1){
+  transform-origin:bottom;
+  transform:rotatez(45deg) translate(8px, 2px)
+}
+
+.ex input[type="checkbox"] ~ .barSpan:nth-of-type(2){
+  transform-origin:top;
+  transform:rotatez(-45deg)
+}
+
+.ex input[type="checkbox"] ~ .barSpan:nth-of-type(3){
+  transform-origin:bottom;
+  width:50%;
+  transform: translate(15px,-10px) rotatez(45deg);
+}
+
 
 .menuName:hover {
   color: #C4FFE7 !important;
@@ -219,7 +280,7 @@ li {
 
 @media only screen and (max-width: 340px) {
 
-  .circle1 {
+  .circle1.black, .circle1.white {
     display: none;
     padding: 0;
     margin: 0;
@@ -245,9 +306,28 @@ li {
     font-size: 14px;
   }
 
-  .btnMenu {
+  .barsDiv {
     margin-left: -5%;
-    font-size: 1.8rem;
+  }
+
+  .barsMenu {
+    width: 20px;
+  }
+
+  .barSpan.black, .barSpan.white {
+    height: 2px;
+    margin: 4px 0;
+  }
+
+  .ex input[type="checkbox"] ~ .barSpan:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(6px, 2px)
+  }
+  
+  .ex input[type="checkbox"] ~ .barSpan:nth-of-type(3){
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(10px,-8px) rotatez(45deg);
   }
 
   .socialLink {
@@ -263,9 +343,29 @@ li {
 
 
 @media screen and (min-width: 340px) and (max-width: 650px) {
-  .btnMenu { 
+  .barsDiv { 
     font-size: 2rem;
     margin-left: -5%;
+  }
+
+  .barsMenu {
+    width: 20px;
+  }
+
+  .barSpan.black, .barSpan.white {
+    height: 2px;
+    margin: 4px 0;
+  }
+
+  .ex input[type="checkbox"] ~ .barSpan:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(6px, 2px)
+  }
+  
+  .ex input[type="checkbox"] ~ .barSpan:nth-of-type(3){
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(10px,-8px) rotatez(45deg);
   }
 
   .logoNav {
@@ -281,7 +381,7 @@ li {
     font-size: 14px;
   }
 
-  .circle1 {
+  .circle1.black, .circle1.white  {
     display: none;
     padding: 0;
     margin: 0;
@@ -347,12 +447,11 @@ li {
     width: 150px;
   }
 
-  .btnMenu {
-    margin-left: 0;
-    font-size: 2.6rem;
+  .barsDiv {
+    margin-left: -2%;
   }
 
-  .circle1 {
+  .circle1.black, .circle1.white {
     display: none;
     padding: 0;
     margin: 0;
@@ -389,35 +488,36 @@ li {
     padding-left: 40px;
   }
 
-  .btnMenu {
+  .barsDiv {
     margin-top: -9%;
-    margin-left: 3%;
+    margin-left: 8%;
   }
-  .circle1 {
+
+  .circle1.black, .circle1.white  {
     margin-top: 2%;
     margin-left: 35%;
   }
  }
 
+ @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .barsDiv {
+    margin-top: -5%;
+    margin-left: 3%;
+  }
+ }
+
  @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-  .btnMenu {
-    margin-top: -6%;
-    margin-left: 2%;
+  .barsDiv {
+    margin-top: -5%;
+    margin-left: 6%;
   }
  }
 
  @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-  .btnMenu {
+  .barsDiv {
     margin-top: -7%;
-    margin-left: 2%;
+    margin-left: 7%;
   }
  }
-
- @media only screen and (min-width: 600px) and (max-width: 715px) {
-  .btnMenu {
-    margin-top: -12%;
-    margin-left: 4%;
-  }
-}
 
 
