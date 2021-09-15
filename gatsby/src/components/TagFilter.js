@@ -39,6 +39,9 @@ const TagStyles = styled.div`
       padding: 0 2px;
       font-size: 11px;
       grid-gap: 0 0.8rem;
+      &[aria-current='page'] {
+        border-bottom: 1px solid #fff;
+      }
     }
   }
 `;

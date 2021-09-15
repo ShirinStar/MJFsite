@@ -46,9 +46,7 @@ export default function PressGrid({ press }) {
           alt={press.name}
         /> */}
         <div className="pressInfo">
-          <p className="presstext">
-            {press.name} | {press.year}
-          </p>
+          <p className="presstext">{press.name}</p>
         </div>
       </a>
     </PressStyle>
