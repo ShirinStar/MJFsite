@@ -138,38 +138,6 @@
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 400px) { 
-  .tagLine {
-    margin-top: 20px;
-  }
-  
-  .imageSize {
-    height: 159px;
-  }
-
-  .imageWrapper {
-    height: 80%;
-  }
-
-  .playIcon {
-    left: 40%;
-    margin-top: 15%;
-    transform: scale(1);
-  }
-  
-  .homeName {
-  font-size: 3.3rem;
-}
-
-.logline {
-  font-size: 1.4rem;
-  }
-
-  .imageInfo {
-    margin-top: -15%;
-    font-size: 10px;
-  }
-}
 
 @media only screen and (max-width: 320px) {
   .imageSize {
@@ -191,8 +159,41 @@
   }
   
   .logline {
-    font-size: 1.2rem;
+    font-size: 1rem;
     }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) { 
+  .tagLine {
+    margin-top: 20px;
+  }
+  
+  .imageSize {
+    height: 159px;
+  }
+
+  .imageWrapper {
+    height: 80%;
+  }
+
+  .playIcon {
+    left: 40%;
+    margin-top: 15%;
+    transform: scale(1);
+  }
+  
+  .homeName {
+  font-size: 3rem;
+}
+
+.logline {
+  font-size: 1.2rem;
+  }
+
+  .imageInfo {
+    margin-top: -15%;
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 650px) { 
@@ -243,6 +244,10 @@
   .logline {
     font-size: 3rem;
   }
+  .imageInfo {
+    margin-top: -12%;
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 800px) {
@@ -269,6 +274,11 @@
   .logline {
     font-size: 3.3rem;
     }
+
+    .imageInfo {
+      margin-top: -4%;
+      font-size: 10px;
+    }
   }
 
 @media only screen and (min-width: 800px) and (max-width: 900px) {
@@ -283,6 +293,11 @@
   .logline {
     font-size: 3rem;
     }
+    
+    .imageInfo {
+      margin-top: -4%;
+      font-size: 10px;
+    }
 }
 
 @media only screen and (min-width: 850px) and (max-width: 950px) {
@@ -294,6 +309,9 @@
     min-height: 400px;
     padding-bottom: 20px;
   }
+  .imageInfo {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 950px) and (max-width: 1050px) {
@@ -304,6 +322,9 @@
   .videoDiv {
     min-height: 400px;
     padding-bottom: 20px;
+  }
+  .imageInfo {
+    font-size: 12px;
   }
 }
 

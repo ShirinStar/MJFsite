@@ -56,7 +56,7 @@ export default function HomePage({ data }) {
                   <img
                     className="imageSize"
                     src={homeImage[0].image.asset.url}
-                    alt="home"
+                    alt="Meticulous Bird"
                     onClick={handleShowDiv}
                   />
                   <p className="imageInfo">

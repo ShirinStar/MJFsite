@@ -130,7 +130,6 @@
 
 .BHSimage {
   width: 600px;
-  height: 100%;
   /* object-fit: cover; */
   padding: 5px;
 }
@@ -198,7 +197,8 @@
   }
 
   .BHSimage {
-    width: 400px;
+    /* width: 400px; */
+    height: 100%;
   }
 }
 
