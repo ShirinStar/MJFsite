@@ -39,7 +39,6 @@ export default function ReelsPage({ data }) {
   return (
     <>
       <SEO title="Reels" />
-
       <h2 className="pageTitle">Reels</h2>
       <div>
         {reels

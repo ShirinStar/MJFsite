@@ -34,7 +34,6 @@ body::-webkit-scrollbar {
 }
 
 /* alternative cursor */
-
 .cursor {
   width: 30px;
   height: 30px;
@@ -72,7 +71,7 @@ body::-webkit-scrollbar {
 .wrapper {
   padding: 0 25px;
   margin: 0 auto;
-  /* padding-bottom: 20px; */
+  padding-bottom: 20px;
 }
 
 .wrapper.imagesGrid {

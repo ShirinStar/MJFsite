@@ -30,46 +30,43 @@ export default function AboutPage({ data }) {
   return (
     <>
       <SEO title="About" image={about[0].image?.asset?.fluid?.src} />
-      <div className="container">
-        <div className="wrapper">
-          <h2 className="pageTitle">About</h2>
+      <h2 className="pageTitle">About</h2>
+      <div className="aboutDiv">
+        <img
+          className="imgAbout"
+          src={about[0].image.asset.url}
+          alt={about[0].name}
+        />
+        <div className="aboutText">
+          <PortableText
+            blocks={about[0]._rawBodyPortableText}
+            serializers={serializers}
+            className="aboutParag"
+          />
 
-          <div className="aboutDiv">
-            <img
-              className="imgAbout"
-              src={about[0].image.asset.url}
-              alt={about[0].name}
-            />
-            <div className="aboutText">
-              <PortableText
-                blocks={about[0]._rawBodyPortableText}
-                serializers={serializers}
-                className="aboutParag"
-              />
+          <div className="contact">
+            <h2> Contact me </h2>
+            <a
+              className="bodyTextLinks about"
+              href="mailto:maryjohn.frank@gmail.com"
+            >
+              maryjohn.frank@gmail.com
+            </a>
 
-              <div className="contact">
-                <h2> Contact me </h2>
+            <div className="aboutSocialWrapper">
+              <div className="socialLinkDivAbout">
                 <a
-                  className="bodyTextLinks about"
-                  href="mailto:maryjohn.frank@gmail.com"
+                  href="https://www.instagram.com/maryjohnfrank/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  maryjohn.frank@gmail.com
+                  <img
+                    src="/instagram_icon.png"
+                    alt="instagram"
+                    className="socialLinkAbout"
+                  />
                 </a>
-
-                <div className="aboutSocialWrapper">
-                  <div className="socialLinkDivAbout">
-                    <a
-                      href="https://www.instagram.com/maryjohnfrank/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src="/instagram_icon.png"
-                        alt="instagram"
-                        className="socialLinkAbout"
-                      />
-                    </a>
-                    {/* <a
+                {/* <a
                       href="https://www.instagram.com/maryjohnfrank/"
                       target="_blank"
                       rel="noreferrer"
@@ -80,19 +77,17 @@ export default function AboutPage({ data }) {
                         className="socialLinkAbout"
                       />
                     </a> */}
-                    <a
-                      href="https://www.facebook.com/mary.j.frank.9/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src="/facebook_icon.png"
-                        alt="facebook"
-                        className="socialLinkAbout"
-                      />
-                    </a>
-                  </div>
-                </div>
+                <a
+                  href="https://www.facebook.com/mary.j.frank.9/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="/facebook_icon.png"
+                    alt="facebook"
+                    className="socialLinkAbout"
+                  />
+                </a>
               </div>
             </div>
           </div>
