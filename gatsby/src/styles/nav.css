@@ -450,7 +450,7 @@ li {
   }
 
   .hamLinks {
-    padding: 0 10%;
+    padding: 0 12%;
   }
 
   .socialLink {
@@ -463,14 +463,14 @@ li {
   }
   
   li {
-    font-size: 7rem;
-    height: 120px;
+    font-size: 6.5rem;
+    height: 110px;
     width: 400px;
     padding-left: 10px;
   }
 
   .humSocialLinks {
-    width: 130px;
+    width: 120px;
   }
 
   .barsDiv {
@@ -508,11 +508,11 @@ li {
   }
 
   .humSocialLinks {
-    width: 150px;
+    width: 140px;
   }
   
   li {
-    font-size: 9rem;
+    font-size: 7rem;
     height: 140px;
     width: 450px;
     padding-left: 40px;
