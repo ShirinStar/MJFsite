@@ -52,12 +52,13 @@ export default function InnerNav() {
         <Link to="/projects">
           <span className="tagName">Videos</span>
         </Link>
-        <Link to="/press">
-          <span className="tagName">Press</span>
-        </Link>
         <Link to="/about">
           <span className="tagName">About</span>
         </Link>
+        <Link to="/press">
+          <span className="tagName">Press</span>
+        </Link>
+
         <Link to="/values">
           <span className="tagName">Values</span>
         </Link>

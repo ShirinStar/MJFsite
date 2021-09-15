@@ -146,9 +146,9 @@ export default function Hamburger({ state }) {
                   onMouseEnter={(e) => handleHover(e)}
                   onMouseLeave={(e) => handleHoverExit(e)}
                   className="meLink"
-                  to="/press"
+                  to="/about"
                 >
-                  Press
+                  About
                 </Link>
               </li>
               <li ref={(el) => (line4 = el)}>
@@ -156,9 +156,9 @@ export default function Hamburger({ state }) {
                   onMouseEnter={(e) => handleHover(e)}
                   onMouseLeave={(e) => handleHoverExit(e)}
                   className="meLink"
-                  to="/about"
+                  to="/press"
                 >
-                  About
+                  Press
                 </Link>
               </li>
               <li ref={(el) => (line5 = el)}>
