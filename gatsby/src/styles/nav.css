@@ -6,12 +6,14 @@
 }
 
 .navWrapper {
-  padding: 20px 50px;
+  padding: 20px 30px;
 }
 
 header {
-  height: 80px;
+  height: 100px;
   padding: 0;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .menuHome {
@@ -32,11 +34,12 @@ header {
 }
 
 .headerLogo {
-  font-weight: 300;
+  padding-top: 20px;
+  /* font-weight: 300;
   text-decoration: none;
   color: black;
   margin-top: 30px;
-  text-align: left !important;
+  text-align: left !important; */
 }
 
 .navMenu {
@@ -46,12 +49,14 @@ header {
 .logoNav {
   font-family: "Barrio" , sans-serif;
   letter-spacing: 2px;
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 600;
+  z-index: 10;
+  position: relative;
 }
 
 .logoNav:hover {
-  color: #C4FFE7 !important;
+  color: #000 !important;
 }
 
 .menuLogo {
@@ -108,13 +113,15 @@ header {
   margin-left: 2%;
   padding:0;
   position: absolute;
+  z-index: 10;
 }
 
 .barsMenu {
   display:flex;
   flex-direction:column;
   width: 30px;
-  cursor:pointer;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .barSpan.black{
@@ -308,7 +315,7 @@ li {
 
   .logoNav {
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .barsDiv {
@@ -351,6 +358,10 @@ li {
 }
 
 @media screen and (min-width: 340px) and (max-width: 650px) {
+  header {
+    height: 80px;
+  }
+
   .navWrapper {
     padding: 5px 20px;
   }
@@ -385,7 +396,7 @@ li {
   }
 
   .logoNav {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .menuLogo {
@@ -433,11 +444,11 @@ li {
 
 @media only screen and (min-width: 650px) and (max-width: 800px) {
   header {
-    height: 130px;
+    height: 80px;
   }
 
   .logoNav {
-    font-size: 22px;
+    font-size: 32px;
   }
   
   .menuNavLogo {
@@ -486,7 +497,7 @@ li {
 
 @media only screen and (min-width: 800px) and (max-width: 1400px) {
   .navWrapper {
-    padding: 20px 80px;
+    padding: 20px 50px;
   }
   
   header {
@@ -494,8 +505,8 @@ li {
   }
 
   .logoNav {
-    font-size: 26px;
-    line-height: -.5rem;
+    font-size: 32px;
+    /* line-height: -.5rem; */
   }
 
   .menuNavLogo {
@@ -523,8 +534,7 @@ li {
   }
 
   .barsDiv {
-    margin-top: -9%;
-    margin-left: 8%;
+    margin-left: -2%;
   }
 
   .circle1.black, .circle1.white  {
@@ -532,7 +542,7 @@ li {
     margin-left: 35%;
   }
  }
-
+/* 
  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .barsDiv {
     margin-top: -5%;
@@ -552,6 +562,6 @@ li {
     margin-top: -7%;
     margin-left: 7%;
   }
- }
+ } */
 
 

@@ -1,10 +1,31 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { graphql, Link } from 'gatsby';
 import Player from '@vimeo/player';
+import PortableText from '@sanity/block-content-to-react';
 import SEO from '../components/SEO';
 import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
 import SketchMovingLine from '../components/sketchMovingLine';
+
+const serializers = {
+  marks: {
+    link: ({ children, mark }) =>
+      mark.blank ? (
+        <a
+          className="bodyTextLinks about"
+          href={mark.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      ) : (
+        <a className="bodyTextLinks about" href={mark.href}>
+          {children}
+        </a>
+      ),
+  },
+};
 
 export default function HomePage({ data }) {
   const homeImage = data.homeImage.nodes;
@@ -26,7 +47,6 @@ export default function HomePage({ data }) {
 
   const handleShowDiv = () => {
     const player = new Player(iframRef.current);
-
     setDivDispaly(true);
     player.play();
   };
@@ -37,9 +57,8 @@ export default function HomePage({ data }) {
       {/* <div className="p5Div">
         <P5Wrapper sketch={SketchMovingLine} />
       </div> */}
-      <div className="container">
-        <div className="wrapper">
-          <div className="tagLine">
+
+      {/* <div className="tagLine">
             <h1 data-text="MARY JOHN FRANK" className="homeName">
               <span className="titleSpan"> MARY JOHN FRANK </span>
             </h1>
@@ -47,53 +66,51 @@ export default function HomePage({ data }) {
               CHOREOGRAPHER <span className="loglineDot">·</span> FILMMAKER{' '}
               <span className="loglineDot">·</span> DIRECTOR
             </h1>
+          </div> */}
+
+      <div className="textHome">
+        <PortableText
+          blocks={homeImage[0]._rawHomePortableText}
+          serializers={serializers}
+        />
+      </div>
+
+      <div className="responsiveContainer">
+        <div className="videoImageContainer">
+          <div className="blackimageCon">
+            <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
+              <img
+                className="imageSize"
+                src={homeImage[0].image.asset.url}
+                alt="Meticulous Bird"
+                onClick={handleShowDiv}
+              />
+              <p className="imageInfo">
+                <a className="imageInfolink" href="/">
+                  “Meticulous Bird”
+                </a>{' '}
+                | Choreographer
+              </p>
+            </div>
+            <div className="imageWrapper" />
+          </div>
+          <div className="imageWrapper" />
+          <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
+            <a>
+              <img src="/play-button.png" alt="play" onClick={handleShowDiv} />
+            </a>
           </div>
 
-          <div className="responsiveContainer">
-            <div className="videoImageContainer">
-              <div className="blackimageCon">
-                <div className={divDisplay ? 'imageHome none' : 'imageHome'}>
-                  <img
-                    className="imageSize"
-                    src={homeImage[0].image.asset.url}
-                    alt="Meticulous Bird"
-                    onClick={handleShowDiv}
-                  />
-                  <p className="imageInfo">
-                    <a className="imageInfolink" href="/">
-                      “Meticulous Bird”
-                    </a>{' '}
-                    | Choreographer
-                  </p>
-                </div>
-                <div className="imageWrapper" />
-              </div>
-              <div className="imageWrapper" />
-              <div className={divDisplay ? 'playIcon none' : 'playIcon'}>
-                <a>
-                  <img
-                    src="/play-button.png"
-                    alt="play"
-                    onClick={handleShowDiv}
-                  />
-                </a>
-              </div>
-
-              <div
-                id="videoDiv"
-                className={divDisplay ? 'videoDiv' : 'videoNone'}
-              >
-                <div style={responsiveVideoContainer}>
-                  <iframe
-                    ref={iframRef}
-                    src="https://player.vimeo.com/video/205550428?api=1&h=007989203f?&loop=1&byline=0&title=0"
-                    style={responsiveVideoPlayer}
-                    frameBorder="0"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
+          <div id="videoDiv" className={divDisplay ? 'videoDiv' : 'videoNone'}>
+            <div style={responsiveVideoContainer}>
+              <iframe
+                ref={iframRef}
+                src="https://player.vimeo.com/video/205550428?api=1&h=007989203f?&loop=1&byline=0&title=0"
+                style={responsiveVideoPlayer}
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
@@ -106,6 +123,7 @@ export const reelsQuery = graphql`
   query {
     homeImage: allSanityHomePageImage {
       nodes {
+        _rawHomePortableText
         image {
           asset {
             url

@@ -11,7 +11,7 @@ export default function Hamburger({ state }) {
   let line2 = useRef(null);
   let line3 = useRef(null);
   let line4 = useRef(null);
-  let line5 = useRef(null);
+  // const line5 = useRef(null);
   let humSocial = useRef(null);
 
   const hardRefresh = () => {
@@ -41,8 +41,8 @@ export default function Hamburger({ state }) {
     });
   };
 
-  const staggerText = (node1, node2, node3, node4, node5) => {
-    gsap.from([node1, node2, node3, node4, node5], {
+  const staggerText = (node1, node2, node3, node4) => {
+    gsap.from([node1, node2, node3, node4], {
       duration: 0.8,
       y: 100,
       delay: 0.1,
@@ -100,7 +100,7 @@ export default function Hamburger({ state }) {
       });
       staggerReveal(revealMenuBg, revealMenu);
       fadeInUp(humSocial);
-      staggerText(line1, line2, line3, line4, line5);
+      staggerText(line1, line2, line3, line4);
     }
   }, [state]);
 
@@ -112,10 +112,9 @@ export default function Hamburger({ state }) {
       />
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
         <div className="menuLogo">
-          <Link className="menuNavLogo" to="/">
-            MARY <br /> JOHN <br />
-            FRANK
-          </Link>
+          {/* <Link className="menuNavLogo" to="/">
+            MARY JOHN FRANK
+          </Link> */}
         </div>
 
         <div className="hamLinks">
@@ -161,7 +160,7 @@ export default function Hamburger({ state }) {
                   Press
                 </Link>
               </li>
-              <li ref={(el) => (line5 = el)}>
+              {/* <li ref={(el) => (line5 = el)}>
                 <Link
                   onMouseEnter={(e) => handleHover(e)}
                   onMouseLeave={(e) => handleHoverExit(e)}
@@ -170,7 +169,7 @@ export default function Hamburger({ state }) {
                 >
                   Values
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div ref={(el) => (humSocial = el)} className="humSocialLinks">

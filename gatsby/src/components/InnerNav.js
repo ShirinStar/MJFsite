@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const InnerNavStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 2.5rem;
   /* text-align: right; */
   justify-content: flex-end;
@@ -58,9 +58,9 @@ export default function InnerNav() {
         <Link to="/press">
           <span className="tagName">Press</span>
         </Link>
-        <Link to="/values">
+        {/* <Link to="/values">
           <span className="tagName">Values</span>
-        </Link>
+        </Link> */}
         <a
           href="https://www.instagram.com/maryjohnfrank/"
           target="_blank"
