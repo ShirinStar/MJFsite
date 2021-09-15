@@ -58,7 +58,6 @@ export default function InnerNav() {
         <Link to="/press">
           <span className="tagName">Press</span>
         </Link>
-
         <Link to="/values">
           <span className="tagName">Values</span>
         </Link>
