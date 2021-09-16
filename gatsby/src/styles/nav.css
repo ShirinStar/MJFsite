@@ -35,6 +35,7 @@ header {
 
 .headerLogo {
   padding-top: 30px;
+  margin-left: 0;
   /* font-weight: 300;
   text-decoration: none;
   color: black;
@@ -48,7 +49,7 @@ header {
 
 .logoNav {
   font-family: "Barrio" , sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 48px;
   font-weight: 600;
   z-index: 10;
@@ -286,6 +287,10 @@ li {
     height: 70px;
   }
 
+  .headerLogo {
+    margin-left: 0;
+  }
+
   .navWrapper {
     padding: 5px 20px;
   }
@@ -367,6 +372,10 @@ li {
 @media screen and (min-width: 340px) and (max-width: 650px) {
   header {
     height: 80px;
+  }
+
+  .headerLogo {
+    margin-left: 0;
   }
 
   .navWrapper {
@@ -458,6 +467,10 @@ li {
     height: 80px;
   }
 
+  .headerLogo {
+    margin-left: 0;
+  }
+
   .logoNav {
     font-size: 32px;
   }
@@ -517,6 +530,10 @@ li {
   
   header {
     height: 100px;
+  }
+
+  .headerLogo {
+    margin-left: -1%;
   }
 
   .logoNav {
