@@ -65,7 +65,7 @@ export default function SingleProjectPage({ data }) {
           ''
         ) : (
           <>
-            <h2 className="BHSTitle">Behind The Scene</h2>
+            <h2 className="BHSTitle">Behind The Scenes</h2>
             <div className="imageBHSGallery">
               {project.BHSimage1 == null ? (
                 ''

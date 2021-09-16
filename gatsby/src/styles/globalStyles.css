@@ -5,6 +5,13 @@
        url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
 }
 
+@font-face{
+  font-family:"sofia-pro-light";
+  src:url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("woff"),
+  url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("opentype"),
+  url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("truetype");
+}
+
 html {
   font-size: 10px;
   height: 100vh;
@@ -69,7 +76,7 @@ body::-webkit-scrollbar {
 }
 
 .wrapper {
-  padding: 0 25px;
+  padding: 0 50px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -86,22 +93,23 @@ h1 {
 }
 
 h2 {
-  font-family: "Barriecito", sans-serif;
+  font-family: 'sofia-pro-light', sans-serif;
 }
 
 p {
-  font-family: 'Avenir', sans-serif;
+  font-family: 'sofia-pro-light', sans-serif;
   line-height: 1.4;
   
 }
 
 .pageTitle {
-  font-family: "Barrio" , sans-serif;
-  font-weight: 600;
-  font-size: 68px;
+  font-family: 'sofia-pro-light', sans-serif;
+  font-weight: 300;
+  font-size: 54px;
   text-align: center;
   margin: 0;
   margin: 15px 0;
+  text-transform: uppercase;
   /* padding: 20px 0; */
 }
 
@@ -125,7 +133,7 @@ button:hover {
 a, a:visited {
   text-decoration: none;
   color: black;
-  font-family: 'Avenir', sans-serif;
+  font-family: 'sofia-pro-light', sans-serif;
   cursor: pointer;
 }
 
@@ -152,7 +160,7 @@ img {
   font-size: 18px;
   margin-top: 10px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .footer {
@@ -171,7 +179,7 @@ img {
 
 .footerText {
   font-size: 11px !important;
-  font-family: "Avenir" , sans-serif !important;
+  font-family: 'sofia-pro-light', sans-serif !important;
   color: #4D866C;
 }
 
@@ -183,14 +191,18 @@ img {
 }
 
 .fourofour {
-  font-family: "Barrio" , sans-serif;
+  font-family: 'sofia-pro-light', sans-serif;
   font-size: 28px;
   padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {  
+  .wrapper {
+    padding: 0 20px;
+  }
+  
   .pageTitle {
-    font-size: 38px;
+    font-size: 28px;
     padding: 5px 0;
   }
 
@@ -202,18 +214,21 @@ img {
 
 @media only screen and (min-width: 350px) and (max-width: 400px) {
   .pageTitle {
-    font-size: 38px;
+    font-size: 32px;
     padding: 10px 0;
   }
 
   p {
     font-size: 12px;
   }
+  .wrapper {
+    padding: 0 20px;
+  }
  }
 
  @media only screen and (min-width: 400px) and (max-width: 700px) {
   .pageTitle {
-    font-size: 38px;
+    font-size: 32px;
     padding: 10px 0;
   }
 
@@ -224,6 +239,7 @@ img {
 
  @media only screen and (min-width: 700px) and (max-width: 1000px) {
   .pageTitle {
+    font-size: 48px;
     padding: 0 0;
   }
 

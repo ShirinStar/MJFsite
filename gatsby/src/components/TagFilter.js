@@ -5,40 +5,42 @@ import styled from 'styled-components';
 const TagStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 5rem;
-  margin-top: 0.5rem;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
   text-align: center;
   justify-content: center;
   align-items: center;
   a {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 0 1rem;
+    grid-gap: 0 0rem;
     align-items: center;
-    padding: 0 8px;
+    padding: 0;
     padding-right: 0px;
     margin-right: 0px;
     font-size: 18px;
-    font-family: 'Avenir', sans-serif;
     color: 'black';
     &[aria-current='page'] {
-      border-bottom: 3px solid #fff;
+      border-bottom: 2px solid #fff;
     }
     &:hover {
       color: #c4ffe7;
     }
   }
   @media (max-width: 650px) {
-    grid-gap: 0 0rem;
+    margin: 0;
+    padding: 0;
     margin-top: 0.6rem;
     text-align: center;
     justify-content: center;
     margin-bottom: 3rem;
+    gap: 0.8rem;
     a {
-      padding: 0 2px;
+      letter-spacing: -0.3px;
+      padding: 0;
       font-size: 11px;
-      grid-gap: 0 0.8rem;
+      grid-gap: 0 0rem;
       &[aria-current='page'] {
         border-bottom: 1px solid #fff;
       }

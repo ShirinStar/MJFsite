@@ -5,6 +5,13 @@
        url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
 }
 
+@font-face{
+  font-family:"sofia-pro-light";
+  src:url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("woff"),
+  url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("opentype"),
+  url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("truetype");
+}
+
 .navWrapper {
   padding: 20px 30px;
 }
@@ -36,6 +43,7 @@ header {
 .headerLogo {
   padding-top: 30px;
   margin-left: 0;
+  text-align: left;
   /* font-weight: 300;
   text-decoration: none;
   color: black;
@@ -49,8 +57,8 @@ header {
 
 .logoNav {
   font-family: "Barrio" , sans-serif;
-  letter-spacing: -2px;
-  font-size: 48px;
+  letter-spacing: -1px;
+  font-size: 42px;
   font-weight: 600;
   z-index: 10;
   position: relative;
@@ -59,6 +67,10 @@ header {
 .logoNav:hover {
   color: #000 !important;
 }
+
+/* .logoNav.frank {
+  letter-spacing: 20px;
+} */
 
 .menuLogo {
   padding: 0 50px;
@@ -237,13 +249,14 @@ li {
   height: 130px;
   position: relative;
   width: 700px;
+  text-transform: uppercase;
 }
 
 .meLink {
   position: absolute;
   color: white !important;
   text-decoration: none;
-  font-family: "Barrio" , sans-serif;
+  font-family: "sofia-pro-light" , sans-serif;
 }
 
 .meLink:hover {
@@ -267,7 +280,7 @@ li {
 .contactLink {
   font-size: 18px;
   letter-spacing: 2px;
-  font-family: "Avenir" , sans-serif !important;
+  font-family: 'sofia-pro-light', sans-serif !important;
   color: black !important;
   padding: 0;
   margin: 0;
@@ -306,8 +319,8 @@ li {
   }
 
   li {
-    font-size: 3.6rem;
-    height: 60px;
+    font-size: 3rem;
+    height: 50px;
     width: 180px;
     padding-left: 0;
   }
@@ -350,7 +363,7 @@ li {
   }
 
   .hamLinks {
-    padding: 0 10%;
+    padding: 2% 10%;
   }
 
   .socialLinkDiv {
@@ -433,12 +446,12 @@ li {
   }
 
   .hamLinks {
-    padding: 0 12%;
+    padding: 4% 12%;
   }
 
   li {
     font-size: 3.6rem;
-    height: 70px;
+    height: 60px;
     width: 200px;
     /* padding-left: 10px; */
   }
@@ -486,7 +499,7 @@ li {
   }
 
   .hamLinks {
-    padding: 10% 10%;
+    padding: 15% 10%;
   }
 
   .socialLinkDiv {
@@ -504,7 +517,7 @@ li {
   
   li {
     font-size: 6.5rem;
-    height: 100px;
+    height: 90px;
     width: 400px;
     padding-left: 10px;
   }
@@ -556,12 +569,12 @@ li {
   }
 
   .hamLinks {
-    padding: 10% 12%;
+    padding: 15% 12%;
   }
   
   li {
     font-size: 8rem;
-    height: 110px;
+    height: 120px;
     width: 450px;
     padding-left: 40px;
   }

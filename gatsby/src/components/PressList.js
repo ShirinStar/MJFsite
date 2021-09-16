@@ -8,6 +8,7 @@ const PressGridStyle = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(1fr));
   gap: 2rem;
   padding-bottom: 70px;
+  margin-top: 50px;
   @media only screen and (min-width: 300px) and (max-width: 700px) {
     grid-template-columns: repeat(auto-fill, minmax(1fr));
     gap: 0.5rem;

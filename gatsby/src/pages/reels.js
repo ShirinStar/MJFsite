@@ -39,7 +39,7 @@ export default function ReelsPage({ data }) {
   return (
     <>
       <SEO title="Reels" />
-      <h2 className="pageTitle">Reels</h2>
+      <h2 className="pageTitle reels">Reels</h2>
       <div className="reelDiv">
         {reels
           .sort((a, b) => a.setOrder - b.setOrder)

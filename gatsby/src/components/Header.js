@@ -87,7 +87,8 @@ export default function Header() {
         <div className="menuHome">
           <div className="headerLogo">
             <Link className="logoNav" to="/">
-              MARY JOHN FRANK
+              MARY JOHN <br />
+              <span className="logoNav frank">FRANK</span>
             </Link>
           </div>
           {isMobile ? (

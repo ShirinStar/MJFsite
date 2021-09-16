@@ -5,6 +5,13 @@
        url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
 }
 
+@font-face{
+  font-family:"sofia-pro-light";
+  src:url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("woff"),
+  url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("opentype"),
+  url("/fonts/Sofia-Pro-1/sofiapro-light.otf") format("truetype");
+}
+
 
 .reelDiv {
   margin: 20px 0;
@@ -34,8 +41,13 @@
   padding-bottom: 40px;
 }
 
+.pageTitle.reels {
+  margin-bottom: 50px;
+}
+
 .reeltitle {
-  font-size: 38px;
+  font-size: 32px;
+  font-weight: 300 !important;
   color: white !important;
   padding-top: 20%;
 }
@@ -67,11 +79,15 @@
 
 .reelPlaceholderText {
   color: white;
-  font-family: "Avenir", sans-serif;
+  font-family: 'sofia-pro-light', sans-serif;
 }
 
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {  
+  .pageTitle.reels {
+    margin-bottom: 10px;
+  }
+
   .reelTitleContainer {
     height: 80%;
     width: 100%;
@@ -83,7 +99,7 @@
   }
 
   .reeltitle {
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 10%;
   }
 
@@ -103,6 +119,10 @@
 }
 
 @media only screen and (min-width: 350px) and (max-width: 700px) {
+  .pageTitle.reels {
+    margin-bottom: 10px;
+  }
+
   .reelTitleContainer {
     height: 85%;
     width: 100%;
@@ -114,18 +134,18 @@
   }
 
   .reeltitle {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 10%;
   }
 
   .playIconReel {
-    left: 42%;
+    left: 41%;
     margin-top: 20%;
     transform: scale(.6);
   }
 
   .reelPlaceholder {
-    height: 200px;
+    height: 180px;
   }
   
   .reelPlaceholderText {
@@ -134,6 +154,10 @@
  }
 
  @media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .pageTitle.reels {
+    margin-bottom: 40px;
+  }
+
   .reelTitleContainer {
     height: 92%;
     width: 100%;
@@ -150,8 +174,8 @@
   }
 
   .playIconReel {
-    left: 48%;
-    margin-top: 20%;
+    left: 46%;
+    margin-top: 18%;
     transform: scale(.8);
   }
 
@@ -181,13 +205,13 @@
   }
 
   .playIconReel {
-    left: 48%;
-    margin-top: 20%;
+    left: 47%;
+    margin-top: 22%;
     transform: scale(1);
   }
 
   .reelPlaceholder {
-    height: 600px;
+    height: 500px;
     margin-top: 3%;
   }
   

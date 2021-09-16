@@ -5,11 +5,9 @@ import styled from 'styled-components';
 const InnerNavStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 2rem;
   margin-top: 2.5rem;
-  /* text-align: right; */
   justify-content: flex-end;
-  /* width: 100vw; */
   .socialNav {
     display: flex;
     justify-content: space-evenly;
@@ -18,16 +16,15 @@ const InnerNavStyles = styled.div`
   a {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 0 1rem;
+    grid-gap: 0 0rem;
     align-items: center;
-    padding: 0 8px;
-    padding-right: 0px;
+    padding: 0;
+    padding-right: 5px;
     margin-right: 0px;
     font-size: 18px;
-    font-family: 'Avenir', sans-serif;
     color: 'black';
     &[aria-current='page'] {
-      border-bottom: 3px solid #fff;
+      border-bottom: 2px solid #fff;
     }
     &:hover {
       color: #c4ffe7;
