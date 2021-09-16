@@ -5,9 +5,13 @@
        url("/fonts/avenir/AvenirLTStd-Book.otf") format("otf");
 }
 
+
+.reelDiv {
+  margin: 20px 0;
+}
+
 .reelWrapper {
   position: relative;
-  margin-top: 2%;
 }
 
 .reelTitleContainer {
