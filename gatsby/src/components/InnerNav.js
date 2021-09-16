@@ -22,7 +22,7 @@ const InnerNavStyles = styled.div`
     padding: 0 8px;
     padding-right: 0px;
     margin-right: 0px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Avenir', sans-serif;
     color: 'black';
     &[aria-current='page'] {
