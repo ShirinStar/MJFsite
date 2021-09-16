@@ -67,7 +67,11 @@
 }
 
 .socialLinkAbout {
-  height: 30px;
+  height: 40px;
+}
+
+.socialLinkAbout.facebook {
+  height: 50px;
 }
 
 .socialLinkAbout:hover {
@@ -120,8 +124,12 @@
     justify-content: center;
   }
 
+  .socialLinkDivAbout {
+    padding: 10px 0;
+  }
+
   .socialLinkAbout {
-    height: 25px;
+    height: 30px;
   }
   
   .bodyTextLinks.about {
@@ -182,8 +190,12 @@
     justify-content: center;
   }
 
+  .socialLinkDivAbout {
+    padding: 10px 0;
+  }
+
   .socialLinkAbout {
-    height: 25px;
+    height: 30px;
   }
   
   .bodyTextLinks.about {
@@ -235,12 +247,14 @@
 
   .contact {
     text-align: center;
-    width: 70%;
-    margin-top: 40px;
   }
 
   .contactTitle {
     font-size: 18px;
+  }
+
+  .socialLinkDivAbout {
+    padding: 10px 0;
   }
 
   .aboutSocialWrapper {
@@ -280,5 +294,13 @@
     height: 420px;
     left: 10px;
     top: 0;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .aboutSocialWrapper {
+    justify-content: center;
   }
 }

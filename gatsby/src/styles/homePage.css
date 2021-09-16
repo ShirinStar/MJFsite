@@ -115,7 +115,7 @@
   margin-top: -2.5%;
   padding-top: 0;
   padding-bottom: 50px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .imageInfolink:hover {
@@ -168,8 +168,13 @@
     }
 
   .textHome {
-    font-size: 12px;
-    margin-top: 0;
+    margin-top: 0px;
+    margin-bottom: 10px; 
+  }
+
+  .imageInfo {
+    margin-top: -12%;
+    font-size: 8px;
   }
 }
 
@@ -201,13 +206,13 @@
   }
 
   .imageInfo {
-    margin-top: -10%;
-    font-size: 10px;
+    margin-top: -12%;
+    font-size: 8px;
   }
 
   .textHome {
-    font-size: 12px;
-    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px; 
   }
 }
 
@@ -239,7 +244,12 @@
 
   .imageInfo {
     margin-top: -10%;
-    font-size: 10px;
+    font-size: 8px;
+  }
+
+  .textHome {
+    margin-top: 10px;
+    margin-bottom: 10px; 
   }
 }
 
@@ -263,6 +273,11 @@
   .imageInfo {
     margin-top: -10%;
     font-size: 10px;
+  }
+
+  .textHome {
+    margin-top: 10px;
+    margin-bottom: 10px; 
   }
 }
 
@@ -295,6 +310,12 @@
       margin-top: -4%;
       font-size: 10px;
     }
+
+    .textHome {
+      font-size: 16px;
+      margin-top: 30px;
+      margin-bottom: 30px; 
+    }
   }
 
 @media only screen and (min-width: 800px) and (max-width: 900px) {
@@ -317,7 +338,8 @@
 
     .textHome {
       font-size: 16px;
-      margin-top: 0;
+      margin-top: 30px;
+      margin-bottom: 30px; 
     }
 }
 
@@ -333,9 +355,11 @@
   .imageInfo {
     font-size: 10px;
   }
+
   .textHome {
     font-size: 16px;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px; 
   }
 }
 
@@ -354,7 +378,8 @@
 
   .textHome {
     font-size: 16px;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px; 
   }
 }
 

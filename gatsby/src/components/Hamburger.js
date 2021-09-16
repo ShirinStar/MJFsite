@@ -147,7 +147,7 @@ export default function Hamburger({ state }) {
                   className="meLink"
                   to="/about"
                 >
-                  About
+                  Contact
                 </Link>
               </li>
               <li ref={(el) => (line4 = el)}>

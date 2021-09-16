@@ -34,7 +34,7 @@ header {
 }
 
 .headerLogo {
-  padding-top: 20px;
+  padding-top: 25px;
   /* font-weight: 300;
   text-decoration: none;
   color: black;
@@ -109,8 +109,6 @@ header {
 .barsDiv {
   display:grid;
   place-items:center;
-  margin-top: -4%;
-  margin-left: 2%;
   padding:0;
   position: absolute;
   z-index: 10;
@@ -218,7 +216,7 @@ input[type="checkbox"]{
   align-items: center;
   position: relative;
   top: 80px;
-  padding: 0 15%;
+  padding: 10% 15%;
 }
 
 nav {
@@ -284,12 +282,16 @@ li {
 }
 
 @media only screen and (max-width: 340px) {
+  header {
+    height: 70px;
+  }
+
   .navWrapper {
     padding: 5px 20px;
   }
 
   .headerLogo {
-    font-size: 1.4rem;
+    padding-top: 10px;
   }
 
   .circle1.black, .circle1.white {
@@ -315,12 +317,12 @@ li {
 
   .logoNav {
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  .barsDiv {
+  /* .barsDiv {
     margin-left: -5%;
-  }
+  } */
 
   .barsMenu {
     width: 20px;
@@ -346,6 +348,10 @@ li {
     padding: 0 10%;
   }
 
+  .socialLinkDiv {
+    max-width: 80px;
+  }
+
   .socialLink {
     height: 22px;
     padding: 0px 0px;
@@ -367,13 +373,13 @@ li {
   }
 
   .headerLogo {
-    font-size: 1.4rem;
+    padding-top: 10px;
   }
 
-  .barsDiv { 
+  /* .barsDiv { 
     font-size: 2rem;
     margin-left: -5%;
-  }
+  } */
 
   .barsMenu {
     width: 20px;
@@ -431,6 +437,10 @@ li {
     letter-spacing: 0;
   }
 
+  .socialLinkDiv {
+    max-width: 100px;
+  }
+
   .humSocialLinks {
     width: 80px;
     font-size: 12px;
@@ -461,7 +471,11 @@ li {
   }
 
   .hamLinks {
-    padding: 0 10%;
+    padding: 10% 10%;
+  }
+
+  .socialLinkDiv {
+    max-width: 120px;
   }
 
   .socialLink {
@@ -484,9 +498,9 @@ li {
     width: 120px;
   }
 
-  .barsDiv {
+  /* .barsDiv {
     margin-left: -2%;
-  }
+  } */
 
   .circle1.black, .circle1.white {
     display: none;
@@ -523,19 +537,19 @@ li {
   }
 
   .hamLinks {
-    padding: 0 12%;
+    padding: 10% 12%;
   }
   
   li {
-    font-size: 7rem;
+    font-size: 8rem;
     height: 110px;
     width: 450px;
     padding-left: 40px;
   }
 
-  .barsDiv {
+  /* .barsDiv {
     margin-left: -2%;
-  }
+  } */
 
   .circle1.black, .circle1.white  {
     margin-top: 2%;

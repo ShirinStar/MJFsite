@@ -10,6 +10,10 @@ const InnerNavStyles = styled.div`
   /* text-align: right; */
   justify-content: flex-end;
   /* width: 100vw; */
+  .socialNav {
+    display: flex;
+    justify-content: space-evenly;
+  }
   a {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -53,7 +57,7 @@ export default function InnerNav() {
           <span className="tagName">Videos</span>
         </Link>
         <Link to="/about">
-          <span className="tagName">About</span>
+          <span className="tagName">Contact</span>
         </Link>
         <Link to="/press">
           <span className="tagName">Press</span>
@@ -61,16 +65,22 @@ export default function InnerNav() {
         {/* <Link to="/values">
           <span className="tagName">Values</span>
         </Link> */}
-        <a
-          href="https://www.instagram.com/maryjohnfrank/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="/instagram_icon_nofill.png" alt="instagram" height="25px" />
-        </a>
-        <a href="mailto:maryjohn.frank@gmail.com">
-          <img src="/email_icon.png" alt="email" height="25px" />
-        </a>
+        <div className="socialNav">
+          <a
+            href="https://www.instagram.com/maryjohnfrank/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/instagram_icon_nofill.png"
+              alt="instagram"
+              height="26px"
+            />
+          </a>
+          <a href="mailto:maryjohn.frank@gmail.com">
+            <img src="/email_icon.png" alt="email" height="26px" />
+          </a>
+        </div>
       </InnerNavStyles>
     </>
   );

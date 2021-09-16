@@ -29,8 +29,8 @@ export default function AboutPage({ data }) {
 
   return (
     <>
-      <SEO title="About" image={about[0].image?.asset?.fluid?.src} />
-      <h2 className="pageTitle">About</h2>
+      <SEO title="Contact" image={about[0].image?.asset?.fluid?.src} />
+      <h2 className="pageTitle">Contact</h2>
       <div className="aboutDiv">
         <img
           className="imgAbout"
@@ -61,7 +61,7 @@ export default function AboutPage({ data }) {
                   rel="noreferrer"
                 >
                   <img
-                    src="/instagram_icon.png"
+                    src="/instagram_icon_nofill.png"
                     alt="instagram"
                     className="socialLinkAbout"
                   />
@@ -83,7 +83,7 @@ export default function AboutPage({ data }) {
                   rel="noreferrer"
                 >
                   <img
-                    src="/facebook_icon.png"
+                    src="/facebook_icon_nofill2.png"
                     alt="facebook"
                     className="socialLinkAbout"
                   />

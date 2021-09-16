@@ -8,9 +8,7 @@
 .heroImage { 
   /* display: inline-block; */
   padding: 0;
-  margin: 0;
-  /* margin-left: 2.5px;
-  margin-right: 2.5px; */
+  margin: 0 10px;
 } 
 
 .imageContainer {
@@ -36,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 99.5%;
-  background-color: rgba(114, 198, 163, 0.5);
+  background-color: rgba(114, 198, 163, 0.7);
   font-family: 'Avenir', sans-serif !important;
   font-size: 42px;
   text-transform: uppercase;
