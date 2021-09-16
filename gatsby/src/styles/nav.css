@@ -264,7 +264,7 @@ li {
 }
 
 .contactLink {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 2px;
   font-family: "Avenir" , sans-serif !important;
   color: black !important;
@@ -273,8 +273,8 @@ li {
 }
 
 .socialLink {
-  height: 40px;
-  padding: 10px 10px;
+  height: 30px;
+  padding: 10px 15px;
 }
 
 .socialLink:hover {
@@ -349,17 +349,18 @@ li {
   }
 
   .socialLinkDiv {
-    max-width: 80px;
+    max-width: 60px;
   }
 
   .socialLink {
     height: 22px;
-    padding: 0px 0px;
+    padding: 0px 10px;
   }
 
   .contactLink {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0;
+    margin-left: 5px;
   }
 }
 
@@ -438,7 +439,7 @@ li {
   }
 
   .socialLinkDiv {
-    max-width: 100px;
+    max-width: 80px;
   }
 
   .humSocialLinks {
@@ -448,7 +449,7 @@ li {
 
   .socialLink {
     height: 22px;
-    padding: 0px 0px;
+    padding: 0px 5px;
   }
 }
 
@@ -475,11 +476,11 @@ li {
   }
 
   .socialLinkDiv {
-    max-width: 120px;
+    max-width: 110px;
   }
 
   .socialLink {
-    height: 30px;
+    height: 25px;
   }
 
   .contactLink {
@@ -533,7 +534,7 @@ li {
   }
 
   .humSocialLinks {
-    width: 140px;
+    width: 120px;
   }
 
   .hamLinks {
