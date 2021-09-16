@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const InnerNavStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-top: 2.5rem;
   /* text-align: right; */
   justify-content: flex-end;
@@ -13,6 +13,7 @@ const InnerNavStyles = styled.div`
   .socialNav {
     display: flex;
     justify-content: space-evenly;
+    padding: 0 5px;
   }
   a {
     display: grid;
