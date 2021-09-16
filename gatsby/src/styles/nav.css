@@ -321,7 +321,7 @@ li {
   }
 
   .logoNav {
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     font-size: 18px;
   }
 
@@ -413,7 +413,7 @@ li {
 
   .logoNav {
     font-size: 20px;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
   }
 
   .menuLogo {

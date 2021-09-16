@@ -235,3 +235,9 @@
   }
 }
 
+@media screen and (max-width: 350px) {  
+  .bodyTextLinks {
+    font-size: 11px;
+  }
+}
+

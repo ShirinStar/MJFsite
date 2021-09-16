@@ -72,6 +72,7 @@ export default function HomePage({ data }) {
         <PortableText
           blocks={homeImage[0]._rawHomePortableText}
           serializers={serializers}
+          className="test"
         />
       </div>
 
