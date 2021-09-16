@@ -13,6 +13,7 @@ import value1 from './value1';
 import value2 from './value2';
 import bodyPortableText from './bodyPortableText';
 import reels from './reels';
+import homePage from './homePage';
 
 export default createSchema({
   // We name our schema
@@ -20,6 +21,7 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
+    homePage,
     singleProject,
     bodyPortableText,
     videoEmbed,

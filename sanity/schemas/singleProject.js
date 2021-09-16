@@ -70,6 +70,7 @@ export default {
     {
       name: 'image',
       title: 'Project hero image',
+      description: 'please upload a 1920X1080 resolution',
       type: 'image',
       options: {
         hotspot: true,
