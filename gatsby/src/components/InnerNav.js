@@ -5,21 +5,21 @@ import styled from 'styled-components';
 const InnerNavStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2.5rem;
   justify-content: flex-end;
   .socialNav {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 5px;
+    padding-right: 2px;
   }
   a {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 0 0rem;
     align-items: center;
-    padding: 0;
-    padding-right: 5px;
+    padding: 0 15px;
+    /* padding-right: 5px; */
     margin-right: 0px;
     font-size: 18px;
     color: 'black';
@@ -70,6 +70,7 @@ export default function InnerNav() {
             rel="noreferrer"
           >
             <img
+              className="navSocialIcon"
               src="/instagram_icon_nofill.png"
               alt="instagram"
               height="26px"

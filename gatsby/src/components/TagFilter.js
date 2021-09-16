@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const TagStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 4rem;
   margin-top: 2rem;
   text-align: center;
@@ -16,9 +16,7 @@ const TagStyles = styled.div`
     grid-template-columns: auto 1fr;
     grid-gap: 0 0rem;
     align-items: center;
-    padding: 0;
-    padding-right: 0px;
-    margin-right: 0px;
+    padding: 0 12px;
     font-size: 18px;
     color: 'black';
     &[aria-current='page'] {
@@ -35,11 +33,11 @@ const TagStyles = styled.div`
     text-align: center;
     justify-content: center;
     margin-bottom: 3rem;
-    gap: 0.8rem;
+    gap: 0.4rem;
     a {
       letter-spacing: -0.3px;
-      padding: 0;
-      font-size: 11px;
+      padding: 0 3px;
+      font-size: 10px;
       grid-gap: 0 0rem;
       &[aria-current='page'] {
         border-bottom: 1px solid #fff;
@@ -106,12 +104,10 @@ export default function TagFilter({ activeTag }) {
     <>
       <h2 className="pageTitle">Videos</h2>
       <TagStyles>
-        <Link to="/projects">
-          <span className="tagName">All</span>
-        </Link>
+        <Link to="/projects">All</Link>
         {tagsToShow.map((tag) => (
           <Link to={`/tags/${tag.name}`} key={tag.id}>
-            <span className="tagName">{tag.name}</span>
+            {tag.name}
           </Link>
         ))}
       </TagStyles>
