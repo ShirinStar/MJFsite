@@ -49,7 +49,7 @@ header {
 
 .logoNav {
   font-family: "Barrio" , sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: -2px;
   font-size: 48px;
   font-weight: 600;
   z-index: 10;
@@ -321,7 +321,7 @@ li {
   }
 
   .logoNav {
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     font-size: 18px;
   }
 
