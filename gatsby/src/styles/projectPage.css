@@ -67,6 +67,7 @@
 .videoDiv.singleProject {
   padding: 0;
   min-height: 0px;
+  margin: 0 20px;
 }
 
 .descriptionDiv {
@@ -178,6 +179,10 @@
   .BHSimage {
     width: 400px;
   }
+
+  .bodyTextLinks {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1400px) { 
@@ -201,6 +206,10 @@
     /* width: 400px; */
     height: 100%;
   }
+
+  .bodyTextLinks {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 850px) { 
@@ -210,6 +219,10 @@
 
   .projectYear {
     font-size: 32px;
+  }
+
+  .bodyTextLinks {
+    font-size: 14px;
   }
 }
 
