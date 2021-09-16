@@ -28,7 +28,7 @@ const TagStyles = styled.div`
       color: #c4ffe7;
     }
   }
-  @media (max-width: 650px) {
+  @media only screen and (max-width: 650px) {
     margin: 0;
     padding: 0;
     margin-top: 0.6rem;
