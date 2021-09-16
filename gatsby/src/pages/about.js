@@ -45,7 +45,7 @@ export default function AboutPage({ data }) {
           />
 
           <div className="contact">
-            <h2> Contact me </h2>
+            <h2 className="contact contactme"> Contact me </h2>
             <a
               className="bodyTextLinks about"
               href="mailto:maryjohn.frank@gmail.com"
