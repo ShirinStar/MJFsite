@@ -6,21 +6,21 @@ const TagStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   margin-top: 2rem;
   text-align: center;
   justify-content: center;
   align-items: center;
   a {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 0 0rem;
-    align-items: center;
-    padding: 0 12px;
-    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    margin-right: 20px;
+    font-size: 16px;
     color: 'black';
+    text-transform: uppercase;
     &[aria-current='page'] {
-      color: #c4ffe7;
+      border-bottom: 1px solid #c4ffe7;
     }
     &:hover {
       color: #c4ffe7;
@@ -29,19 +29,23 @@ const TagStyles = styled.div`
   @media only screen and (max-width: 650px) {
     margin: 0;
     padding: 0;
-    margin-top: 0.6rem;
     text-align: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     gap: 0.4rem;
     a {
-      letter-spacing: -0.3px;
-      padding: 0 3px;
-      font-size: 10px;
-      grid-gap: 0 0rem;
+      margin-right: 5px;
+      font-size: 12px;
+      text-transform: capitalize;
       &[aria-current='page'] {
-        color: #c4ffe7;
+        border-bottom: 1px solid #c4ffe7;
       }
+    }
+  }
+  @media only screen and (min-width: 650px) and (max-width: 900px) {
+    a {
+      margin-right: 15px;
+      font-size: 14px;
     }
   }
 `;

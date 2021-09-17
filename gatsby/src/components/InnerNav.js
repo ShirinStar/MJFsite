@@ -14,18 +14,15 @@ const InnerNavStyles = styled.div`
     padding-right: 2px;
   }
   a {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 0 0rem;
-    align-items: center;
-    padding: 0 15px;
-    /* padding-right: 5px; */
-    margin-right: 0px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    margin-right: 20px;
     font-size: 18px;
     color: 'black';
     text-transform: uppercase;
     &[aria-current='page'] {
-      color: #c4ffe7;
+      border-bottom: 1px solid #c4ffe7;
     }
     &:hover {
       color: #c4ffe7;
@@ -78,7 +75,7 @@ export default function InnerNav() {
             />
           </a>
           <a href="mailto:maryjohn.frank@gmail.com">
-            <img src="/email_icon.png" alt="email" height="26px" />
+            <img src="/email_icon2.png" alt="email" height="26px" />
           </a>
         </div>
       </InnerNavStyles>

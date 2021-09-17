@@ -35,9 +35,23 @@
 }
 
 .textHome {
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-top: -2%;
+  padding: 0;
   margin-bottom: 10px;
-  width: 90%;
+  width: 99%;
+}
+
+.introText {
+  font-size: 28px;
+  line-height: 4rem;
+}
+
+.introTextLogo {
+  font-family: "Barrio" , sans-serif;
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
 }
 
 .responsiveContainer {
@@ -116,7 +130,7 @@
   margin-top: -2.5%;
   padding-top: 0;
   padding-bottom: 50px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
 }
 
@@ -148,7 +162,7 @@
 
 @media only screen and (max-width: 320px) {
   .imageSize {
-    height: 109px;
+    height: 139px;
   }
 
   .imageWrapper {
@@ -156,8 +170,8 @@
   }
 
   .playIcon {
-    left: 40%;
-    margin-top: 8%;
+    left: 42%;
+    margin-top: 12%;
     transform: scale(.8);
   }
 
@@ -170,8 +184,16 @@
     }
 
   .textHome {
-    margin-top: 0px;
-    margin-bottom: 50px; 
+    margin-top: 0px; 
+  }
+
+  .introText {
+    font-size: 14px;
+    line-height: 2rem;
+  }
+  
+  .introTextLogo {
+    font-size: 20px;
   }
 
   .imageInfo {
@@ -180,7 +202,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 400px) { 
+@media only screen and (min-width: 321px) and (max-width: 400px) { 
   .tagLine {
     margin-top: 20px;
   }
@@ -194,7 +216,7 @@
   }
 
   .playIcon {
-    left: 40%;
+    left: 45%;
     margin-top: 15%;
     transform: scale(1);
   }
@@ -213,9 +235,16 @@
   }
 
   .textHome {
-    margin-top: 10px;
-    margin-bottom: 30px; 
     width: 100%;
+  }
+
+  .introText {
+    font-size: 16px;
+    line-height: 2.2rem;
+  }
+  
+  .introTextLogo {
+    font-size: 24px;
   }
 }
 
@@ -251,9 +280,16 @@
   }
 
   .textHome {
-    margin-top: 20px;
-    margin-bottom: 30px; 
     width: 100%;
+  }
+
+  .introText {
+    font-size: 16px;
+    line-height: 2.2rem;
+  }
+  
+  .introTextLogo {
+    font-size: 28px;
   }
 }
 
@@ -280,9 +316,16 @@
   }
 
   .textHome {
-    margin-top: 10px;
-    margin-bottom: 10px; 
     width: 100%;
+  }
+
+  .introText {
+    font-size: 22px;
+    line-height: 3rem;
+  }
+  
+  .introTextLogo {
+    font-size: 32px;
   }
 }
 
@@ -317,10 +360,16 @@
     }
 
     .textHome {
-      font-size: 16px;
-      margin-top: 30px;
-      margin-bottom: 30px; 
       width: 100%;
+    }
+
+    .introText {
+      font-size: 22px;
+      line-height: 3rem;
+    }
+    
+    .introTextLogo {
+      font-size: 32px;
     }
   }
 
@@ -343,10 +392,16 @@
     }
 
     .textHome {
-      font-size: 16px;
-      margin-top: 30px;
-      margin-bottom: 30px; 
       width: 100%;
+    }
+
+    .introText {
+      font-size: 22px;
+      line-height: 3rem;
+    }
+    
+    .introTextLogo {
+      font-size: 38px;
     }
     
 }
@@ -365,10 +420,16 @@
   }
 
   .textHome {
-    font-size: 16px;
-    margin-top: 30px;
-    margin-bottom: 30px; 
     width: 100%;
+  }
+
+  .introText {
+    font-size: 28px;
+    line-height: 3.5rem;
+  }
+  
+  .introTextLogo {
+    font-size: 38px;
   }
 }
 
@@ -390,6 +451,15 @@
     margin-top: 30px;
     margin-bottom: 30px; 
     width: 100%;
+  }
+
+  .introText {
+    font-size: 28px;
+    line-height: 3.5rem;
+  }
+  
+  .introTextLogo {
+    font-size: 38px;
   }
 }
 

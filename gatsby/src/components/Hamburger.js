@@ -111,12 +111,6 @@ export default function Hamburger({ state }) {
         className="menu-secondary-background-color"
       />
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
-        <div className="menuLogo">
-          {/* <Link className="menuNavLogo" to="/">
-            MARY JOHN FRANK
-          </Link> */}
-        </div>
-
         <div className="hamLinks">
           <nav>
             <ul>
@@ -187,7 +181,11 @@ export default function Hamburger({ state }) {
                 />
               </a>
               <a href="mailto:maryjohn.frank@gmail.com">
-                <img className="socialLink" src="/email_icon.png" alt="email" />
+                <img
+                  className="socialLink"
+                  src="/email_icon2.png"
+                  alt="email"
+                />
               </a>
             </div>
           </div>

@@ -7,25 +7,26 @@ import { loadableP5 as P5Wrapper } from '../components/loadable';
 import SketchSinLine from '../components/sketchSinLine';
 import SketchMovingLine from '../components/sketchMovingLine';
 
-const serializers = {
-  marks: {
-    link: ({ children, mark }) =>
-      mark.blank ? (
-        <a
-          className="bodyTextLinks about"
-          href={mark.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {children}
-        </a>
-      ) : (
-        <a className="bodyTextLinks about" href={mark.href}>
-          {children}
-        </a>
-      ),
-  },
-};
+// const serializers = {
+
+//   marks: {
+//     link: ({ children, mark }) =>
+//       mark.blank ? (
+//         <a
+//           className="bodyTextLinks"
+//           href={mark.href}
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           {children}
+//         </a>
+//       ) : (
+//         <a className="bodyTextLinks" href={mark.href}>
+//           {children}
+//         </a>
+//       ),
+//   },
+// };
 
 export default function HomePage({ data }) {
   const homeImage = data.homeImage.nodes;
@@ -69,11 +70,21 @@ export default function HomePage({ data }) {
           </div> */}
 
       <div className="textHome">
-        <PortableText
+        <p className="introText">
+          <span className="introTextLogo"> Mary John Frank</span> is a New
+          York-based choreographer and filmmaker. She has directed video content
+          for companies including New York City Ballet, Condé Nast, Disney and
+          Google. Her choreography, films, and music video work has been
+          featured on Vogue.com, Nowness, Afropunk, and Refinery 29 and has
+          played at venues including Lincoln Center and the Hammer Museum. She
+          has also built immersive theater and Virtual Reality experiences. She
+          is interested in how VR and AR technology can further our storytelling
+          capabilities and inform choreographic principles and styles.
+        </p>
+        {/* <PortableText
           blocks={homeImage[0]._rawHomePortableText}
           serializers={serializers}
-          className="test"
-        />
+        /> */}
       </div>
 
       <div className="responsiveContainer">

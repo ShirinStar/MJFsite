@@ -68,9 +68,10 @@ header {
   color: #000 !important;
 }
 
-/* .logoNav.frank {
-  letter-spacing: 20px;
-} */
+.logoNav.none {
+  display: none;
+}
+
 
 .menuLogo {
   padding: 0 50px;
@@ -224,32 +225,37 @@ input[type="checkbox"]{
 }
 
 .hamLinks {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   align-items: center;
   position: relative;
+  text-align: center;
   top: 80px;
-  padding: 10% 15%;
+  margin: 0 auto;
+  /* padding: 10% 15%; */
 }
 
 nav {
   display: block;
+  margin: 0 auto;
 }
 
 ul {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  margin-left: -16%;
 }
 
 li {
   list-style: none;
   font-size: 7rem;
-  font-weight: 700;
   overflow: hidden;
   height: 100px;
   position: relative;
-  width: 700px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .meLink {
@@ -257,6 +263,7 @@ li {
   color: white !important;
   text-decoration: none;
   font-family: "sofia-pro-light" , sans-serif;
+  text-align: center;
 }
 
 .meLink:hover {
@@ -264,16 +271,15 @@ li {
 }
 
 .humSocialLinks {
-  width: 400px;
   color: white;
 }
 
 .socialLinkDiv {
   display: flex;
-  max-width: 140px;
+  /* max-width: 140px; */
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 15px 0;
 }
 
@@ -284,6 +290,7 @@ li {
   color: black !important;
   padding: 0;
   margin: 0;
+  margin-top: 50px;
 }
 
 .socialLink {
@@ -321,8 +328,7 @@ li {
   li {
     font-size: 2rem;
     height: 40px;
-    width: 180px;
-    padding-left: 0;
+    margin-left: -5%;
   }
 
   .menuLogo {
@@ -342,9 +348,9 @@ li {
     margin-left: -5%;
   } */
 
-  .barsMenu {
+  /* .barsMenu {
     width: 20px;
-  }
+  } */
 
   .barSpan.black, .barSpan.white {
     height: 2px;
@@ -363,11 +369,7 @@ li {
   }
 
   .hamLinks {
-    padding: 2% 10%;
-  }
-
-  .socialLinkDiv {
-    max-width: 60px;
+    padding: 10% 0;
   }
 
   .socialLink {
@@ -378,7 +380,7 @@ li {
   .contactLink {
     font-size: 12px;
     letter-spacing: 0;
-    margin-left: 5px;
+    margin-top: 10px;
   }
 }
 
@@ -446,27 +448,22 @@ li {
   }
 
   .hamLinks {
-    padding: 4% 12%;
+    padding: 10% 0;
   }
 
   li {
     font-size: 2.6rem;
     height: 50px;
-    width: 200px;
-    /* padding-left: 10px; */
+    margin-left: -5%;
   }
 
   .contactLink {
     font-size: 14px;
     letter-spacing: 0;
-  }
-
-  .socialLinkDiv {
-    max-width: 80px;
+    margin-top: 20px;
   }
 
   .humSocialLinks {
-    width: 80px;
     font-size: 12px;
   }
 
@@ -499,11 +496,7 @@ li {
   }
 
   .hamLinks {
-    padding: 15% 10%;
-  }
-
-  .socialLinkDiv {
-    max-width: 110px;
+    padding: 15% 0;
   }
 
   .socialLink {
@@ -518,13 +511,9 @@ li {
   li {
     font-size: 4rem;
     height: 70px;
-    width: 400px;
-    padding-left: 10px;
+    margin-left: 0;
   }
 
-  .humSocialLinks {
-    width: 120px;
-  }
 
   /* .barsDiv {
     margin-left: -2%;
@@ -564,19 +553,18 @@ li {
     padding-top: 30px;
   }
 
-  .humSocialLinks {
-    width: 120px;
-  }
-
   .hamLinks {
-    padding: 15% 12%;
+    padding: 15% 0;
+    text-align: center;
+    align-items: center;
   }
   
   li {
     font-size: 5rem;
     height: 90px;
-    width: 450px;
-    padding-left: 40px;
+    text-align: center;
+    /* width: 450px; */
+    /* padding-left: 40px; */
   }
 
   /* .barsDiv {
@@ -588,26 +576,6 @@ li {
     margin-left: 35%;
   }
  }
-/* 
- @media only screen and (min-width: 1400px) and (max-width: 1600px) {
-  .barsDiv {
-    margin-top: -5%;
-    margin-left: 3%;
-  }
- }
 
- @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-  .barsDiv {
-    margin-top: -5%;
-    margin-left: 6%;
-  }
- }
-
- @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-  .barsDiv {
-    margin-top: -7%;
-    margin-left: 7%;
-  }
- } */
 
 

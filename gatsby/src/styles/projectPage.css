@@ -58,14 +58,14 @@
 .pageTitle.singleProject {
   font-family: "sofia-pro-light" , sans-serif;
   padding-right: 4px;
-  font-size: 28px;
+  font-size: 32px;
   text-align: left;
   margin-top: 25px;
 }
 
 .projectYear {
   font-family: "sofia-pro-light" , sans-serif;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .videoDiv.singleProject {
@@ -115,29 +115,30 @@
 }
 
 .BHSTitle {
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   font-weight: 300 !important;
 }
 
 .imagesContainer {
   max-width: 1460px;
-  padding: 0 1vw;
+  padding: 0 2vw;
   margin: 0 auto;  
 }
 
 .imageBHSGallery {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start; 
   padding-bottom: 40px;
   justify-content: center;
-  /* max-width: 100%; */
-  /* flex-direction: row; */
+  flex-direction: row;
 }
 
 .BHSimage {
   width: 600px;
-  /* object-fit: cover; */
+  height: 500px;
+  object-fit: cover;
   padding: 5px;
 }
 
@@ -175,7 +176,7 @@
   }
 
   .BHSTitle {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .imagesContainer {
@@ -189,6 +190,11 @@
   .bodyTextLinks {
     font-size: 12px;
   }
+
+  .BHSimage {
+    width: 300px;
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1400px) { 
@@ -197,15 +203,15 @@
   }
 
   .pageTitle.singleProject {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .projectYear {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .BHSTitle {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .featureDiv {
@@ -220,15 +226,20 @@
   .bodyTextLinks {
     font-size: 16px;
   }
+
+  .BHSimage {
+    width: 400px;
+    height: 350px;
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 850px) { 
   .pageTitle.singleProject {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .projectYear {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .BHSTitle {
@@ -241,8 +252,20 @@
 }
 
 @media screen and (max-width: 350px) {  
+  .pageTitle.singleProject {
+    font-size: 16px;
+  }
+
+  .projectYear {
+    font-size: 16px;
+  }
+
+  .BHSTitle {
+    font-size: 14px;
+  }
+
   .bodyTextLinks {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 

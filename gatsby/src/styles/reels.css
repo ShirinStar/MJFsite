@@ -108,7 +108,7 @@
   }
 
   .reelPlaceholder {
-    height: 150px;
+    height: 160px;
   }
 
   .reelPlaceholderText {
@@ -116,9 +116,9 @@
   }
 
   .playIconReel {
-    left: 40%;
+    left: 42%;
     margin-top: 20%;
-    transform: scale(.7);
+    transform: scale(.5);
   }
 }
 
@@ -143,13 +143,13 @@
   }
 
   .playIconReel {
-    left: 41%;
+    left: 42%;
     margin-top: 20%;
-    transform: scale(.6);
+    transform: scale(.5);
   }
 
   .reelPlaceholder {
-    height: 180px;
+    height: 200px;
   }
   
   .reelPlaceholderText {
@@ -178,13 +178,13 @@
   }
 
   .playIconReel {
-    left: 46%;
-    margin-top: 18%;
-    transform: scale(.8);
+    left: 47%;
+    margin-top: 23%;
+    transform: scale(.7);
   }
 
   .reelPlaceholder {
-    height: 400px;
+    height: 350px;
   }
   
   .reelPlaceholderText {
@@ -210,8 +210,8 @@
 
   .playIconReel {
     left: 47%;
-    margin-top: 22%;
-    transform: scale(1);
+    margin-top: 25%;
+    transform: scale(.9);
   }
 
   .reelPlaceholder {

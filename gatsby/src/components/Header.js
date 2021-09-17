@@ -13,7 +13,7 @@ export default function Header() {
     menuName: 'bars',
   });
   const [disabled, setDisabled] = useState(false);
-  // const [logoShow, setLogoShow] = useState(true);
+  const [logoShow, setLogoShow] = useState(false);
   const [black, setBlack] = useState(true);
   let labelClasses = 'barsMenu';
 
@@ -22,17 +22,17 @@ export default function Header() {
   }
 
   // checking if main page to hide the logo
-  // useEffect(() => {
-  //   // change url in production
-  //   if (
-  //     window.location.href === 'http://localhost:8000/' ||
-  //     window.location.href === 'https://maryjohnfrank.netlify.app/'
-  //   ) {
-  //     setLogoShow(true);
-  //   } else {
-  //     setLogoShow(false);
-  //   }
-  // }, [window.location.href]);
+  useEffect(() => {
+    // change url in production
+    if (
+      window.location.href === 'http://localhost:8000/' ||
+      window.location.href === 'https://maryjohnfrank.netlify.app/'
+    ) {
+      setLogoShow(false);
+    } else {
+      setLogoShow(true);
+    }
+  }, [window.location.href]);
 
   // checking if inner pages where clicked from the menu screen
   useEffect(
@@ -86,7 +86,7 @@ export default function Header() {
       <div className="inner-header">
         <div className="menuHome">
           <div className="headerLogo">
-            <Link className="logoNav" to="/">
+            <Link className={logoShow ? 'logoNav' : 'logoNav none'} to="/">
               MARY JOHN <br />
               <span className="logoNav frank">FRANK</span>
             </Link>

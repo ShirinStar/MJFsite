@@ -37,36 +37,47 @@ export default function AboutPage({ data }) {
           src={about[0].image.asset.url}
           alt={about[0].name}
         />
-        <div className="aboutText">
-          <PortableText
-            blocks={about[0]._rawBodyPortableText}
-            serializers={serializers}
-            className="aboutParag"
-          />
-
+        <div className="abouttTextDiv">
+          <div className="aboutText">
+            <PortableText
+              blocks={about[0]._rawBodyPortableText}
+              serializers={serializers}
+              className="aboutParag"
+            />
+          </div>
           <div className="contact">
             <h2 className="contact contactme"> Contact me </h2>
-            <a
-              className="bodyTextLinks about"
-              href="mailto:maryjohn.frank@gmail.com"
-            >
-              maryjohn.frank@gmail.com
-            </a>
-
-            <div className="aboutSocialWrapper">
-              <div className="socialLinkDivAbout">
-                <a
-                  href="https://www.instagram.com/maryjohnfrank/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/instagram_icon_nofill.png"
-                    alt="instagram"
-                    className="socialLinkAbout"
-                  />
-                </a>
-                {/* <a
+            <div className="textIcon">
+              <a
+                className="contactlink"
+                href="mailto:maryjohn.frank@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/email_icon2.png"
+                  alt="email"
+                  className="socialLinkAbout mail"
+                />
+                maryjohn.frank@gmail.com
+              </a>
+            </div>
+            <div className="textIcon">
+              <a
+                className="contactlink"
+                href="https://www.instagram.com/maryjohnfrank/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/instagram_icon_nofill.png"
+                  alt="instagram"
+                  className="socialLinkAbout"
+                />
+                maryjohnfrank
+              </a>
+            </div>
+            {/* <a
                       href="https://www.instagram.com/maryjohnfrank/"
                       target="_blank"
                       rel="noreferrer"
@@ -77,18 +88,20 @@ export default function AboutPage({ data }) {
                         className="socialLinkAbout"
                       />
                     </a> */}
-                <a
-                  href="https://www.facebook.com/mary.j.frank.9/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/facebook_icon_nofill2.png"
-                    alt="facebook"
-                    className="socialLinkAbout"
-                  />
-                </a>
-              </div>
+            <div className="textIcon">
+              <a
+                className="contactlink"
+                href="https://www.facebook.com/mary.j.frank.9/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/facebook_icon_nofill2.png"
+                  alt="facebook"
+                  className="socialLinkAbout"
+                />
+                @mary.j.frank.9
+              </a>
             </div>
           </div>
         </div>
