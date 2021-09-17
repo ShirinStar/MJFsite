@@ -23,8 +23,9 @@ const InnerNavStyles = styled.div`
     margin-right: 0px;
     font-size: 18px;
     color: 'black';
+    text-transform: uppercase;
     &[aria-current='page'] {
-      border-bottom: 2px solid #fff;
+      color: #c4ffe7;
     }
     &:hover {
       color: #c4ffe7;

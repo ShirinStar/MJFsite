@@ -27,12 +27,24 @@ const PressStyle = styled.div`
   .pressImage:hover {
     border: 1px solid #c4ffe7;
   }
+  .presstext {
+    font-size: 18px;
+  }
   a {
     color: 'black';
-    font-family: 'Avenir', sans-serif;
   }
   a:hover {
     color: #c4ffe7;
+  }
+  @media only screen and (min-width: 300px) and (max-width: 400px) {
+    .presstext {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (min-width: 400px) and (max-width: 768px) {
+    .presstext {
+      font-size: 14px;
+    }
   }
 `;
 

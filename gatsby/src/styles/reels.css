@@ -36,6 +36,10 @@
   display: none;
 }
 
+/* .reelTitleContainer:hover {
+  color: white;
+} */
+
 .reelVideoContainer {
   display: block;
   padding-bottom: 40px;
@@ -46,7 +50,7 @@
 }
 
 .reeltitle {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300 !important;
   color: white !important;
   padding-top: 20%;
@@ -54,7 +58,7 @@
 
 .playIconReel {
   position: absolute;
-  top: 5%;
+  top: 0;
   left: 48%;
   height: 48px;
   width: 48px;

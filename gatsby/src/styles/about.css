@@ -17,9 +17,9 @@
   width: 100%;
   display: flex;
   margin-left: auto;
+  margin-top: 2%;
   margin-right: auto;
   justify-content: space-between;
-  align-items: center;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -35,6 +35,7 @@
   padding-left: 40px;
   font-size: 18px;
   margin: 0 auto;
+  margin-top: -1%;
 }
 
 .aboutParag {
@@ -45,11 +46,13 @@
 .contact {
   text-align: left;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 0;
+  /* text-align: center; */
 }
 
 .contact.contactme {
+  font-size: 20px;
   margin-bottom: 20px;
   font-weight: 300;
 }
@@ -70,6 +73,7 @@
 .aboutSocialWrapper {
   margin-top: 10px;
   display: flex;
+  /* justify-content: center; */
 }
 
 .socialLinkDivAbout {
@@ -82,11 +86,11 @@
 }
 
 .socialLinkAbout {
-  height: 40px;
+  height: 35px;
 }
 
 .socialLinkAbout.facebook {
-  height: 50px;
+  height: 45px;
 }
 
 .socialLinkAbout:hover {

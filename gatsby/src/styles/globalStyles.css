@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 }
 
 .wrapper {
-  padding: 0 50px;
+  padding: 0 80px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -104,8 +104,8 @@ p {
 
 .pageTitle {
   font-family: 'sofia-pro-light', sans-serif;
-  font-weight: 300;
-  font-size: 54px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: center;
   margin: 0;
   margin: 15px 0;
@@ -157,7 +157,6 @@ img {
   max-width: 100%;
   align-items: center;
   text-align: left;
-  font-size: 18px;
   margin-top: 10px;
   text-transform: uppercase;
   font-weight: 300;
@@ -202,7 +201,7 @@ img {
   }
   
   .pageTitle {
-    font-size: 28px;
+    font-size: 18px;
     padding: 5px 0;
   }
 
@@ -212,9 +211,9 @@ img {
  }
 
 
-@media only screen and (min-width: 350px) and (max-width: 400px) {
+@media only screen and (min-width: 350px) and (max-width: 700px) {
   .pageTitle {
-    font-size: 32px;
+    font-size: 18px;
     padding: 10px 0;
   }
 
@@ -226,20 +225,9 @@ img {
   }
  }
 
- @media only screen and (min-width: 400px) and (max-width: 700px) {
-  .pageTitle {
-    font-size: 32px;
-    padding: 10px 0;
-  }
-
-  p {
-    font-size: 14px;
-  }
- }
-
  @media only screen and (min-width: 700px) and (max-width: 1000px) {
   .pageTitle {
-    font-size: 48px;
+    font-size: 20px;
     padding: 0 0;
   }
 

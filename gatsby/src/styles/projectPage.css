@@ -58,14 +58,14 @@
 .pageTitle.singleProject {
   font-family: "sofia-pro-light" , sans-serif;
   padding-right: 4px;
-  font-size: 48px;
+  font-size: 28px;
   text-align: left;
   margin-top: 25px;
 }
 
 .projectYear {
   font-family: "sofia-pro-light" , sans-serif;
-  font-size: 48px;
+  font-size: 28px;
 }
 
 .videoDiv.singleProject {
@@ -151,12 +151,12 @@
   }
 
   .pageTitle.singleProject {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 15px;
   }
 
   .projectYear {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .descriptionDiv {
@@ -197,15 +197,15 @@
   }
 
   .pageTitle.singleProject {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .projectYear {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .BHSTitle {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .featureDiv {
@@ -224,15 +224,15 @@
 
 @media only screen and (min-width: 650px) and (max-width: 850px) { 
   .pageTitle.singleProject {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .projectYear {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .BHSTitle {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .bodyTextLinks {

@@ -56,7 +56,7 @@
 .mainImageTitle {
   padding: 10px 0;
   margin: 0;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700 !important;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .secondImageTitle {
-  font-size: 0.8em;
+  font-size: 0.5em;
   margin-top: 0;
 }
 

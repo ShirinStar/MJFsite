@@ -88,9 +88,10 @@ export default function HomePage({ data }) {
               />
               <p className="imageInfo">
                 <a className="imageInfolink" href="/">
-                  “Meticulous Bird”
-                </a>{' '}
-                | Choreographer
+                  “Meticulous Bird" by Thao & The Get Down Stay Down
+                </a>
+                <br />
+                Choreographer / Music Video
               </p>
             </div>
             <div className="imageWrapper" />

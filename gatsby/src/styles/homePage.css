@@ -35,8 +35,9 @@
 }
 
 .textHome {
-  margin-top: 50px;
+  margin: 50px auto;
   margin-bottom: 10px;
+  width: 90%;
 }
 
 .responsiveContainer {
@@ -116,6 +117,7 @@
   padding-top: 0;
   padding-bottom: 50px;
   font-size: 12px;
+  text-align: right;
 }
 
 .imageInfolink:hover {
@@ -184,7 +186,7 @@
   }
   
   .imageSize {
-    height: 159px;
+    height: 179px;
   }
 
   .imageWrapper {
@@ -213,6 +215,7 @@
   .textHome {
     margin-top: 10px;
     margin-bottom: 30px; 
+    width: 100%;
   }
 }
 
@@ -222,7 +225,7 @@
   }
   
   .imageSize {
-    height: 179px;
+    height: 199px;
   }
 
   .imageWrapper {
@@ -250,12 +253,13 @@
   .textHome {
     margin-top: 20px;
     margin-bottom: 30px; 
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 700px) {
   .imageSize {
-    height: 325px;
+    height: 289px;
   }
 
   .imageWrapper {
@@ -278,6 +282,7 @@
   .textHome {
     margin-top: 10px;
     margin-bottom: 10px; 
+    width: 100%;
   }
 }
 
@@ -287,7 +292,7 @@
   }
     
   .imageSize {
-    height: 359px;
+    height: 329px;
   }
 
   .imageWrapper {
@@ -315,12 +320,13 @@
       font-size: 16px;
       margin-top: 30px;
       margin-bottom: 30px; 
+      width: 100%;
     }
   }
 
 @media only screen and (min-width: 800px) and (max-width: 900px) {
   .imageSize {
-      height: 420px;
+      height: 390px;
   }
 
   .homeName {
@@ -340,12 +346,14 @@
       font-size: 16px;
       margin-top: 30px;
       margin-bottom: 30px; 
+      width: 100%;
     }
+    
 }
 
 @media only screen and (min-width: 850px) and (max-width: 950px) {
   .imageSize {
-    height: 450px;
+    height: 390px;
   }
 
   .videoDiv {
@@ -360,12 +368,13 @@
     font-size: 16px;
     margin-top: 30px;
     margin-bottom: 30px; 
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 950px) and (max-width: 1050px) {
+@media only screen and (min-width: 950px) and (max-width: 1024px) {
   .imageSize {
-    height: 500px;
+    height: 430px;
   }
 
   .videoDiv {
@@ -380,13 +389,14 @@
     font-size: 16px;
     margin-top: 30px;
     margin-bottom: 30px; 
+    width: 100%;
   }
 }
 
 
-@media only screen and (min-width: 1050px) and (max-width: 1100px) {
+@media only screen and (min-width: 1024px) and (max-width: 1100px) {
   .imageSize {
-    height: 539px;
+    height: 469px;
   }
 
   .videoDiv {
@@ -401,7 +411,7 @@
 
 @media only screen and (min-width: 1100px) and (max-width: 1350px) {
   .imageSize {
-    height: 589px;
+    height: 600px;
   }
 
   .videoDiv {

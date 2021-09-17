@@ -20,7 +20,7 @@ const TagStyles = styled.div`
     font-size: 18px;
     color: 'black';
     &[aria-current='page'] {
-      border-bottom: 2px solid #fff;
+      color: #c4ffe7;
     }
     &:hover {
       color: #c4ffe7;
@@ -40,7 +40,7 @@ const TagStyles = styled.div`
       font-size: 10px;
       grid-gap: 0 0rem;
       &[aria-current='page'] {
-        border-bottom: 1px solid #fff;
+        color: #c4ffe7;
       }
     }
   }
